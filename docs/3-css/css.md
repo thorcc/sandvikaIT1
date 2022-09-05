@@ -27,7 +27,7 @@ Et regelsett består av flere mindre deler:
 
 Et regelsett består ofte av flere deklarasjoner, og hele CSS-koden vil som regel ha flere regelsett, se eksemplet under.
 
-```CSS
+```css
 body{
     background-color: lightgrey;
 }
@@ -43,7 +43,7 @@ Først må vi uansett vite hvor vi faktisk skal skrive CSS-koden vår, og her ha
 
 Alternativt kan vi nøste et `<style>`-element inn i  `<head>` i html-fila vår. Da kan vi skrive all css vi trenger inne i dette elementet. Nettsiden vi har jobbet med i forrige kapittel vil dermed se ut som følger (legg merke til style elementet):
 
-```HTML
+```html
     <!DOCTYPE html>
     <html lang="en">
         <head>

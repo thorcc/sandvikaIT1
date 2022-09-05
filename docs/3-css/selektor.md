@@ -10,7 +10,7 @@ sidebar_label: 3.2 Selektorer
 
 Vi utvider nettsiden vår med en ny del om for eksempel sommerferien og introduserer samtidig to nye attributter nemlig `class` og `id`. Vi legger derfor til følgende tekst til nettsiden:
 
-```HTML
+```html
 <section class="norefjell">
     <h1 class="norefjell">Fjelltur i sommerferien</h1>
     <img src="fjelltopp.jpg" alt="bilde av en fjelltopp" id="fjelltopp">
@@ -28,7 +28,7 @@ Nå kan vi bruke selektorer for å peke på en id eller en klasse i stedet for �
 
 Når vi skal endre stil på en klasse i CSS kan vi ikke bare skrive navnet på den, da leter nettleseren nemlig etter ett element med det navnet. Vi legger bare på et punktum foran navnet så vil selektoren peke på en klasse.
 
-```CSS
+```css
 .norefjell{
     font-family:cursive;
     color: blue;
@@ -40,7 +40,7 @@ Når vi skal endre stil på en klasse i CSS kan vi ikke bare skrive navnet på d
 
 Tilsvarende som class-selektoren har vi også en egen skrivemåte for id-selektoren:
 
-```CSS
+```css
 #fjelltopp{
     border: solid red 2px;
 }
@@ -53,7 +53,7 @@ Vi bruker altså # foran navnet for å velge et element med en id-attributt.
 Vår eksempel-nettside ser nå ut som følger:
 
 
-```HTML
+```html
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -97,14 +97,14 @@ Vår eksempel-nettside ser nå ut som følger:
 
 I kap 2.4 så vi på nøstede elementer som barn og etterkommere. Vi kan bruke slike relasjoner som selektorer for raskt å endre på en bestemt gruppe av elementer.
 
-```CSS
+```css
 main>p{
     color: black;
 }
 ```
 Denne selektoren endrer alle p - element som er direkte barn av main.
 
-```CSS
+```css
 main p{
     color: black;
 }
@@ -121,7 +121,7 @@ Med pseudoselektorer kan vi for eksempel sette stil kun på første bokstav i en
 
 Koden under endrer stil på første bokstav i avsnittet #norefjell:
 
-```CSS
+```css
 #norefjell::first-letter{
     font-size: 64px;
 }
@@ -130,7 +130,7 @@ Koden under endrer stil på første bokstav i avsnittet #norefjell:
 Vi kan også bruke pseudoselektorer for å sette inn innhold før eller etter elementer.
 For å sette inn « » før og etter et sitat kan vi gjøre følgende:
 
-```CSS
+```css
 q::before{
     content: "«";
 }
@@ -156,7 +156,7 @@ En tilstand er for eksempel når musepekeren er over et element, mens en annen e
 
 For å endre størrelsen på et bilde når pekeren er over bildet kan vi gjøre følgende:
 
-```CSS
+```css
 #fjelltopp:hover{
     width: 200px;
 }

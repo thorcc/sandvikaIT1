@@ -42,7 +42,7 @@ def index():
 Huskeliste er nå en liste, og for å skrive ut listen på nettsiden er det mulig å bruke en for-løkke.
 For-løkker i Flask og HTML skrives på følgende måte:
 
-````HTML
+````html
 <ul>
     {% for listepunkt in huskeliste %}
         <li>{{listepunkt}}</li>

@@ -9,7 +9,7 @@ Vi oppsummerer html-delen av kapittelet ved å se på de vanligste elementene ma
 
 ## Overskrifter - headings
 
-```HTML
+```html
 <h1>My main title</h1>
 <h2>My top level heading</h2>
 <h3>My subheading</h3>
@@ -19,19 +19,19 @@ Overskriftene går fra h1 (aller størst) til h6 (minste overskrift). Dersom vi 
 
 ## Avsnitt - paragraph
 
-```HTML
+```html
 <p>Dette er et avsnitt</p>
 ```
 
 ## Tekst - som inline element
 
-```HTML
+```html
 <span>Et element som kan brukes for ren tekst</span>
 ```
 
 ## Lenker
 
-```HTML
+```html
 <a href="https://viken.no/sandvika-vgs/">Min VGS</a>
 ```
 
@@ -39,7 +39,7 @@ a-elementet står for anker. Her må vi minimum ha med en href attributt for at 
 
 ## Bilder
 
-```HTML
+```html
 <img src="mittBilde.png" alt="Mitt bilde">
 ```
 
@@ -49,7 +49,7 @@ img-elementet er et eksempel på et element som kun trenger en åpnings-tagg. I 
 
 **Uordnet/punktliste**
 
-```HTML
+```html
 <ul>
     <li>technologists</li>
     <li>thinkers</li>
@@ -59,7 +59,7 @@ img-elementet er et eksempel på et element som kun trenger en åpnings-tagg. I 
 
 **Ordnet/tall-liste**
 
-```HTML
+```html
 <ol>
     <li>technologists</li>
     <li>thinkers</li>
@@ -84,7 +84,7 @@ Eksempel på form-element
 
 `form` elementet er en ramme for andre element som tar for seg det å hente informasjon fra bruker, såkalt `input` element. Vi får ikke enda laget noe funksjonalitet med disse men vi kan bygge opp utseende til nettsiden ved hjelp av elementene.
 
-```HTML
+```html
 <form action="resultat.html">
     <label for="f_navn">Fornavn</label>
     <input id="f_navn" type="text">

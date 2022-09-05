@@ -45,7 +45,7 @@ Prøv følgende:
 
 - **Kopier inn følgende tekst**
 
-```HTML
+```html
     <!DOCTYPE html>
     <html>
         <body>

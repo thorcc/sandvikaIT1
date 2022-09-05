@@ -27,7 +27,7 @@ Det som står mellom taggene er det som synes på nettsiden. Html-koden ovenfor 
 
 I eksempelet ovenfor skrev vi ren tekst i innholdsbiten av lenke elementet. Det er ganske vanlig men vi kan være mer avanserte. Alle elementer som ligger nøstet inn i et a-element blir en del av lenka. Slik kan for eksempel nettaviser gjøre både bilde og tekst klikkbare for å lese mer om saken:
 
-```HTML
+```html
 <a href="https://www.vg.no/sistenytt">
     <img src="kjempekultbilde.png">
     <p>Du vil aldri tro hva som skjedde!</p>

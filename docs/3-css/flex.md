@@ -14,7 +14,7 @@ Hittil har vi sett litt hvordan man kan endre stil på elementene vi ønsker, og
 
 Som vanlig er det best å starte med et eksempel. De aller fleste nettsteder du besøker består av mange undersider, og har da en felles fane der du lett kan navigere deg rundt. La oss bruke flex til å lage en slik fane med lenker på toppen av nettsidene våre. Det er naturlig å skrive denne koden i et header element, før resten innholdet som vi legger i main-elementet:
 
-```HTML
+```html
 <body>
     <header>
         <nav>
@@ -40,7 +40,7 @@ Vi skal nå vise hvordan vi ganske enkelt kan posisjonere lenke slik vi ønsker 
 
 Vi starter med å skru på flex på forelder elementet.
 
-```CSS
+```css
 nav{
     display: flex;
 }
@@ -66,7 +66,7 @@ I eksemplene som kommer det flere regelsett for CSS, og noen av egenskapene er k
 
 La oss pynte på navigasjonsfanen vår, se nøye på hver egenskap og resultatet og prøv å avgjøre hva hver linje gjør.
 
-```CSS
+```css
 nav{
     background-color: lightgrey;
     padding-top: 20px;
@@ -96,7 +96,7 @@ nav a{
 
 En annen variant er å legge padding på selve lenkene, og bruke "flex-start" i stedet. Flex-start legger alle elementene ved begynnelsen, og padding sørger for at det er luft i mellom:
 
-```CSS
+```css
 nav{
     padding-top: 20px;
     padding-bottom: 20px;
@@ -123,7 +123,7 @@ nav a{
 
 For en nettside til mobiltelefon, er det beste som regel å ha fleks-elementene i en kolonne. Vi endrer flex-direction så lenkene kommer under hverandre. Vi bruker som i forrige eksempel padding for luft mellom lenkene, og til slutt så sentrerer vi lenkene horisontalt ved hjelp av align-items:
 
-```CSS
+```css
 nav{
     background-color: lightgray;
     padding-top: 20px;
@@ -148,7 +148,7 @@ nav a{
 
 Ofte er det vanlig å ha lenker til nettstedet til venstre, og innlogging eller min side til høyre. Vi nøster lenkene slik at det bare blir to fleks-barn og legger `space-between` på disse:
 
-```HTML
+```html
 <body>
     <header>
         <nav class="flex-container">
@@ -167,7 +167,7 @@ Ofte er det vanlig å ha lenker til nettstedet til venstre, og innlogging eller 
 </body>
 ```
 
-```CSS
+```css
 nav{
     background-color: lightgray;
     padding-top: 20px;

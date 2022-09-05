@@ -40,7 +40,7 @@ I nyere tid skrives ikke html nødvendigvis manuelt, og da brukes ikke de semant
 
 Når vi nøster elementer kan det være greit å ha et språk som raskt gir oversikt over hvordan sammenhengen mellom elementene er. Se på følgende eksempel:
 
-```HTML
+```html
 <body>
     <main>
         <section>

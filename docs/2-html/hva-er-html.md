@@ -6,7 +6,7 @@ sidebar_label: 2.2 Hvordan skrive HTML
 ## HTML består av Elementer
 
 HTML kalles for et markeringsspråk og brukes til å strukturere innhold på nettsider. HTML består av `elementer`, disse må skrives på en spesifikk måte slik at nettleseren skal forstå språket. Se igjen på:
-```HTML
+```html
     <!DOCTYPE html>
     <html>
         <body>
@@ -33,7 +33,7 @@ Hva med `html` og `body`? De er begge en del av "skjelettet" til en html-fil. De
 
 **Velg det midterste alternativet, html:5, og du vil få følgende tekst:**
 
-```HTML
+```html
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -61,7 +61,7 @@ La oss legge til en overskrift igjen. Legg merke til at siden vi bruker VS-Code 
 Vi kan også legge til litt tekst, da er `p`-elementet kjekt å bruke. All tekst vi skriver som innhold i dette elementet vil lage et avsnitt (paragraph). Ved å legge flere p-element etter hverandre får vi flere avsnitt under hverandre
 
 
-```HTML
+```html
     <!DOCTYPE html>
     <html lang="en">
         <head>
@@ -85,7 +85,7 @@ Vi kan også legge til litt tekst, da er `p`-elementet kjekt å bruke. All tekst
 Du ser nå kanskje at vi ofte har lagt elementer inne i elementer, dette kalles *nøsting*.
 Hvis vi har lyst til å understreke at katten vår er veldig gretten, kan vi sette "veldig" i et `<strong>` element, det vil gjøre at "veldig" blir skrevet med fet skrift på nettsiden.
 
-```HTML
+```html
 <p>Katten min er <strong>veldig</strong> gretten.</p>
 ```
 
@@ -93,7 +93,7 @@ Hvis vi har lyst til å understreke at katten vår er veldig gretten, kan vi set
 >
 > Her må du passe på at du nøster riktig. Dette blir feil:
 >
-> ```HTML
+> ```html
 > <p>Katten min er <strong>veldig gretten.</p></strong>
 > ```
 >
@@ -102,7 +102,7 @@ Hvis vi har lyst til å understreke at katten vår er veldig gretten, kan vi set
 
 Når vi skriver html, viser vi hvilke elementer som er nøstet i hverandre ved inhopp:
 
-```HTML
+```html
 <body>
     <h1>Min Sommerferie</h1>
 </body>
@@ -122,7 +122,7 @@ Når vi legger til et element så vil vi ofte ha behov for å legge til litt eks
 
 Vi har nå laget en nettside med overskrift tekst og bilder, for eksempel:
 
-```HTML
+```html
     <!DOCTYPE html>
     <html lang="en">
         <head>

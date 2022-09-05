@@ -53,7 +53,7 @@ Vi starter med en overskrift, og setter en annen bakgrunnsfarge på denne enn re
 
 Vi ser at innholdsdelen av h1 elementet er farget rosa. La oss legge til litt padding og se hva som skjer:
 
-```CSS
+```css
 h1{
     background-color: pink;
     padding: 20px;
@@ -66,7 +66,7 @@ Enheten `px` står for piksler (billedpunkter) og er en enhet for lengde som bru
 
 Vi ser altså at ved å øke padding fra 0 til 20 piksler så fikk vi mer "luft" rundt teksten i innholds-området. La oss videre se på border-egenskapen, denne har tre verdier vi må definere før vi ser en effekt, vi kan definere alle på en gang:
 
-```CSS
+```css
 h1{
     background-color: pink;
     padding: 20px;
@@ -78,7 +78,7 @@ h1{
 
 Til slutt setter vi på margin, tilsvarende som padding:
 
-```CSS
+```css
     h1{
         background-color: rgb(223, 109, 128);
         padding: 20px;
@@ -100,7 +100,7 @@ Vi kan også finjustere enda mer ved å bruke left-, right-, top- eller bottom f
 
 Følgende teknikk gir oss en fin marg på hele nettsiden vår:
 
-```CSS
+```css
 body{
     width: 80%;
     margin: auto;

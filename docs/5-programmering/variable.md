@@ -14,7 +14,7 @@ En av de viktigste prinsippene når vi skal kode, er at vi kan lagre alt mulig i
 ## Lagre en variabel.
 Dersom vi for eksempel ønsker å lagre tallet 10 skriver vi 
 
-```PYTHON
+```python
 tall = 10
 ```
 
@@ -25,7 +25,7 @@ tall = 10
 
 Når vi har lagret en variabel kan vi hente den ved å bruke navnet (merkelappen) vi satte på den:
 
-```PYTHON
+```python
 tall = 10
 print(tall)
 ```
@@ -40,7 +40,7 @@ Som nevnt kan vi lagre veldig mye forskjellig som variabler, men datamaskinen ve
 
 Med strenger tenker vi som regel på all tekst, men en streng er i bunn og grunn en kombinasjon av bokstaver, symboler og tall vi kan skrive med tastaturet. En streng må skrives med anførselstegn rundt. Dermed har vi litt bedre forståelse av instruksjonen fra forrige kapittel:
 
-```PYTHON
+```python
 print("Hei alle sammen!")
 ```
 
@@ -51,7 +51,7 @@ Setningen vi ville skrive ut er en streng, og må dermed være i anførselstegn.
 
 Når vi jobber med tall holder det å skrive tallet (uten anførselstegn). Python har også de fire regneartene innebygd,  
 
-```PYTHON
+```python
 tall1 = 10
 tall2 = 4.2
 print(tall1 + tall2)
@@ -66,7 +66,7 @@ Fra tidligere vet du at man relativt greit kan regne om heltall til totallsystem
 
 Dette er egentlig en streng, men den har en spesiell form og brukes masse for å lage interaksjon med brukeren av programmet (før vi gjør det med grafikk)
 
-```PYTHON
+```python
 navn = input("Hva heter du? ")
 ```
 
@@ -77,7 +77,7 @@ Når vi kjører programmet vil du se at spørsmålet stilles i konsollen. Progra
 
 #### Boolske variable
 
-```PYTHON
+```python
 test = True
 ```
 
@@ -86,7 +86,7 @@ En slik variabel kan kun ha verdiene True eller False. Tenk på den som en bryte
 
 #### Lister
 
-```PYTHON
+```python
 liste = ["eple", "banan", "appelsin"]
 ```
 
@@ -97,7 +97,7 @@ Dette er mer avanserte datatyper som vi skal se på i egne kapittel. Vi kan for 
 
 Vi kan printe ut flere variable, sammen med tekst ved å kjede sammen alt med komma mellom hver gang:
 
-```PYTHON
+```python
 navn = input("Hva heter du? ")
 sted = input("Hvor gammel er du?" )
 

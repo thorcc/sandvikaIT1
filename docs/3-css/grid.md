@@ -12,7 +12,7 @@ Grid er en annen teknikk for å plassere elementer slik vi vil. Både grid og fl
 
 På samme måte som med flex, må vi alltid ha en forelder rundt alt vi skal plassere sammen i en grid. I koden under har vi et section-element med id grid rundt elementene som skal plasseres ut på nettsiden. 
 
-```HTML
+```html
 <section id="grid">
     <div class="boks">1</div>
     <div class="boks">2</div>
@@ -29,7 +29,7 @@ På samme måte som med flex, må vi alltid ha en forelder rundt alt vi skal pla
 
 Vi bruker en selektor for id-en grid, og akkurat som med fleks må vi først "skru på" grid:
 
-```CSS
+```css
 #grid{
   display: grid;
 }
@@ -97,7 +97,7 @@ Vi legger også en border rundt selve elementene, slik at det er lettere å se s
 
 Vi satte bredden på rutenettet vårt til 200px, da "låser" vi bredden på rutenettet, noe som ikke er å anbefale. Vi ønsker at elementene skal justere seg selv i bredden avhengig av hvor bred skjermen er. Vi kan alternativt bruke prosenter istedet, men for å slippe å regne så bruker vi heler `deler (fractions)` når vi lager rutenettet. Vi endrer derfor CSS-koden vår:
 
-```CSS
+```css
 #grid{ 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

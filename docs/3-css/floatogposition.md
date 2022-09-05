@@ -29,7 +29,7 @@ Alle elementene er i utgangspunktet satt til å være statiske. Det betyr at de 
 
 For å få en god forståelse av hvordan de andre verdiene fungerer lager vi først kode for noen "bokser"
 
-```HTML
+```html
     <div class="forelder">
         <div class="boks" id="en">En</div>
         <div class="boks" id="to">To</div>
@@ -40,7 +40,7 @@ For å få en god forståelse av hvordan de andre verdiene fungerer lager vi fø
 
 Med påfølgende CSS
 
-```CSS
+```css
     .forelder{
         border: dotted black 2px;
         display: inline-block;
@@ -66,7 +66,7 @@ Med påfølgende CSS
 
 En relativ posisjon lar oss flytte på plasseringen på et element basert på der det allerede ligger. Hvis vi setter relativ posisjon følger det de vanlige reglene (statisk), men vi kan nå "dytte" elementet i alle retninger:
 
-```CSS
+```css
     #tre{
         bacground: pink;
         position: relative;
@@ -82,7 +82,7 @@ Vi "dytter" altså elementet 25 piksler nedover (fra toppen), og 25 piksler mot 
 
 Legg merke til at den relative posisjonen av boksen etterlater et tomrom der den opprinnelig var. Med absolutt posisjonering blir det motsatt. Da fjernes boksen fra sin opprinnelige posisjon og legger seg der hvor forelderen starter. Vi kan så dytte den på samme måte og får følgende effekt:
 
-```CSS
+```css
     #tre{
         bacground: pink;
         position: relative;
@@ -99,7 +99,7 @@ Legg merke til at den relative posisjonen av boksen etterlater et tomrom der den
 
 La oss bruke det vi har sett på av relativ og absolutt posisjonering for å lage en drop down meny. Vi ser av tipset ovenfor at vi må ha et **relativt forelder element** og **absolutte barn**. Drop down menyen vår skal bestå av en synlig lenke og tre skjulte lenker som skal dukke opp når vi holder musepekeren over den synlige lenken:
 
-```HTML
+```html
     <div class="dropdown">
         <a href="#">Klær</a>
         <div class="usynlig">
@@ -112,7 +112,7 @@ La oss bruke det vi har sett på av relativ og absolutt posisjonering for å lag
 
 La oss nå legge på CSS. Siden a elementene skal legge seg under hverandre endrer vi disse fra inline til block-elementer. Dropdown-klassen skal være relativ og usynlig-klassen skal være absolutt. Da vil barna automatisk legge seg under "Klær".  Vi gjør lenkene usynlige ved å sette **display: none;** på usynlig klassen. Legg merke til den siste selektoren, når vi holder musepekeren over det relative elementet så skal de usynlige barna dukke opp ved at vi endrer de til **display: block;**
 
-```CSS
+```css
         .dropdown{
             position: relative;
         }
@@ -134,7 +134,7 @@ Prøv selv med å skrive koden du ser over. Prøv så å lage en ordentlig navig
 
 Med denne verdien låser vi et element på plass uansett hvordan vi scroller på siden. Tenk deg for eksempel en navbar som alltid er med på toppen av siden uansett hvor langt ned du har kommet. Da må du sette header elementet til fixed, men i tillegg må vi sørge for at headeren alltid kommer over resten av nettsiden. Det gjør vi ved å øke z-indeksen. Prøv selv med en navigasjonsbar du har laget, legg til følgende inn i CSS koden din:
 
-```CSS
+```css
 header{
     position: fixed;
     z-index: 2;
