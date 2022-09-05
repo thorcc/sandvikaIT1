@@ -23,6 +23,7 @@ Vi starter med en overskrift, og setter en annen bakgrunnsfarge på denne enn re
 <details>
     <summary>Klikk for å se html/css-kode</summary>
 
+```html
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -47,7 +48,7 @@ Vi starter med en overskrift, og setter en annen bakgrunnsfarge på denne enn re
         sit consectetur magnam laudantium impedit! Quod ab voluptatibus provident inventore?</p>
     </body>
     </html>  
- 
+```
 
 </details>
 
