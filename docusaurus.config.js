@@ -37,8 +37,8 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/sandvika-VGS/sandvika-VGS.github.io',
+          // editUrl:
+          //   'https://github.com/thorcc/sandvikaIT1',
         },
         blog: false,
         theme: {
