@@ -119,3 +119,14 @@ Et html-element vi bruker veldig mye fremover er div-elementet. Dette elementet 
    - Tips: `border: solid 1px black;`
 2. Lag en nettside som inneholder tre avsnitt med tekst, teksten skal ha 10 % marg på høyre og venstre side.
     - Tekst kan du finne på wikipedia, eks: [no.wikipedia.org/wiki/Parlamentarisme](https://no.wikipedia.org/wiki/Parlamentarisme)
+3. Kopier koden under og legg på CSS slik at de får riktige egenskaper
+
+````html
+ <div>
+    <section>
+        <p>Hei - Jeg skal ha lilla bakgrunnsfarge og 40px padding rundt hele innholdet</p>
+    </section>
+    <p>Hallo! - Jeg skal ha rosa bakgrunnsfarge, 0px marg over og under og 15px marg på venstre og høyre side</p>
+</div>
+<p>Dette var rart! - Jeg skal ha hvit bakgrunnsfarge og en svart linje over og under<p>
+````
