@@ -1,0 +1,34 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.introduksjon": {
+    "message": "introduksjon",
+    "description": "The label for category introduksjon in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.html": {
+    "message": "html",
+    "description": "The label for category html in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.css": {
+    "message": "css",
+    "description": "The label for category css in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.3.8 Diverse komponenter": {
+    "message": "3.8 Diverse komponenter",
+    "description": "The label for category 3.8 Diverse komponenter in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.signaler": {
+    "message": "signaler",
+    "description": "The label for category signaler in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.programmering": {
+    "message": "programmering",
+    "description": "The label for category programmering in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.flask": {
+    "message": "flask",
+    "description": "The label for category flask in sidebar tutorialSidebar"
+  }
+}
