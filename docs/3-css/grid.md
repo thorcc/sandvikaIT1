@@ -10,7 +10,7 @@ Grid er en annen teknikk for å plassere elementer slik vi vil. Både grid og fl
 
 ## HTML
 
-På samme måte som med flex, må vi alltid ha en forelder rundt alt vi skal plassere sammen i en grid. I koden under har vi et section-element med id grid rundt elementene som skal plasseres ut på nettsiden. 
+På samme måte som med flex, må vi alltid ha en forelder rundt alt vi skal plassere sammen i en grid. I koden under har vi et section-element med id grid rundt elementene som skal plasseres ut på nettsiden. hei
 
 ```html
 <section id="grid">
