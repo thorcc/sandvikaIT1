@@ -197,12 +197,12 @@ nav a{
 
 Bruk Flex og gjenskap [TV2 Plays pakkevelger](https://play.tv2.no/pakker)
 
-- Tips: teksttypen `Helvetica` er ganske lik TV2 Plays
+- Tips: fonten `Helvetica` er ganske lik TV2 Plays
 
 ## Oppgave 2 - Spotifys nettside
 
 Gjenskap [Spotifys nettside](https://open.spotify.com/) 
 
-- Tips: teksttypen `Montserrat` er ganske lik Spotifys, du finner den på [Google Fonts: montserrat](https://fonts.google.com/specimen/Montserrat)
+- Tips: fonten `Montserrat` er ganske lik Spotifys, du finner den på [Google Fonts: montserrat](https://fonts.google.com/specimen/Montserrat)
 
 
