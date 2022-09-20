@@ -193,4 +193,16 @@ nav a{
 > bestemme størrelsen til et fleks-element ved å bruke egenskapen `flex-basis`. Les mer om 
 > denne her: https://mastery.games/post/the-difference-between-width-and-flex-basis/
 
+## Oppgave 1 - TV2 Plays pakkevelger
+
+Bruk Flex og gjenskap [TV2 Plays pakkevelger](https://play.tv2.no/pakker)
+
+- Tips: fonten `Helvetica` er ganske lik TV2 Plays
+
+## Oppgave 2 - Spotifys nettside
+
+Gjenskap [Spotifys nettside](https://open.spotify.com/) 
+
+- Tips: fonten `Montserrat` er ganske lik Spotifys, du finner den på [Google Fonts: montserrat](https://fonts.google.com/specimen/Montserrat)
+
 

@@ -93,6 +93,7 @@ const config = {
         ],
       },
     }),
+    themes: ['@docusaurus/theme-live-codeblock'],
 };
 
 
