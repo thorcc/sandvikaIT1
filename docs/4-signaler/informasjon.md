@@ -13,30 +13,32 @@ Så hvordan kan vi lagre informasjon ved hjelp av dette? For å lettere illustre
 
 Hva skjer da når vi øker antallet komponenter som kan ha strøm på eller av? Da øker også mengden av informasjon vi kan lagre. Med to komponenter har vi plutselig fire muligheter:
 
-> 00
 
-> 01
+|   1   |   2   |   3   |   4   |
+| :---: | :---: | :---: | :---: |
+| $00$  | $01$  | $10$  | $11$  |
+| Av-Av | Av-På | På-Av | På-På |
 
-> 10
-
-> 11
-
+:::tip
 
 Hva skjer når vi øker til tre? 
 
 Gå inn på https://bits-og-bytes.netlify.app/  
 
-Sett antall lysbrytere til tre, og undersøk hvor mange mulige kombinasjoner du kan lage. Hva med fire? Nå begynner det kanskje å bli uoversiktlig, men det er et mønster her. De som kan sin sannsynlighet vet vi at vi kan gange antall muligheter per brytere med seg selv tilsvarende antall brytere vi har.
+Sett antall lysbrytere til tre, og undersøk hvor mange mulige kombinasjoner du kan lage. Hva med fire? Nå begynner det kanskje å bli uoversiktlig, men det er et mønster her. 
 
-> 1 bryter:   2^1 = 2 muligheter
+:::
 
-> 2 brytere:  2^2 = 4 muligheter
+De som kan sin sannsynlighet vet vi at vi kan gange antall muligheter per brytere med seg selv tilsvarende antall brytere vi har.
 
-> 3 brytere:  2^3 = 8 muligheter
-
-> ...
-
-> 8 brytere:  2^8 = 256 muligheter
+| Antall brytere | Antall muligheter |
+| :------------: | :---------------: |
+|      $1$       |     $2^1 = 2$     |
+|      $2$       |     $2^2 = 4$     |
+|      $3$       |     $2^3 = 8$     |
+|      $4$       |    $2^4 = 16$     |
+|      ...       |        ...        |
+|      $8$       |    $2^8 = 256$    |
 
 Slik kan vi fortsette. Vi ser fort at for hver nye "lysbryter" vi legger til så øker informasjonen vi kan lagre med det dobbelte.
 
