@@ -21,15 +21,23 @@ De består av de samme hoveddelene, alle smarttelefoner og PC-er har et hovedkor
 
 ### Hovedkort
 
+![Hovedkort](./bilder/komponenter/hovedkort.jpg)
+
 Hovedkortet er den delen som kobler alle de andre delene av datamaskinen sammen.
 Det fordeler strøm, tar i mot og sender signaler mellom de andre delene.
 
+
 ### Prosessor
+
+![Prosessor](./bilder/komponenter/cpu.jpg)
 
 Prosessoren er hjernen i datamaskinen, det er den som utfører alle instruksjonene og beregningene i maskinen.
 På engelsk kalles prosessoren for central processing unit (CPU).
 
 ### Arbeidsminne
+
+![Prosessor](./bilder/komponenter/ram.jpeg)  
+> *Bilde av [An-d](https://commons.wikimedia.org/wiki/File:Swissbit_2GB_PC2-5300U-555.jpg), kopirett: [CC BY-SA.30](https://creativecommons.org/licenses/by-sa/3.0/)*
 
 Arbeidsminne i datamaskinen er et midlertidig minne, som gjør at datamaskinen raskt kan hente ut data den trenger.
 Når du åpner et program på datamaskinen din, lastes alle filene den trenger for å kjøre det programmet inn i arbeidsminne, slik at programmet kan kjøre raskt.
@@ -38,8 +46,8 @@ Når vi programmerer programmer bruker vi variabler for å midlertidig lagre ver
 
 I kodesnutten under, vil `konge = Harald` lagres i arbeidsminne, og ligge der helt til vi lukker programmet.
 
-```js
-const konge = "Harald";
+```python
+konge = "Harald"
 ```
 
 På engelsk kalles arbeidsminne for random access memory (RAM).
@@ -56,3 +64,14 @@ Hele tiden mens du har dokumentet åpent og endrer på det, ligger det i arbeids
 Først når du trykker lagre, oppdateres dokumentet på harddisken.
 
 På engelsk skilles det mellom hard disk drive (HDD) og solid state drive (SSD), avhengig av hvilken teknologi som brukes, mens vi i Norge ofte bare sier harddisk.
+
+:::tip
+
+Lag et nettsted som forklarer hvilke komponenter som er i en datamaskin og hvordan de fungerer. 
+Nettstedet skal ha bilder og info om:
+- Harddisk
+- Prosessor (CPU)		
+- Grafikkort (GPU)		
+- Nettverkskort		
+- Minne (RAM)		
+- Hovedkort
