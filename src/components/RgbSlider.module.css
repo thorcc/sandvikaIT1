@@ -1,0 +1,35 @@
+.slider{
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    gap: 25px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+.inputs div{
+    text-align: right;
+    width: 20px;
+}
+.inputs .numbers{
+    width: 35px;
+}
+.inputs input{
+    width: 100px;
+}
+.inputs label{
+    display: flex;
+}
+.color{
+    width: 75px;
+    height: 75px;
+    border: solid 1px black;
+    box-shadow: 1px 1px;
+}
+.output{
+    display: flex;
+    flex-direction: column;
+}

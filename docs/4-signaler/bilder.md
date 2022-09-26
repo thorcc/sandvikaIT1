@@ -15,11 +15,18 @@ Hver firkant kalles for en **piksel** eller et bildepunkt. Oppløsningen et bild
 
 La oss se nærmere på hvordan farger fungerer på en datamaskin. Du har kanskje lært at ved å bruke fargene rød, gul og blå så kan man lage alle andre farger? Det er en regel som fungerer greit når vi skal male, men en dataskjerm gir fra seg lys, og da bruker vi **rød**, **grønn** og **blå** som primærfarger. Ved å justere metningen av disse tre fargene vil vi kunne lage alle andre farger vi trenger på skjermen. Når vi ikke sender ut noen av fargene vil skjermen være svart. Dersom vi sender ut maksimalt av alle tre (rød, blå og grønn),  vil det oppfattes som hvitt på skjermen! 
 
-![RBG slider](./rbgslider.png)
+
+### Fargevelger
+
+import RgbSlider from '@site/src/components/RgbSlider'
+
+<RgbSlider />
+<br />
 
 :::tip
-Søk etter en "RGB slider" på nettet, og velg en av nettsidene du får opp [for eksempel denne](https://clarle.github.io/yui3/yui/docs/color/rgb-slider.html). 
-Juster på metningen av de tre primærfargene og se hvor mange forskjellige farger du får opp.*
+
+Bruk fargevelgeren over og juster på metningen av de tre primærfargene og se hvor mange forskjellige farger du får opp.
+
 :::
 
 
