@@ -75,3 +75,5 @@ Nettstedet skal ha bilder og info om:
 - Nettverkskort		
 - Minne (RAM)		
 - Hovedkort
+
+:::
