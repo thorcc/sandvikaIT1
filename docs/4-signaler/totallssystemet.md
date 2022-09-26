@@ -10,13 +10,15 @@ I forrige delkapittel så vi på et eksempel på et 8 bits system der vi hadde 8
 
 så tilsvarer det 255 (vi starter jo å telle fra 0).
 
-Vi må altså kunne regne tall gitt på et totallssystem om til et titallssystem. La oss først se litt nærmere på hvordan titallssystemet, som vi jo er veldig vant med, egentlig fungerer:
-Vi kaller det for et titallssystem fordi vi har 10 unike symboler vi kan bruke for tallene våre (fra 0 til 9). Når vi har vi teller og kommer til 9 har vi "brukt opp" symbolene våre. Da setter vi et 1-tall på "tierplassen" og 0 på enerplassen. Symbolkombinasjonen 1 og 0, altså 10, lærer vi allerede som barn at tilsvarer ti. Tilsvarende fungerer systemet for hver potens av ti, vi fortsetter med en hundreplass, tusenplass og så videre. For oss virker det så naturlig at det er vanskelig å tenke seg at det er noe vi har funnet opp! Trolig er det fordi det er naturlig å telle på fingrene at vi utviklet et titallssystem (Mayaindianerene brukte et 20 tallsystem, kan du tenke deg hvorfor?).
+Vi må altså kunne regne tall gitt på et totallsystem om til et titallsystem. La oss først se litt nærmere på hvordan titallsystemet, som vi jo er veldig vant med, egentlig fungerer:
+Vi kaller det for et titallsystem fordi vi har 10 unike symboler vi kan bruke for tallene våre (fra 0 til 9). Når vi har vi teller og kommer til 9 har vi "brukt opp" symbolene våre. Da setter vi et 1-tall på "tierplassen" og 0 på enerplassen. Symbolkombinasjonen 1 og 0, altså 10, lærer vi allerede som barn at tilsvarer ti. Tilsvarende fungerer systemet for hver potens av ti, vi fortsetter med en hundreplass, tusenplass og så videre. For oss virker det så naturlig at det er vanskelig å tenke seg at det er noe vi har funnet opp! Trolig er det fordi det er naturlig å telle på fingrene at vi utviklet et titallsystem 
+
+> Mayaindianerene brukte et 20 tallsystem, kan du tenke deg hvorfor?
 
 Hvis vi skulle brukt den samme logikken for å lage et femtallsystem har vi nå bare 5 unike symboler tilgjengelig, altså 0 1 2 3 4. Når vi har kommet til 4 har vi igjen "brukt opp" symbolene våre og må skrive 10. Nå kan ikke 1-tallet representere en tier, vi har jo bare kommet til 4. Dermed har vi nå et 1-tall på **femmer** plassen. Vi teller altså som følger i et femtallsystem:
 
-| Femtallssystemet | Titallssystemet |
-|------------------|-----------------|
+| Femtallsystemet | Titallsystemet |
+|:------------------:|:-----------------:|
 |0                 |0                |
 |1                 |1                |
 |2                 |2                |
@@ -33,10 +35,10 @@ Hvis vi skulle brukt den samme logikken for å lage et femtallsystem har vi nå 
 |100               |25               |
 
 
-Et annet tallssystem som vi ofte bruker for farger er 16-tallssystemet. Da trenger vi 16 unike symboler for tallene fra 0 til 15. Vi har jo ikke så mange, så vi bruker bokstaver:
+Et annet tallsystem som vi ofte bruker for farger er 16-tallsystemet. Da trenger vi 16 unike symboler for tallene fra 0 til 15. Vi har jo ikke så mange, så vi bruker bokstaver:
 
-| Sekstentallssystemet | Titallssystemet |
-|------------------|---------------------|
+| Sekstentallsystemet | Titallsystemet |
+|:----------------:|:-------------------:|
 |0                 |0                    |
 |1                 |1                    |
 |2                 |2                    |
@@ -53,10 +55,10 @@ Et annet tallssystem som vi ofte bruker for farger er 16-tallssystemet. Da treng
 |FF                |255                  |
 
 
-I et totallssystem er logikken helt lik, vi har bare to unike symboler, nemlig 0 og 1. Når vi har "brukt opp" disse må vi introdusere en ny plass, altså toerplassen. Tabellen vil da se slik ut:
+I et totallsystem er logikken helt lik, vi har bare to unike symboler, nemlig 0 og 1. Når vi har "brukt opp" disse må vi introdusere en ny plass, altså toerplassen. Tabellen vil da se slik ut:
 
-| Totallssystemet | Titallssystemet  |
-|------------------|-----------------|
+| Totallsystemet | Titallsystemet  |
+|:-----------------|----------------:|
 |0                 |0                |
 |1                 |1                |
 |10                |2                |
@@ -69,17 +71,36 @@ I et totallssystem er logikken helt lik, vi har bare to unike symboler, nemlig 0
 |...               |...              |
 |1111 1111         |255              |
 
-> Det kan virke vanskelig å regne om når tallene blir store, men husk at hvert siffer i et titallssystem er en potens av 10: 10-er plassen er 10^1, hundreplassen er 10^2 etc.
-> Tilsvarende er hver plass en toerpotens i et totallssystem. Vi kan altså regne om for eksempel 1101 1011 ved å regne: 
->
->  | 2^7 = 128 | 2^6 = 64 | 2^5 = 32 | 2^4 = 16 | 2^3 = 8 | 2^2 = 4 | 2^1 = 2 | 2^0 = 1 | Sum |
->  |-----------|----------|----------|----------|---------|---------|---------|---------|-----|
->  |1          |1         |0         |1         |1        |0        |1        |1        |219  |
+:::note
 
-Vi skal ikke regne mye på slike tallssystem i dette faget, men det er fint å ha en viss forståelse av hvordan strømkomponentene i en datamaskin kan gjøres om til en rekke med 0 og 1, som igjen kan gjøres om til "vanlige" tall.
+Det kan virke vanskelig å regne om når tallene blir store, men husk at hvert siffer i et titallsystem er en potens av 10: 10-er plassen er 10^1, hundreplassen er 10^2 etc.
+Tilsvarende er hver plass en toerpotens i et totallsystem. Vi kan altså regne om for eksempel 1101 1011 ved å regne: 
+
+| $2^7 = 128$ | $2^6 = 64$ | $2^5 = 32$ | $2^4 = 16$ | $2^3 = 8$ | $2^2 = 4$ | $2^1 = 2$ | $2^0 = 1$ | Sum |
+|:-----------:|:----------:|:----------:|:----------:|:---------:|:---------:|:---------:|:---------:|:-----:|
+|1          |1         |0         |1         |1        |0        |1        |1        |219  |
+
+:::
+
+:::note
+
+## Notasjon
+
+For å vise hvilket tallsystem et tall er oppgitt i, er det vanlig å bruke subskript.
+Subskript er et litt mindre tall som ligger til høyre for selve tallet.
+For eksempel er tallet $101_{2}$ oppgitt i totallsystemet, mens $101_{10}$ er oppgitt i titallsystemet.
+
+:::
+
+Vi skal ikke regne mye på slike tallsystem i dette faget, men det er fint å ha en viss forståelse av hvordan strømkomponentene i en datamaskin kan gjøres om til en rekke med 0 og 1, som igjen kan gjøres om til "vanlige" tall.
 
 
-## Prøv selv: Regn på totallssystemet.
+:::tip
 
-Hvilket tall tilsvarer 1011 i vårt vanlige tallssystem?
-
+1. Hva er $16_{10}$ i totallsystemet?
+2. Hva er $101_{2}$ i titallsystemet?
+3. Hva er $101_{10}$ i totallsystemet?
+4. Hva er $53_{10}$ i totallsystemet?
+5. Hva er $10000001_{2}$ i titallsystemet? 
+6. Hvilken verdi i titallsystemet har de ulike plassene i tallet $11111111_{2}$?
+:::
