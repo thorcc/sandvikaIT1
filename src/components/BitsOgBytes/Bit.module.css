@@ -1,0 +1,16 @@
+.app{
+    text-align: center;
+    cursor: pointer;
+}
+.app img{
+    width: 75px;
+}
+.app div{
+    position: relative;
+}
+.app h3{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}

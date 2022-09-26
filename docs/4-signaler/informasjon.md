@@ -44,8 +44,8 @@ Slik kan vi fortsette. Vi ser fort at for hver nye "lysbryter" vi legger til så
 
 Dersom en av tilstandene vi kan lagre ser ut som følger:
 
-![8bit](lagring.png)
+import BitsOgBytes from '@site/src/components/BitsOgBytes/BitsOgBytes'
 
-Vil vi kunne skrive det om til følgende rekke: 1101 0101
+<BitsOgBytes bits={[1, 1, 0, 1, 0, 1, 0, 1]}/>
 
 Denne tallfølgen er et eksempel på binære tall (binary digit), og vi kaller derfor hver "bryter" for en **bit**. 8 bit (som altså gir 256 mulige tilstander) kalles for en **byte**. Nå for tiden består en datamaskin av mange milliarder bytes, så det er mye informasjon som i teorien kan lagres. Vi skal i kapittelet se nærmere på hvordan vi kan gjøre bilder, symboler og lyd om til bits og bytes, slik at disse kan lagres på datamaskinen. For å gjøre dette må vi ha en litt dypere forståelse av totallsystemet.
