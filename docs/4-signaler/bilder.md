@@ -17,7 +17,11 @@ La oss se nærmere på hvordan farger fungerer på en datamaskin. Du har kanskje
 
 ![RBG slider](./rbgslider.png)
 
-    *Prøv selv: Søk etter en "RGB slider" på nettet, og velg en av nettsidene du får opp (for eksempel: https://clarle.github.io/yui3/yui/docs/color/rgb-slider.html ). Juster på metningen av de tre primærfargene og se hvor mange forskjellige farger du får opp.*
+:::tip
+Søk etter en "RGB slider" på nettet, og velg en av nettsidene du får opp [for eksempel denne](https://clarle.github.io/yui3/yui/docs/color/rgb-slider.html). 
+Juster på metningen av de tre primærfargene og se hvor mange forskjellige farger du får opp.*
+:::
+
 
 Legg merke til at metningen kan justeres i en skala fra 0 til 255. Det tilsvarer 8 bit, altså en byte! Vi setter altså av en byte for å bestemme hvor mye metning det er av hver primærfarge, totalt 3 bytes. Det betyr at hvis en piksel for eksempel skal være oransje så vil den informasjonen kreve 3 bytes i minne.
 
