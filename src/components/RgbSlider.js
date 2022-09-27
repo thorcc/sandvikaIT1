@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import styles from './rgbSlider.module.css'
+import styles from './RgbSlider.module.css'
 
 function rgbSlider() {
   const [r, setR] = useState(50)
