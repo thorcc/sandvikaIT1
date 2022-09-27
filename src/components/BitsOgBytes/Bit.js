@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react'
 import lightOn from './bilder/light-on.png'
 import lightOff from './bilder/light-off.png'
 import switchOn from './bilder/switch-on.png'
