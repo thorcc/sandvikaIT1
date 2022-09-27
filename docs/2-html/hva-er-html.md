@@ -89,16 +89,18 @@ Hvis vi har lyst til å understreke at katten vår er veldig gretten, kan vi set
 <p>Katten min er <strong>veldig</strong> gretten.</p>
 ```
 
-> OBS!
->
-> Her må du passe på at du nøster riktig. Dette blir feil:
->
-> ```html
-> <p>Katten min er <strong>veldig gretten.</p></strong>
-> ```
->
-> Elementene må åpnes og lukkes korrekt, slik at de er innenfor eller utenfor hverandre.
-> Hvis de overlapper, slik som i koden over, vil nettleseren din prøve å tippe hva du mener, og det blir ofte feil.
+:::danger
+
+Her må du passe på at du nøster riktig. Dette blir feil:
+
+```html
+<p>Katten min er <strong>veldig gretten.</p></strong>
+```
+
+Elementene må åpnes og lukkes korrekt, slik at de er innenfor eller utenfor hverandre.
+Hvis de overlapper, slik som i koden over, vil nettleseren din prøve å tippe hva du mener, og det blir ofte feil.
+
+:::
 
 Når vi skriver html, viser vi hvilke elementer som er nøstet i hverandre ved inhopp:
 
