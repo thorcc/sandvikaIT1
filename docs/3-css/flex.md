@@ -32,11 +32,11 @@ Som vanlig er det best å starte med et eksempel. De aller fleste nettsteder du 
 ```
 Uten CSS ser det ikke spesielt imponerende ut:
 
-![alt text](./bilder/3_4%20flex/navbar1.png)
+![alt text](./bilder/3_4%20-%20flex/navbar1.png)
 
 Vi skal nå vise hvordan vi ganske enkelt kan posisjonere lenke slik vi ønsker ved hjelp av flex i CSS. Da trenger vi alltid et element som forelder for det vi skal posisjonere. Vi ser av koden i eksempelet over, at nav-elementet passer fint som en slik forelder.
 
-![alt text](./bilder/3_4%20flex/flexboks.png)
+![alt text](./bilder/3_4%20-%20flex/flexboks.png)
 
 Vi starter med å skru på flex på forelder elementet.
 
@@ -85,7 +85,7 @@ nav a{
 
 *Med resultatet*
 
-![alt text](./bilder/3_4%20flex/navbar2.png)
+![alt text](./bilder/3_4%20-%20flex/navbar2.png)
 
 
 
@@ -115,7 +115,7 @@ nav a{
 
 *Resultat:*
 
-![alt text](./bilder/3_4%20flex/navbar3.png)
+![alt text](./bilder/3_4%20-%20flex/navbar3.png)
 
 
 
@@ -142,7 +142,7 @@ nav a{
 ```
 *Resultat:*
 
-![alt text](./bilder/3_4%20flex/navbar5.png)
+![alt text](./bilder/3_4%20-%20flex/navbar5.png)
 
 ### Alternativ 4 - Horisontalt i grupper
 
@@ -186,7 +186,7 @@ nav a{
 
 *Resultat*
 
-![alt text](./bilder/3_4%20flex/navbar4.png)
+![alt text](./bilder/3_4%20-%20flex/navbar4.png)
 
 
 > I eksemplene ovenfor har vi brukt padding for luft mellom elementene. Alternativt kan man 
@@ -204,5 +204,3 @@ Bruk Flex og gjenskap [TV2 Plays pakkevelger](https://play.tv2.no/pakker)
 Gjenskap [Spotifys nettside](https://open.spotify.com/) 
 
 - Tips: fonten `Montserrat` er ganske lik Spotifys, du finner den på [Google Fonts: montserrat](https://fonts.google.com/specimen/Montserrat)
-
-

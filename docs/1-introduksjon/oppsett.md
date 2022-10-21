@@ -20,7 +20,7 @@ Mange av dere har Mac og bruker Safari som nettleser. Det meste går helt fint m
 
 ## Extensions/Utvidelser
 
-![extensions i VS Code](extensions.png ':size=200')
+![extensions i VS Code](./bilder/extensions.png ':size=200')
 
 Vi går igjennom dette sammen i timen. Brukere av VS Code har laget utvidelsespakker som forenkler en del av arbeidet for oss. Disse kalles for extensions og lastes ned i VS-Code:
 

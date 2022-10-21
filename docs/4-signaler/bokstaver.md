@@ -56,7 +56,7 @@ Du har kanskje lagt merke til at vi skriver `<meta charset="utf-8">` i `<head>` 
 Det er her du velger hvilket tegnsett (tabell) datamaskinen skal bruke for å tolke innholdet i HTML-filen.
 `UTF-8` står for Unicode 8-bits.
 
-![Meta-tag](meta-tag.png)
+![Meta-tag](./bilder/meta-tag.png)
 
 Når vi lagrer informasjon digitalt er det vi som mennesker som må fortelle datamaskinen hvordan den skal tolke kombinasjonen av 0 og 1.
 *Vanlige* folk merker ikke noe til dette, fordi det er programmert inn i datamaskinene og appene vi bruker, men de som lager datamaskinene og appene må fortelle datamaskinen hvordan den skal tolke all informasjon som skal vises eller lagres.

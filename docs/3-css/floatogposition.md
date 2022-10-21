@@ -60,7 +60,7 @@ Med påfølgende CSS
 
 > Legg merke til at inline-block (i motsetning til bare inline), lar oss sette høyde og bredde på elementene. Alternativt kunne vi brukt flex, men eksempelet er best når elementene ikke er dynamiske.
 
-![Static](position1.png)
+![Static](./bilder/3_6%20-%20floatogposition/position1.png)
 
 ### position: relative
 
@@ -76,7 +76,7 @@ En relativ posisjon lar oss flytte på plasseringen på et element basert på de
 ```
 Vi "dytter" altså elementet 25 piksler nedover (fra toppen), og 25 piksler mot høyre (fra venstre). Da ser det ut som følger:
 
-![Relative](position2.png)
+![Relative](./bilder/3_6%20-%20floatogposition/position2.png)
 
 ### position: absolute 
 
@@ -91,7 +91,7 @@ Legg merke til at den relative posisjonen av boksen etterlater et tomrom der den
     }
 ```
 
-![Absolutt](position3.png)
+![Absolutt](./bilder/3_6%20-%20floatogposition/position3.png)
 
 > NB! Følgende er et veldig nyttig triks! Et problem med absolutt posisjonering er at disse elementene ofte ikke endrer seg "riktig" når vi endrer på størrelsen av skjermen. Det løser vi ved å sette forelderen til å være relativ og så barna til være absolutte. Da vil barnas posisjon være absolutte, men flytte seg sammen med forelderen. Dette virker kanskje forvirrende men er ganske enkelt å få til i praksis, se neste eksempel.
 

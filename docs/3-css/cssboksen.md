@@ -18,7 +18,7 @@ Det kan kanskje være litt forvirrende å se for seg hvordan dette fungerer, nå
 
 Vi starter med en overskrift, og setter en annen bakgrunnsfarge på denne enn resten av nettsiden:
 
-![alt text](./bilder/3_3%20cssboksen/cssoverskrift0.png)
+![alt text](./bilder/3_3%20-%20cssboksen/cssoverskrift0.png)
 
 <details>
     <summary>Klikk for å se html/css-kode</summary>
@@ -63,7 +63,7 @@ h1{
 
 Enheten `px` står for piksler (billedpunkter) og er en enhet for lengde som brukes for skjermer/digitale bilder. Vi ser nærmere på dette i kap 4.2.
 
-![alt text](./bilder/3_3%20cssboksen/cssoverskrift.png)
+![alt text](./bilder/3_3%20-%20cssboksen/cssoverskrift.png)
 
 Vi ser altså at ved å øke padding fra 0 til 20 piksler så fikk vi mer "luft" rundt teksten i innholds-området. La oss videre se på border-egenskapen, denne har tre verdier vi må definere før vi ser en effekt, vi kan definere alle på en gang:
 
@@ -75,7 +75,7 @@ h1{
 }
 ```
 
-![alt text](./bilder/3_3%20cssboksen/cssoverskrift2.png)
+![alt text](./bilder/3_3%20-%20cssboksen/cssoverskrift2.png)
 
 Til slutt setter vi på margin, tilsvarende som padding:
 
@@ -87,13 +87,13 @@ Til slutt setter vi på margin, tilsvarende som padding:
         margin: 20px;
     }
 ```
-![alt text](./bilder/3_3%20cssboksen/cssoverskrift3.png)
+![alt text](./bilder/3_3%20-%20cssboksen/cssoverskrift3.png)
 
 Vi ser en marg på alle sider av html-elementet-
 
 Oppsummert kan vi altså si at alle elementer har følgende boksmodell:
 
-![alt text](./bilder/3_3%20cssboksen/cssboks.png)
+![alt text](./bilder/3_3%20-%20cssboksen/cssboks.png)
 
 Vi kan også finjustere enda mer ved å bruke left-, right-, top- eller bottom foran de nye egenskapene! For eksempel vil `margin-left: 20px;` bare lage venstremarg, mens `border-bottom: solid black 1px;` vil bare lage en understrek.
 

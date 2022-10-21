@@ -8,7 +8,7 @@ sidebar_label: 4.7 Internett
 Internett er et nettverk som kobler sammen veldig mange datamaskiner over hele verden.
 Det består av fysisk infrastruktur, blant annet kabler, satelitter, mobiltårn og datamaskiner.
 
-![Undersjøiske internettkabler](fysiske-internett.png)
+![Undersjøiske internettkabler](./bilder/fysiske-internett.png)
 
 *Kart over undersjøiske interkabler. Hentet fra [https://www.submarinecablemap.com/](https://www.submarinecablemap.com/).*
 

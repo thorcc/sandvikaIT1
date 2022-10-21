@@ -162,7 +162,7 @@ Da kan man bruke flere CSS-filer, med lenker eks. slik:
 ## Oppgaver
 
 1. Lag et nettsted om solsystemet
-   - Last ned filen [solsystemet.zip](./solsystemet.zip)
+   - Last ned filen [solsystemet.zip](./vedlegg/solsystemet.zip)
    - Nettsted skal minst ha:
    - Fire undersider:
      - index.html – hjemmesiden
