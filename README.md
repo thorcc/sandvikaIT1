@@ -19,5 +19,6 @@ description: Lær hvordan filer og mapper fungerer og samarbeider.
 
 ```
 Egenskapen `title` blir inkludert for å unngå at filnavnet blir brukt som overskrift.
+
 I tillegg er `description` en beskrivelse over hva siden handler om.
 Hold denne kort, slik at den vises i sin helhet i oversikten over underkapitler når noen trykker på en kategori.
