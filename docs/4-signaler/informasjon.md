@@ -1,6 +1,8 @@
 ---
+title: 4.1 Informasjon som strøm
 sidebar_position: 1
 sidebar_label: 4.1 Informasjon som strøm
+description: Strøm kan bli brukt til å oppbevare informasjon.
 ---
 
 # Informasjon som strøm

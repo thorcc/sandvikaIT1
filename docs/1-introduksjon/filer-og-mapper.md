@@ -1,6 +1,8 @@
 ---
+title: 1.2 Filer og mapper
 sidebar_position: 3
 sidebar_label: 1.2 Filer og mapper
+description: Lær hvordan filer og mapper fungerer og samarbeider.
 ---
 
 # Filer og Mapper

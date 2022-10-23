@@ -1,6 +1,8 @@
 ---
+title: 5.2 Variabler
 sidebar_position: 2
 sidebar_label: 5.2 Variabler
+description: Variabler brukes for å lagre informasjon i datamaskinens minne.
 ---
 
 # Variabler

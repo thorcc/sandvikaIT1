@@ -1,6 +1,8 @@
 ---
+title: 3.1 CSS
 sidebar_position: 1
 sidebar_label: 3.1 CSS
+description: Lær deg CSS, som gjør det mulig å endre utseende av nettsiden din.
 ---
 
 # Hva er CSS?

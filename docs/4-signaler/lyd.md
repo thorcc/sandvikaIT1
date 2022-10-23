@@ -1,9 +1,11 @@
 ---
+title: 4.4 Lagring av lyd
 sidebar_position: 4
 sidebar_label: 4.4 Lagring av lyd
+description: Finn ut av hvordan datamaskiner lagrer lyd.
 ---
 
-# Lyd 
+# Lyd
 
 ![lyd](./bilder/lyd.jpg)
 *https://www.freepik.com/vectors/background created by zaie - www.freepik.com*

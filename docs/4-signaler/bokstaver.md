@@ -1,6 +1,8 @@
 ---
+title: 4.5 Lagring av bokstaver
 sidebar_position: 5
 sidebar_label: 4.5 Lagring av bokstaver
+description: Lær hvordan totallsystemet brukes for å lagre bokstaver.
 ---
 
 # Lagring av bokstaver og symboler

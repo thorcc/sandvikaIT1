@@ -1,6 +1,8 @@
 ---
+title: 3.3 Boks-modellen
 sidebar_position: 3
 sidebar_label: 3.3 Boks-modellen
+description: Bruk boks-modellen for å vise HTML-elementer.
 ---
 
 # Enkel posisjonering

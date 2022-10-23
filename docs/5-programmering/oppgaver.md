@@ -1,6 +1,8 @@
 ---
+title: 5.7 Oppgaver
 sidebar_position: 7
 sidebar_label: 5.7 Oppgaver
+description: En oversikt over programmeringsoppgaver.
 ---
 
 # Oppgaver med løsning

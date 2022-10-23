@@ -1,6 +1,8 @@
 ---
+title: 4.3 Lagring av bilder
 sidebar_position: 3
 sidebar_label: 4.3 Lagring av bilder
+description: Finn ut av hvordan datamaskiner lagrer bilder.
 ---
 
 ## Piksler

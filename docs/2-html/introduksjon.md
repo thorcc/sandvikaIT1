@@ -1,6 +1,8 @@
 ---
+title: 2.1 Introduksjon
 sidebar_position: 1
 sidebar_label: 2.1 Introduksjon
+description: En introduksjon til hvordan nettsider blir laget.
 ---
 
 ## Html lager Nettsider

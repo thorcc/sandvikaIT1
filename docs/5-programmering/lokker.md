@@ -1,6 +1,8 @@
 ---
+title: 5.4 Løkker
 sidebar_position: 4
 sidebar_label: 5.4 Løkker
+description: Løkker brukes for å gjøre repetitive arbeidsoppgaver.
 ---
 
 # Løkker

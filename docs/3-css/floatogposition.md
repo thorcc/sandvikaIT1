@@ -1,6 +1,8 @@
 ---
+title: 3.6 Float og position
 sidebar_position: 6
 sidebar_label: 3.6 Float og position
+description: Lær deg float og position og deres bruk.
 ---
 
 # Float og Position

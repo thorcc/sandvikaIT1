@@ -1,6 +1,8 @@
 ---
+title: 4.7 Internett
 sidebar_position: 7
 sidebar_label: 4.7 Internett
+description: Hvordan fungerer egentlig internett? Utforsk det her.
 ---
 
 # Internett

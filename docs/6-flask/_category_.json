@@ -1,0 +1,14 @@
+{
+    "position": 6,
+    "label": "Flask",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "Flask",
+    "link": {
+      "type": "generated-index",
+      "title": "Kapittel 6: Flask"
+    },
+    "customProps": {
+      "description": "En oversikt over underkapitler av Flask-kategorien."
+    }
+}

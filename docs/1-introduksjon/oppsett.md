@@ -1,6 +1,8 @@
 ---
+title: 1.1 Oppsett
 sidebar_position: 2
 sidebar_label: 1.1 Oppsett
+description: Sett opp og gjør deg klar for IT her.
 ---
 
 # Oppsett

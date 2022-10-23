@@ -1,6 +1,8 @@
 ---
+title: 5.6 Funksjoner
 sidebar_position: 6
 sidebar_label: 5.6 Funksjoner
+description: Del opp og gjenbruk kode enklere med funksjoner.
 ---
 
 # Funksjoner og prosedyrer

@@ -1,6 +1,8 @@
 ---
+title: 3.4 Flex
 sidebar_position: 4
 sidebar_label: 3.4 Flex
+description: Bli kjent med flex som åpner flere muligheter for utseende.
 ---
 
 # Flex

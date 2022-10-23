@@ -1,0 +1,14 @@
+{
+    "position": 3,
+    "label": "CSS",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "CSS",
+    "link": {
+      "type": "generated-index",
+      "title": "Kapittel 3: CSS"
+    },
+    "customProps": {
+      "description": "En oversikt over underkapitler av CSS-kategorien."
+    }
+}
