@@ -1,11 +1,13 @@
 ---
+title: 4.4 Lagring av lyd
 sidebar_position: 4
 sidebar_label: 4.4 Lagring av lyd
+description: Finn ut av hvordan datamaskiner lagrer lyd.
 ---
 
-# Lyd 
+# Lyd
 
-![lyd](lyd.jpg)
+![lyd](./bilder/lyd.jpg)
 *https://www.freepik.com/vectors/background created by zaie - www.freepik.com*
 
 ## Lyd som spenning
@@ -16,7 +18,7 @@ La oss derfor se nærmere på hva lyd egentlig er.
 
 Du har kanskje sett en visuell representasjon før? Lyd defineres som vibrasjoner i blant annet luft, ofte kalt lydbølger. En mikrofon registrerer lydbølgene og lager tilsvarende elektriske signaler i form av spenning. Lydbølgene er dermed ulike spenninger over tid, og disse spenningene kan både måles og tegnes i form av en graf. Ved å jevnlig måle spenningen, og lagre den i riktig rekkefølge, vil vi kunne gjenskape grafen av den opprinnelige lyden:
 
-![graf for spenning av lyd](./lydgraf.png)
+![graf for spenning av lyd](./bilder/lydgraf.png)
 
 Legg merke til at målingene vi gjør (ca 1.5s mellom hver), gir en elendig kvalitet. Her vil ikke vår versjon være i nærheten av den originale kilden engang. Det betyr at vi må gjøre målingene langt oftere, og antall målinger vi gjør kalles for **samplingsfrekvensen**. Til sammenligning har gamle CD-plater en samplingsfrekvens på 44.1 kHz, som tilsvarer 44 100 målinger i sekundet! Selv det er ikke nok dersom vi trenger virkelig god kvalitet på lyden vi skal lagre.
 
@@ -28,6 +30,6 @@ Tabellen med tid og spenning gjøres så om til totallsystemet. For CD-platen be
 
 > Når vi rekonstruerer bilder eller lydbølger kan det oppstå et problem som gjør at to helt forskjellige kilder blir helt like, de danner **aliaser** av hverandre. Det er fordi vi gjør for få målinger:
 
-![aliasing](./alias.png)
+![aliasing](./bilder/alias.png)
 
 > Her er den rød linjen original lyd, mens den blå er gjenskapt lyd. For å unngå aliasing må vi gjøre flere målinger, i Fysikk 2 vil du lære at man bør gjøre dobbelt så mange målinger som den høyeste frekvensen til lydbølgen.

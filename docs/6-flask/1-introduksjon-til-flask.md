@@ -1,6 +1,8 @@
 ---
+title: 6.1 Introduksjon
 sidebar_position: 1
 sidebar_label: 6.1 Introduksjon
+description: Velkommen til Flask!
 ---
 
 # Introduksjon til Flask

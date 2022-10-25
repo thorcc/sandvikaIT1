@@ -1,6 +1,8 @@
 ---
+title: 5.1 Hva er programmering?
 sidebar_position: 1
 sidebar_label: 5.1 Hva er programmering?
+description: La oss se på hva programmering egentlig er.
 ---
 
 # Hva er programmering?

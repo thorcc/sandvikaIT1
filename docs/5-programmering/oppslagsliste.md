@@ -1,6 +1,8 @@
 ---
+title: 5.8 Oppslagsliste
 sidebar_position: 8
 sidebar_label: 5.8 Oppslagsliste
+description: En oversikt over ofte brukte datatyper og annet nyttig i Python.
 ---
 
 # Jukseark - Python

@@ -1,6 +1,8 @@
 ---
+title: 6.4 Requests
 sidebar_position: 4
 sidebar_label: 6.4 Requests
+description: Lær om samarbeid mellom bruker og server i Flask.
 ---
 
 # Requests i Flask

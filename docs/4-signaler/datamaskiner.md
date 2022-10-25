@@ -1,6 +1,8 @@
 ---
+title: 4.6 Datamaskiner
 sidebar_position: 6
 sidebar_label: 4.6 Datamaskiner
+description: Bli kjent med oppbygningen av datamaskiner.
 ---
 
 

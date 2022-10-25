@@ -1,6 +1,8 @@
 ---
+title: 4.2 Totallsystemet
 sidebar_position: 2
 sidebar_label: 4.2 Totallsystemet
+description: "Totallsystemet: Noe essensielt for datamaskiner."
 ---
 
 # Tallsystem

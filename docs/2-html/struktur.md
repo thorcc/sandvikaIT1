@@ -1,6 +1,8 @@
 ---
+title: 2.4 Stuktur
 sidebar_position: 4
 sidebar_label: 2.4 Struktur
+description: Strukturer nettsiden din for å gjøre den oversiktlig.
 ---
 
 # Strukturering av nettsiden

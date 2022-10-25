@@ -1,10 +1,12 @@
 ---
+title: 5.2 Variabler
 sidebar_position: 2
 sidebar_label: 5.2 Variabler
+description: Variabler brukes for å lagre informasjon i datamaskinens minne.
 ---
 
 # Variabler
-![Variable](variable_glass.jpg)
+![Variable](./bilder/variable_glass.jpg)
 
 *På samme måte som med denne hylla med kjemiske stoffer, kan vi lagre mye forskjellig i datamaskinens minne*
 
@@ -72,7 +74,7 @@ navn = input("Hva heter du? ")
 
 Når vi kjører programmet vil du se at spørsmålet stilles i konsollen. Programmet fortsetter ikke før vi har svart på spørsmålet. Svaret vårt lagres som en streng i variabelen navn:
 
-![Input](input.png)
+![Input](./bilder/input.png)
 
 
 #### Boolske variable
@@ -109,11 +111,11 @@ print("Hei", navn, "hyggelig å hilse på deg, du er", alder, "år gammel")
 
 Se på følgende kode:
 
-![Feil med input](feil.png)
+![Feil med input](./bilder/feil.png)
 
 Her får vi en feilmelding som går på datatyper. Du husker kanskje at alle input-variable lagres som strenger? Når vi skal regne ut alderen så prøver vi å regne med 2022 og tallet brukeren skrev. Python kjenner igjen det som kom fra input-feltet som en streng, og kan derfor ikke regne seg frem til et svar. Vi må derfor `konvertere` fødselsåret som vi får fra input-feltet fra streng til tall. Siden vi skal regne på årstall, er det beste å konvertere til heltall. Vi konverter på følgende måte:
 
-![Feil med input - konvertering](riktig.png)
+![Feil med input - konvertering](./bilder/riktig.png)
 
 På linje 2 i koden ser du at vi har lagt `int()` rundt input-feltet. Det er en instruksjon som konverterer om til tall dersom det gir mening. Nå er det kun tall som håndteres i linje 4, og koden vil fungere. I følgende tabell ser du kodeinstruksjonene for å konvertere mellom ulike datatyper (forutsatt at det gir mening).
 

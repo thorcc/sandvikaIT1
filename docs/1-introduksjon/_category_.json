@@ -1,0 +1,14 @@
+{
+    "position": 1,
+    "label": "Introduksjon",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "Introduksjon",
+    "link": {
+      "type": "generated-index",
+      "title": "Kapittel 1: Introduksjon"
+    },
+    "customProps": {
+      "description": "En oversikt over underkapitler av Introduksjon-kategorien."
+    }
+}

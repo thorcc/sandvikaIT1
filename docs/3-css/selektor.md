@@ -1,6 +1,8 @@
 ---
+title: 3.2 Selektorer
 sidebar_position: 2
 sidebar_label: 3.2 Selektorer
+description: Bruk av selektorer er essensielt i CSS.
 ---
 
 # Ulike Selektorer i CSS

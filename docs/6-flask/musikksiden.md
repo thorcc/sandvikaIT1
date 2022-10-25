@@ -1,6 +1,8 @@
 ---
+title: 6.5 Musikksiden
 sidebar_position: 5
 sidebar_label: 6.5 Musikksiden
+description: Et eksempel på bruk av Flask.
 ---
 
 # Eksempel - Musikksiden

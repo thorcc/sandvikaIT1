@@ -1,6 +1,8 @@
 ---
+title: 3.5 Grid
 sidebar_position: 5
 sidebar_label: 3.5 Grid
+description: Lær deg å lage oversikter/tabeller med grid.
 ---
 
 # Grid
