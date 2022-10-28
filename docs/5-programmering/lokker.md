@@ -7,7 +7,7 @@ description: Løkker brukes for å gjøre repetitive arbeidsoppgaver.
 
 # Løkker
 
-<iframe width="560" height="500" src="https://www.youtube.com/embed/mgooqyWMTxk?start=0&end=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/mgooqyWMTxk?start=0&end=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Datamaskiner er veldig gode på å repetere identiske eller lignende arbeidsoppgaver uten å gjøre feil, mens vi mennesker ikke alltid er like flinke. 
 Det er en av grunnene til at datamaskiner ofte brukes for å automatisere gjentagende oppgaver.
