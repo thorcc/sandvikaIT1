@@ -15,6 +15,13 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Disse bruker samme farge som --ifm-color-primary over
+  for å passe bedre med det generelle utseendet til nettsiden.
+  !important overskriver det som er default. */
+  --aa-primary-color-rgb: 41, 120, 76 !important;
+  --aa-panel-border-color-rgb: 41, 120, 76 !important;
+  --aa-input-border-color-rgb: 41, 120, 76 !important;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -27,7 +34,14 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Disse bruker samme farge som --ifm-color-primary over
+  for å passe bedre med det generelle utseendet til nettsiden.
+  !important overskriver det som er default. */
+  --aa-primary-color-rgb: 37, 194, 160 !important;
+  --aa-muted-color-rgb: 37, 194, 160 !important;
 }
+
 .code-block-error-line {
   background-color: #ff000020;
   display: block;
