@@ -12,22 +12,29 @@ De gjør det mulig å lenke sammen egne og andres dokumenter, slik at vi kan bev
 
 ## Hyperlenker i HTML
 
-Se på følgende html snutt:
+Se på følgende HTML-snutt:
 
-`<a href="https://www.sandvika.vgs.no/">Skolens hjemmeside</a>`
+```html
+<a href="https://www.sandvika.vgs.no/">Skolens hjemmeside</a>
+```
 
-I HTML lages hyperlenker med å bruke `<a>` - elementet. Her står bokstaven a som en forkotelse for **anchor**.
+I HTML lages hyperlenker med å bruke `a`-elementet. Her står bokstaven a som en forkotelse for *anchor*.
 Attributtet `href` angir hvor lenken peker.
-Det som står mellom taggene er det som synes på nettsiden. Html-koden ovenfor vil da se slik ut på nettleseren:
+Det som står mellom taggene er det som synes på nettsiden. HTML-koden ovenfor vil da se slik ut på nettleseren:
 
 ![Eksempel](./bilder/2_3%20-%20lenker/eksempellenke.png)
 
-> Tips: For at lenken skal åpne i en ny fane kan vi legge til attributtet `target="_blank"`   
-> [Sjekk ut w3schools for å se hva mer du kan gjøre med lenker](https://www.w3schools.com/tags/tag_a.asp)
+:::info
 
-### Innholdet til a - elementet
+Tips: For at lenken skal åpne i en ny fane kan vi legge til attributtet `target="_blank"`.
 
-I eksempelet ovenfor skrev vi ren tekst i innholdsbiten av lenke elementet. Det er ganske vanlig men vi kan være mer avanserte. Alle elementer som ligger nøstet inn i et a-element blir en del av lenka. Slik kan for eksempel nettaviser gjøre både bilde og tekst klikkbare for å lese mer om saken:
+Sjekk ut [W3Schools](https://www.w3schools.com/tags/tag_a.asp) for å se hva mer du kan gjøre med lenker!
+
+:::
+
+### Innholdet til `a`-elementet
+
+I eksempelet ovenfor skrev vi ren tekst i innholdsbiten av lenke-elementet. Det er ganske vanlig, men vi kan være mer avanserte. Alle elementer som ligger nøstet inn i et `a`-element blir en del av lenka. Slik kan for eksempel nettaviser gjøre både bilde og tekst klikkbare for å lese mer om saken:
 
 ```html
 <a href="https://www.vg.no/sistenytt">
@@ -38,18 +45,19 @@ I eksempelet ovenfor skrev vi ren tekst i innholdsbiten av lenke elementet. Det 
 
 ## URL
 
-URL er en forkortelse for Uniform Resource Locator, og viser til *"adresser"*, eller *"stier*, på internett.
-Verdien til attributtet *href* i en a-tagg er en URL.
-URL'en til Sandvika VGS: `https://www.sandvika.vgs.no`
+URL er en forkortelse for Uniform Resource Locator, og viser til *adresser*, eller *stier*, på internett.
+Verdien til attributtet `href` i en a-tagg er en URL.
+
+URL'en til Sandvika VGS: `https://viken.no/sandvika-vgs`
 
 ### Lokal URL
 
 En lokal URL er en *sti* til en fil lagret lokalt på en PC.
 Eks: `C:/Users/thorchr/desktop/uk3_html_css/bilde2.jpg`
 
-I dette eksempelet ser vi at ved å gå inn i de fire mappene (Users, thorchr, desktop, uk3_html_css) så finner vi en fil som heter bilde2.jpg
+I dette eksempelet ser vi at ved å gå inn i de fire mappene (Users, thorchr, desktop, uk3_html_css) så finner vi en fil som heter bilde2.jpg.
 
-Vi deler lokale URL'er i `absolutte` og `relative`.
+Vi deler lokale URL'er i *absolutte* og *relative*.
 
 URL'en over er en absolutt URL fordi den viser til den faktiske plasseringen til en fil. Absolutte lenker er fine for å se nøyaktig plassering av mapper og undermapper for fila, men det kan bli slitsomt i lengden.
 
@@ -57,7 +65,7 @@ Mens en relativ URL viser til plasseringen av en fil i forhold til filen vi er i
 
 ![Bilde: Utforsker VS Code](./bilder/2_3%20-%20lenker/vscode.png)
 
-Anta at vi jobber med hjemmeside.html, da er vi i mappen uke 2. Den relative URL'en til 
+Anta at vi jobber med `hjemmeside.html`, da er vi i mappen "uke 2". Den relative URL'en til 
 bilde.jpeg blir da bare `bilde.jpeg` (siden vi er i samme mappe). Dersom bilde.jpeg derimot er i andre mapper, må vi skrive stien ved å hoppe enten inn eller ut av undermappene.
 
 Her kommer noen eksempler på hvordan vi kan skriver relative stier til bilde.jpeg ved å enten gå inn i, eller hoppe ut av mapper.
@@ -112,4 +120,3 @@ Her må vi først ut av hjem-mappen før vi kan gå inn i bilder-mappen. For å 
    - Flytt .zip-filen til IT-mappen din og pakk den ut (Mac: Dobbelklikk på filen i finder / Windows: Høyreklikk og velg pakk ut alle). 
    - Finn filen `hovedside.html` i VS Code
    - Gjør oppgavene som står i filen
-
