@@ -72,6 +72,14 @@ Når vi kjører programmet vil du se at spørsmålet stilles i konsollen. Progra
 
 ![Input](./bilder/input.png)
 
+:::caution
+
+Alle verdier som en bruker skriver inn når `input()` blir brukt, er lagret som en strenge.
+
+Vi kan gjøre om formen til for eksempel et tall om det trengs; dette ser vi på [under](#konvertere-datatyper).
+
+:::
+
 ### Boolske variable
 
 ```python

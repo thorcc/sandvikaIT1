@@ -21,11 +21,15 @@ For eksempel bruker programmet under en while-løkke for å telle ned fra 5, og 
 ```python
 while betingelse:
     # kode som gjennomføres så lenge betingelsen er sann
-}
 ```
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=n%20%3D%205%0Awhile%20n%20%3E%200%3A%0A%20%20%20%20print%28n%29%0A%20%20%20%20n%20-%3D%201%0Aprint%28%22Lift%20off!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
+:::tip
+
+Trykk på Next-knappen et par ganger i vinduet over. Hva skjer?
+
+:::
 
 Så lenge `n` er større enn 0 skal programmet kjøre.
 
@@ -55,18 +59,28 @@ While-løkkene kjører så lenge betingelsen er sann (`True`).
 Hvis betingelsen aldri blir usann (`False`), vil en løkke kjøre for alltid. Slike løkker kalles *uendelige løkker* (fra eng. *infinite loops*).
 Hvis vi ender opp i en uendelig løkke vil PCen fryse, og vi får ikke kjørt resten av programmet.
 
-#### Eks:
+**Eksempel 1**:
 
 ```Python
 while True:
     print("Inn i evigheten!")
 ```
+
+**Eksempel 2**:
+
 ```Python
 n = 20
 while n > 0:
     print(n)
 ```
-> I det siste eksemplet vil `n` alltid være 20, og 20 er alltid større enn 0.
+
+:::note
+
+I eksempel 1 vil `True` alltid forbli `True`.
+
+I eksempel 2 vil `n` alltid forbli større enn 0, fordi 20 er større enn 0.
+
+:::
 
 ## For-løkke
 
