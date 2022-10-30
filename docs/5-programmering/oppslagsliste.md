@@ -1,7 +1,7 @@
 ---
-title: 5.8 Oppslagsliste
-sidebar_position: 8
-sidebar_label: 5.8 Oppslagsliste
+title: 5.7 Oppslagsliste
+sidebar_position: 7
+sidebar_label: 5.7 Oppslagsliste
 description: En oversikt over ofte brukte datatyper og annet nyttig i Python.
 ---
 
