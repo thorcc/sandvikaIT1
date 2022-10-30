@@ -18,19 +18,19 @@ c) Legg til noen fag du hadde forrige skoleår i lista
 d) Finn lengden av lista uten selv å måtte telle den
 
 <details>
-    <summary>Klikk for Løsning</summary>
-    
-    Løsning:
+<summary>Klikk for løsning</summary>
 
-    fag = ["norsk", "matematikk", "historie", "gym", "informasjonsteknologi", "fysikk", "engelsk"]
+```python
+fag = ["norsk", "matematikk", "historie", "gym", "informasjonsteknologi", "fysikk", "engelsk"]
 
-    print("mitt favorittfag er ", fag[4])
+print("mitt favorittfag er ", fag[4])
 
-    fag.append("naturfag")
-    fag.append("geografi")
-    fag.append("samfunnsfag")
+fag.append("naturfag")
+fag.append("geografi")
+fag.append("samfunnsfag")
 
-    print("antall fag:", len(fag))
+print("antall fag:", len(fag))
+```
 
 </details>
 
@@ -45,18 +45,18 @@ Sjekk om faget ligger i lista. Hvis ja skriv at du har faget, hvis nei skriver d
 Eksperttips: Dersom variabelen tekst er en streng vil tekst.lower() gjøre om hele teksten til små bokstaver.
 
 <details>
-    <summary>Klikk for Løsning</summary>
-    
-    Løsning:
+<summary>Klikk for løsning</summary>
 
-    fag = ["norsk", "matematikk", "historie", "gym", "informasjonsteknologi", "fysikk", "engelsk"]
+```python
+fag = ["norsk", "matematikk", "historie", "gym", "informasjonsteknologi", "fysikk", "engelsk"]
 
-    sjekk = input("Hvilket fag vil du sjekke? ")
-    
-    if sjekk in fag:
-        print("Jeg kan dette faget!")
-    else:
-        print("Beklager, jeg har ikke hatt", sjekk)
+sjekk = input("Hvilket fag vil du sjekke? ")
+
+if sjekk in fag:
+    print("Jeg kan dette faget!")
+else:
+    print("Beklager, jeg har ikke hatt", sjekk)
+```
 
 </details>
 
@@ -75,16 +75,15 @@ e) Fjern “fire” fra lista
 f) Print lengden av lista
 
 <details>
-    <summary>Klikk for Løsning</summary>
-    
-    Løsning:
+<summary>Klikk for løsning</summary>
 
-    tall = [1,3,5,6]
-    tall.append(8)
-    tall.instert(2,4)
-    tall[2] = "fire"
-    tall.remove("fire")
-
+```python
+tall = [1,3,5,6]
+tall.append(8)
+tall.insert(2,4)
+tall[2] = "fire"
+tall.remove("fire")
+```
 
 </details>
 
@@ -99,20 +98,20 @@ Print en passende tekst
 Finn på et passende snitt til en utdanning du vil søke på. Sjekk om du kommer inn eller ikke. Print ut en passende tekst
 
 <details>
-    <summary>Klikk for Løsning</summary>
-    
-    Løsning:
+<summary>Klikk for løsning</summary>
 
-    karakterer = [4,4,5,5,3,6,5,4,3,2,4,3] # Tilfeldig både mhp karakter og antall fag
+```python
+karakterer = [4,4,5,5,3,6,5,4,3,2,4,3] # Tilfeldig både mhp karakter og antall fag
 
-    snitt = sum(karakterer)/len(karakterer)
+snitt = sum(karakterer)/len(karakterer)
 
-    print("Mitt karaktersnitt er:", snitt)
+print("Mitt karaktersnitt er:", snitt)
 
-    if snitt > 4.8:
-        print("Hurra, jeg kommer inn")
-    else:
-        print("Jeg må nok forbedre karakterene mine")
+if snitt > 4.8:
+    print("Hurra, jeg kommer inn")
+else:
+    print("Jeg må nok forbedre karakterene mine")
+```
 
 </details>
 
@@ -133,42 +132,37 @@ Hvis de vil legge til, ta inn det nye nummeret og legg det i lista.
 Hvis de vil sjekke, ta inn nummeret og sjekk om det ligger i lista. Skriv ut en passende tekst.
 
 <details>
-    <summary>Klikk for Hint</summary>
-   
-    Hint:
+<summary>Klikk for hint</summary>
 
-    Lag ei liste, enten tom eller med noen tilfeldige bilnummer du selv fyller inn
-
-    Lag en input der du spør etter en bokstav for å legge til eller sjekke nr
-
-    Lag en betingelse der du tester bokstaven fra input.
-
-    Skriv kode for å hendholdsvis legge til eller sjekke i riktig sted i betingelsen
-
+- Lag ei liste, enten tom eller med noen tilfeldige bilnummer du selv fyller inn
+- Lag en input der du spør etter en bokstav for å legge til eller sjekke nr
+- Lag en betingelse der du tester bokstaven fra input.
+- Skriv kode for å hendholdsvis legge til eller sjekke i riktig sted i betingelsen
 
 </details>
+
 <details>
-    <summary>Klikk for Løsning</summary>
-    
-    Løsning:
+<summary>Klikk for løsning</summary>
 
-    bilskilt = ["AB12345", "BT12345"]
-    fortsett = "ja"
+```python 
+bilskilt = ["AB12345", "BT12345"]
+fortsett = "ja"
 
-    while fortsett.lower() == "ja":
-        valg = input("Vil du (S)jekke eller (L)egge til et nummer? ")
-        if valg.upper() == "S":
-            nummer = input("Skriv inn nummeret du vil sjekke: ")
-            if nummer in bilskilt:
-                print("Nummeret finnes registrert")
-            else:
-                print("Nummeret finnes ikke i vårt register")
-        elif valg.upper() == "L":
-            nummer = input("Skriv inn nummeret du vil legge til: ")
-            bilskilt.append(nummer)
+while fortsett.lower() == "ja":
+    valg = input("Vil du (S)jekke eller (L)egge til et nummer? ")
+    if valg.upper() == "S":
+        nummer = input("Skriv inn nummeret du vil sjekke: ")
+        if nummer in bilskilt:
+            print("Nummeret finnes registrert")
         else:
-            print("Du må velge S eller L!")
-        fortsett = input("Vil du fortsette (ja/nei)?")
+            print("Nummeret finnes ikke i vårt register")
+    elif valg.upper() == "L":
+        nummer = input("Skriv inn nummeret du vil legge til: ")
+        bilskilt.append(nummer)
+    else:
+        print("Du må velge S eller L!")
+    fortsett = input("Vil du fortsette (ja/nei)?")
+```
 
 </details>
 
@@ -176,22 +170,21 @@ Hvis de vil sjekke, ta inn nummeret og sjekk om det ligger i lista. Skriv ut en 
 
 Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
 
-* Bruk liste-metoder for å endre listeen til å bare inneholde tallene 3 og 1. 
-* Legg til tallet 2 mellom tallene 3 og 1. 
-* Legg til stringen “Stilig” på indeks 3 og boolean-en true på indeks 5. 
-* To-dimensjonal liste, gjør følgende: 
-* Lag en liste 
-* Lag tre nye lister inne i listen 
-* Legg til tallene 1, 2, 3 i den første listen 
-* Legg til tallene 4, 5, 6 i den andre listen 
-* Legg til tallene 7, 8, 9 i den tredje listen 
-* Skriv ut tallene 1, 3, 5 og 9 fra listen 
+- Bruk liste-metoder for å endre listeen til å bare inneholde tallene 3 og 1. 
+- Legg til tallet 2 mellom tallene 3 og 1. 
+- Legg til stringen “Stilig” på indeks 3 og boolean-en true på indeks 5. 
+- To-dimensjonal liste, gjør følgende: 
+- Lag en liste 
+- Lag tre nye lister inne i listen 
+- Legg til tallene 1, 2, 3 i den første listen 
+- Legg til tallene 4, 5, 6 i den andre listen 
+- Legg til tallene 7, 8, 9 i den tredje listen 
+- Skriv ut tallene 1, 3, 5 og 9 fra listen 
 
 <details>
-<summary>Klikk for Løsning</summary>
-    
+<summary>Klikk for løsning</summary>
 
-````python
+```python
 mineTall = [9, 3, 1, 2]
 mineTall.remove(9)
 mineTall.remove(2)
@@ -207,7 +200,7 @@ liste2d = [
 ]
 
 print(liste2d[0][0], liste2d[0][2], liste2d[1][1], liste2d[2][2])
-````
+```
 
 </details>
 
@@ -218,12 +211,11 @@ Lag en ordbok med info om den du sitter ved siden av.
 Print navn og alder fra ordboken. 
 
 <details>
-    <summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
     
-    kommer
+Kommer
 
 </details>
-
 
 ## Oppgave 4.8
 
@@ -248,22 +240,21 @@ Bruk flagg["egenskap"], og legg til et nytt land i ordboken
 Legg til kode slik at brukeren kan skrive inn et land, og så printes fargene til landets flagg. Hvis brukeren skriver inn et land som ikke eksisterer i ordboken, skal programmet gi en feilmelding som forteller at vi ikke har lagret info om dette landet. 
 
 <details>
-    <summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
     
-    kommer
+Kommer
 
 </details>
 
-
-#### Oppgave 4.9
+## Oppgave 4.9
 
 Lag en liste `bakeri`, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
 
-* Croissant 25 
-* Grovbrød 40 
-* Kneipp 20 
-* Rosinbolle 20 
-* Baguette 10 
+- Croissant 25 
+- Grovbrød 40 
+- Kneipp 20 
+- Rosinbolle 20 
+- Baguette 10 
 
 Print innholdet i hele `bakeri`-et som en meny med en linje per vare, med navn og pris 
 
@@ -276,8 +267,8 @@ Skriv ut listen med innhold på nytt, og sjekk at croissantens pris er endret ri
 Lag en funksjon meny(liste) som du kan kalle på for å utføre oppgave 1 og 4, og endre programmet ditt til å kjøre denne funksjonen i stedet. 
 
 <details>
-    <summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
     
-    kommer
+Kommer
 
 </details>

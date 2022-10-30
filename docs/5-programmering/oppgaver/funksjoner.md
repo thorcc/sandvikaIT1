@@ -12,9 +12,9 @@ description: "Oppgaver: Funksjoner"
 Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: “rgb(100,155,200)” - Tallene i rgb går fra 0 til 255
 
 <details>
-    <summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
     
-    kommer
+Kommer
 
 </details>
 
@@ -22,7 +22,7 @@ Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: “rgb(100,155,200)�
 
 Lag en minibank med Python. Når programmet starter skal brukeren bli presentert med en meny som ser slik ut: 
 
-````
+```
 --- Velkommen til minibanken --- 
 Hva ønsker du? Trykk på en tast for å velge. 
  
@@ -37,19 +37,16 @@ I: Sette inn penger
 2. Utfordring: legg til funksjonalitet for flere brukere og/eller konti 
 
 3. Utfordring: legg til funksjonalitet for å overføre mellom brukere og/eller konti 
-
-````
+```
 
 <details>
-    <summary>Klikk for Løsning</summary>
-<p>
+    <summary>Klikk for løsning</summary>
 
 Løsning:
 
-a) Denne kan gjøres på mange forskjellige måter, dette er bare et forslag:
+Denne kan gjøres på mange forskjellige måter, dette er bare et forslag:
 
-````python
-
+```python
 konto = 0
 bank = True
 
@@ -78,8 +75,6 @@ while bank == True:
     
     else:
         print("Ugyldig valg")
-    
-````
+```
 
-</p>
 </details>

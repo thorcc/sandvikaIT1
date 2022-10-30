@@ -19,60 +19,56 @@ e)  `a == d`
 f)  `a > d or a == d`  
 g)  `a > d and a == d`  
 
+<details>
+<summary>Klikk for løsning</summary>
 
-<details><summary>Klikk for Løsning</summary>
-<p>
+a) True
 
-````
-    Løsning
+b) False
 
-    a) True  
-    b) False  
-    c) Feilmelding  
-    d) Det er ikke en test, verdien av a settes til "7"
-    e) True
-    f) True
-    g) False
-````
+c) Feilmelding
 
-</p>
+d) Det er ikke en test, verdien av a settes til "7"
+
+e) True
+
+f) True
+
+g) False
+
 </details>
 
 ## Oppgave 2.2
 
 Bytt ut `# din kode her` slik at `Morna Erna` skrives ut
 
-````python
+```python
 statsminister = "Jonas Gahr Støre"
 
 if # din kode her
     print("Morna Erna")
 else:
     print("Morna Jonas")
-
-````
+```
 
 <details>
-<summary>Klikk for Hint</summary>
-<p>
+<summary>Klikk for hint</summary>
 
-> `a == "Gro Harlem"` sjekker om a er lik teksten "Gro Harlem"
+`a == "Gro Harlem"` sjekker om a er lik teksten "Gro Harlem"
 
-</p>
 </details>
 
-
 <details>
-<summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
 
-````python
+```python
 statsminister = "Jonas Gahr Støre"
 
 if statsminister == "Jonas Gahr Støre":
     print("Morna Erna")
 else:
     print("Morna Jonas")
-````
+```
 
 </details>
 
@@ -81,27 +77,30 @@ else:
 Slottet har installert et nytt alarmsystem, som kun slipper folk som heter `Kong Harald` inn dørene. Lag et program som sjekker om en brukeren heter `Kong Harald`, og sier velkommen hvis det stemmer, ellers skal programmet si `Ha deg vekk!`.
 
 <details>
-    <summary>Klikk for Hint</summary>
-    Hint
+<summary>Klikk for hint</summary>
 
-    Du kan starte med denne koden:
-    
-    print("Velkommen til slottet")
-    print("Hva heter du?")
-    navn = input("Navn: ")
+Du kan starte med denne koden:
 
-    # Her skal du sjekke om navn er lik `Kong Harald`
+```python
+print("Velkommen til slottet")
+print("Hva heter du?")
+navn = input("Navn: ")
+
+# Her skal du sjekke om navn er lik `Kong Harald`
+```
 
 </details>
-<details>
-    <summary>Klikk for Løsning</summary>
-    Løsning
 
-    navn = input("Navn: ")
-    if navn == "Kong Harald":
-        print("Velkommen!")
-    else:
-        print("Ha deg vekk!")
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+navn = input("Navn: ")
+if navn == "Kong Harald":
+    print("Velkommen!")
+else:
+    print("Ha deg vekk!")
+```
 
 </details>
 
@@ -110,13 +109,14 @@ Slottet har installert et nytt alarmsystem, som kun slipper folk som heter `Kong
 I fornøyelsesparken Titusenfryd må man være minst 100 cm høy for å kjøre berg-og-dal-banen Thundercoaster. Skriv et program med en if-setning som tester om en person er høy nok.
 
 <details>
-    <summary>Klikk for Løsning</summary>
-    Løsning
+<summary>Klikk for løsning</summary>
 
-    høyde = int(input("Hvor høy er du? (cm): "))
+```python
+høyde = int(input("Hvor høy er du? (cm): "))
 
-    if høyde >= 100:
-        print("Gratulerer, du kan kjøre Thundercoaster")
+if høyde >= 100:
+    print("Gratulerer, du kan kjøre Thundercoaster")
+```
 
 </details>
 
@@ -125,17 +125,16 @@ I fornøyelsesparken Titusenfryd må man være minst 100 cm høy for å kjøre b
 Lag en variabel `hemmelig` med et tall mellom 1 og 10. Be brukeren gjette tallet. Dersom brukeren gjetter riktig, skriver du ut "Gratulerer! Du gjettet riktig". Ved feil skriver du "Beklager, du gjettet feil". Ta vare på koden, du skal bruke den senere. 
 
 <details>
-<summary>Klikk for Hint</summary>
+<summary>Klikk for hint</summary>
 
-
-> Bruk en betingelse. Husk `==` for å sjekke likhet når du lager en betingelse.
+Bruk en betingelse. Husk `==` for å sjekke likhet når du lager en betingelse.
 
 </details>
+
 <details>
-<summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
 
-
-````python
+```python
 riktig = 4
 gjett = int(input("Gjett et tall mellom 1 og 10"))
 
@@ -143,7 +142,7 @@ if gjett == riktig:
     print("Du klarte det")
 else:
     print("Beklager, prøv igjen")
-````
+```
 
 </details>
 
@@ -152,19 +151,20 @@ else:
 Hos friske mennesker varierer kroppstemperaturen vanligvis mellom 36.5 og 37.5 grader. Lag et program som avgjør om en persons kroppstemperatur ligger under, innenfor eller over normal kroppstemperatur. Programmet skal skrive ut passende beskjed.
 
 <details>
-    <summary>Klikk for Løsning</summary>
-    Løsning
+<summary>Klikk for løsning</summary>
 
-    temp = int(input("Temperatur (celsius): "))
+```python
+temp = int(input("Temperatur (celsius): "))
 
-    if temp > 37.5:
-        print("Du har høyere kroppstemperatur enn vanlig")
-    elif temp < 36.5:
-        print("Du har lavere kroppstemperatur enn vanlig")
-    else:
-        print("Du har helt normal kroppstemperatur")
+if temp > 37.5:
+    print("Du har høyere kroppstemperatur enn vanlig")
+elif temp < 36.5:
+    print("Du har lavere kroppstemperatur enn vanlig")
+else:
+    print("Du har helt normal kroppstemperatur")
+```
+
 </details>
-
 
 ## Oppgave 2.7
 
@@ -177,16 +177,16 @@ a) Lag et program der bruker kan skrive inn poengsummen sin for en matematikkeks
 b) Endre koden slik at programmet skriver ut "Ugyldig poengsum" dersom man ikke skriver inn et tall mellom 0 og 60
 
 <details>
-<summary>Klikk for Hint</summary>
+<summary>Klikk for hint</summary>
 
-
-> Her må du ha flere betingelser i samme if-setning, husk at du kan legge til elif-betingelser etter if- setningen for at de er koblet sammen.
+Her må du ha flere betingelser i samme if-setning, husk at du kan legge til elif-betingelser etter if- setningen for at de er koblet sammen.
 
 </details>
-<details>
-<summary>Klikk for Løsning</summary>
 
-````python
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
 poeng = int(input("Hvor mange poeng fikk du? "))
 
 if poeng > 60 or poeng < 0:
@@ -203,9 +203,9 @@ elif poeng >= 12:
     print("Du fikk karakter 2")
 else:
     print("Beklager du fikk 1 - Ikke bestått")
-````
-</details>
+```
 
+</details>
 
 ## Oppgave 2.8
 
@@ -232,22 +232,20 @@ from random import *
 ```
 
 <details>
-<summary>Klikk for Hint</summary>
+<summary>Klikk for hint</summary>
 
-```
-Ta imot et tall mellom 1 og 3 fra bruker
-Trekk et tall mellom 1 og 3 for datamaskinen
+- Ta imot et tall mellom 1 og 3 fra bruker
+- Trekk et tall mellom 1 og 3 for datamaskinen
+- Sammenlign tallene med en betingelse der du sjekker valgene opp mot hverandre og skriv ut resultatet. 
 
-Sammenlign tallene med en betingelse der du sjekker valgene opp mot hverandre og skriv ut resultatet. 
+For eksempel hvis brukeren skriver 1 (Stein) og datamaskinen velger 2 (Saks) så skriver du ut "Du vant, motstanderen valgte saks!".
 
-For eksempel hvis bruker skriver 1 (Stein) og datamaskinen velger 2 (Saks) så skriver du ut "Du vant, motstanderen valgte saks!"
-```
 </details>
 
 <details>
 <summary>Klikk for løsning</summary>
 
-````python
+```python
 from random import *
 print("Hva velger du?")
 print("1: Stein")
@@ -273,7 +271,8 @@ elif spiller_valg == 3 and data_valg == 2:
     print("Du tapte, mostanderen valgte saks!") 
 else:
     print("Du har valgt feil!")
-````
+```
+
 </details>
 
 ## Oppgave 2.9
@@ -290,33 +289,30 @@ Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True 
 9.	`not b and x != 0`
 10.	`not b or x != 0`
 
-
 <details>
-    <summary>Klikk for Hint</summary>
-    Hint
+<summary>Klikk for hint</summary>
 
-    x == y : gir True hvis x og y er like, ellers False
-    x != y : gir True hvis x og y IKKE er like, ellers False
-    x and y: gir True hvis både x og y er True
-    x or y : gir True hvis en av x og y er True
-    not x  : gir True hvis x er False
-    
+
+- `x == y`: gir True hvis x og y er like, ellers False
+- `x != y`: gir True hvis x og y IKKE er like, ellers False
+- `x and y`: gir True hvis både x og y er True
+- `x or y`: gir True hvis en av x og y er True
+- `not x`: gir True hvis x er False
 
 </details>
 <details>
-    <summary>Klikk for Løsning</summary>
-    Løsning
+<summary>Klikk for løsning</summary>
 
-    1. False
-    2. True
-    3. False (Hver side av "and" må være True, her er høyresiden True (x == 0), mens venstresiden (x) er False)
-    4. True (Bare en side av "or" må være True, her er høyresiden True (x == 0), mens venstresiden (x) er False)
-    5. True
-    6. True
-    7. False
-    8. False
-    9. False
-    10. True
+1. False
+2. True
+3. False (Hver side av "and" må være True, her er høyresiden True (x == 0), mens venstresiden (x) er False)
+4. True (Bare en side av "or" må være True, her er høyresiden True (x == 0), mens venstresiden (x) er False)
+5. True
+6. True
+7. False
+8. False
+9. False
+10. True
 
 </details>
 
@@ -325,6 +321,7 @@ Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True 
 **SJAMAN-PROGRAMMET**
 
 Lag et program som skriver ut tekster med personlige spådomer. Hvilken tekst som skal skrives ut avhenger av verdiene i variablene: kjønn, fødselsår og navn.  
+
 Et eksempel på en spådom kan være:  
 `Kjære Trine Skei Grande, denne måneden vil du motta en gave fra en ukjent. Unngå pengespill og gatekjøkkenmat. Dette gjelder spesielt deg som er dame og født i 1969.`
 

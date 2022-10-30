@@ -23,9 +23,9 @@ print(a + 2)
 b) Hvorfor er det ingen anførselstegn i print-instruksjonen denne gangen?
 
 <details>
-    <summary>Klikk for Løsning</summary>
+    <summary>Klikk for løsning</summary>
 
-    Koden printer ut 4. Vi kan ikke bruke anførselstegn fordi det ikke er en streng vi skal printe ut
+Koden printer ut 4. Vi kan ikke bruke anførselstegn fordi det ikke er en streng vi skal printe ut.
 
 </details>
 
@@ -44,9 +44,9 @@ print("Arealet av rektangelet er", areal)
 Hvorfor bruker vi variable for lengde og bredde? Kunne vi ikke bare ha skrevet arealet rett inn i print-funksjonen?
 
 <details>
-    <summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
 
-    Variable gir bedre oversikt når man leser koden. Dersom man ønsker å regne areal for et annet rektangel er det mye lettere å endre på verdien på variablene enn å gå inn i resten av koden for å endre på tallene. Dette blir spesielt viktig jo større koden er.
+Variabler gir bedre oversikt når man leser koden. Dersom man ønsker å regne areal for et annet rektangel er det mye lettere å endre på verdien på variablene enn å gå inn i resten av koden for å endre på tallene. Dette blir spesielt viktig jo større koden er.
 
 </details>
 
@@ -55,48 +55,50 @@ Hvorfor bruker vi variable for lengde og bredde? Kunne vi ikke bare ha skrevet a
 Spør den du sitter nærmest om alder. Lagre både navn og alder i to forskjellige variabler. Print en tekst som skriver ut følgende tekst rikig: Hei *navn*, du er *alder* år.
 
 <details>
-    <summary>Klikk for Hint</summary>
-
-    Lag et input-felt for navn og alder. Husk komma i mellom strenger og variable når du printer ut
-</details>
-
-<details>
-    <summary>Klikk for Løsning</summary>
-
-    navn = input("Hva heter du? ")
-    alder = input("Hvor gammel er du? ")
-
-    print("Hei", navn, "du er", alder, "år")
-
-</details>
-
-## Oppgave 1.5
-
-Lag et program som ber om to tall. Programmet skal deretter regne ut differansen mellom de to tallene og skrive ut svaret. Her er et eksempel på hvordan en kjøring av programmet kan se ut:
-````
-Oppgi verdien til x: 25
-Oppgi verdien til y: 19
-Differansen mellom x og y er 6.
-````
-
-<details>
 <summary>Klikk for hint</summary>
 
-
-> Husk at det som bruker skriver inn alltid blir tekst, du må konvertere til flyttall (float) eller heltall (int). Eks: `float(input("Oppgi verdien til x: "))`
+Lag et input-felt for navn og alder. Husk komma i mellom strenger og variable når du printer ut.
 
 </details>
 
 <details>
 <summary>Klikk for løsning</summary>
 
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
 
-````python
+print("Hei", navn, "du er", alder, "år")
+```
+
+</details>
+
+## Oppgave 1.5
+
+Lag et program som ber om to tall. Programmet skal deretter regne ut differansen mellom de to tallene og skrive ut svaret. Her er et eksempel på hvordan en kjøring av programmet kan se ut:
+
+```
+Oppgi verdien til x: 25
+Oppgi verdien til y: 19
+Differansen mellom x og y er 6.
+```
+
+<details>
+<summary>Klikk for hint</summary>
+
+Husk at det som bruker skriver inn alltid blir tekst, du må konvertere til flyttall (float) eller heltall (int). Eks: `float(input("Oppgi verdien til x: "))`
+
+</details>
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
 x = float(input("Oppgi verdien til x: "))
 y = float(input("Oppgi verdien til y: "))
 diff = x - y
 print("Differansen mellom x og y er ", diff)
-````
+```
 
 </details>
 
@@ -109,18 +111,20 @@ a) Forklar hva som er galt med denne koden. Hvorfor blir det feil? Rett opp kode
 b) Skriv adressen ut på følgende to måter ved å bruke variabler: "Adressen er Kongens gate 432b" og "Gaten er Kongens Gate, husnummeret er 432, oppgang b" 
 
 <details>
-    <summary>Klikk for Løsning</summary>
+<summary>Klikk for løsning</summary>
 
-    a) I linje 3 er b skrevet uten anførselstegn. Da leter programmet etter en variabel som heter b, somn ikke finnes.
+a) I linje 3 er b skrevet uten anførselstegn. Da leter programmet etter en variabel som heter `b`, som ikke finnes.
 
-    b) 
-    
-    gate = "Kongens gate"
-    husnr = "432"
-    oppgang = "b"
+b)
 
-    print("Adressen er", gate + husnummer + oppgang)
-    print("Gaten er", gate, ", husnummeret er", husnr, "oppgang", oppgang)
+```python
+gate = "Kongens gate"
+husnr = "432"
+oppgang = "b"
+
+print("Adressen er", gate + husnummer + oppgang)
+print("Gaten er", gate, ", husnummeret er", husnr, "oppgang", oppgang)
+```
 
 </details>
 
@@ -143,30 +147,22 @@ d) Legg på tips, og skriv ut summen for måltidet etter både rabatt og tips
 e) Lag en variabel for antall personer, og skriv ut pris per person samt antall personer.
 
 <details>
-<summary>Klikk for Hint</summary>
+<summary>Klikk for hint</summary>
 <p>
 
-````
 - Lag de tre variablene
-
 - Husk prosentformlene: pris*rabatt/100 gir selve rabatten
-
-- Lag egne variable for alle mellomregningen.
-
+- Lag egne variabler for alle mellomregningen.
 - Bruk mellomregningene til å regne ut det som skal betales
-
-- print ut alle variable du er usikre på underveis så er det lettere å finne ut om matematikken stemmer
-````
+- Print ut alle variabler du er usikre på underveis så er det lettere å finne ut om matematikken stemmer
 
 </p>
 </details>
 
 
 <details><summary>Klikk for løsning</summary>
-<p>
 
-
-````python
+```python
 # Her regner vi tips før rabatt, man kan argumentere for at det kan gjøres motsatt
 
 pris = 850
@@ -181,42 +177,34 @@ totalt = pris - rabatt_kr + tips_kr/100
 per_pers = totalt/ant_pers
 
 print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per person")
-````
+```
 
-</p>
 </details>
 
 ## Oppgave 1.8
 
 Formelen for å regne Fahrenheit om til Celsius er `C = (F-32)*5/9`. Lag et program som spør brukeren om temperaturen i fahrenheit. Regn om til Celsius og skriv en beskjed som sier hvor mange grader Celsius det tilsvarer. 
 
-<details><summary>Klikk for hint</summary>
-<p>
+<details>
+<summary>Klikk for hint</summary>
 
-````
-Lag en input som tar inn temperatur, husk å gjøre om til desimaltall
+- Lag en input som tar inn temperatur, husk å gjøre om til desimaltall
+- Regn ut Celsius med formelen, lagre i en ny variabel
+- Skriv ut variabelen sammen med input variabelen i en passende tekst
 
-Regn ut Celsius med formelen, lagre i en ny variabel
-
-Skriv ut variabelen sammen med input variabelen i en passende tekst
-
-````
-
-</p>
 </details>
 
 
-<details><summary>Klikk for Løsning</summary>
-<p>
+<details>
+<summary>Klikk for løsning</summary>
 
-````python
+```python
 f_heit = float(input("Hvor mange Fahrenheit? "))
 celsius = (f_heit-32)*5/9
 
 print(f_heit, "Fahrenheit tilsvarer, celsius, "grader Celsius")
-````
+```
 
-</p>
 </details>
 
 ## Oppgave 1.9
@@ -224,10 +212,9 @@ print(f_heit, "Fahrenheit tilsvarer, celsius, "grader Celsius")
 Endre på koden i oppgave 1.7 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer 
 
 <details>
-<summary>Klikk for Løsning</summary>
-<p>
+<summary>Klikk for løsning</summary>
 
-````python
+```python
 pris = float(input("Hva kostet måltidet? "))
 rabatt_prosent = float(input("Har du eventuell rabatt? "))
 tips = float(input("Vil du gi tips (oppgi i prosent) "))
@@ -240,11 +227,9 @@ totalt = pris - rabatt_kr + tips_kr/100
 per_pers = totalt/ant_pers
 
 print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per person")
-````
+```
 
-</p>
 </details>
-
 
 ## Oppgave 1.10
 
@@ -258,7 +243,6 @@ Brød: 20 kr.<br />
 Melk: 15 kr.<br />
 Ost: 40 kr.<br />
 Yoghurt: 12 kr.
-
 
 Eksempel på bruk av programmet:
 ```
@@ -275,10 +259,9 @@ Du skal betale: 131 kr.
 ```
 
 <details>
-<summary>Løsning</summary>
-<p>
+<summary>Klikk for løsning</summary>
 
-````python
+```python
 #priser
 brød = 20
 melk = 15
@@ -300,7 +283,6 @@ ant_yoghurt = int(input("> "))
 pris = brød * ant_brød + melk * ant_melk + ost * ant_ost + youghurt * ant_yoghurt
 print("Du skal betale ", pris, " kr.")
 print("-- Takk for handelen --")
-````
+```
 
-</p>
 </details>
