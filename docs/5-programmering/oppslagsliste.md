@@ -7,6 +7,8 @@ description: En oversikt over ofte brukte datatyper og annet nyttig i Python.
 
 # Jukseark - Python
 
+Dette er en oppslagsliste over ofte bruke datatyper, tall, operatorer og syntaks i Python.
+
 ## Datatyper
 
 | Navn (norsk)           | Navn (engelsk) | Eksempel                              | Konvertere til |
@@ -94,7 +96,7 @@ else:
 
 ### If-elif-elif-else
 
-> Det er ingen begrensning på hvor mange elif man kan ha i en if-setning.
+Det er ingen begrensning på hvor mange elif man kan ha i en if-setning.
 
 ```python
 navn = "Harald"
@@ -225,8 +227,8 @@ hovedsteder = {
 ```
 
 Ordbøker er som oppslagsverk, de har nøkler og verdier. En ordbok defineres i Python med krøllparenteser `{}`.
-Inne i ordboken skrives nøkler og tilhørende verdier, slik: `"Norge": "Oslo"`, her er `Norge` nøkkelen og `Oslo` verdien.
-Nå kan vi slå opp `Norge` i ordboken med `hovedsteder["Norge"]` og vi får verdien `Oslo`.
+Inne i ordboken skrives nøkler og tilhørende verdier, slik: `"Norge": "Oslo"`, her er `Norge` *nøkkelen* og `Oslo` *verdien*.
+Nå kan vi slå opp `Norge` i ordboken med `hovedsteder["Norge"]`, og vi får verdien `Oslo`.
 
 
 ## Funksjoner og prosedyrer
@@ -248,7 +250,7 @@ areal = areal_trekant(10, 5) # Funksjonskall
 print("Arealet av trekanten er", areal)
 ```
 
-> Merk: Funksjoner og prosedyrer trenger ikke har parametere, da defineres de med en tom parentes, slik `def funksjonsnavn():`
+Merk: Funksjoner og prosedyrer trenger ikke å ha parametere, da defineres de med en tom parentes, slik `def funksjonsnavn():`
 
 ### Funksjoner vs. prosedyrer
 

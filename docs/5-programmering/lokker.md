@@ -18,12 +18,11 @@ I Python brukes løkker for å repetere arbeidsoppgaver.
 While-løkker kjører "så lenge" en betingelse er sann.
 For eksempel bruker programmet under en while-løkke for å telle ned fra 5, og deretter si "lift off!":
 
-```Python
+```python
 while betingelse:
     # kode som gjennomføres så lenge betingelsen er sann
 }
 ```
-
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=n%20%3D%205%0Awhile%20n%20%3E%200%3A%0A%20%20%20%20print%28n%29%0A%20%20%20%20n%20-%3D%201%0Aprint%28%22Lift%20off!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
@@ -33,7 +32,7 @@ Så lenge `n` er større enn 0 skal programmet kjøre.
 While-løkker brukes som oftest når vi ikke vet hvor lenge vi skal holde på.
 F.eks helt til en spiller dør i et spill, eller så lenge spilleren ikke har gjettet riktig, som i eksemplet under.
 
-```Python
+```python
 hemmelig = 5
 gjett = int(input("Hvilket tall tenker jeg på? 1-100: "))
 
@@ -50,13 +49,11 @@ print("Riktig!")
 
 </details>
 
-
-
 ### Uendelige løkker
 
-While-løkkene kjører så lenge betingelsen er sann (true). 
-Hvis betingelsen aldri blir usann (false), vil en løkke kjøre for alltid, slike løkker kalles uendelige løkker (infinite loops).
-Hvis vi ender opp i en uendelig løkke vil PC-en fryse, og vi får ikke kjørt resten av programmet.
+While-løkkene kjører så lenge betingelsen er sann (`True`). 
+Hvis betingelsen aldri blir usann (`False`), vil en løkke kjøre for alltid. Slike løkker kalles *uendelige løkker* (fra eng. *infinite loops*).
+Hvis vi ender opp i en uendelig løkke vil PCen fryse, og vi får ikke kjørt resten av programmet.
 
 #### Eks:
 
@@ -71,7 +68,6 @@ while n > 0:
 ```
 > I det siste eksemplet vil `n` alltid være 20, og 20 er alltid større enn 0.
 
-
 ## For-løkke
 
 En for-løkke gjentar en kode et bestemt antall ganger.
@@ -79,7 +75,7 @@ Hvis vi på forhånd vet hvor mange ganger en kode skal kjøre, kan vi bruke en 
 
 Løkken under vil telle fra 1 til 10.
 
-```Python
+```python
 for i in range(1,11):
     print(i)
 ```
@@ -91,9 +87,9 @@ for i in range(1,11):
 
 </details>
 
-> range() er en innebygd funksjon som lager en rekke med tall. Rekken starter på det første tallet og slutter ett tall før det andre tallet. Eks: `range(1,3)` gir rekken `1` `2`. `range(5,7)` gir rekken `5` `6`.
+`range()` er en innebygd funksjon som lager en rekke med tall. Rekken starter på det første tallet og slutter ett tall før det andre tallet. Eks: `range(1,3)` gir rekken `1` `2`. `range(5,7)` gir rekken `5` `6`.
 
-> Det er også mulig å droppe første tallet i range, slik `range(3)`, da lager range en rekke som starter på `0` og slutter før tallet mellom parantesene. Eks: `range(3)` gir rekken `0` `1` `2`
+Det er også mulig å droppe første tallet i range, slik `range(3)`, da lager range en rekke som starter på `0` og slutter før tallet mellom parantesene. Eks: `range(3)` gir rekken `0` `1` `2`
 
 ```Python
 # Teller fra 0 til 9
@@ -108,13 +104,12 @@ for i in range(10):
 
 </details>
 
-
 ## While vs. for
 
 I mange tilfeller kan vi velge om vi skal bruke for eller while.
 I eksemplet under brukes både en while-løkke og en for-løkke for å telle til 10.
 
-```Python
+```python
 # ---- While ----
 i = 1
 while i < 11:
@@ -131,10 +126,7 @@ for i in range(11):
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23%20----%20While%20----%0Ai%20%3D%201%0Awhile%20i%20%3C%2011%3A%0A%20%20%20%20print%28i%29%0A%20%20%20%20i%20%2B%3D%201%0A%0A%23%20----%20For%20-----%0Afor%20i%20in%20range%2811%29%3A%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-
 </details>
-
-
 
 Selv om det er mulig å bruke begge typene løkker for å løse samme problem, er det noen tilfeller hvor vi oftere bruker for, og andre tilfeller hvor vi oftere bruker while. 
 For-løkker brukes som oftest når vi vet hvor mange ganger vi skal gjenta en kode, mens While-løkker brukes oftest når vi ikke vet hvor mange ganger vi skal gjenta en kode.
@@ -176,9 +168,7 @@ for nøkkel, verdi in fotballspiller.items():
 
 <details>
 <summary>Klikk for Pythontutor</summary>
-    
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fotballspiller%20%3D%20%7B%0A%20%20%20%20%22fornavn%22%3A%20%22Ada%22,%0A%20%20%20%20%22etternavn%22%3A%20%22Hegerberg%22,%0A%20%20%20%20%22alder%22%3A%2026,%0A%20%20%20%20%22klubb%22%3A%20%22Lyon%22%0A%7D%0Afor%20n%C3%B8kkel,%20verdi%20in%20fotballspiller.items%28%29%3A%0A%20%20%20%20print%28n%C3%B8kkel,%20%22%3A%22,%20verdi%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
 
 </details>

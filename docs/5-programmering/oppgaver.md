@@ -13,11 +13,9 @@ description: En oversikt over programmeringsoppgaver.
 
 Print ut noen selvvalgte beskjeder. Prøv å se hva som skjer dersom du glemmer anførselstegnene.
 
- 
-
 #### Oppgave 1.2 
 
-a ) Hva tror du skjer dersom vi kjører følgende kode? 
+a) Hva tror du skjer dersom vi kjører følgende kode? 
 
 ```python
 a = 2
@@ -32,8 +30,6 @@ b) Hvorfor er det ingen anførselstegn i print-instruksjonen denne gangen?
     Koden printer ut 4. Vi kan ikke bruke anførselstegn fordi det ikke er en streng vi skal printe ut
 
 </details>
-
-
 
 #### Oppgave 1.3
 
@@ -112,7 +108,7 @@ print("Differansen mellom x og y er ", diff)
 
 ![oppgave 5](./bilder/oppgave_5.png)
 
-a) Forklar hva som er galt med denne koden? Hvorfor blir det feil? Rett opp koden slik at den kjører 
+a) Forklar hva som er galt med denne koden. Hvorfor blir det feil? Rett opp koden slik at den kjører.
 
 b) Skriv adressen ut på følgende to måter ved å bruke variabler: "Adressen er Kongens gate 432b" og "Gaten er Kongens Gate, husnummeret er 432, oppgang b" 
 
@@ -132,14 +128,12 @@ b) Skriv adressen ut på følgende to måter ved å bruke variabler: "Adressen e
 
 </details>
 
-
-
 #### Oppgave 1.7
 
 Du er på restaurant med venner, og på regningen er følgende informasjon:
 
-Total pris for mat og drikke: 850 kr
-Ungdomsrabatt: 25 % 
+Total pris for mat og drikke: 850 kr<br />
+Ungdomsrabatt: 25 %<br />
 Tips: 10 %
 
 a) Legg informasjonen inn i variabler som tall (ikke bruk %, det gir ikke mening når vi programmerer)
@@ -155,7 +149,6 @@ e) Lag en variabel for antall personer, og skriv ut pris per person samt antall 
 <details>
 <summary>Klikk for Hint</summary>
 <p>
-
 
 ````
 - Lag de tre variablene
@@ -197,11 +190,9 @@ print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per pers
 </p>
 </details>
 
-
-
 #### Oppgave 1.8
 
-Formelen for å regne Fahrenheit om til Celsius er C = (F-32)*5/9. Lag et program som spør brukeren om temperaturen i fahrenheit. Regn om til Celsius og skriv en beskjed som sier hvor mange grader Celsius det tilsvarer. 
+Formelen for å regne Fahrenheit om til Celsius er `C = (F-32)*5/9`. Lag et program som spør brukeren om temperaturen i fahrenheit. Regn om til Celsius og skriv en beskjed som sier hvor mange grader Celsius det tilsvarer. 
 
 <details><summary>Klikk for hint</summary>
 <p>
@@ -232,11 +223,9 @@ print(f_heit, "Fahrenheit tilsvarer, celsius, "grader Celsius")
 </p>
 </details>
 
-
-
 #### Oppgave 1.9
 
-Endre på koden i oppgave 6 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer 
+Endre på koden i oppgave 1.7 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer 
 
 <details>
 <summary>Klikk for Løsning</summary>
@@ -268,12 +257,12 @@ print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per pers
 Lag et program som regner ut totalpris for en bruker etter å ha vært på handletur. De varene det er mulig å kjøpe er brød, melk, ost og yoghurt.
 
 Prisene er som følger:
-```
-Brød: 20 kr.
-Melk: 15 kr.
-Ost: 40 kr.
-Youghurt: 12 kr.
-```
+
+Brød: 20 kr.<br />
+Melk: 15 kr.<br />
+Ost: 40 kr.<br />
+Yoghurt: 12 kr.
+
 
 Eksempel på bruk av programmet:
 ```
@@ -437,7 +426,7 @@ I fornøyelsesparken Titusenfryd må man være minst 100 cm høy for å kjøre b
 
 #### Oppgave 2.5
 
-Lag en variabel `hemmelig` med et tall mellom 1 og 10. Be brukeren gjette tallet. Dersom brukeren gjetter riktig er riktig, skriver du ut "Gratulerer! Du gjettet riktig". Ved feil skriver du "Beklager, du gjettet feil". Ta vare på koden, du skal bruke den senere. 
+Lag en variabel `hemmelig` med et tall mellom 1 og 10. Be brukeren gjette tallet. Dersom brukeren gjetter riktig, skriver du ut "Gratulerer! Du gjettet riktig". Ved feil skriver du "Beklager, du gjettet feil". Ta vare på koden, du skal bruke den senere. 
 
 <details>
 <summary>Klikk for Hint</summary>
@@ -648,7 +637,7 @@ Et eksempel på en spådom kan være:
 **SKUDDÅR**
 
 Lag et program som avgjør om et årstall er skuddår eller ikke.  
-> Tips: for å sjekke om tall er delelig på 4, bruk modulo. Eks: tall % 4 == 0 gir true hvis tallet er delelig på 4.
+> Tips: for å sjekke om tall er delelig på 4, bruk modulo. Eks: `tall % 4 == 0` gir True hvis tallet er delelig på 4.
 
 1. Bruk reglene som gjaldt fra 8 e.kr til 1582:
    - Et år er et skuddår hvis årstallet er delelig på 4.
@@ -680,7 +669,6 @@ c) Bruk en for-løkke til å printe ut alle partallene fra og med 400 til og med
 <details>
 <summary>Klikk for Løsning</summary>
 
-
 ````python
 # a) 
 
@@ -702,10 +690,7 @@ for tall in range(400, 601,2):
 
 </details>
 
-
-
 #### Oppgave 3.2
-
 
 a) Forklar hva følgende kode gjør:
 
@@ -731,10 +716,7 @@ b) Lag et program som regner ut summen av de n første oddetallene. La bruker be
 
     b)
 
-
 </details>
-
-
 
 #### Oppgave 3.3
 
@@ -790,8 +772,6 @@ d) Finn lengden av lista uten selv å måtte telle den
 
 </details>
 
-
-
 #### Oppgave 4.2
 
 Bruk lista med fag fra oppgave 4.1
@@ -801,7 +781,6 @@ Lag en input der brukeren kan skrive inn et fag
 Sjekk om faget ligger i lista. Hvis ja skriv at du har faget, hvis nei skriver du ut beskjed om at du ikke har det.
 
 Eksperttips: Dersom variabelen tekst er en streng vil tekst.lower() gjøre om hele teksten til små bokstaver.
-
 
 <details>
     <summary>Klikk for Løsning</summary>
@@ -829,12 +808,11 @@ b) Legg til tallet 8 på slutten av lista
 
 c) Legg til tallet 4 mellom 3 og 5 i lista
 
-d) Endre tallet 4, slik at det står som “fire” istedet.
+d) Endre tallet 4, slik at det står som “fire” i stedet.
 
 e) Fjern “fire” fra lista
 
 f) Print lengden av lista
-
 
 <details>
     <summary>Klikk for Løsning</summary>
@@ -850,18 +828,15 @@ f) Print lengden av lista
 
 </details>
 
-
-
 #### Oppgave 4.4
 
 Legg alle julekarakterene inn i ei liste (som tall!)
 
-Bruk sum(liste) og len(liste) til å regne gjennomsnittet. Rund av til to desimaler.
+Bruk `sum(liste)` og `len(liste)` til å regne gjennomsnittet. Rund av til to desimaler.
 
 Print en passende tekst
 
 Finn på et passende snitt til en utdanning du vil søke på. Sjekk om du kommer inn eller ikke. Print ut en passende tekst
-
 
 <details>
     <summary>Klikk for Løsning</summary>
@@ -883,11 +858,11 @@ Finn på et passende snitt til en utdanning du vil søke på. Sjekk om du kommer
 
 #### Oppgave 4.5
 
-Norske bilnummer har to (store) bokstaver og fem tall 
+Norske bilnummer har to (store) bokstaver og fem tall.
 
-Du skal lage et program der man enten kan legge til eller sjekke et bilnummer. 
+Du skal lage et program der man enten kan legge til eller sjekke et bilnummer.
 
-Legg en while-løkke rundt programmet så det gjentar seg. Enten ved å sette while True: eller ved å spørre om brukeren vil fortsette
+Legg en while-løkke rundt programmet så det gjentar seg. Enten ved å sette `while True:` eller ved å spørre om brukeren vil fortsette.
 
 Lag en liste der du legger inn noen få fiktive bilnummer.
 
@@ -895,9 +870,7 @@ Spør først brukeren om de vil legge til eller sjekke et nummer. 
 
 Hvis de vil legge til, ta inn det nye nummeret og legg det i lista.
 
-Hvis de vil sjekke, ta inn nummeret og sjekk om det ligger i lista. Skriv ut en passende tekst
-
-
+Hvis de vil sjekke, ta inn nummeret og sjekk om det ligger i lista. Skriv ut en passende tekst.
 
 <details>
     <summary>Klikk for Hint</summary>
@@ -939,10 +912,9 @@ Hvis de vil sjekke, ta inn nummeret og sjekk om det ligger i lista. Skriv ut en 
 
 </details>
 
-
 #### Oppgave 4.6
 
-Opprett en liste mineTall med tallene 9, 3, 1 og 2 
+Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
 
 * Bruk liste-metoder for å endre listeen til å bare inneholde tallene 3 og 1. 
 * Legg til tallet 2 mellom tallene 3 og 1. 
@@ -997,21 +969,23 @@ Print navn og alder fra ordboken.
 
 Ordboken under har navn på land som egenskaper og fargene på flagget til landene som verdier. 
 
+```python
 flagg = { 
-    norge : ["rødt", "hvitt", "blått"], 
-    sverige : ["blått", "gult"], 
-    danmark : ["rødt", "hvitt"], 
-    finland : ["hvitt", "blått"], 
-    japan : ["rødt", "hvitt"], 
-    gabon : ["grønt", "gult", "blått"], 
-    chile : ["blått", "hvitt", "rødt"] 
-} 
+    "norge": ["rødt", "hvitt", "blått"], 
+    "sverige": ["blått", "gult"], 
+    "danmark": ["rødt", "hvitt"], 
+    "finland": ["hvitt", "blått"], 
+    "japan": ["rødt", "hvitt"], 
+    "gabon": ["grønt", "gult", "blått"], 
+    "chile": ["blått", "hvitt", "rødt"] 
+}
+```
 
 OBS! Merk at vi kan skrive ordbøker og lister over flere linjer, så lenge vi passer på komma og avsluttende “]” eller “}”, som i flagg over. 
 
 Bruk flagg["egenskap"], og legg til et nytt land i ordboken 
 
-Legg til kode slik at brukeren kan skrive inn et land, også printes fargene til landets flagg. Hvis brukeren skriver inn et land som ikke eksisterer i ordboken, skal programmet gi en feilmelding som forteller at vi ikke har lagret info om dette landet. 
+Legg til kode slik at brukeren kan skrive inn et land, og så printes fargene til landets flagg. Hvis brukeren skriver inn et land som ikke eksisterer i ordboken, skal programmet gi en feilmelding som forteller at vi ikke har lagret info om dette landet. 
 
 <details>
     <summary>Klikk for Løsning</summary>
@@ -1023,7 +997,7 @@ Legg til kode slik at brukeren kan skrive inn et land, også printes fargene til
 
 #### Oppgave 4.9
 
-Lag en liste bakeri, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
+Lag en liste `bakeri`, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
 
 * Croissant 25 
 * Grovbrød 40 
@@ -1031,7 +1005,7 @@ Lag en liste bakeri, og fyll listen med følgende varer som ordbøker, hvor navn
 * Rosinbolle 20 
 * Baguette 10 
 
-Print innholdet i hele bakeri-et som en meny med en linje per vare, med navn og pris 
+Print innholdet i hele `bakeri`-et som en meny med en linje per vare, med navn og pris 
 
 Tips: for-løkke 
 
@@ -1085,11 +1059,10 @@ I: Sette inn penger
 
 ````
 
-
 <details>
     <summary>Klikk for Løsning</summary>
 <p>
-    
+
 Løsning:
 
 a) Denne kan gjøres på mange forskjellige måter, dette er bare et forslag:
@@ -1098,7 +1071,7 @@ a) Denne kan gjøres på mange forskjellige måter, dette er bare et forslag:
 
 konto = 0
 bank = True
-        
+
 while bank == True:
     oppdrag = input("Hva ønsker du? Trykk på en tast for å velge.\n S: Se Saldo.\n U: Ta ut penger. \n I: Sette inn penger. \n A: Avslutt\n")
     
