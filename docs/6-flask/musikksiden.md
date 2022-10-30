@@ -63,7 +63,6 @@ def artister():
     return render_template("artister.html", artister=artistliste) # returnerer nettsiden "artister.html"
 ```
 
-
 ## mal.html
 
 ```html
