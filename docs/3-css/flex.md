@@ -9,12 +9,11 @@ description: Bli kjent med flex som åpner flere muligheter for utseende.
 
 ## Plassering av elementer
 
-Hittil har vi sett litt hvordan man kan endre stil på elementene vi ønsker, og vi har jobbet med egenskapene til "Boks-modellen". Ettersom man har hatt et ønske om å ha bedre kontroll over hvordan elementer skal plasseres, er det utviklet flere mer avanserte teknikker som vi nå skal se nærmere på. Den første av disse kalles `flex`. Vi bruker gjerne flex når vi skal posisjonere elementer i en dimensjon, altså på en linje eller en rad. 
+Hittil har vi sett litt hvordan man kan endre stil på elementene vi ønsker, og vi har jobbet med egenskapene til *boks-modellen*. Ettersom man har hatt et ønske om å ha bedre kontroll over hvordan elementer skal plasseres, er det utviklet flere mer avanserte teknikker som vi nå skal se nærmere på. Den første av disse kalles *flex*. Vi bruker gjerne flex når vi skal posisjonere elementer i én dimensjon, altså på en linje eller en rad. 
 
+## Posisjonering av lenker med flex
 
-## Posisjonering av lenker med Flex
-
-Som vanlig er det best å starte med et eksempel. De aller fleste nettsteder du besøker består av mange undersider, og har da en felles fane der du lett kan navigere deg rundt. La oss bruke flex til å lage en slik fane med lenker på toppen av nettsidene våre. Det er naturlig å skrive denne koden i et header element, før resten innholdet som vi legger i main-elementet:
+Som vanlig er det best å starte med et eksempel. De aller fleste nettsteder du besøker består av mange undersider, og har da en felles fane der du lett kan navigere deg rundt. La oss bruke flex til å lage en slik fane med lenker på toppen av nettsidene våre. Det er naturlig å skrive denne koden i et `header`-element, før resten av innholdet som vi legger i `main`-elementet:
 
 ```html
 <body>
@@ -32,15 +31,16 @@ Som vanlig er det best å starte med et eksempel. De aller fleste nettsteder du 
     </main>
 </body>
 ```
+
 Uten CSS ser det ikke spesielt imponerende ut:
 
-![alt text](./bilder/3_4%20-%20flex/navbar1.png)
+![Navigasjonsbar uten CSS](./bilder/3_4%20-%20flex/navbar1.png)
 
-Vi skal nå vise hvordan vi ganske enkelt kan posisjonere lenke slik vi ønsker ved hjelp av flex i CSS. Da trenger vi alltid et element som forelder for det vi skal posisjonere. Vi ser av koden i eksempelet over, at nav-elementet passer fint som en slik forelder.
+Vi skal nå vise hvordan vi ganske enkelt kan posisjonere lenkene slik vi ønsker ved hjelp av flex i CSS. Da trenger vi alltid et element som *forelder* for det vi skal posisjonere. Vi ser av koden i eksempelet over, at `nav`-elementet passer fint som en slik forelder.
 
 ![alt text](./bilder/3_4%20-%20flex/flexboks.png)
 
-Vi starter med å skru på flex på forelder elementet.
+Vi starter med å skru på flex på forelder-elementet.
 
 ```css
 nav{
@@ -50,19 +50,19 @@ nav{
 
 Legg merke til at ingenting endrer seg enda, vi har bare satt igang verktøyet og må nå vite hvilke muligheter vi har tilgjengelig.
 
-## Flex - Egenskaper.
+## Flex - egenskaper
 
-Når flex er "skrudd på" får vi endel nye egenskaper å forholde oss til:
+Når flex er "skrudd på" får vi en del nye egenskaper å forholde oss til:
 
 * `flex-direction`: row / column. Her bestemmer vi om fleks-elementene skal plasseres langs en rad eller kolonne. Standardinnstillingen er `row` altså horisontalt, og vi trenger derfor ikke denne egenskapen med mindre lenkene våre skal ligge vertikalt.
 
 * `justify-content:` flex-start / flex-end / center / space-between /space-around. Den viktigste egenskapen for posisjonering. Vi ser nærmere på denne i eksempler nedenfor.
 
-* `align-items:` flex-start / flex-end / center /baseline. Her bestemmer vi hvordan elementene skal legge seg i "motsatt retning" av det vi valgte i "flex-direction". Dersom vi har lagt elementene på en rad, vil align-items justere de i høyden. Motsatt vil elementer i en kolonne kunne justeres horisontalt. 
+* `align-items:` flex-start / flex-end / center / baseline. Her bestemmer vi hvordan elementene skal legge seg i "motsatt retning" av det vi valgte i "flex-direction". Dersom vi har lagt elementene på en rad, vil align-items justere de i høyden. Motsatt vil elementer i en kolonne kunne justeres horisontalt. 
 
 ## Eksempler
 
-I eksemplene som kommer det flere regelsett for CSS, og noen av egenskapene er kanskje nye for deg. Det er veldig lurt å prøve å lage de samme fanene selv, og eksperimentere med verdiene. Hva skjer når du endrer på ting, eller fjerner egenskaper. Ved å utforske koden på denne måten, vil du lære veldig mye om hvordan css og flex fungerer! 
+I eksemplene som kommer er det flere regelsett for CSS, og noen av egenskapene er kanskje nye for deg. Det er veldig lurt å prøve å lage de samme fanene selv, og eksperimentere med verdiene. Hva skjer når du endrer på ting, eller fjerner egenskaper. Ved å utforske koden på denne måten, vil du lære veldig mye om hvordan CSS og flex fungerer! 
 
 ### Alternativ 1 - Horisontal Spredning
 
@@ -85,10 +85,9 @@ nav a{
 }
 ```
 
-*Med resultatet*
+Resultatet blir:
 
-![alt text](./bilder/3_4%20-%20flex/navbar2.png)
-
+![Navigasjonsbar](./bilder/3_4%20-%20flex/navbar2.png)
 
 
 > Vi ser at "space-around" gjør at barna til nav fyller hele skjermen, men like mye luft på 
@@ -115,15 +114,13 @@ nav a{
 }
 ```
 
-*Resultat:*
+Resultat:
 
-![alt text](./bilder/3_4%20-%20flex/navbar3.png)
-
-
+![Navigasjonsbar](./bilder/3_4%20-%20flex/navbar3.png)
 
 ### Alternativ 3 - Mobil/Vertikal
 
-For en nettside til mobiltelefon, er det beste som regel å ha fleks-elementene i en kolonne. Vi endrer flex-direction så lenkene kommer under hverandre. Vi bruker som i forrige eksempel padding for luft mellom lenkene, og til slutt så sentrerer vi lenkene horisontalt ved hjelp av align-items:
+For en nettside til mobiltelefon, er som oftest det beste å ha fleks-elementene i en kolonne. Vi endrer flex-direction så lenkene kommer under hverandre. Vi bruker - som i forrige eksempel - padding for luft mellom lenkene, og til slutt så sentrerer vi lenkene horisontalt ved hjelp av align-items:
 
 ```css
 nav{
@@ -142,9 +139,10 @@ nav a{
     padding-bottom: 10px;
 }
 ```
-*Resultat:*
 
-![alt text](./bilder/3_4%20-%20flex/navbar5.png)
+Resultat:
+
+![Navigasjonsbar](./bilder/3_4%20-%20flex/navbar5.png)
 
 ### Alternativ 4 - Horisontalt i grupper
 
@@ -186,23 +184,26 @@ nav a{
 }
 ```
 
-*Resultat*
+Resultat:
 
-![alt text](./bilder/3_4%20-%20flex/navbar4.png)
+![Navigasjonsbar](./bilder/3_4%20-%20flex/navbar4.png)
 
+:::note
 
-> I eksemplene ovenfor har vi brukt padding for luft mellom elementene. Alternativt kan man 
-> bestemme størrelsen til et fleks-element ved å bruke egenskapen `flex-basis`. Les mer om 
-> denne her: https://mastery.games/post/the-difference-between-width-and-flex-basis/
+I eksemplene ovenfor har vi brukt padding for luft mellom elementene.
+
+Alternativt kan man bestemme størrelsen til et fleks-element ved å bruke egenskapen `flex-basis`. [Les mer om denne her](https://mastery.games/post/the-difference-between-width-and-flex-basis/).
+
+:::
 
 ## Oppgave 1 - TV2 Plays pakkevelger
 
-Bruk Flex og gjenskap [TV2 Plays pakkevelger](https://play.tv2.no/pakker)
+Bruk Flex og gjenskap [TV2 Plays pakkevelger](https://play.tv2.no/pakker).
 
-- Tips: fonten `Helvetica` er ganske lik TV2 Plays
+- Tips: fonten `Helvetica` er ganske lik TV2 Plays sin.
 
 ## Oppgave 2 - Spotifys nettside
 
-Gjenskap [Spotifys nettside](https://open.spotify.com/) 
+Gjenskap [Spotifys nettside](https://open.spotify.com/).
 
-- Tips: fonten `Montserrat` er ganske lik Spotifys, du finner den på [Google Fonts: montserrat](https://fonts.google.com/specimen/Montserrat)
+- Tips: fonten `Montserrat` er ganske lik Spotifys, du finner den på [Google Fonts: Montserrat](https://fonts.google.com/specimen/Montserrat).

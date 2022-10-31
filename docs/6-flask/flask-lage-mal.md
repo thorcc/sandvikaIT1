@@ -97,7 +97,13 @@ Videre står det `{% block innhold %}`, her forteller vi Flask at det skal komme
 
 Når Flask generer koden for denne fila henter den HTML-koden fra `mal.html`, og bytter `{% block innhold %}{% endblock %}` med det som står inne i `{% block innhold %}{% endblock %}` i `index.html`.
 
-> Oppgave: Kjør nettstedet ved å høyreklikke på mappen `filmsiden` og velg `Flask run`. Når nettsiden kjører, høyreklikker du på nettsiden og velger `vis sidekilde` (chrome). Studer koden, ser du hva Flask har gjort?
+:::tip
+
+Kjør nettstedet ved å høyreklikke på mappen `filmsiden` og velg `Flask run`. Når nettsiden kjører, høyreklikker du på nettsiden og velger `vis sidekilde` (chrome).
+
+Studer koden, ser du hva Flask har gjort?
+
+:::
 
 ### filmer.html
 

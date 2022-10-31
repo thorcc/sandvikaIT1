@@ -20,7 +20,7 @@ Du har kanskje sett en visuell representasjon før? Lyd defineres som vibrasjone
 
 ![graf for spenning av lyd](./bilder/lydgraf.png)
 
-Legg merke til at målingene vi gjør (ca 1.5s mellom hver), gir en elendig kvalitet. Her vil ikke vår versjon være i nærheten av den originale kilden engang. Det betyr at vi må gjøre målingene langt oftere, og antall målinger vi gjør kalles for **samplingsfrekvensen**. Til sammenligning har gamle CD-plater en samplingsfrekvens på 44.1 kHz, som tilsvarer 44 100 målinger i sekundet! Selv det er ikke nok dersom vi trenger virkelig god kvalitet på lyden vi skal lagre.
+Legg merke til at målingene vi gjør (ca 1.5s mellom hver), gir en elendig kvalitet. Her vil ikke vår versjon være i nærheten av den originale kilden engang. Det betyr at vi må gjøre målingene langt oftere, og antall målinger vi gjør kalles for *samplingsfrekvensen*. Til sammenligning har gamle CD-plater en samplingsfrekvens på 44.1 kHz, som tilsvarer 44 100 målinger i sekundet! Selv det er ikke nok dersom vi trenger virkelig god kvalitet på lyden vi skal lagre.
 
 Du vet fra matematikken at dersom du har en graf, så har du også en verditabell (en tabell med alle x og y verdiene du har målt). I denne tabellen er altså lydbølgene gjort om til tall, og vi er i stand til å lagre lyden digitalt. Hvor stor plass denne tabellen tar, avhenger av hvordan vi komprimerer y-aksen, altså spenningsnivåene. Dersom vi kun har 4 bit tilgjengelig, må spenningene regnes om til en skala fra 0 til 15, og det går utover nøyaktigheten. CD-platen i eksempelet over brukte 16 bit, som ga 65 536 ulike y-verdier.
 
@@ -28,8 +28,8 @@ Tabellen med tid og spenning gjøres så om til totallsystemet. For CD-platen be
 
 ## Ekstrastoff: Aliasing
 
-> Når vi rekonstruerer bilder eller lydbølger kan det oppstå et problem som gjør at to helt forskjellige kilder blir helt like, de danner **aliaser** av hverandre. Det er fordi vi gjør for få målinger:
+Når vi rekonstruerer bilder eller lydbølger kan det oppstå et problem som gjør at to helt forskjellige kilder blir helt like, de danner *aliaser* av hverandre. Det er fordi vi gjør for få målinger:
 
 ![aliasing](./bilder/alias.png)
 
-> Her er den rød linjen original lyd, mens den blå er gjenskapt lyd. For å unngå aliasing må vi gjøre flere målinger, i Fysikk 2 vil du lære at man bør gjøre dobbelt så mange målinger som den høyeste frekvensen til lydbølgen.
+Her er den rød linjen original lyd, mens den blå er gjenskapt lyd. For å unngå aliasing må vi gjøre flere målinger, i Fysikk 2 vil du lære at man bør gjøre dobbelt så mange målinger som den høyeste frekvensen til lydbølgen.

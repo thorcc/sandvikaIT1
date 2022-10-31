@@ -35,7 +35,6 @@ description: Et eksempel på bruk av Flask.
 
 ## app.py
 
-
 ```python
 from flask import Flask, render_template
 import json
@@ -61,7 +60,6 @@ def film(id):
     return render_template("film.html", film=filmliste[filmnummer])
 
 # ---
-
 ```
 
 ## mal.html
@@ -111,9 +109,7 @@ Denne siden inneholder en for-løkke som går gjennom listen filmer, og lager et
         {% endfor %}
     </ol>
 {% endblock %}
-
 ```
-
 
 ## film.html
 
@@ -133,7 +129,6 @@ Når brukeren går inn på ruten `/film/<id>`, får brukeren denne siden med inf
         <li>Karakter: {{film["karakter"]}}</li>
     </ul>
 {% endblock %}
-
 ```
 
 ## Eksperttips: film.html med all info
@@ -171,6 +166,4 @@ Når brukeren går inn på ruten `/film/<id>`, får brukeren denne siden med inf
     <iframe width="600" height="400" src='{{film["trailer"]}}' frameborder="0"></iframe>
     
 {% endblock %}
-
 ```
-

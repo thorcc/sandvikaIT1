@@ -20,7 +20,7 @@ I 2018 estimerte selskapet Statista at 22 milliarder datamaskiner var koblet på
 Felles for alt som er koblet på internett er at de har et nettverkskort, som lar de kommunisere med andre datamaskiner som er koblet på internett.
 
 Når en datamaskin skal sende en beskjed til en annen datamaskin via internett, konverteres først beskjeden om til en samling av `0` og `1`.
-Deretter deles samlingen av `0` og `1` opp i mange mindre *pakker*.
+Deretter deles samlingen av `0` og `1` opp i mange mindre *pakker* (fra eng. *packets*).
 Pakkene sendes hver for seg over det fysiske nettet.
 De går gjennom kabler, innom mobiltårn eller andre deler av det fysiske nettet.
 På sin vei over nettet er de innom mange datamaskiner, som tar i mot pakkene, og sender de videre i retning målet.
