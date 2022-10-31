@@ -28,7 +28,7 @@
     "description": "The default label used for the Tip admonition (:::tip)"
   },
   "theme.admonition.danger": {
-    "message": "fare",
+    "message": "obs",
     "description": "The default label used for the Danger admonition (:::danger)"
   },
   "theme.admonition.info": {
@@ -253,5 +253,20 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Søk..."
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "Ingen resultater."
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Tøm"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "Avbryt"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Send"
   }
 }
