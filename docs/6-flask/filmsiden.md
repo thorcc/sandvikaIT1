@@ -1,6 +1,8 @@
 ---
+title: 6.6 Filmsiden
 sidebar_position: 6
 sidebar_label: 6.6 Filmsiden
+description: Et eksempel på bruk av Flask.
 ---
 
 # Eksempel: Filmsiden - Ruter med parametere

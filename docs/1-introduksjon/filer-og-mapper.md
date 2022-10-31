@@ -1,13 +1,15 @@
 ---
+title: 1.2 Filer og mapper
 sidebar_position: 3
 sidebar_label: 1.2 Filer og mapper
+description: Lær hvordan filer og mapper fungerer og samarbeider.
 ---
 
 # Filer og Mapper
 
 Alt du har på datamaskinen din består av filer. Tekster, bilder, film og spill, alle apper og program du bruker utgjør til sammen mange hundretusener (om ikke millioner) av filer. 
 
-![Filer i Office](./filer-og-mapper.png)
+![Filer i Office](./bilder/filer-og-mapper.png)
 
 *Office-pakka du installerer her på skolen består av ganske mange filer* 
 
@@ -17,7 +19,7 @@ Vi sorterer disse filene i mapper slik at vi får en enklere struktur. Programme
 
 Hver gang du lagrer en ny fil, for eksempel en tekst eller et bilde, bestemmer du samtidig hvor filen skal plasseres. Mange lagrer kanskje filene i en standardmappe uten å tenke over hvor, mens andre allerede har laget seg sitt eget system med mapper for fag på skolen og lignende.
 
-![Bilde: Lagre på PC/MAC](./lagre.png)
+![Bilde: Lagre på PC/MAC](./bilder/lagre.png)
 
 Du har som regel valget om å lagre lokalt eller i en sky. Lokal lagring betyr at filene lagres fysisk på datamaskinen din, og tar plass på denne. Dersom maskinen blir ødelagt eller borte så forsvinner fila. 
 
@@ -43,7 +45,7 @@ For å manuelt lete blant filene og mappene vi har (både lokalt og i skyen) så
 
 VS-Code har også en innebygd utforsker som vi bruker mye i dette faget, for å bruke denne så åpner vi først en mappe så vil VS-Code vise deg hva som som ligger inne i denne. Vi kan åpne og lukke mapper ved å trykke på pilene. Husk at dersom vi åpner en helt ny mappe så betyr ikke det at lagrede filene vi hadde oppe tidligere forsvinner, vi bare utforsker et annet sted.
 
-![Bilde: Navigasjon i VS-Code](./vscodenav.png)
+![Bilde: Navigasjon i VS-Code](./bilder/vscodenav.png)
 
 *Ser du hvilke hvordan fil- og mappestrukturen er bygd opp? Hva ligger inne hvor?*
 

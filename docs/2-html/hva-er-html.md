@@ -1,6 +1,8 @@
 ---
+title: 2.2 Hvordan skrive HTML
 sidebar_position: 2
 sidebar_label: 2.2 Hvordan skrive HTML
+description: Lær deg grunnleggende HTML for å skrive din første nettside.
 ---
 
 ## HTML består av Elementer

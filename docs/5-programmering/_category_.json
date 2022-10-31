@@ -1,0 +1,14 @@
+{
+    "position": 5,
+    "label": "Programmering",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "Programmering",
+    "link": {
+      "type": "generated-index",
+      "title": "Kapittel 5: Programmering"
+    },
+    "customProps": {
+      "description": "En oversikt over underkapitler av Programmering-kategorien."
+    }
+}

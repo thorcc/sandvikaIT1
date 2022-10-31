@@ -1,6 +1,8 @@
 ---
+title: 2.5 Vanlige HTML-elementer
 sidebar_position: 5
 sidebar_label: 2.5 Vanlige HTML-elementer
+description: En oversikt over de vanligste HTML-elementer som blir brukt.
 ---
 
 # Vanlige HTML-elementer

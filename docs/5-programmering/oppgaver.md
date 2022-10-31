@@ -1,6 +1,8 @@
 ---
+title: 5.7 Oppgaver
 sidebar_position: 7
 sidebar_label: 5.7 Oppgaver
+description: En oversikt over programmeringsoppgaver.
 ---
 
 # Oppgaver med løsning
@@ -108,7 +110,7 @@ print("Differansen mellom x og y er ", diff)
 
 #### Oppgave 1.6
 
-![oppgave 5](./oppgave_5.png)
+![oppgave 5](./bilder/oppgave_5.png)
 
 a) Forklar hva som er galt med denne koden? Hvorfor blir det feil? Rett opp koden slik at den kjører 
 

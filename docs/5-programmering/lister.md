@@ -1,6 +1,8 @@
 ---
+title: 5.5 Lister
 sidebar_position: 5
 sidebar_label: 5.5 Lister
+description: Når vi skal gruppere og organisere informasjon, bruker vi lister.
 ---
 
 # Lister

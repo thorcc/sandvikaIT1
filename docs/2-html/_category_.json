@@ -1,0 +1,14 @@
+{
+    "position": 2,
+    "label": "HTML",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "HTML",
+    "link": {
+      "type": "generated-index",
+      "title": "Kapittel 2: HTML"
+    },
+    "customProps": {
+      "description": "En oversikt over underkapitler av HTML-kategorien."
+    }
+}

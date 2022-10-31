@@ -1,0 +1,14 @@
+{
+    "position": 4,
+    "label": "Signaler",
+    "collapsible": true,
+    "collapsed": true,
+    "className": "Signaler",
+    "link": {
+      "type": "generated-index",
+      "title": "Kapittel 4: Signaler"
+    },
+    "customProps": {
+      "description": "En oversikt over underkapitler av Signaler-kategorien."
+    }
+}

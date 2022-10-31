@@ -1,8 +1,10 @@
 ---
+title: Velkommen til Informasjonsteknologi 1
 slug: "/"
 sidebar_position: 1
-sidebar_label: velkommen
+sidebar_label: Velkommen
 ---
+
 # Velkommen til Informasjonsteknologi 1
 
 Hei og velkommen til Informasjonsteknologi 1. I dette faget skal vi blant annet bli kjent med datamaskinen, samt jobbe med teknologi og verktøy som er relevante i vår digitale hverdag. Vi skal se på hvordan hjemmesider eller apper lages, samt hvordan kommunikasjon i den digitale verdenen fungerer.

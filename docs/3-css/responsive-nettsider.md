@@ -1,6 +1,8 @@
 ---
+title: 3.7 Responsive nettsider
 sidebar_position: 7
 sidebar_label: 3.7 Responsive nettsider
+description: Lag nettsider som er tilgjengelig for alle.
 ---
 
 # Responsive nettsider
@@ -9,13 +11,13 @@ En responsiv nettside er en nettside hvor innholdet automatisk tilpasses større
 Elementene på nettsiden vil automatisk krympes, strekkes eller flyttes for å tilpasse størrelsen de har tilgjengelig.
 Under er et eksempel på hvordan www.nytimes.com ser ut med forskjellig skjermstørrelser.
 
-![PC-versjon](./bilder/responsive-nettsider/pc.png ':size=800')  
+![PC-versjon](./bilder/3_7%20-%20responsive-nettsider/pc.png ':size=800')
 *PC-versjon*
 
-![Tablet-versjon](./bilder/responsive-nettsider/tablet.png ':size=400')  
+![Tablet-versjon](./bilder/3_7%20-%20responsive-nettsider/tablet.png ':size=400')
 *Tablet-versjon*
 
-![Mobil-versjon](./bilder/responsive-nettsider/mobil.png ':size=200')  
+![Mobil-versjon](./bilder/3_7%20-%20responsive-nettsider/mobil.png ':size=200')
 *Mobilversjon*
 
 ## Vanlige skjermstørrelser
@@ -26,7 +28,7 @@ Les mer om universell utforming og responsivt design på [uu.difi.no](https://uu
 
 Under kan du se en oversikt over de mest vanlige skjermstørrelsene. 
 
-![Vanlige skjermstørrelser](./bilder/responsive-nettsider/breakpoints.png)
+![Vanlige skjermstørrelser](./bilder/3_7%20-%20responsive-nettsider/breakpoints.png)
 *Vanlige skjermstørrelser. [Hentet fra freecodecamp](https://www.freecodecamp.org/news/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862/)*
 
 ## Responsive nettsider med CSS
@@ -108,7 +110,7 @@ Vi kan lage en grid responsiv ved å endre antall elementer som vises i bredden.
 
 Koden over gir nettsiden under:
 
-![Eksempel - Grid](./bilder/responsive-nettsider/grid-eksempel.png ':size=400')
+![Eksempel - Grid](./bilder/3_7%20-%20responsive-nettsider/grid-eksempel.png ':size=400')
 
 ### Eksempel - Responsiv navigasjonsbar med flex
 

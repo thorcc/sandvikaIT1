@@ -1,6 +1,8 @@
 ---
+title: 3.1 CSS
 sidebar_position: 1
 sidebar_label: 3.1 CSS
+description: Lær deg CSS, som gjør det mulig å endre utseende av nettsiden din.
 ---
 
 # Hva er CSS?
@@ -162,7 +164,7 @@ Da kan man bruke flere CSS-filer, med lenker eks. slik:
 ## Oppgaver
 
 1. Lag et nettsted om solsystemet
-   - Last ned filen [solsystemet.zip](./solsystemet.zip)
+   - Last ned filen [solsystemet.zip](./vedlegg/solsystemet.zip)
    - Nettsted skal minst ha:
    - Fire undersider:
      - index.html – hjemmesiden

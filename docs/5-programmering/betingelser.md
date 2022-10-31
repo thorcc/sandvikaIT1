@@ -1,9 +1,11 @@
 ---
+title: 5.3 Betingelser
 sidebar_position: 3
 sidebar_label: 5.3 Betingelser
+description: Betigelser legger til rette for logikk i programmering.
 ---
 
-# Betingelser.
+# Betingelser
 
 ![Hvilken vei](bilder/hvilken_vei.jpeg ':size=700')
 

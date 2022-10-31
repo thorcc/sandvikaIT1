@@ -1,6 +1,8 @@
 ---
+title: 1.1 Oppsett
 sidebar_position: 2
 sidebar_label: 1.1 Oppsett
+description: Sett opp og gjør deg klar for IT her.
 ---
 
 # Oppsett
@@ -20,7 +22,7 @@ Mange av dere har Mac og bruker Safari som nettleser. Det meste går helt fint m
 
 ## Extensions/Utvidelser
 
-![extensions i VS Code](extensions.png ':size=200')
+![extensions i VS Code](./bilder/extensions.png ':size=200')
 
 Vi går igjennom dette sammen i timen. Brukere av VS Code har laget utvidelsespakker som forenkler en del av arbeidet for oss. Disse kalles for extensions og lastes ned i VS-Code:
 

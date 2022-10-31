@@ -1,6 +1,8 @@
 ---
+title: 2.3 Hyperlenker
 sidebar_position: 3
 sidebar_label: 2.3 Hyperlenker
+description: Hyperlenker er det som binder nettet sammen.
 ---
 
 # Hyperlenker
