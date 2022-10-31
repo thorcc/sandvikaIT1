@@ -253,5 +253,20 @@
   "theme.tags.tagsPageTitle": {
     "message": "Tags",
     "description": "The title of the tag list page"
+  },
+  "cmfcmf/d-s-l.searchBar.placeholder": {
+    "message": "Søk..."
+  },
+  "cmfcmf/d-s-l.searchBar.noResults": {
+    "message": "Ingen resultater."
+  },
+  "cmfcmf/d-s-l.searchBar.clearButtonTitle": {
+    "message": "Tøm"
+  },
+  "cmfcmf/d-s-l.searchBar.detachedCancelButtonText": {
+    "message": "Avbryt"
+  },
+  "cmfcmf/d-s-l.searchBar.submitButtonTitle": {
+    "message": "Send"
   }
 }

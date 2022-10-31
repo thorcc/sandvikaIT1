@@ -106,8 +106,30 @@ const config = {
       },
     }),
     themes: ['@docusaurus/theme-live-codeblock'],
+    plugins: [
+      [
+        require.resolve("@cmfcmf/docusaurus-search-local"),
+        {
+          indexDocs: true,
+          indexBlog: false,
+          indexPages: false,
+          indexDocSidebarParentCategories: 0,
+
+          language: "no",
+          style: undefined,
+          maxSearchResults: 8,
+
+          /* Gir andre boosting verdier slik at det er enklere å finne frem til innholdet på nettsiden.
+          Les mer her: https://lunrjs.com/guides/searching.html#boosts */
+          lunr: {
+            titleBoost: 4,
+            contentBoost: 3,
+            parentCategoriesBoost: 2,
+            tagsBoost: 1,
+          }
+        }
+      ]
+  ]
 };
-
-
 
 module.exports = config;
