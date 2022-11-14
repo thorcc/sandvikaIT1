@@ -24,7 +24,7 @@ Med det grunnleggende på plass kan vi nå begynne å programmere. Vi bruker Pyt
 print("Hei alle sammen!") 
 ```
 
-["Instruksjon og resultat"](./bilder/heialle.png)
+!["Instruksjon og resultat"](./bilder/heialle.png)
 
 *Vi skrev koden på venstre del, og ser resultatet på høyre side*
 
