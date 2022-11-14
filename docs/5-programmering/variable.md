@@ -8,18 +8,18 @@ description: Variabler brukes for å lagre informasjon i datamaskinens minne.
 # Variabler
 ![En hylle med kjemiske stoffer som kan symbolisere variabler](./bilder/variable_glass.jpg)
 
-*På samme måte som med denne hylla med kjemiske stoffer, kan vi lagre mye forskjellig i datamaskinens minne.*
+*Når vi programmerer kan vi også sortere og lagre mye forskjellig i datamaskinens minne.*
 
-En av de viktigste prinsippene når vi skal kode, er at vi kan lagre alt mulig i datamaskinens minne. Det vi lagrer kan vi hente opp igjen i koden, og bruke når vi selv ønsker det. Når vi lagrer noe i datamaskinens minne på denne måten kaller vi det for en *variabel*. God bruk av variable er fundamentalt for å lære seg å programmere godt. Akkurat som med glassene i bildet over, kan vi lagre alt mulig rart; bokstaver, setninger, tall og lister er eksempler på variabler som ofte brukes. Som vi ser i bildet over er det lurt å ha gode merkelapper på glassene. I den digitale verden må vi på samme måte også være påpasselige å si nøyaktig hva vi lagrer, slik at datamaskinen har riktig oversikt. Da vil vi samtidig også være i stand til å hente frem riktig variabel når vi trenger den. 
+En av de viktigste prinsippene når vi skal kode, er at vi kan lagre alt mulig i datamaskinens minne. Det vi lagrer kan vi hente opp igjen i koden, og bruke når vi selv ønsker det. Når vi lagrer noe i datamaskinens minne på denne måten kaller vi det for en **variabel**. God bruk av variable er fundamentalt for å lære seg å programmere godt. Vi kan lagre alt mulig rart; bokstaver, setninger, tall og lister er eksempler på variabler som ofte brukes. Som vi ser i bildet over er det lurt å ha gode merkelapper for å holde oversikten. I den digitale verden må vi på samme måte også være påpasselige å si nøyaktig hva vi lagrer. Da vil vi være lettere i stand til å hente frem riktig variabel når vi trenger den. 
 
 ## Lagre en variabel
-Dersom vi for eksempel ønsker å lagre tallet 10 skriver vi:
+Dersom vi for eksempel ønsker å lagre tallet 10 kan vi skrive:
 
 ```python
 tall = 10
 ```
 
-Navnet på variabelen (i dette tilfellet `tall`) tilsvarer merkelappen til krydderhylla. Selv om vi bestemmer navnet selv, bør vi velge et navn som gir mening.
+Vi sier at vi **deklarerer** variabelen `tall` med verdien `10`. Navnet på variabelen tilsvarer merkelappen på glassene i hylla. Selv om vi bestemmer navnet selv, bør vi velge et navn som gir mening. Dersom vi senere overskriver verdien vi lagrer i tall, er det alltid den siste deklarasjonen som gjelder.
 
 ## Hente en variabel
 
@@ -34,9 +34,9 @@ Hva tror du skrives til konsollen? Sjekk selv.
 
 ## Datatyper
 
-Som nevnt kan vi lagre veldig mye forskjellig som variabler, men datamaskinen vet i utgangspunktet ikke forskjell på noen av delene. Skal for eksempel `2` være ett tall som vi skal bruke til å regne med, eller skal det bare være en del av en vanlig tekst? For at programmet skal fungere er det viktig at vi vet hvilken *datatype* vi jobber med. Det betyr at når vi *deklarer*/lager en ny variabel, så må vi ikke bare lage et navn og innhold på den. Vi må samtidig fortelle hva slags type variabel det er. I mange andre programmeringsspråk gjøres dette spesifikt, men i Python holder det å skrive på en spesiell form for at programmet skal gjenkjenne datatypen. La oss se nærmere på nøyaktig hva vi skal skrive for å skille mellom ulike datatyper.
+Som nevnt kan vi lagre veldig mye forskjellig som variabler, men datamaskinen vet i utgangspunktet ikke forskjell på noen av delene. Skal for eksempel verdien `10` være ett tall som vi skal bruke til å regne med, eller skal det bare være en del av en vanlig tekst? For at programmet skal fungere er det viktig at vi vet hvilken *datatype* vi jobber med. Det betyr at når vi deklarerer en ny variabel, så må vi ikke bare lage et navn og innhold på den. Vi må samtidig fortelle hva slags type variabel det er. I mange programmeringsspråk gjøres dette spesifikt, men i Python holder det å skrive verdien av variabelen på riktig form form for at programmet skal gjenkjenne datatypen. La oss se nærmere på nøyaktig hva vi skal skrive for å skille mellom ulike datatyper.
 
-### Strenger (eng: String)
+##### Strenger (eng: String)
 
 Med strenger tenker vi som regel på all tekst, men en streng er i bunn og grunn en kombinasjon av bokstaver, symboler og tall vi kan skrive med tastaturet. En streng må skrives med anførselstegn rundt. Dermed har vi litt bedre forståelse av instruksjonen fra forrige kapittel:
 
@@ -46,7 +46,7 @@ print("Hei alle sammen!")
 
 Setningen vi ville skrive ut er en streng, og må dermed være i anførselstegn. Dersom vi ikke har de med vil datamaskinen lete etter en variabel ved navn `Hei` som ikke finnes og gi en feilmelding.
 
-### Tall
+##### Tall (int og float)
 
 Når vi jobber med tall holder det å skrive tallet (uten anførselstegn). Python har også de fire regneartene innebygd:
 
@@ -60,9 +60,9 @@ print(tall1 + tall2)
 
 Fra tidligere vet du at man relativt greit kan regne om heltall til totallsystemet og omvendt. For desimaltall blir konverteringen til bytes vanskeligere (og utenfor pensum). Vi har likevel fått det til, og dermed har vi to forskjellige datatyper for tall. Disse kalles *heltall* (fra eng. *integer*) og *flyt-tall* (fra eng. *float*). I praksis er det ikke så mye forskjell for vår del, men det kan dukke opp feil der man for eksempel prøver å behandle et heltall som om det var et desimaltall. I matematikken ville det vært uproblematisk, men når vi koder må vi være klar over forskjellen.
 
-### Input
+##### Input
 
-Dette er egentlig en streng, men den har en spesiell form og brukes masse for å lage interaksjon med brukeren av programmet (før vi gjør det med grafikk).
+Dette er egentlig en streng, men den har en spesiell form og vi bruker den for interaksjon med brukeren av programmet.
 
 ```python
 navn = input("Hva heter du? ")
@@ -74,29 +74,29 @@ Når vi kjører programmet vil du se at spørsmålet stilles i konsollen. Progra
 
 :::caution
 
-Alle verdier som en bruker skriver inn når `input()` blir brukt, er lagret som en strenge.
+Alle verdier som en bruker skriver inn når `input()` blir brukt, er lagret som en streng.
 
-Vi kan gjøre om formen til for eksempel et tall om det trengs; dette ser vi på [under](#konvertere-datatyper).
+Vi kan gjøre om formen til for eksempel et tall om det trengs; dette ser vi på [senere](#konvertere-datatyper) i kapittelet.
 
 :::
 
-### Boolske variable
+##### Boolske variable
 
 ```python
 test = True
 ```
 
-En slik variabel kan kun ha verdiene `True` eller `False`. Tenk på den som en bryter som kun kan være av eller på. Vi bruker den ikke så ofte, men det er en del av betingelser som vi skal se på senere.
+Boolske variable kan kun ha verdiene `True` eller `False`. Tenk på de som en bryter som kun kan være av eller på. Vi bruker de ikke så ofte i IT-1, men konseptet en blant annet del av `betingelser` som vi skal se på senere.
 
-### Lister
+##### Lister
 
 ```python
 liste = ["eple", "banan", "appelsin"]
 ```
 
-Dette er mer avanserte datatyper som vi skal se på i et eget kapittel. Vi kan for eksempel samle data, tall og/eller egenskaper i lister, og de har mange verktøy for å jobbe videre med de.
+Dette er mer avanserte datatyper som vi skal se på i et eget kapittel. Vi kan for eksempel samle data, tall og/eller egenskaper i lister, og har mange muligheter for å jobbe videre med de.
 
-### Printe flere variable
+##### Printe flere variable
 
 Vi kan printe ut flere variable, sammen med tekst ved å kjede sammen alt med komma mellom hver gang:
 
