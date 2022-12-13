@@ -230,7 +230,7 @@ print("Differansen mellom x og y er ", diff)
 
 ### Oppgave 1.6
 
-![oppgave 5](../bilder/oppgave_5.png)
+![oppgave 5](./bilder/oppgave_5.png)
 
 a) Forklar hva som er galt med denne koden. Hvorfor blir det feil? Rett opp koden slik at den kjører.
 
