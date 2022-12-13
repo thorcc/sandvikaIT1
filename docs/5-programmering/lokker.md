@@ -186,3 +186,87 @@ for nøkkel, verdi in fotballspiller.items():
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fotballspiller%20%3D%20%7B%0A%20%20%20%20%22fornavn%22%3A%20%22Ada%22,%0A%20%20%20%20%22etternavn%22%3A%20%22Hegerberg%22,%0A%20%20%20%20%22alder%22%3A%2026,%0A%20%20%20%20%22klubb%22%3A%20%22Lyon%22%0A%7D%0Afor%20n%C3%B8kkel,%20verdi%20in%20fotballspiller.items%28%29%3A%0A%20%20%20%20print%28n%C3%B8kkel,%20%22%3A%22,%20verdi%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 </details>
+
+
+## Oppgaver
+
+### Oppgave 3.1
+
+a) Bruk en while-løkke til å printe ut alle tallene fra 0 til og med 100
+
+b) Bruk en for-løkke til å printe ut alle tallene fra 0 til og med 100
+
+c) Bruk en for-løkke til å printe ut alle partallene fra og med 400 til og med 600
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+# a) 
+
+tall = 0
+while tall < 101:
+    print(tall)
+    tall = tall + 1 # Kan alternativt skrive tall += 1
+
+# b)
+
+for tall in range(101):
+    print(tall)
+
+# c) 
+
+for tall in range(400, 601,2):
+    print(tall)
+```
+
+</details>
+
+### Oppgave 3.2
+
+a) Forklar hva følgende kode gjør:
+
+```python
+sum = 0 
+n = 200
+
+for tall in range(1,n+1):
+    sum = sum + tall
+
+print(sum)
+```
+
+b) Lag et program som regner ut summen av de n første oddetallene. La bruker bestemme n.
+
+<details>
+<summary>Klikk for løsning</summary>
+
+a) tall er løkkas variabel, og vil starte på 1 og slutte når den er n (som her er 200). 
+
+Den øker med 1 hver gang løkka kjøres. 
+
+sum øker med tall for hver gang, altså regner vi summen av de 200 første tallene
+
+b) Kommer
+
+</details>
+
+### Oppgave 3.3
+
+Ta frem koden koden for Stein - Saks - Papir. Legg på funksjonalitet slik at programmet spør om man vil spille en gang til etter et spill. Hvis "ja" så spiller man om igjen, ellers stopper programmet.
+
+<details>
+<summary>Klikk for hint</summary>
+
+- Lag en variabel som du setter til "ja"
+- Legg en while-løkke rundt programmet som sjekker om variabelen er "ja".
+- På slutten av spillet (i løkka), oppdaterer du variabelen med en input der du spør om det skal spilles om igjen
+
+</details>
+
+<details>
+<summary>Klikk for løsning</summary>
+    
+Kommer
+
+</details>
