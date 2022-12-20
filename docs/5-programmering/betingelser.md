@@ -14,10 +14,10 @@ description: Betigelser legger til rette for logikk i programmering.
 Livet består av mange valg. Det kan være de små valgene (Hva skal jeg ha på meg i dag?), eller større valg (Hva skal jeg studere?). Hva som skjer videre avhenger nok mye av valgene du stadig gjør. Dersom vi skal kunne programmere mer avansert, må vi også kunne gi datamaskingen muligheten til å kjøre forskjellige instrukser avhengig av ulike valg. Frem til nå har nemlig koden vår kjørt linje for linje. En betingelse derimot, består av et eller flere utsagn med tilhørende kode. Koden som hører vil bare kjøre dersom utsagnet stemmer (returner `True`). La oss legge til en betingelse på koden fra forrige side (der vi regner ut alderen til brukeren):
 
 ```python
-navn = input("Hva heter du? )
+navn = input("Hva heter du? ")
 f_aar = int(input("Hvilket år er du født? "))
 
-let alder = 2021 - fødselsår;
+alder = 2022 - f_aar # Erstatt 2022 med riktig år om nødvendig
 
 if alder > 17:
     print("Hei", navn, "du er myndig!")
@@ -31,7 +31,7 @@ Når vi lager en betingelse kan vi avslutte med `else`, altså kode som skal kj�
 navn = input("Hva heter du? ")
 f_aar = int(input("Hvilket år er du født? "))
 
-let alder = 2021 - fødselsår
+alder = 2022 - f_aar
 
 if alder > 17:
     print("Hei", navn, "du er myndig!")
@@ -44,7 +44,7 @@ else:
 Vi kan teste flere utsagn samtidig. Anta at vi ønsker å sjekke om et tall ligger mellom 10 og 20. Da vil vi at tallet både skal være større enn 10, og *samtidig* være mindre enn 20. Vi kan skrive følgende:
 
 ```python
-tall = input("Hvor mange poeng fikk du?")
+tall = input("Hvor mange poeng fikk du? ")
 
 if tall > 10 and tall < 20:
     print("Dette tilsvarer middels måloppnåelse")
@@ -55,9 +55,9 @@ Her må begge betingelsene være sanne samtidig for at koden skal kjøre.
 Hvis vi skal lage ferdig koden (0 - 10 poeng er lav måloppnåelse mens 20 - 30 tilsvarer høy), så kan vi kjede sammen flere betingelser. Setningsoppbygningen foregår da som *if - elif - else*. Her starter "if" instruksjonen, elif står for "else if" der vi kan sjekke andre betingelser (vi kan ha flere av disse etter hverandre), mens "else" avslutter. Det er lettest å se i praksis:
 
 ```python
-tall = input("Hvor mange poeng fikk du?")
+tall = input("Hvor mange poeng fikk du? ")
 
-if tall >= 0 and and tall < 10:
+if tall >= 0 and tall < 10:
     print("Dette tilsvarer lav måloppnåelse")
 elif tall > 10 and tall <= 20
     print("Dette tilsvarer middels måloppnåelse")
@@ -77,7 +77,7 @@ I eksempelene ovenfor sjekket vi en matematisk ulikhet, men vi har langt større
 navn = input("Hva heter du? ")
 f_aar = int(input("Hvilket år er du født? "))
 
-let alder = 2021 - f_aar
+alder = 2022 - f_aar
 
 if alder == 18:
     print("Gratulerer", navn, "du ble/blir myndig i år!")

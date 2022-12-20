@@ -102,7 +102,7 @@ Vi kan printe ut flere variable, sammen med tekst ved å kjede sammen alt med ko
 
 ```python
 navn = input("Hva heter du? ")
-sted = input("Hvor gammel er du?" )
+sted = input("Hvor gammel er du? ")
 
 print("Hei", navn, "hyggelig å hilse på deg. Du er", alder, "år gammel")
 ```
