@@ -61,14 +61,14 @@ Hvis vi ender opp i en uendelig løkke vil PCen fryse, og vi får ikke kjørt re
 
 **Eksempel 1**:
 
-```Python
+```python
 while True:
     print("Inn i evigheten!")
 ```
 
 **Eksempel 2**:
 
-```Python
+```python
 n = 20
 while n > 0:
     print(n)
@@ -105,7 +105,7 @@ for i in range(1,11):
 
 Det er også mulig å droppe første tallet i range, slik `range(3)`, da lager range en rekke som starter på `0` og slutter før tallet mellom parantesene. Eks: `range(3)` gir rekken `0` `1` `2`
 
-```Python
+```python
 # Teller fra 0 til 9
 for i in range(10):
     print(i)
