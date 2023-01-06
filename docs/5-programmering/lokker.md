@@ -236,18 +236,29 @@ for tall in range(1,n+1):
 print(sum)
 ```
 
-b) Lag et program som regner ut summen av de n første oddetallene. La bruker bestemme n.
+b) Lag et program som regner ut summen av de `n` første oddetallene. La bruker bestemme `n`.
 
 <details>
 <summary>Klikk for løsning</summary>
 
-a) tall er løkkas variabel, og vil starte på 1 og slutte når den er n (som her er 200). 
+a) `tall` er løkkas variabel, og vil starte på 1 og slutte når den er `n` (som her er 200).
 
-Den øker med 1 hver gang løkka kjøres. 
+Den øker med 1 hver gang løkka kjøres.
 
-sum øker med tall for hver gang, altså regner vi summen av de 200 første tallene
+`sum` øker med tall for hver gang, altså regner vi summen av de 200 første tallene.
 
-b) Kommer
+b)
+```python
+n = int(input("Skriv inn et tall: "))
+n_sum = 0
+oddetall = 1
+
+for i in range(n):
+    n_sum = n_sum + oddetall
+    oddetall = oddetall + 2
+
+print("Summen av de første", n, "oddetall er:", n_sum)
+```
 
 </details>
 
