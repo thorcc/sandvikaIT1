@@ -114,7 +114,7 @@ Følgende tabell er en fin oppsummering og oversikt over de ulike operatorene vi
 
 ## Oppgaver
 
-### Oppgave 2.1
+### Oppgave 5.3.1
 
 Med variablene a = 3, b = 7 og c = "7", d = 3.  
 Hvilke utfall gir testene nedenfor? (True, False eller noe annet?)  
@@ -145,7 +145,7 @@ g) False
 
 </details>
 
-### Oppgave 2.2
+### Oppgave 5.3.2
 
 Bytt ut `# din kode her` slik at `Morna Erna` skrives ut
 
@@ -179,7 +179,7 @@ else:
 
 </details>
 
-### Oppgave 2.3
+### Oppgave 5.3.3
 
 Slottet har installert et nytt alarmsystem, som kun slipper folk som heter `Kong Harald` inn dørene. Lag et program som sjekker om en brukeren heter `Kong Harald`, og sier velkommen hvis det stemmer, ellers skal programmet si `Ha deg vekk!`.
 
@@ -211,7 +211,7 @@ else:
 
 </details>
 
-### Oppgave 2.4
+### Oppgave 5.3.4
 
 I fornøyelsesparken Titusenfryd må man være minst 100 cm høy for å kjøre berg-og-dal-banen Thundercoaster. Skriv et program med en if-setning som tester om en person er høy nok.
 
@@ -227,7 +227,7 @@ if høyde >= 100:
 
 </details>
 
-### Oppgave 2.5
+### Oppgave 5.3.5
 
 Lag en variabel `hemmelig` med et tall mellom 1 og 10. Be brukeren gjette tallet. Dersom brukeren gjetter riktig, skriver du ut "Gratulerer! Du gjettet riktig". Ved feil skriver du "Beklager, du gjettet feil". Ta vare på koden, du skal bruke den senere. 
 
@@ -253,7 +253,7 @@ else:
 
 </details>
 
-### Oppgave 2.6
+### Oppgave 5.3.6
 
 Hos friske mennesker varierer kroppstemperaturen vanligvis mellom 36.5 og 37.5 grader. Lag et program som avgjør om en persons kroppstemperatur ligger under, innenfor eller over normal kroppstemperatur. Programmet skal skrive ut passende beskjed.
 
@@ -273,7 +273,7 @@ else:
 
 </details>
 
-### Oppgave 2.7
+### Oppgave 5.3.7
 
 a) Lag et program der bruker kan skrive inn poengsummen sin for en matematikkeksamen. Programmet skal skrive ut karakteren på eksamen når vi bruker følgende skala (maks 60 poeng): 
 
@@ -314,7 +314,7 @@ else:
 
 </details>
 
-### Oppgave 2.8
+### Oppgave 5.3.8
 
 Lag en tekstbasert versjon av "Stein - Saks - Papir", der du kan spille mot datamaskinen.
 
@@ -382,7 +382,7 @@ else:
 
 </details>
 
-### Oppgave 2.9
+### Oppgave 5.3.9
 
 Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True eller False) til følgende uttrykk? 
 1.  `b`
@@ -423,7 +423,7 @@ Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True 
 
 </details>
 
-### Oppgave 2.10
+### Oppgave 5.3.10
 
 **SJAMAN-PROGRAMMET**
 
@@ -473,7 +473,7 @@ print(f"Kjære {navn}, {tilfeldig_intro}. {tilfeldig_pastand}. Dette gjelder spe
 
 </details>
 
-### Oppgave 2.11
+### Oppgave 5.3.11
 
 **SKUDDÅR**
 

@@ -67,7 +67,7 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 
 ## Oppgaver
 
-### Oppgave 4.1
+### Oppgave 5.5.1
 
 a) Lag ei liste med navn på fagene du har i år. Alle elementene i lista skal være strenger.
 
@@ -94,7 +94,7 @@ print("antall fag:", len(fag))
 
 </details>
 
-### Oppgave 4.2
+### Oppgave 5.5.2
 
 Bruk lista med fag fra oppgave 4.1
 
@@ -120,7 +120,7 @@ else:
 
 </details>
 
-### Oppgave 4.3
+### Oppgave 5.5.3
 
 a) Lag følgende liste med tall: [1,3,5,6]
 
@@ -147,7 +147,7 @@ tall.remove("fire")
 
 </details>
 
-### Oppgave 4.4
+### Oppgave 5.5.4
 
 Legg alle julekarakterene inn i ei liste (som tall!)
 
@@ -175,7 +175,7 @@ else:
 
 </details>
 
-### Oppgave 4.5
+### Oppgave 5.5.5
 
 Norske bilnummer har to (store) bokstaver og fem tall.
 
@@ -226,7 +226,7 @@ while fortsett.lower() == "ja":
 
 </details>
 
-### Oppgave 4.6
+### Oppgave 5.5.6
 
 Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
 
@@ -264,7 +264,7 @@ print(liste2d[0][0], liste2d[0][2], liste2d[1][1], liste2d[2][2])
 
 </details>
 
-### Oppgave 4.7
+### Oppgave 5.5.7
 
 Lag en ordbok med info om den du sitter ved siden av. 
 
@@ -297,7 +297,7 @@ print(person["navn"], "er", person["alder"], "år gammel.")
 
 </details>
 
-### Oppgave 4.8
+### Oppgave 5.5.8
 
 Ordboken under har navn på land som egenskaper og fargene på flagget til landene som verdier. 
 
@@ -351,7 +351,7 @@ else:
 
 </details>
 
-### Oppgave 4.9
+### Oppgave 5.5.9
 
 a) Lag en liste `bakeri`, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
 

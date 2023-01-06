@@ -190,7 +190,7 @@ for nøkkel, verdi in fotballspiller.items():
 
 ## Oppgaver
 
-### Oppgave 3.1
+### Oppgave 5.4.1
 
 a) Bruk en while-løkke til å printe ut alle tallene fra 0 til og med 100
 
@@ -222,7 +222,7 @@ for tall in range(400, 601,2):
 
 </details>
 
-### Oppgave 3.2
+### Oppgave 5.4.2
 
 a) Forklar hva følgende kode gjør:
 
@@ -262,7 +262,7 @@ print("Summen av de første", n, "oddetall er:", n_sum)
 
 </details>
 
-### Oppgave 3.3
+### Oppgave 5.4.3
 
 Ta frem koden koden for Stein - Saks - Papir. Legg på funksjonalitet slik at programmet spør om man vil spille en gang til etter et spill. Hvis "ja" så spiller man om igjen, ellers stopper programmet.
 

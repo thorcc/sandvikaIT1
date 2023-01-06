@@ -181,11 +181,11 @@ Denne funksjonen er innebygd, og alle strenger har den tilgjengelig.
 
 ## Oppgaver
 
-### Oppgave 1.1
+### Oppgave 5.2.1
 
 Print ut noen selvvalgte beskjeder. Prøv å se hva som skjer dersom du glemmer anførselstegnene.
 
-### Oppgave 1.2 
+### Oppgave 5.2.2
 
 a) Hva tror du skjer dersom vi kjører følgende kode? 
 
@@ -203,7 +203,7 @@ Koden printer ut 4. Vi kan ikke bruke anførselstegn fordi det ikke er en streng
 
 </details>
 
-### Oppgave 1.3
+### Oppgave 5.2.3
 
 Se på følgende kode:
 
@@ -224,7 +224,7 @@ Variabler gir bedre oversikt når man leser koden. Dersom man ønsker å regne a
 
 </details>
 
-### Oppgave 1.4
+### Oppgave 5.2.4
 
 Spør den du sitter nærmest om alder. Lagre både navn og alder i to forskjellige variabler. Print en tekst som skriver ut følgende tekst rikig: Hei *navn*, du er *alder* år.
 
@@ -247,7 +247,7 @@ print("Hei", navn, "du er", alder, "år")
 
 </details>
 
-### Oppgave 1.5
+### Oppgave 5.2.5
 
 Lag et program som ber om to tall. Programmet skal deretter regne ut differansen mellom de to tallene og skrive ut svaret. Her er et eksempel på hvordan en kjøring av programmet kan se ut:
 
@@ -276,7 +276,7 @@ print("Differansen mellom x og y er ", diff)
 
 </details>
 
-### Oppgave 1.6
+### Oppgave 5.2.6
 
 ![oppgave 5](./bilder/oppgave_5.png)
 
@@ -302,7 +302,7 @@ print("Gaten er", gate, ", husnummeret er", husnr, "oppgang", oppgang)
 
 </details>
 
-### Oppgave 1.7
+### Oppgave 5.2.7
 
 Du er på restaurant med venner, og på regningen er følgende informasjon:
 
@@ -355,7 +355,7 @@ print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per pers
 
 </details>
 
-### Oppgave 1.8
+### Oppgave 5.2.8
 
 Formelen for å regne Fahrenheit om til Celsius er `C = (F-32)*5/9`. Lag et program som spør brukeren om temperaturen i fahrenheit. Regn om til Celsius og skriv en beskjed som sier hvor mange grader Celsius det tilsvarer. 
 
@@ -381,9 +381,9 @@ print(f_heit, "Fahrenheit tilsvarer, celsius, "grader Celsius")
 
 </details>
 
-### Oppgave 1.9
+### Oppgave 5.2.9
 
-Endre på koden i oppgave 1.7 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer 
+Endre på koden i oppgave 5.2.7 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer.
 
 <details>
 <summary>Klikk for løsning</summary>
@@ -405,7 +405,7 @@ print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per pers
 
 </details>
 
-### Oppgave 1.10
+### Oppgave 5.2.10
 
 **HANDLETUR**
 

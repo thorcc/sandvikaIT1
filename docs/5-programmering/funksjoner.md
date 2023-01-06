@@ -57,7 +57,7 @@ print(melding) # Skriver ut Hei Jonas
 
 ## Oppgaver
 
-### Oppgave 5.1
+### Oppgave 5.6.1
 
 Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: “rgb(100,155,200)” - Tallene i rgb går fra 0 til 255
 
@@ -81,7 +81,7 @@ def tilfeldig_farge():
 
 </details>
 
-### Oppgave 5.2
+### Oppgave 5.6.2
 
 Lag en minibank med Python. Når programmet starter skal brukeren bli presentert med en meny som ser slik ut: 
 
