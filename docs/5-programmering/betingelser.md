@@ -432,6 +432,47 @@ Lag et program som skriver ut tekster med personlige spådomer. Hvilken tekst so
 Et eksempel på en spådom kan være:  
 `Kjære Trine Skei Grande, denne måneden vil du motta en gave fra en ukjent. Unngå pengespill og gatekjøkkenmat. Dette gjelder spesielt deg som er dame og født i 1969.`
 
+<details>
+<summary>Klikk for løsning</summary>
+
+Leddsetningen som kommer etter "Kjære ...", har vi bestemt å kalle intro her.
+
+Du kan gjerne bytte ut påstander/introduksjoner i de utvalgte variablene.
+Det som kommer under er bare et eksempel.
+```python
+from random import choice
+
+intro = [
+    "denne måneden vil du motta en gave fra en ukjent",
+    "dette året vil være flott",
+    "i morgen vil du møte kjæresten din",
+    "du spiste frokost i dag"
+]
+
+generelle_pastander = [
+    "Unngå pengespill og gatekjøkkenmat",
+    "Unngå å kjøre bil, det kan være farlig",
+    "Ikke ta imot penger fra ukjente",
+    "Kjøp noe som gir deg litt ro i livet"
+]
+
+navn = input("Hva er navnet ditt? ")
+f_aar = int(input("Hvor gammel er du? "))
+kjonn = input("Hva er kjønnet ditt? ")
+
+tilfeldig_intro = choice(intro)
+tilfeldig_pastand = choice(generelle_pastander)
+
+# Denne printen bruker en f-string, som gjør det mulig å gjøre en slik print oversiktlig.
+print(f"Kjære {navn}, {tilfeldig_intro}. {tilfeldig_pastand}. Dette gjelder spesielt deg som er {kjonn} og født i {2023 - f_aar}.")
+
+# Dette er en annen måte på å skrive samme print på, men denne er mindre oversiktlig.
+# Fjern kommentaren for å bruke denne.
+# print("Kjære", navn + ",", tilfeldig_intro + ".", tilfeldig_pastand + ". Dette gjelder spesielt deg som er", kjonn, "og født i", str(2023 - f_aar) + ".")
+```
+
+</details>
+
 ### Oppgave 2.11
 
 **SKUDDÅR**
@@ -439,19 +480,89 @@ Et eksempel på en spådom kan være:
 Lag et program som avgjør om et årstall er skuddår eller ikke.  
 > Tips: for å sjekke om tall er delelig på 4, bruk modulo. Eks: `tall % 4 == 0` gir True hvis tallet er delelig på 4.
 
-1. Bruk reglene som gjaldt fra 8 e.kr til 1582:
-   - Et år er et skuddår hvis årstallet er delelig på 4.
+a) Bruk reglene som gjaldt fra 8 e.kr til 1582:
+- Et år er et skuddår hvis årstallet er delelig på 4.
 
-2. Endre programmet fra `1.` slik at du bruker reglene som er litt mer korrekt enn `1.`:
-   - Et år er et skuddår hvis: 
-     - årstallet er delelig på 4, eks: 2012 var skuddår, men ikke 2014
-     - men ikke hvis årstallet er delelig på 100, eks: 1900 var ikke skuddår
-     - men likevel hvis det er også er delelig på 400, eks: 2000 var skuddår
+b) Endre programmet fra oppgave a) slik at du bruker reglene som er litt mer korrekt:
+- Et år er et skuddår hvis: 
+    - årstallet er delelig på 4, eks: 2012 var skuddår, men ikke 2014
+    - men ikke hvis årstallet er delelig på 100, eks: 1900 var ikke skuddår
+    - men likevel hvis det er også er delelig på 400, eks: 2000 var skuddår
 
-3. Lag et skuddårsprogram med komplette regler:
-   - Regler for skuddår:
-     -  før 46 f.kr: Ingen skuddår
-     -  45 f.kr – 9 f.kr: Skuddår hvis delelig på 3
-     -  8 f.kr – 7 e.kr: Ingen skuddår (pause)
-     -  8 e.kr – 1581: Skuddår hvis delelig på 4
-     -  fra 1582: delelig på 4, men ikke på 100, unntatt delelig på 400
+c) Lag et skuddårsprogram med komplette regler:
+- Regler for skuddår:
+    - før 46 f.kr: Ingen skuddår
+    - 45 f.kr – 9 f.kr: Skuddår hvis delelig på 3
+    - 8 f.kr – 7 e.kr: Ingen skuddår (pause)
+    - 8 e.kr – 1581: Skuddår hvis delelig på 4
+    - fra 1582: delelig på 4, men ikke på 100, unntatt delelig på 400
+
+<details>
+<summary>Klikk for løsning</summary>
+
+a)
+```python
+aar = int(input("Skriv inn et år: "))
+
+if aar % 4 == 0:
+    print("Året er et skuddår!")
+else:
+    print("Året er ikke et skuddår.")
+```
+
+b)
+```python
+aar = int(input("Skriv inn et år: "))
+
+if aar % 4 == 0:
+    if aar % 400 == 0:
+        print("Året er et skuddår!")
+    elif aar % 100 == 0:
+        print("Året er ikke et skuddår!")
+    else:
+        print("Året er et skuddår!")
+else:
+    print("Året er ikke et skuddår.")
+```
+
+c)
+```python
+print("Bruk negative tall for år f.Kr.")
+aar = int(input("Skriv inn et år: "))
+
+# Definer svarene slik at vi slipper å skrive disse flere ganger i koden.
+info_sant = "Året er et skuddår!"
+info_usant = "Året er ikke et skuddår."
+
+# Ingen skuddår før 46 f.Kr. og ingen skuddår mellom 8 f.Kr. - 7 e.Kr.
+if aar <= -46 or (aar >= -8 and aar <= 7):
+    print(info_usant)
+
+# Skuddår mellom 45 f.Kr. og 9 f.Kr. hvis delelig på 3.
+if aar >= -45 and aar <= -9:
+    if aar % 3 == 0:
+        print(info_sant)
+    else:
+        print(info_usant)
+
+# Skuddår mellom 8 e.Kr. og 1581 e.Kr. hvis delelig på 4.
+if aar >= 8 and aar <= 1581:
+    if aar % 4 == 0:
+        print(info_sant)
+    else:
+        print(info_usant)
+
+# Skuddår etter 1582 hvis delelig på 4, ikke hvis delelig på 100, unntatt hvis også delelig på 400.
+if aar >= 1582:
+    if aar % 4 == 0:
+        if aar % 400 == 0:
+            print(info_sant)
+        elif aar % 100 == 0:
+            print(info_usant)
+        else:
+            print(info_sant)
+    else:
+        print(info_usant)
+```
+
+</details>
