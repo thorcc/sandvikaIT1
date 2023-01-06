@@ -130,6 +130,54 @@ På linje 2 i koden ser du at vi har lagt `int()` rundt input-feltet. Det er en 
 
 *Her ser du en tabell ulike datatyper og hvordan vi skriver de.*
 
+## Nyttig bonus: Formatering av strenger
+
+Formatering av strenger går ut på å sette inn verdier inn i strenger, eller å sette sammen flere strenger (*konkatenering*).
+Dette blir ofte brukt for å vise informasjon, feilmeldinger, eller annet viktig brukeren bør vite.
+
+Et typisk eksempel kan være å printe ut informasjon om brukeren. Man lærer ofte å gjøre det slik:
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
+kommentar = "Du er veldig kul"
+
+print("Hei", navn + ", du er", alder, "år gammel.", kommentar + "!")
+```
+
+Legg merke til at vi bytter mellom å bruke `,` og `+`, fordi komma vil sette inn et mellomrom i teksten som blir skrevet ut, mens pluss vil ikke gjøre dette.
+Denne måten å sette sammen strenger på kan bli veldig vanskelig å holde styr på etter hvert, og derfor har vi flere måter å formatere strenger på i Python.
+
+:::note
+
+Hvilken måte du velger å gjøre det på, er opp til deg - likevel er f-strings generelt sett anbefalt.
+
+:::
+
+### Anbefalt: Formatering med f-strings
+
+En f-string er nesten identisk sammenlignet med en vanlig strenge, men den har en vesentlig forskjell - den lar oss sette inn variabler og annet info veldig enkelt.
+
+For å lage en f-string, bruk bokstaven `f` rett før strengen, og sett inn variablene du ønsker slik:
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
+kommentar = "Du er veldig kul"
+
+print(f"Hei {navn}, du er {alder} år gammel. {kommentar}!")
+```
+
+### Formatering med format-funksjonen
+
+Et annet alterativ for å formatere strengene våre er å bruke `format`-funksjonen slik:
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
+kommentar = "Du er veldig kul"
+
+print("Hei {}, du er {} år gammel. {}!".format(navn, alder, kommentar))
+```
+
+Denne funksjonen er innebygd, og alle strenger har den tilgjengelig.
 
 ## Oppgaver
 
