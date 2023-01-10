@@ -96,7 +96,7 @@ print("antall fag:", len(fag))
 
 ### Oppgave 5.5.2
 
-Bruk lista med fag fra oppgave 4.1
+Bruk lista med fag fra oppgave 5.5.1
 
 Lag en input der brukeren kan skrive inn et fag
 
