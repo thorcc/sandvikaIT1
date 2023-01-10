@@ -281,3 +281,25 @@ Ta frem koden koden for Stein - Saks - Papir. Legg på funksjonalitet slik at pr
 Kommer
 
 </details>
+
+### Oppgave 5.4.4
+
+Lag din egen Chatbot. 
+
+**Eksempel på bruk av Chatbot** 
+`````
+Hei jeg er chatbotten Thorsen 2000, hva lurer du på?
+> Hvor mye koster en bitcoin?
+1 Bitcoin koster 171 061 kr.
+Lurer du på noe annet?
+> Hvordan er været i Bergen?
+Det er 6 grader og regn
+Lurer du på noe annet?
+> Hva er klokka?
+Klokka er 09:39 
+> Hva er hovedstaden i Argentina?
+Det vet jeg ikke.
+Lurer du på noe annet?
+> Nei
+Den er grei. Ha en fin dag.
+`````
