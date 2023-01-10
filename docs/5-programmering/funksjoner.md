@@ -24,7 +24,16 @@ areal = areal_trekant(10, 5) # Funksjonskall
 print("Arealet av trekanten er", areal)
 ```
 
-> Merk: Funksjoner og prosedyrer trenger ikke å ha parametere, da defineres de med en tom parentes, slik `def funksjonsnavn():`
+:::note
+
+Funksjoner og prosedyrer trenger ikke å ha parametere, da defineres de med en tom parentes, slik:
+
+```python
+def funksjonsnavn():
+    # kode her...
+```
+
+:::
 
 ## Funksjoner vs. prosedyrer
 
@@ -48,18 +57,31 @@ print(melding) # Skriver ut Hei Jonas
 
 ## Oppgaver
 
-### Oppgave 5.1
+### Oppgave 5.6.1
 
 Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: “rgb(100,155,200)” - Tallene i rgb går fra 0 til 255
 
 <details>
 <summary>Klikk for løsning</summary>
-    
-Kommer
+
+```python
+from random import randint
+
+def tilfeldig_farge():
+    farge_liste = []
+
+    for i in range(3):
+        tilfeldig_tall = randint(0, 255)
+        farge_liste.append(tilfeldig_tall)
+
+    farge = f"rgb({farge_liste[0]}, {farge_liste[1]}, {farge_liste[2]})"
+
+    return farge
+```
 
 </details>
 
-### Oppgave 5.2
+### Oppgave 5.6.2
 
 Lag en minibank med Python. Når programmet starter skal brukeren bli presentert med en meny som ser slik ut: 
 
@@ -81,9 +103,7 @@ I: Sette inn penger
 ```
 
 <details>
-    <summary>Klikk for løsning</summary>
-
-Løsning:
+<summary>Klikk for løsning</summary>
 
 Denne kan gjøres på mange forskjellige måter, dette er bare et forslag:
 

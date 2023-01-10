@@ -130,14 +130,62 @@ På linje 2 i koden ser du at vi har lagt `int()` rundt input-feltet. Det er en 
 
 *Her ser du en tabell ulike datatyper og hvordan vi skriver de.*
 
+## Nyttig bonus: Formatering av strenger
+
+Formatering av strenger går ut på å sette inn verdier inn i strenger, eller å sette sammen flere strenger (*konkatenering*).
+Dette blir ofte brukt for å vise informasjon, feilmeldinger, eller annet viktig brukeren bør vite.
+
+Et typisk eksempel kan være å printe ut informasjon om brukeren. Man lærer ofte å gjøre det slik:
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
+kommentar = "Du er veldig kul"
+
+print("Hei", navn + ", du er", alder, "år gammel.", kommentar + "!")
+```
+
+Legg merke til at vi bytter mellom å bruke `,` og `+`, fordi komma vil sette inn et mellomrom i teksten som blir skrevet ut, mens pluss vil ikke gjøre dette.
+Denne måten å sette sammen strenger på kan bli veldig vanskelig å holde styr på etter hvert, og derfor har vi flere måter å formatere strenger på i Python.
+
+:::note
+
+Hvilken måte du velger å gjøre det på, er opp til deg - likevel er f-strings generelt sett anbefalt.
+
+:::
+
+### Anbefalt: Formatering med f-strings
+
+En f-string er nesten identisk sammenlignet med en vanlig strenge, men den har en vesentlig forskjell - den lar oss sette inn variabler og annet info veldig enkelt.
+
+For å lage en f-string, bruk bokstaven `f` rett før strengen, og sett inn variablene du ønsker slik:
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
+kommentar = "Du er veldig kul"
+
+print(f"Hei {navn}, du er {alder} år gammel. {kommentar}!")
+```
+
+### Formatering med format-funksjonen
+
+Et annet alterativ for å formatere strengene våre er å bruke `format`-funksjonen slik:
+```python
+navn = input("Hva heter du? ")
+alder = input("Hvor gammel er du? ")
+kommentar = "Du er veldig kul"
+
+print("Hei {}, du er {} år gammel. {}!".format(navn, alder, kommentar))
+```
+
+Denne funksjonen er innebygd, og alle strenger har den tilgjengelig.
 
 ## Oppgaver
 
-### Oppgave 1.1
+### Oppgave 5.2.1
 
 Print ut noen selvvalgte beskjeder. Prøv å se hva som skjer dersom du glemmer anførselstegnene.
 
-### Oppgave 1.2 
+### Oppgave 5.2.2
 
 a) Hva tror du skjer dersom vi kjører følgende kode? 
 
@@ -155,7 +203,7 @@ Koden printer ut 4. Vi kan ikke bruke anførselstegn fordi det ikke er en streng
 
 </details>
 
-### Oppgave 1.3
+### Oppgave 5.2.3
 
 Se på følgende kode:
 
@@ -176,7 +224,7 @@ Variabler gir bedre oversikt når man leser koden. Dersom man ønsker å regne a
 
 </details>
 
-### Oppgave 1.4
+### Oppgave 5.2.4
 
 Spør den du sitter nærmest om alder. Lagre både navn og alder i to forskjellige variabler. Print en tekst som skriver ut følgende tekst rikig: Hei *navn*, du er *alder* år.
 
@@ -199,7 +247,7 @@ print("Hei", navn, "du er", alder, "år")
 
 </details>
 
-### Oppgave 1.5
+### Oppgave 5.2.5
 
 Lag et program som ber om to tall. Programmet skal deretter regne ut differansen mellom de to tallene og skrive ut svaret. Her er et eksempel på hvordan en kjøring av programmet kan se ut:
 
@@ -228,7 +276,7 @@ print("Differansen mellom x og y er ", diff)
 
 </details>
 
-### Oppgave 1.6
+### Oppgave 5.2.6
 
 ![oppgave 5](./bilder/oppgave_5.png)
 
@@ -254,7 +302,7 @@ print("Gaten er", gate, ", husnummeret er", husnr, "oppgang", oppgang)
 
 </details>
 
-### Oppgave 1.7
+### Oppgave 5.2.7
 
 Du er på restaurant med venner, og på regningen er følgende informasjon:
 
@@ -307,7 +355,7 @@ print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per pers
 
 </details>
 
-### Oppgave 1.8
+### Oppgave 5.2.8
 
 Formelen for å regne Fahrenheit om til Celsius er `C = (F-32)*5/9`. Lag et program som spør brukeren om temperaturen i fahrenheit. Regn om til Celsius og skriv en beskjed som sier hvor mange grader Celsius det tilsvarer. 
 
@@ -333,9 +381,9 @@ print(f_heit, "Fahrenheit tilsvarer, celsius, "grader Celsius")
 
 </details>
 
-### Oppgave 1.9
+### Oppgave 5.2.9
 
-Endre på koden i oppgave 1.7 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer 
+Endre på koden i oppgave 5.2.7 slik at alle variablene skrives inn som input, det vil si at vi selv kan velge totalpris, rabatt, tips og antall personer.
 
 <details>
 <summary>Klikk for løsning</summary>
@@ -357,7 +405,7 @@ print("Pris etter rabatt og tips er", totalt, "det blir", per_pers, "kr per pers
 
 </details>
 
-### Oppgave 1.10
+### Oppgave 5.2.10
 
 **HANDLETUR**
 

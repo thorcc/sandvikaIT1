@@ -67,7 +67,7 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 
 ## Oppgaver
 
-### Oppgave 4.1
+### Oppgave 5.5.1
 
 a) Lag ei liste med navn på fagene du har i år. Alle elementene i lista skal være strenger.
 
@@ -94,7 +94,7 @@ print("antall fag:", len(fag))
 
 </details>
 
-### Oppgave 4.2
+### Oppgave 5.5.2
 
 Bruk lista med fag fra oppgave 4.1
 
@@ -120,7 +120,7 @@ else:
 
 </details>
 
-### Oppgave 4.3
+### Oppgave 5.5.3
 
 a) Lag følgende liste med tall: [1,3,5,6]
 
@@ -147,7 +147,7 @@ tall.remove("fire")
 
 </details>
 
-### Oppgave 4.4
+### Oppgave 5.5.4
 
 Legg alle julekarakterene inn i ei liste (som tall!)
 
@@ -175,7 +175,7 @@ else:
 
 </details>
 
-### Oppgave 4.5
+### Oppgave 5.5.5
 
 Norske bilnummer har to (store) bokstaver og fem tall.
 
@@ -226,7 +226,7 @@ while fortsett.lower() == "ja":
 
 </details>
 
-### Oppgave 4.6
+### Oppgave 5.5.6
 
 Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
 
@@ -264,20 +264,40 @@ print(liste2d[0][0], liste2d[0][2], liste2d[1][1], liste2d[2][2])
 
 </details>
 
-### Oppgave 4.7
+### Oppgave 5.5.7
 
 Lag en ordbok med info om den du sitter ved siden av. 
 
 Print navn og alder fra ordboken. 
 
 <details>
-<summary>Klikk for løsning</summary>
-    
-Kommer
+<summary>Klikk for hint</summary>
+
+Koden under lager en ordbok med navnet `bil` og egenskapene `merke` og `farge`.
+```python
+bil = {
+    "merke": "Ferrari",
+    "farge": "Rød"
+}
+```
 
 </details>
 
-### Oppgave 4.8
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+person = {
+    "navn": "Ola Nordmann",
+    "alder": 22
+}
+
+print(person["navn"], "er", person["alder"], "år gammel.")
+```
+
+</details>
+
+### Oppgave 5.5.8
 
 Ordboken under har navn på land som egenskaper og fargene på flagget til landene som verdier. 
 
@@ -293,42 +313,105 @@ flagg = {
 }
 ```
 
-OBS! Merk at vi kan skrive ordbøker og lister over flere linjer, så lenge vi passer på komma og avsluttende “]” eller “}”, som i flagg over. 
+:::caution
 
-Bruk flagg["egenskap"], og legg til et nytt land i ordboken 
+Merk at vi kan skrive ordbøker og lister over flere linjer, så lenge vi passer på komma og avsluttende `]` eller `}`, som i flagg over. 
 
-Legg til kode slik at brukeren kan skrive inn et land, og så printes fargene til landets flagg. Hvis brukeren skriver inn et land som ikke eksisterer i ordboken, skal programmet gi en feilmelding som forteller at vi ikke har lagret info om dette landet. 
+:::
+
+Bruk `flagg["egenskap"]`, og legg til et nytt land i ordboken.
+
+Legg til kode slik at brukeren kan skrive inn et land, og så printes fargene til landets flagg. Hvis brukeren skriver inn et land som ikke eksisterer i ordboken, skal programmet gi en feilmelding som forteller at vi ikke har lagret info om dette landet.
 
 <details>
 <summary>Klikk for løsning</summary>
-    
-Kommer
+
+```python
+flagg = { 
+    "norge": ["rødt", "hvitt", "blått"], 
+    "sverige": ["blått", "gult"], 
+    "danmark": ["rødt", "hvitt"], 
+    "finland": ["hvitt", "blått"], 
+    "japan": ["rødt", "hvitt"], 
+    "gabon": ["grønt", "gult", "blått"], 
+    "chile": ["blått", "hvitt", "rødt"] 
+}
+
+flagg["polen"] = ["hvitt", "rødt"]
+
+land = input("Skriv inn et land du tenker på: ").lower()
+
+if flagg[land]:
+    # Definerer en variabel som setter sammen alle fargene og separerer disse med komma.
+    farger = ", ".join(flagg[land])
+    print(f"Landet har fargene {farger}.")
+else:
+    print("Vi har dessverre ikke fargene til flagget til dette landet!")
+```
 
 </details>
 
-### Oppgave 4.9
+### Oppgave 5.5.9
 
-Lag en liste `bakeri`, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
+a) Lag en liste `bakeri`, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
 
-- Croissant 25 
-- Grovbrød 40 
-- Kneipp 20 
-- Rosinbolle 20 
-- Baguette 10 
+- Croissant: 25 kr
+- Grovbrød: 40 kr
+- Kneipp: 20 kr
+- Rosinbolle: 20 kr
+- Baguette: 10 kr
 
-Print innholdet i hele `bakeri`-et som en meny med en linje per vare, med navn og pris 
+Print innholdet i hele `bakeri`-et som en meny med en linje per vare, med navn og pris.
 
-Tips: for-løkke 
+> Tips: bruk en for-løkke
 
-Øk prisen på croissant med 10, uten å endre tidligere kode. 
+b) Øk prisen på croissant med 10 kr, uten å endre hva du skrev i din originale liste.
 
-Skriv ut listen med innhold på nytt, og sjekk at croissantens pris er endret riktig. 
+Skriv ut listen med innhold på nytt, og sjekk at croissantens pris er endret riktig.
 
-Lag en funksjon meny(liste) som du kan kalle på for å utføre oppgave 1 og 4, og endre programmet ditt til å kjøre denne funksjonen i stedet. 
+c) Lag en funksjon meny(liste) som du kan kalle på for å utføre oppgave 1 og 4, og endre programmet ditt til å kjøre denne funksjonen i stedet.
 
 <details>
 <summary>Klikk for løsning</summary>
-    
-Kommer
+
+a)
+```python
+meny = [
+    {
+        "navn": "Croissant",
+        "pris": 25
+    },
+    {
+        "navn": "Grovbrød",
+        "pris": 40
+    },
+    {
+        "navn": "Kneipp",
+        "pris": 20
+    },
+    {
+        "navn": "Rosinbolle",
+        "pris": 20
+    },
+    {
+        "navn": "Baguette",
+        "pris": 10
+    }
+]
+
+for produkt in meny:
+    print(f"{produkt['navn']} koster {produkt['pris']} kr.")
+```
+
+b)
+Legg til følgende linje av kode før for-løkken i oppgave a).
+
+```python
+meny[0]["pris"] = 35
+```
+
+c)
+
+Kommer...
 
 </details>

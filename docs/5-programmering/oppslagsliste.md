@@ -250,7 +250,16 @@ areal = areal_trekant(10, 5) # Funksjonskall
 print("Arealet av trekanten er", areal)
 ```
 
-Merk: Funksjoner og prosedyrer trenger ikke å ha parametere, da defineres de med en tom parentes, slik `def funksjonsnavn():`
+:::note
+
+Funksjoner og prosedyrer trenger ikke å ha parametere, da defineres de med en tom parentes, slik:
+
+```python
+def funksjonsnavn():
+    # kode her...
+```
+
+:::
 
 ### Funksjoner vs. prosedyrer
 
