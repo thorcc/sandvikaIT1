@@ -76,9 +76,124 @@ melding = velkomstmelding("Jonas") # melding får verdien "Hei Jonas"
 print(melding) # Skriver ut Hei Jonas
 ```
 
-## Oppgaver
+## Oppgaver 5.6.1
 
-### Oppgave 5.6.1
+a) Lag en prosedyre `kalkulator()` som ber brukeren om å skrive inn to tall, og deretter printer summen av tallene.  
+b) Utvid prosedyren slik at den spør brukeren om hvilken regneoperasjon (+,-,*,/) den skal utføre.
+c) **Frivillig:** Hvis du lagde chatbotten i kapittel 4, legg til kalkulatoren som et valg i den. 
+
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+def kalkulator():
+    tall1 = float(input("Første tall: "))
+    operasjon = input("Operasjon: ")
+    tall2 = float(input("Andre tall: "))
+    
+
+    if operasjon == "+":
+        resultat = tall1 + tall2
+    elif operasjon == "-":
+        resultat = tall1 - tall2
+    elif operasjon == "*":
+        resultat = tall1 * tall2
+    elif operasjon == "/":
+        resultat = tall1 / tall2
+
+    print(f"{tall1} {operasjon} {tall2} = {resultat}")
+
+kalkulator()
+```
+
+</details>
+
+
+### Oppgave 5.6.2
+
+Lag en funksjon `gjennomsnitt(talliste)` som tar inn en liste av tall og returnerer gjennomsnittet av tallene i listen.  
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+def gjennomsnitt(talliste):
+    sum_tall = sum(talliste)
+    antall_tall = len(talliste)
+    return sum_tall / antall_tall
+
+talliste = [1,2,3,4,5]
+resultat = gjennomsnitt(talliste)
+print(resultat)
+```
+
+</details>
+
+### Oppgave 5.6.3
+
+Lag en funksjon `sjekk_partall(tall)` som tar inn et tall og returnerer `true` om det er et partall og `false` hvis det er et oddetall  
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+def sjekk_partall(tall):
+    if tall % 2 == 0:
+        return True
+    else:
+        return False
+
+result = sjekk_partall(4)
+print(result) # Output : True
+
+result = sjekk_partall(5)
+print(result) # Output : False
+```
+
+Alternativ løsning:
+
+```python
+def sjekk_partall(tall):
+    return tall % 2 == 0
+
+result = sjekk_partall(4)
+print(result) # Output : True
+
+result = sjekk_partall(5)
+print(result) # Output : False
+```
+
+</details>
+
+
+### Oppgave 5.6.4
+
+Lag en funksjon `antall_vokaler(tekst)` som tar inn en tekststreng og returnerer antall vokaler i teksten 
+
+Lag en prosedyre som ber brukeren om å skrive inn et ord, også printer en beskjed om ordet er et palindrom eller ikke  
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+def antall_vokaler(tekst):
+    vokaler = "aeiouyæøå"
+    vokal_teller = 0
+    for bokstav in tekst:
+        if bokstav.lower() in vokaler:
+            vokal_teller += 1
+    return vokal_teller
+
+resultat = antall_vokaler("hei på deg")
+print(resultat) # Output : 4
+```
+
+</details>
+
+
+
+### Oppgave 5.6.5
 
 Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: “rgb(100,155,200)” - Tallene i rgb går fra 0 til 255
 
@@ -102,7 +217,7 @@ def tilfeldig_farge():
 
 </details>
 
-### Oppgave 5.6.2
+### Oppgave 5.6.6
 
 Lag en minibank med Python. Når programmet starter skal brukeren bli presentert med en meny som ser slik ut: 
 
