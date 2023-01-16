@@ -87,6 +87,9 @@ melding = velkomstmelding("Jonas") # melding får verdien "Hei Jonas"
 print(melding) # Skriver ut Hei Jonas
 ```
 
+*Hvilket av eksemplene ovenfor er en prosedyre og hvilket er en funksjon?*
+
+
 ## Oppgaver
 
 ### Oppgave 5.6.1
