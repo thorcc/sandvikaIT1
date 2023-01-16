@@ -92,6 +92,7 @@ print(melding) # Skriver ut Hei Jonas
 ### Oppgave 5.6.1
 
 a) Lag en funksjon som tar inn to verdier, der disse er katetene i en rettvinklet trekant. Funksjonen skal regne ut lengde til hypotenusen og returnere denne.
+
 b) Endre på funksjonen slik brukeren kan bestemme om det er hypotenus eller en katet som skal regnes ut. Programmet skal returnere riktig svar avhengig av brukerens ønsker.
 
 <details>
@@ -105,8 +106,10 @@ Kommer senere
 
 ### Oppgave 5.6.2
 
-a) Lag en prosedyre `kalkulator()` som ber brukeren om å skrive inn to tall, og deretter printer summen av tallene.  
+a) Lag en prosedyre `kalkulator()` som ber brukeren om å skrive inn to tall, og deretter printer summen av tallene.
+
 b) Utvid prosedyren slik at den spør brukeren om hvilken regneoperasjon (+,-,*,/) den skal utføre.
+
 c) **Frivillig:** Hvis du lagde chatbotten i kapittel 4, legg til kalkulatoren som et valg i den. 
 
 
