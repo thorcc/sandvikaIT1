@@ -28,14 +28,14 @@ Generelt kan man si at prosedyrer er funksjoner som ikke returnerer en egen verd
 ## Funksjoner
 
 
-Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet. La oss se nærmere på hvordan vi setter opp en funksjon. Et viktig moment å forstå da er at når maskinen kjører programmet så *vil ikke koden inne i funksjonen kjøre!* Den må kalles opp senere i programmet (men kan hentes frem flere ganger). Vi definerer en enkel funksjon ved å skrive følgende `def valgfritt_navn():`. Her bruker vi kodeordet def (definere), velger så et navn for funksjonen og så legger vi til parenteser. Inne i parentesene kan vi legge inn argument noe vi skal se eksempler på etterpå. Som vanlig brukes kolon for å starte funksjonen og all kode som skal være med i linjene nedenfor må ha innrykk.
+Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet. La oss se nærmere på hvordan vi setter opp en funksjon. Et viktig moment å forstå da er at når maskinen kjører programmet så *vil ikke koden inne i funksjonen kjøre!* Den må kalles opp senere i programmet (men kan hentes frem flere ganger). Vi definerer en enkel funksjon ved å skrive følgende `def valgfritt_navn():`. Inne i parentesene kan vi legge inn argument, noe vi skal se eksempler på etterpå. Som vanlig brukes kolon for å starte funksjonen og all kode som skal være med i linjene nedenfor må ha innrykk.
 
 
 Eks:
 
 ```python
 def hilsen():
-    print("Hei alle sammen, dette er en funksjon. Strengt tatt en prosedyre siden det ikke returneres noe ut.")
+    print("Hei alle sammen, dette er en funksjon. Strengt tatt en prosedyre siden det ikke returneres noe.")
 ```
 
 Funksjoner og prosedyrer må nå *kalles opp* for at de skal kjøre, det gjøres med `funksjonsnavn()`. 
