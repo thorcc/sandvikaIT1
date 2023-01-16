@@ -21,7 +21,7 @@ Subrutiner er at noen gitte linjer i et program skal kunne kalles og brukes andr
 
 :::info
 
-Generelt kan man si at prosedyrer er funksjoner som ikke returnerer en egen verdi, og metoder er en subrutine som må kobles til et objekt. Objekter og metoder er en stor del av IT2, faktisk handler resten av programmeringen i IT1 og IT2 bare om å strukturere kode.
+Generelt kan man si at prosedyrer er funksjoner som ikke returnerer en egen verdi, mens metoder er en funksjon som må kobles til et objekt. Objekter og metoder er en stor del av IT2. Resten av programmeringen i IT1 og IT2 handler faktisk bare om å strukturere kode.
 
 :::
 
