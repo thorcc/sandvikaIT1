@@ -5,10 +5,31 @@ sidebar_label: 5.6 Funksjoner
 description: Del opp og gjenbruk kode enklere med funksjoner.
 ---
 
+# Behovet for struktur i koden
+
+Med verktøyene vi har lært til nå i IT1 – variabler, løkker og if-setninger – kan vi faktisk programmere *alt*.
+Vi kan lage alle dataspill du noen gang har spilt, alle nettsider du noen gang har besøkt, til og med alle chatbotter du noen gang har brukt for å jukse på innleveringer i norsk.
+Men hvis vi faktisk skal lage noen av disse tingene, kun med verktøyene vi har lært til nå i IT1, kommer det til å bli utrolig krevende, og grunnen til at det blir krevende er mangelen på struktur.
+
+Frem til nå har vi laget programmer som for det meste kjører kode linje for linje, ovenfra og nedover.
+Med løkker klarer vi å få datamaskinen til å gjenta linjer med kode, og med if-setninger klarer vi å få datamaskinen til å hoppe over linjer med kode, men datamaskinen kjører fortsatt koden ovenfra og nedover.
+De aller første digitale datamaskinene som ble laget på 40-tallet hadde bare de verktøyene vi har lært til nå.
+Og når programmene er relativt små, går det som regel greit, men når programmene blir større og koden lengre, blir det fort krevende å jobbe med koden.
+
+For å enklere strukturere koden i større programmer ble det derfor ganske raskt introdusert et konsept i programmering kalt *subrutiner*.
+Subrutiner er at noen gitte linjer i et program skal kunne kalles fra andre steder i programmet.
+I IT1 skal vi forholde oss til *funksjoner* og *prosedyrer* som er to typer subrutiner.
+
+:::info
+
+Resten av programmeringen i IT1 og IT2 handler faktisk bare om å strukturere kode.
+
+:::
+
 # Funksjoner og prosedyrer
 
 Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet.
-De defineres med `def valgfritt_navn(parameter1, parameter2, ...)`, og all etterfølgende kode som har innrykk er med i funksjonen.
+De defineres med `def valgfritt_navn(parameter1, parameter2, ...):`, og all etterfølgende kode som har innrykk er med i funksjonen.
 
 Eks:
 
