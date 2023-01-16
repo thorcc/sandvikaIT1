@@ -57,7 +57,7 @@ def areal_trekant(g_linje, h):
 
 ```
 
-Da vi lagde denne funksjonen "lovet" vi at informasjon om grunnlinje og høyde skal følge med. Hvis ikke vil ikke funksjonskallet fungere:
+Vi har nå "lovet" at informasjon om grunnlinje og høyde skal følge med i funksjonskallet. Argumentene `g_linje` og `h` vil da fungere som variable med verdiene vi sender i funksjonskallet. Uten disse vil ikke funksjonskallet fungere:
 
 ```python
 areal = areal_trekant(10,5) # Funksjonskallet. Verdien som returneres lagres i variabelen areal
