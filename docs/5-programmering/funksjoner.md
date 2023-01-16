@@ -19,7 +19,7 @@ Og når programmene er relativt små, går det som regel greit, men når program
 For å enklere strukturere koden i større programmer ble det derfor ganske raskt introdusert et konsept i programmering kalt *subrutiner*.
 Subrutiner er at noen gitte linjer i et program skal kunne kalles og brukes andre steder i programmet. Når man jobber med slike subrutiner vil man ofte støte på noen ulike begrep, nemlig *funksjoner*, *prosedyrer* og *metoder*. Alle disse begrepene er mer eller mindre er varianter av det samme, og vi skal jobbe med de to førstnevnte her. 
 
-:::For de interesserte:
+:::info:
 
 Generelt kan man si at prosedyrer er funksjoner som ikke returnerer en egen verdi, og metoder er en subrutine som må kobles til et objekt. Objekter og metoder er en stor del av IT2, faktisk handler resten av programmeringen i IT1 og IT2 bare om å strukturere kode.
 
