@@ -17,44 +17,55 @@ De aller første digitale datamaskinene som ble laget på 40-tallet hadde bare d
 Og når programmene er relativt små, går det som regel greit, men når programmene blir større og koden lengre, blir det fort krevende å jobbe med koden.
 
 For å enklere strukturere koden i større programmer ble det derfor ganske raskt introdusert et konsept i programmering kalt *subrutiner*.
-Subrutiner er at noen gitte linjer i et program skal kunne kalles fra andre steder i programmet.
-I IT1 skal vi forholde oss til *funksjoner* og *prosedyrer* som er to typer subrutiner.
+Subrutiner er at noen gitte linjer i et program skal kunne kalles og brukes andre steder i programmet. Når man jobber med slike subrutiner vil man ofte støte på noen ulike begrep, nemlig *funksjoner*, *prosedyrer* og *metoder*. Alle disse begrepene er mer eller mindre er varianter av det samme, og vi skal jobbe med de to førstnevnte her. 
 
-:::info
+:::For de interesserte:
 
-Resten av programmeringen i IT1 og IT2 handler faktisk bare om å strukturere kode.
+Generelt kan man si at prosedyrer er funksjoner som ikke returnerer en egen verdi, og metoder er en subrutine som må kobles til et objekt. Objekter og metoder er en stor del av IT2, faktisk handler resten av programmeringen i IT1 og IT2 bare om å strukturere kode.
 
 :::
 
-# Funksjoner og prosedyrer
+# Funksjoner
 
-Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet.
-De defineres med `def valgfritt_navn(parameter1, parameter2, ...):`, og all etterfølgende kode som har innrykk er med i funksjonen.
+
+Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet. La oss se nærmere på hvordan vi setter opp en funksjon. Et viktig moment å forstå da er at når maskinen kjører programmet så *vil ikke koden inne i funksjonen kjøre!* Den må kalles opp senere i programmet (men kan hentes frem flere ganger). Vi definerer en enkel funksjon ved å skrive følgende `def valgfritt_navn():`. Her bruker vi kodeordet def (definere), velger så et navn for funksjonen og så legger vi til parenteser. Inne i parentesene kan vi legge inn argument noe vi skal se eksempler på etterpå. Som vanlig brukes kolon for å starte funksjonen og all kode som skal være med i linjene nedenfor må ha innrykk.
+
 
 Eks:
 
 ```python
-def areal_trekant(grunnlinje, høyde):
-    return grunnlinje * høyde / 2
+def hilsen():
+    print("Hei alle sammen, dette er en funksjon. Strengt tatt en prosedyre siden det ikke returneres noe ut.")
 ```
 
-Funksjoner og prosedyrer må *kalles opp* for at de skal kjøre, det gjøres med `funksjonsnavn(parameter1, parameter2, ...)`
+Funksjoner og prosedyrer må nå *kalles opp* for at de skal kjøre, det gjøres med `funksjonsnavn()`. 
 
 ```python
-areal = areal_trekant(10, 5) # Funksjonskall
+hilsen()
+```
+
+Her er det spesifikt parentesene som gjør at datamaskinen gjenkjenner dette som en funksjon, i stedet for en variabel. Når funksjonen kalles, vil koden inne i funksjonen kjøres. Legg merke til at du har kalt opp mange funksjoner andre har laget allerede. Faktisk er den første instruksjonen du lærte i kurset, nemlig print("..."), en funksjon! Den skrives jo med parenteser.
+
+## Parametere/Argument
+
+Når vi skal lage funksjoner har vi ofte behov for å sende med litt informasjon. Tenk deg for eksempel at du skal lage en funksjon som skal regne arealet av en trekant. Det ville vært rimelig klønete å lage en egen funksjon for alle forskjellige trekanter der ute. Vi lager i stedet en der vi sender med grunnlinje og høyde og regner ut arealet basert på informasjonen vi får:
+
+```python
+def areal_trekant(g_linje, h):
+    areal = g_linje*h/2
+    return areal
+
+```
+
+Da vi lagde denne funksjonen "lovet" vi at informasjon om grunnlinje og høyde skal følge med. Hvis ikke vil ikke funksjonskallet fungere:
+
+```python
+areal = areal_trekant(10,5) # Funksjonskallet. Verdien som returneres lagres i variabelen areal
 print("Arealet av trekanten er", areal)
 ```
 
-:::note
+*Ved å legge inn nye tall i funksjonskallet vil resultatet endre seg!*
 
-Funksjoner og prosedyrer trenger ikke å ha parametere, da defineres de med en tom parentes, slik:
-
-```python
-def funksjonsnavn():
-    # kode her...
-```
-
-:::
 
 ## Funksjoner vs. prosedyrer
 
@@ -76,7 +87,23 @@ melding = velkomstmelding("Jonas") # melding får verdien "Hei Jonas"
 print(melding) # Skriver ut Hei Jonas
 ```
 
-## Oppgaver 5.6.1
+# Oppgaver
+
+## Oppgave 5.6.1
+
+a) Lag en funksjon som tar inn to verdier, der disse er katetene i en rettvinklet trekant. Funksjonen skal regne ut lengde til hypotenusen og returnere denne.
+b) Endre på funksjonen slik brukeren kan bestemme om det er hypotenus eller en katet som skal regnes ut. Programmet skal returnere riktig svar avhengig av brukerens ønsker.
+
+<details>
+<summary>Klikk for løsning</summary>
+
+Kommer senere
+
+</details>
+
+
+
+## Oppgave 5.6.2
 
 a) Lag en prosedyre `kalkulator()` som ber brukeren om å skrive inn to tall, og deretter printer summen av tallene.  
 b) Utvid prosedyren slik at den spør brukeren om hvilken regneoperasjon (+,-,*,/) den skal utføre.
@@ -110,7 +137,7 @@ kalkulator()
 </details>
 
 
-### Oppgave 5.6.2
+### Oppgave 5.6.3
 
 Lag en funksjon `gjennomsnitt(talliste)` som tar inn en liste av tall og returnerer gjennomsnittet av tallene i listen.  
 
@@ -130,7 +157,7 @@ print(resultat)
 
 </details>
 
-### Oppgave 5.6.3
+### Oppgave 5.6.4
 
 Lag en funksjon `sjekk_partall(tall)` som tar inn et tall og returnerer `true` om det er et partall og `false` hvis det er et oddetall  
 
@@ -167,7 +194,7 @@ print(result) # Output : False
 </details>
 
 
-### Oppgave 5.6.4
+### Oppgave 5.6.5
 
 Lag en funksjon `antall_vokaler(tekst)` som tar inn en tekststreng og returnerer antall vokaler i teksten 
 
@@ -193,7 +220,7 @@ print(resultat) # Output : 4
 
 
 
-### Oppgave 5.6.5
+### Oppgave 5.6.6
 
 Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: “rgb(100,155,200)” - Tallene i rgb går fra 0 til 255
 
@@ -217,7 +244,7 @@ def tilfeldig_farge():
 
 </details>
 
-### Oppgave 5.6.6
+### Oppgave 5.6.7
 
 Lag en minibank med Python. Når programmet starter skal brukeren bli presentert med en meny som ser slik ut: 
 
