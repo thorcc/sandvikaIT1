@@ -28,7 +28,7 @@ Generelt kan man si at prosedyrer er funksjoner som ikke returnerer en egen verd
 ## Funksjoner
 
 
-Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet. La oss se nærmere på hvordan vi setter opp en funksjon. Et viktig moment å forstå da er at når maskinen kjører programmet så *vil ikke koden inne i funksjonen kjøre!* Den må kalles opp senere i programmet (men kan hentes frem flere ganger). Vi definerer en enkel funksjon ved å skrive følgende `def valgfritt_navn():`. Inne i parentesene kan vi legge inn argument, noe vi skal se eksempler på etterpå. Som vanlig brukes kolon for å starte funksjonen og all kode som skal være med i linjene nedenfor må ha innrykk.
+Funksjoner og prosedyrer kan ses på som mindre delprogrammer i programmet. La oss se nærmere på hvordan vi setter opp en funksjon. Et viktig moment å forstå da er at når maskinen kjører funksjonen vi definerer så *vil ikke koden inne i funksjonen kjøre!* Den må kalles opp senere i programmet (men kan da hentes frem flere ganger). Vi definerer en enkel funksjon ved å skrive følgende `def valgfritt_navn():`. Inne i parentesene kan vi legge inn argument, noe vi skal se eksempler på etterpå. Som vanlig brukes kolon for å starte funksjonen og all kode som skal være med i linjene nedenfor må ha innrykk.
 
 
 Eks:
