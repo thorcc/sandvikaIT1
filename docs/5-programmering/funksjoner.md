@@ -74,7 +74,7 @@ print("Arealet av trekanten er", areal)
 Parameterne er variablene som *tas inn* i funksjonen, disse kan være hva som helst, mens argumentene er de faktiske verdiene som blir sendt inn i et funksjonskall. Se eksempelet under:
 
 ```python
-def min_funksjon(parameter1, parameter2, ...):
+def min_funksjon(parameter1, parameter2):
     # kode som gjør noe med parameterne
 
 
