@@ -221,7 +221,6 @@ print(result) # Output : False
 
 Lag en funksjon `antall_vokaler(tekst)` som tar inn en tekststreng og returnerer antall vokaler i teksten 
 
-Lag en prosedyre som ber brukeren om å skrive inn et ord, også printer en beskjed om ordet er et palindrom eller ikke  
 
 <details>
 <summary>Klikk for løsning</summary>
