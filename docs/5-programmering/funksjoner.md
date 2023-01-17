@@ -46,7 +46,7 @@ hilsen()
 
 Her er det spesifikt parentesene som gjør at datamaskinen gjenkjenner dette som en funksjon, i stedet for en variabel. Når funksjonen kalles, vil koden inne i funksjonen kjøres. Legg merke til at du har kalt opp mange funksjoner andre har laget allerede. Faktisk er den første instruksjonen du lærte i kurset, nemlig print("..."), en funksjon! Den skrives jo med parenteser.
 
-## Parametere/Argument
+## Parametere
 
 Når vi skal lage funksjoner har vi ofte behov for å sende med litt informasjon. Tenk deg for eksempel at du skal lage en funksjon som skal regne arealet av en trekant. Det ville vært rimelig klønete å lage en egen funksjon for alle forskjellige trekanter der ute. Vi lager i stedet en der vi sender med grunnlinje og høyde og regner ut arealet basert på informasjonen vi får:
 
@@ -57,7 +57,7 @@ def areal_trekant(g_linje, h):
 
 ```
 
-Vi har nå "lovet" at informasjon om grunnlinje og høyde skal følge med i funksjonskallet. Argumentene `g_linje` og `h` vil da fungere som variable med verdiene vi sender i funksjonskallet. Uten disse vil ikke kallet fungere:
+Vi har nå "lovet" at informasjon om grunnlinje og høyde skal følge med i funksjonskallet. Parameterne `g_linje` og `h` vil da fungere som variable med verdiene vi sender i funksjonskallet. Uten disse vil ikke kallet fungere:
 
 ```python
 areal = areal_trekant(10,5) # Funksjonskallet. Verdien som returneres lagres i variabelen areal
@@ -65,6 +65,23 @@ print("Arealet av trekanten er", areal)
 ```
 
 *Ved å legge inn nye tall i funksjonskallet vil resultatet endre seg!*
+
+
+:::info
+
+**Parametere og argumenter**
+
+Parameterne er variablene som *tas inn* i funksjonen, disse kan være hva som helst, mens argumentene er de faktiske verdiene som blir sendt inn i et funksjonskall. Se eksempelet under:
+
+```python
+def min_funksjon(parameter1, parameter2, ...):
+    # kode som gjør noe med parameterne
+
+
+min_funksjon("Dette er argument 1", "Dette er argument 2")
+```
+
+:::
 
 
 ## Funksjoner vs. prosedyrer
