@@ -71,9 +71,9 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 
 a) Lag ei liste med navn på fagene du har i år. Alle elementene i lista skal være strenger.
 
-b) Print ut favorittfaget ditt med en tilhørende tekst
+b) Print ut favorittfaget ditt ved å hente det fra lista.
 
-c) Legg til noen fag du hadde forrige skoleår i lista
+c) Legg til noen fag du hadde forrige skoleår i lista ved å bruke append
 
 d) Finn lengden av lista uten selv å måtte telle den
 
