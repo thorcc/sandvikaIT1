@@ -83,6 +83,13 @@ min_funksjon("Dette er argument 1", "Dette er argument 2")
 
 :::
 
+Filmen under viser hvordan parametere og argumenter henger sammen.
+Legg også merke til at vi kan lagre returnerte verdier fra funksjoner i variabler, som vist i linje 6 i videoen.
+
+import ReactPlayer from 'react-player'
+import video from './bilder/functions.mp4'
+
+<ReactPlayer url={video} controls width="100%" />
 
 ## Funksjoner vs. prosedyrer
 
