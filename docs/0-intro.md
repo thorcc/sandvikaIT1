@@ -2,7 +2,7 @@
 title: Velkommen til Informasjonsteknologi 1
 slug: "/"
 sidebar_position: 1
-sidebar_label: Velkommen
+sidebar_label: 0. Velkommen
 ---
 
 # Velkommen til Informasjonsteknologi 1
