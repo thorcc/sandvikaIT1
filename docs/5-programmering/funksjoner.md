@@ -92,7 +92,6 @@ import video from './bilder/functions.mp4'
 <ReactPlayer url={video} controls width="100%" />
 <br />
 
-*Laget ved hjelp av [Carbon](https://carbon.now.sh/)*
 
 ## Funksjoner vs. prosedyrer
 
