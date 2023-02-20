@@ -43,7 +43,7 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 
 
 
-## Oppsummering
+## Instruksjoner for å jobbe med lister
 
 | Metode / Operasjon               | Resultat                                       | Beskrivelse                                       |
 | -------------------------------- | ---------------------------------------------- | ------------------------------------------------- |
@@ -64,6 +64,25 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 | `skole_liste.sort(reverse=True)` | `["Valler", "Sandvika", "Nesbru"]`             | Sorter listen motsatt vei etter ASCII-tabellen    |
 | `" og ".join(skole_liste)`       | `"Valler og Sandvika og Nesbru"`               | Slår listen sammen til en tekst                   |
 | `",".join(skole_liste)`          | `"Valler,Sandvika,Nesbru"`                     | Slår listen sammen til en tekst                   |
+
+Det tar tid å bli vant med å bruke lister når man programmerer, og det er veldig lurt i å trene med oppgavene nederst i kapittelet.
+
+
+## Løkker og lister
+
+I forrige kapittel så vi på løkker. Vi brukte konsekvent funksjonen `range()` for å bestemme hvor mange ganger ei for-løkke skulle kjøre. 
+Samtidig lagde vi en tellevariabel, ofte kalt `i` som tok på seg verdier bestemt ut ifra det som ble skrevet i range. For eksempel vil
+`for i in range(3,11,2)` starte med i = 3, hver gang koden i løkka kjøres øker i med 2 helt til den når verdien 11 (eller større) og da vil løkka umiddelbart stoppe. Med lister kan vi bruke løkker på en litt anderledes måte. Se hva som skjer når vi kjører løkka gjennom ei liste:
+
+```Python
+skole_liste = ["Sandvika", "Valler", "Nesbru"]
+
+for i in skole_liste:
+    print(i)
+```
+
+Dersom du kjører denne koden, vil du se at alle tre skolene i lista er det som printes ut. Det betyr at "tellevariabelen" `i` ikke lenger er tall, men tar på seg verdien av hvert element i lista. Dette er en veldig god og viktig teknikk for å raskt kunne få tak i ett og ett element fra ei liste.
+
 
 ## Oppgaver
 
@@ -177,6 +196,45 @@ else:
 
 #### Oppgave 5.5.5
 
+
+Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
+
+- Bruk liste-metoder for å endre listeen til å bare inneholde tallene 3 og 1. 
+- Legg til tallet 2 mellom tallene 3 og 1. 
+- Legg til stringen “Stilig” på indeks 3 og boolean-en true på indeks 5. 
+- To-dimensjonal liste, gjør følgende: 
+- Lag en liste 
+- Lag tre nye lister inne i listen 
+- Legg til tallene 1, 2, 3 i den første listen 
+- Legg til tallene 4, 5, 6 i den andre listen 
+- Legg til tallene 7, 8, 9 i den tredje listen 
+- Skriv ut tallene 1, 3, 5 og 9 fra listen 
+
+<details>
+<summary>Klikk for løsning</summary>
+
+```python
+mineTall = [9, 3, 1, 2]
+mineTall.remove(9)
+mineTall.remove(2)
+mineTall.insert(1, 2) # sett inn 2 på indeks 1
+mineTall.insert(3, "stilig")
+mineTall.insert(5, True)
+print(mineTall)
+
+liste2d = [
+    [1, 2, 3], 
+    [4, 5, 6], 
+    [7, 8, 9]
+]
+
+print(liste2d[0][0], liste2d[0][2], liste2d[1][1], liste2d[2][2])
+```
+
+</details>
+
+#### Oppgave 5.5.6
+
 Norske bilnummer har to (store) bokstaver og fem tall.
 
 Du skal lage et program der man enten kan legge til eller sjekke et bilnummer.
@@ -226,43 +284,7 @@ while fortsett.lower() == "ja":
 
 </details>
 
-#### Oppgave 5.5.6
 
-Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
-
-- Bruk liste-metoder for å endre listeen til å bare inneholde tallene 3 og 1. 
-- Legg til tallet 2 mellom tallene 3 og 1. 
-- Legg til stringen “Stilig” på indeks 3 og boolean-en true på indeks 5. 
-- To-dimensjonal liste, gjør følgende: 
-- Lag en liste 
-- Lag tre nye lister inne i listen 
-- Legg til tallene 1, 2, 3 i den første listen 
-- Legg til tallene 4, 5, 6 i den andre listen 
-- Legg til tallene 7, 8, 9 i den tredje listen 
-- Skriv ut tallene 1, 3, 5 og 9 fra listen 
-
-<details>
-<summary>Klikk for løsning</summary>
-
-```python
-mineTall = [9, 3, 1, 2]
-mineTall.remove(9)
-mineTall.remove(2)
-mineTall.insert(1, 2) # sett inn 2 på indeks 1
-mineTall.insert(3, "stilig")
-mineTall.insert(5, True)
-print(mineTall)
-
-liste2d = [
-    [1, 2, 3], 
-    [4, 5, 6], 
-    [7, 8, 9]
-]
-
-print(liste2d[0][0], liste2d[0][2], liste2d[1][1], liste2d[2][2])
-```
-
-</details>
 
 #### Oppgave 5.5.7
 
