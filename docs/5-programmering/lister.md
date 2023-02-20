@@ -170,7 +170,7 @@ venn = {
 
 ```
 
-Her har vi altså laget en ordbok der egenskapene vi ønsker å få med står som nøkler med tilhørende verdier. Legg merke til at datatypene kan være hva som helst, her har vi en blanding av tall, strenger og ei liste. Dersom vi ønsker å utvide til flere venner blir det verre slik vi har bygd opp ordboka. Her kan det derfor være lurt å nøste ordbøker og lister, altså enten legge mange ordbøker inne i ei liste, eller legge nye ordbøker inn som verdier til nøklene i en eksisterende ordbok. Forvirrende? Vi utvider koden:
+Her har vi altså laget en ordbok der egenskapene vi ønsker å få med står som nøkler med tilhørende verdier. Legg merke til at datatypene kan være hva som helst, vi har en blanding av tall, strenger og en liste. Dersom vi ønsker å utvide til flere venner blir det verre slik vi har bygd opp ordboka. Da er er det være lurt å nøste ordbøker og lister, altså enten legge ordbøker inne i ei liste, eller legge nye ordbøker inn som verdier til nøklene i en eksisterende ordbok. Forvirrende? Vi utvider koden:
 
 ```python
 
@@ -180,21 +180,21 @@ venner = [
         "etternavn":"Nordmann",
         "telefon_nr": "22222222"
         "alder": 18,
-        "hobbyer": ["venner","håndball","kino"]
+        "hobby": ["venner","håndball","kino"]
     },
     {
         "fornavn":"Kari",
         "etternavn":"Nordmann",
         "telefon_nr": "22223333"
         "alder": 17,
-        "hobbyer": ["venner","fotball","kino"]
+        "hobby": ["venner","fotball","kino"]
     }
 ]
 
 
 ```
 
-I dette eksempelet har vi altså en liste ytterst der hvert element i lista er en ordbok. En av nøklene har verdier i form av en liste. Så lenge man holder hodet kaldt og til enhver tid vet hvilken datatype man har, kan man få tak i akkurat den informasjonen man ønsker. For eksempel vil koden `print(venner[0]["hobbyer"][1])` printe ut `håndball`. Det er fordi vi først går inn i element på plass null i den ytterste lista. Da vil resultatet være en ordbok så vi kan videre slå opp på en av nøklene nemlig "hobbyer". Da er resultatet nok en liste som vi igjen slår opp element nummer 2 ifra. 
+I dette eksempelet har vi altså en liste ytterst der hvert element i lista er en ordbok. Den siste nøkkelen har verdier i form av en liste. Så lenge man holder hodet kaldt og til enhver tid vet hvilken datatype man har, kan man få tak i akkurat den informasjonen man ønsker. For eksempel vil koden `print(venner[0]["hobbyer"][1])` printe ut `håndball`. Det er fordi vi først går inn i element på plass null i den ytterste lista. Da vil resultatet være en ordbok så vi kan videre slå opp på nøkkelen "hobby". Da er resultatet nok en liste som vi kan slå opp element nummer 2 ifra. 
 
 I virkeligheten kan dette bli ganske komplisert, her ser du et lite utdrag av hvordan yr lagrer værdata. Ikke vær bekymret om du mister oversikt her, dette går et stykke utover pensum for kurset:
 
