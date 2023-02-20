@@ -1,8 +1,8 @@
 ---
-title: 5.5 Lister
+title: 5.5 Lister og ordbøker
 sidebar_position: 5
 sidebar_label: 5.5 Lister
-description: Når vi skal gruppere og organisere informasjon, bruker vi lister.
+description: Når vi skal gruppere og organisere informasjon, bruker vi lister og ordbøker.
 ---
 
 # En ny datatype
@@ -43,7 +43,7 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 
 
 
-## Instruksjoner for å jobbe med lister
+## Instruksjoner på lister
 
 | Metode / Operasjon               | Resultat                                       | Beskrivelse                                       |
 | -------------------------------- | ---------------------------------------------- | ------------------------------------------------- |
@@ -68,13 +68,13 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 Det tar tid å bli vant med å bruke lister når man programmerer, og det er veldig lurt i å trene med oppgavene nederst i kapittelet.
 
 
-## Løkker og lister
+## Lister og Løkker
 
 I forrige kapittel så vi på løkker. Vi brukte konsekvent funksjonen `range()` for å bestemme hvor mange ganger ei for-løkke skulle kjøre. 
 Samtidig lagde vi en tellevariabel, ofte kalt `i` som tok på seg verdier bestemt ut ifra det som ble skrevet i range. For eksempel vil
 `for i in range(3,11,2)` starte med i = 3, hver gang koden i løkka kjøres øker i med 2 helt til den når verdien 11 (eller større) og da vil løkka umiddelbart stoppe. Med lister kan vi bruke løkker på en litt anderledes måte. Se hva som skjer når vi kjører løkka gjennom ei liste:
 
-```Python
+```python
 skole_liste = ["Sandvika", "Valler", "Nesbru"]
 
 for i in skole_liste:
@@ -82,6 +82,125 @@ for i in skole_liste:
 ```
 
 Dersom du kjører denne koden, vil du se at alle tre skolene i lista er det som printes ut. Det betyr at "tellevariabelen" `i` ikke lenger er tall, men tar på seg verdien av hvert element i lista. Dette er en veldig god og viktig teknikk for å raskt kunne få tak i ett og ett element fra ei liste.
+
+## Ordbøker
+
+Lister lagrer altså en samling med data der vi kan hente ut et eller flere element fra en tilfeldig plass lista. Dette egner seg veldig greit når vi samler data fra samme gruppe, for eksempel ei liste med farger, primtall eller navn på elever. Ordbøker fungerer delvis på samme måte men lagrer i stedet *par av egenskaper koblet sammen*. For å forstå hvordan dette fungerer kan vi for eksempel se på romertall. Anta at vi ønsker å lage et program der vi oversetter romertall om til vanlige tall. For eksempel er `III` det samme som 3, `VI` er det samme som 6 og så videre. Vi ønsker derfor å koble sammen egenskapene, noe som er ganske komplisert eller klønete dersom vi bruker lister. Med ordbøker er denne koblingen innebygd:
+
+```python
+romertall = {
+    "I": 1,
+    "II":2,
+    "III":3,
+    "IV":4,
+    "V":5
+}
+```
+Her har vi laget en ordbok. Der vi bruker [] for at python skal identifisere det som liste, bruker vi altså {} for ordbøker. Det er 5 element i ordboka vår og disse er separert med komma. Hvert element består av et par med egenskaper som er knyttet sammen. Romertallene kalles her `nøkler`, og tallene som står etter kalles for `verdier`. Hver nøkkel er altså koblet til en verdi ved hjelp av kolon. Nøklene må være unike slik at vi senere kan slå opp riktig verdi. Da er det lettere å forstå hvorfor vi har kalt denne strukturen for en ordbok.
+
+## Lese og legge til ordbok
+
+Vi fortsetter med ordboka om romertall og ser nå hvordan vi kan hente både nøkler og verdier fra denne.
+
+```python
+romertall = {
+    "I": 1,
+    "II":2,
+    "III":3,
+    "IV":4,
+    "V":5
+}
+
+print(romertall) # gir oss hele ordboka tilbake
+print(romertall["I"]) # slår opp verdien som står på nøkkelen "I" og skriver ut denne, altså 1.
+print(romertall.keys()) # skriver ut alle nøklene i ordboka.
+print(romertall.values()) # skriver ut alle verdiene i ordboka
+```
+
+Vi ser at det er mange måter å hente informasjon ut av ei ordbok på, men det å slå opp på nøkkelen er nok det vanligste.
+
+Vi har også muligheter til å legge til eller endre på ordbøker:
+
+```python
+romertall = {
+    "I": 1,
+    "II":2,
+    "III":3,
+    "IV":4,
+    "V":5
+}
+
+romertall["VI"] = 6 # legger til en nøkkel "VI" med verdi 6. Hvis nøkkelen allerede finnes oppdateres verdien
+
+```
+
+## Ordbøker og løkker
+
+Vi så at man kunne kjøre en løkke gjennom lister og dermed då verdien av hvert element i lista en etter en når løkka kjørte. Tilsvarende konsept fungerer fint med ordbøker, men du får da verdiene av nøklene når løkka farer gjennom ordboka.
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=romertall%20%3D%20%7B%0A%20%20%20%20%22I%22%3A%201,%0A%20%20%20%20%22II%22%3A2,%0A%20%20%20%20%22III%22%3A3,%0A%20%20%20%20%22IV%22%3A4,%0A%20%20%20%20%22V%22%3A5%0A%7D%0A%0Afor%20i%20in%20romertall%3A%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+Dersom vi vil skrive ut en fin oversikt over både nøkler og verdier kan vi bruke for eksempel en for løkke på følgende måte:
+
+```python
+romertall = {
+    "I": 1,
+    "II":2,
+    "III":3,
+    "IV":4,
+    "V":5
+}
+
+for i in romertall:
+    print(i,"=",romertall[i])
+```
+
+## Avansert lagring av data. Nøstede lister og ordbøker
+
+Ved å kombinere lister og ordbøker på kreative måter kan vi nå lagre kompliserte sammenhenger av data. La oss starte med et eksempel der vi samler informasjon om en bestevenn. Vi kan da lage følgende ordbok:
+
+```python
+venn = {
+    "fornavn":"Ola",
+    "etternavn":"Nordmann",
+    "telefon_nr": "22222222"
+    "alder": 18,
+    "hobbyer": ["venner","håndball","kino"]
+}
+
+```
+
+Her har vi altså laget en ordbok der egenskapene vi ønsker å få med står som nøkler med tilhørende verdier. Legg merke til at datatypene kan være hva som helst, her har vi en blanding av tall, strenger og ei liste. Dersom vi ønsker å utvide til flere venner blir det verre slik vi har bygd opp ordboka. Her kan det derfor være lurt å nøste ordbøker og lister, altså enten legge mange ordbøker inne i ei liste, eller legge nye ordbøker inn som verdier til nøklene i en eksisterende ordbok. Forvirrende? Vi utvider koden:
+
+```python
+
+venner = [
+    {
+        "fornavn":"Ola",
+        "etternavn":"Nordmann",
+        "telefon_nr": "22222222"
+        "alder": 18,
+        "hobbyer": ["venner","håndball","kino"]
+    },
+    {
+        "fornavn":"Kari",
+        "etternavn":"Nordmann",
+        "telefon_nr": "22223333"
+        "alder": 17,
+        "hobbyer": ["venner","fotball","kino"]
+    }
+]
+
+
+```
+
+I dette eksempelet har vi altså en liste ytterst der hvert element i lista er en ordbok. En av nøklene har verdier i form av en liste. Så lenge man holder hodet kaldt og til enhver tid vet hvilken datatype man har, kan man få tak i akkurat den informasjonen man ønsker. For eksempel vil koden `print(venner[0]["hobbyer"][1])` printe ut `håndball`. Det er fordi vi først går inn i element på plass null i den ytterste lista. Da vil resultatet være en ordbok så vi kan videre slå opp på en av nøklene nemlig "hobbyer". Da er resultatet nok en liste som vi igjen slår opp element nummer 2 ifra. 
+
+I virkeligheten kan dette bli ganske komplisert, her ser du et lite utdrag av hvordan yr lagrer værdata. Ikke vær bekymret om du mister oversikt her, dette går et stykke utover pensum for kurset:
+
+![Bilde: Værdata fra yr.](./bilder/kompliserjson.png)
+
+
 
 
 ## Oppgaver
