@@ -5,7 +5,7 @@ sidebar_label: 5.5 Lister
 description: Når vi skal gruppere og organisere informasjon, bruker vi lister og ordbøker.
 ---
 
-# En ny datatype
+## Struktur av data
 
 Når vi skal utnytte datamaskinens evnte til å håndtere store mengder informasjon veldig raskt trenger vi muligheten til å lagre og gruppere informasjon sammen på en god måte. Ta for eksempel en biolog som skal måle vingespenn på hundrevis av fugler innenfor en art. Det ville fort blitt rotete om hvert mål måtte lagres som en egen variabel. Heldigvis finnes det litt mer avanserte datatyper enn strenger og tall når vi programmerer og vi skal her se nærmere på *lister* og *ordbøker* (eng: *dictionaries*). Vi må da se på hvordan vi oppretter denne nye typen variabler, hvordan vi så kan jobbe med store datamengder som vi lagrer på denne måten. 
 
