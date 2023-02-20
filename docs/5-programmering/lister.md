@@ -5,13 +5,13 @@ sidebar_label: 5.5 Lister
 description: Når vi skal gruppere og organisere informasjon, bruker vi lister.
 ---
 
-# Lister
+# En ny datatype
 
-Når vi skal utnytte datamaskinens evnte til å håndtere store mengder informasjon veldig raskt trenger vi muligheten til å lagre og gruppere informasjon sammen på en god måte. Da er *lister* og *ordbøker* (eng: *dictionaries*) gode verktøy, og derfor en ny type variabel vi skal lære å håndtere i dette kapittelet. Vi må da se på hvordan vi oppretter slike variabler, hvordan vi kan hente all eller spesifikk informasjon og hvordan vi enkelt kan endre eksisterende informasjon. I tillegg skal vi se nærmere en del eksempler der vi kombinerer løkker med lister for å få til en del litt mer avansert interaksjon.
+Når vi skal utnytte datamaskinens evnte til å håndtere store mengder informasjon veldig raskt trenger vi muligheten til å lagre og gruppere informasjon sammen på en god måte. Ta for eksempel en biolog som skal måle vingespenn på hundrevis av fugler innenfor en art. Det ville fort blitt rotete om hvert mål måtte lagres som en egen variabel. Heldigvis finnes det litt mer avanserte datatyper enn strenger og tall når vi programmerer og vi skal her se nærmere på *lister* og *ordbøker* (eng: *dictionaries*). Vi må da se på hvordan vi oppretter denne nye typen variabler, hvordan vi så kan jobbe med store datamengder som vi lagrer på denne måten. 
 
-## Opprette lister
+## Lister
 
-La oss starte enkelt ved å opprette et par lister. Vi starter som en hvilken som helst annen variabel ved å bestemme oss for et navn og så deklarere med likhetstegnet:
+Vi begynner med lister, og her er navnet ganske selvforklarende; vi lagrer data som henger sammen i ei liste. La oss starte enkelt med små eksempler. Vi deklarerer en variabel på vanlig måte ved å bestemme oss for et navn på venstre side og så legger vi på et likhetstegn for å tilegne variabelen data. Følgende er tre eksempler på lister:
 
 ```python
 skole_liste = ["Sandvika", "Valler", "Nesbru"]
@@ -19,15 +19,15 @@ karakter_liste = [4, 3, 2]
 tom_liste = []
 ```
 
-Vi ser at det er klammeparentesene som forteller python at vi har laget ei liste. Selve liste-elementene separeres med komma. Som vi kan se av eksempelet kan vi lagre informasjon i form av både tall og strenger (vi kan også blande typer i en og samme liste). La oss undersøke våre nyopprettede variabler ved å printe de ut, samt sjekke hva slags type de er lagret som:
+Det er altså klammeparentesene som forteller python at vi har laget ei liste. Dataene vi legger inn i lista kalles element, og disse separeres med komma. Som vi kan se av eksempelet kan vi lagre informasjon i form av både tall og strenger. Vi kan også blande datatyper i en og samme liste dersom det gir mening. La oss undersøke våre nyopprettede variabler ved å kjøre en print instruks på de:
 
 ![Bilde: Skrive ut lista](./bilder/liste_output.png)
 
-Som forventet er variabelen registrert av typen liste, og når vi printer den ut får vi hele listen. Neste steg er da å se nærmere på hvordan vi kan hente ut deler av listen. 
+Som forventet er variabelen registrert av typen liste, og når vi skriver den ut får vi hele listen. Neste steg er da å se nærmere på hvordan vi kan hente ut deler av listen. 
 
 ## Element i lister
 
-La oss se nærmere på listen over skoler: `["Sandvika", "Valler", "Nesbru"]`. En slik liste er *ordnet*, det vil si at rekkefølgen vi har lagret skolene er en del av listen. Dermed vet vi at Sandvika ligger først i listen, mens Nesbru ligger sist (uten at det har noe mer å si akkurat nå). I dette tilfellet sier vi at Sandvika ligger på plass nummer 0, Valler ligger på plass nummer 1 og Nesbru på plass nr 2. Det er tre element i lista, men vi teller alltid fra 0 når vi skal angi hvilken plass et element ligger på:
+Vi ser nærmere på listen over skoler: `["Sandvika", "Valler", "Nesbru"]`. En slik liste er *ordnet*, det vil si at rekkefølgen vi har lagret skolene er en del av listen. Dermed vet vi at Sandvika ligger først i listen, mens Nesbru ligger sist (uten at det har noe mer å si i dette tilfellet). Vi sier at Sandvika ligger på plass nummer 0, Valler ligger på plass nummer 1 og Nesbru på plass nr 2. Det er tre element i lista, men vi teller alltid fra 0 når vi skal angi hvilken plass et element ligger på:
 
 | skole_liste | `"Sandvika"` | `"Valler"` | `"Nesbru"` |
 | ----------- | ------------ | ---------- | ---------- |
@@ -39,7 +39,7 @@ Dette betyr at dersom vi skal hente ut Sandvika, så må vi huske at det ligger 
 ![Bilde: Hente ut element på plass 0](./bilder/indeks_output.png)
 
 
-Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at dersom du glemmer deg og prøver å hente ut element nr 3, så får du en feil. Datamaskinen prøver å finne det fjerde elementet i lista, men det finnes jo bare tre.
+Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at dersom du glemmer deg og prøver å hente ut element nr 3, så får du en feil. Datamaskinen prøver å finne det fjerde elementet i lista, men det finnes jo bare tre. Det finnes veldig mange forskjellige operasjoner/instrukser vi kan utføre på lister. Det er ikke meningen at disse skal pugges, men når man jobber med en liste bør man være klar over mulighetene man har. Da kan det være lurt å søke opp det man trenger. Følgende er en liten oversikt over de viktigste instruksene vi kan utføre:
 
 
 
@@ -67,7 +67,7 @@ Tilsvarende kan vi hente ut de andre skolene dersom det trengs. Pass på at ders
 
 ## Oppgaver
 
-### Oppgave 5.5.1
+#### Oppgave 5.5.1
 
 a) Lag ei liste med navn på fagene du har i år. Alle elementene i lista skal være strenger.
 
@@ -94,7 +94,7 @@ print("antall fag:", len(fag))
 
 </details>
 
-### Oppgave 5.5.2
+#### Oppgave 5.5.2
 
 Bruk lista med fag fra oppgave 5.5.1
 
@@ -120,7 +120,7 @@ else:
 
 </details>
 
-### Oppgave 5.5.3
+#### Oppgave 5.5.3
 
 a) Lag følgende liste med tall: [1,3,5,6]
 
@@ -147,7 +147,7 @@ tall.remove("fire")
 
 </details>
 
-### Oppgave 5.5.4
+#### Oppgave 5.5.4
 
 Legg alle julekarakterene inn i ei liste (som tall!)
 
@@ -175,7 +175,7 @@ else:
 
 </details>
 
-### Oppgave 5.5.5
+#### Oppgave 5.5.5
 
 Norske bilnummer har to (store) bokstaver og fem tall.
 
@@ -226,7 +226,7 @@ while fortsett.lower() == "ja":
 
 </details>
 
-### Oppgave 5.5.6
+#### Oppgave 5.5.6
 
 Opprett en liste `mineTall` med tallene 9, 3, 1 og 2.
 
@@ -264,7 +264,7 @@ print(liste2d[0][0], liste2d[0][2], liste2d[1][1], liste2d[2][2])
 
 </details>
 
-### Oppgave 5.5.7
+#### Oppgave 5.5.7
 
 Lag en ordbok med info om den du sitter ved siden av. 
 
@@ -297,7 +297,7 @@ print(person["navn"], "er", person["alder"], "år gammel.")
 
 </details>
 
-### Oppgave 5.5.8
+#### Oppgave 5.5.8
 
 Ordboken under har navn på land som egenskaper og fargene på flagget til landene som verdier. 
 
@@ -351,7 +351,7 @@ else:
 
 </details>
 
-### Oppgave 5.5.9
+#### Oppgave 5.5.9
 
 a) Lag en liste `bakeri`, og fyll listen med følgende varer som ordbøker, hvor navn og pris er nøkler. 
 
