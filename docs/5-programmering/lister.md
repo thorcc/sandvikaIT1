@@ -198,7 +198,7 @@ I dette eksempelet har vi altså en liste ytterst der hvert element i lista er e
 
 I virkeligheten kan dette bli ganske komplisert, her ser du et lite utdrag av hvordan yr lagrer værdata. Ikke vær bekymret om du mister oversikt her, dette går et stykke utover pensum for kurset:
 
-![Bilde: Værdata fra yr.](./bilder/kompliserjson.png)
+![Bilde: Værdata fra yr.](./bilder/komplisertjson.png)
 
 
 
