@@ -16,7 +16,7 @@ Når du har installert Flask har det dukket endel mapper og to nye filer i prosj
 
 ### Flask
 
-Alle nettsidene vi skal lage skal ligge i mappen `templates` og forsiden bør hete `index.html`. Denne ble allerede laget da vi installerte Flask modulen, og vi ser at skjelettet foreløpig ser ganske likt ut som før. Vi kan nå lett legge til nye overskrifter og tekst, men lenker, bilder og css blir anderledes nå som vi jobber i et Flask-miljø. Tenk deg at hele mappen med prosjektet er noe som ligger back-end, altså brukeren ikke har tilgang til. Vi kan da for eksempel ikke lenger lage en lenke til en ny side der vi skriver `<a href="nyside.html>Trykk her</a>` fordi det forutsetter at brukeren allerede har lastet ned den nye siden! Vi lager istedet en forespørsel eller `rute` til vår nye side. En slik rute sender en beskjed til serveren om at vi ønsker å gå til `nyside.html`, denne kan da sende nettsiden til oss slik at vi faktisk får tilgang til innholdet vi ønsker. Legg på en rute på forsiden ved å skrive a-elementet som følger:
+Alle nettsidene vi skal lage skal ligge i mappen `templates` og forsiden bør hete `index.html`. Denne ble allerede laget da vi installerte Flask modulen, og vi ser at skjelettet foreløpig ser ganske likt ut som før. Vi kan nå lett legge til nye overskrifter og tekst, men lenker, bilder og css blir anderledes nå som vi jobber i et Flask-miljø. Tenk deg at hele mappen med prosjektet er noe som ligger back-end, altså brukeren ikke har tilgang til. Vi kan da for eksempel ikke lenger lage en lenke til en ny side der vi skriver `<a href="nyside.html>Trykk her</a>` fordi det forutsetter at brukeren allerede har lastet ned den nye siden! Vi lager istedet en forespørsel eller `rute`. En slik rute sender en beskjed til serveren om at vi ønsker å gå til `nyside.html`, denne kan da sende nettsiden til oss slik at vi faktisk får tilgang til innholdet vi ønsker. Vi legger på en rute på forsiden ved å skrive a-elementet som følger:
 
 ````html
 <!DOCTYPE html>
@@ -64,6 +64,7 @@ def side2():
 - Den første ruten, nemlig `"/"` var allerede laget fra før, den fører til forsiden vår. Uten denne ville vi ikke hatt tilgang til nettstedet vårt i første omgang. Vi har så laget en ny rute under, nemlig `/nyside`.
 
 - `@app.route("/")` lager altså en *rute* på nettadressen, og bestemmes av det som returneres av funksjonen under. Ruten `"/"` tilsvarer nettadressen `http://127.0.0.1:5000/` som er den Flask har laget til nettstedet vårt. Vår nye rute vil dermed tilsvare nettadressen `http://127.0.0.1:5000/nyside`
+
 - `return render_template("nyside.html")`, returnerer html-filen `nyside.html`. Med andre ord vi sendte `"/nyside"` via href til app.py, da sendes nettsiden `nyside.html` tilbake. Denne interaksjonen mellom front-end og back-end tilsvarer nå en lenke mellom nettsidene våre.
 
 Selv om vi fortsatt kjører alt fra samme datamaskin, later nå flask som at vi jobber opp mot en server ved å la applikasjonen bygge et såkalt "virtual enviroment". Slik kan vi se hvordan nettstedet ville ha fungert i virkeligheten. Dersom vi "skrur av" serveren (ctrl-c) så vil ikke nettsidene våre fungere lenger. Ved å høyreklikke på prosjektmappa og velge "Run Flask" så starter vi "serveren" og kan sjekke ut nettsidene våre igjen.
