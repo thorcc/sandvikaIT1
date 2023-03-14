@@ -39,7 +39,7 @@ Vi har nå kalt ruten vår for `nyside` og bruker `/` for å indikere at nyside 
 
 ### app.py
 
-Når vi skal lage nettsider i Flask så må altså all informasjon gå via noe vi programmerer i back-end, her er det `app.py` som er "hjernen" eller sentralen som behandler alt som skal skje. Vi lagde en rute som vi kalte `nyside`og ønsker at serveren skal sende html-fila til den nye siden tilbake.
+Når vi skal lage nettsider i Flask så må altså all informasjon gå via noe vi programmerer i back-end, her er det `app.py` som har serverkoden altså er "hjernen" som behandler alt som skal skje. Vi lagde akkurat en rute som vi kalte `nyside`og ønsker at serveren skal sende html-fila til den nye siden tilbake.
 
 :::info
 I `app.py` skrives Python-koden til applikasjonen.
