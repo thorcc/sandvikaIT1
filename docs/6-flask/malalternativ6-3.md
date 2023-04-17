@@ -2,7 +2,7 @@
 
 ### 
 
-I prosjektet før jul er det en stort sjanse for at det ble veldig mye kopiering mellom de ulike nettsidene du lagde. Faktisk så var jo stort sett hele skjelettet samt header og footer elementende identiske. Jinja modulen som er innebygd i Flask har et system der vi slipper å kopiere gjentagende html hele tiden.
+I prosjektet før jul er det en stort sjanse for at det ble veldig mye kopiering mellom de ulike nettsidene du lagde. Faktisk så var jo stort sett hele skjelettet samt header og footer elementende identiske. Når vi tar i bruk rammeverk så 
 
 Vi starter med å opprette en ny html-fil i templates mappa. Vi kan kalle den for hva vi vil, men det er vanlig å bruke `mal.html` eller `layout.html` på engelsk. Denne siden skal inneholde alt som vi regner med kommer til å være felles for prosjektet og kan se ut som følger:
 
@@ -35,7 +35,7 @@ Vi starter med å opprette en ny html-fil i templates mappa. Vi kan kalle den fo
 
 ```
 
-Symbolene `{% %}` er en snarvei de som har laget jinja har bestemt at skal brukes for å kalle på verktøyene som følger med den pakka. Ved å skrive `{% block valgfrittnavn %} {% endblock %}` så holder vi av plass som andre nettsider kan fylle med eget innhold. Alle andre nettsider vi lager kan nå hente denne felles delen fra mal.html. Forsiden vår, index.html, kan dermed endres til følgende:
+Symbolene `{% %}` er en snarvei de som har laget jinja har bestemt at skal brukes for å kalle på verktøyene som følger med jinja. Ved å skrive `{% block valgfrittnavn %} {% endblock %}` så holder vi av plass som andre nettsider kan fylle med eget innhold. Alle andre nettsider vi lager kan nå hente denne felles delen fra mal.html. Forsiden vår, index.html, kan dermed endres til følgende:
 
 ```HMTL
 

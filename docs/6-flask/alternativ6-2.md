@@ -76,8 +76,7 @@ Følg lenka slik at du får åpnet nettstedet. Nå kan du surfe og inspisere som
 
 ### Statiske filer
 
-Vi har sett på hvordan vi lenker sammen nettsider ved å gå via backend med flask. Hva da med eksterne filer, slik som bilder og css-filene våre? Disse skal jo heller ikke ligge åpent for brukeren, så også her må vi gjøre det litt anderledes. Flask er bygd opp på en måte der disse filene skal ligge i en spesifikk mappe som kalles `static`. Vi oppretter denne mappa i prosjektet vårt (på samme nivå som for eksempel templates mappa). Legg inn et bilde i static-mappa, og lag img-taggen et sted på forsiden vår. Tidligere har vi skrevet en sti til bildet i src-attributten til bilde-elementet, **dette fungerer også nå(!)**, men Flask har et innebygd alternativ som skal være raskere og mer effektivt på større prosjekt:
-
+Vi har sett på hvordan vi lenker sammen nettsider ved å gå via backend med flask. Hva da med eksterne filer, slik som bilder og css-filene våre? Disse skal jo heller ikke ligge åpent for brukeren, så også her må vi gjøre det litt anderledes. Flask er bygd opp på en måte der disse filene skal ligge i en spesifikk mappe som kalles `static`. Vi oppretter denne mappa i prosjektet vårt (på samme nivå som for eksempel templates mappa). Legg inn et bilde i static-mappa, og lag img-taggen et sted på forsiden vår. 
 ````html
 <!DOCTYPE html>
 <html lang="en">
@@ -90,12 +89,10 @@ Vi har sett på hvordan vi lenker sammen nettsider ved å gå via backend med fl
 <body>
     <h1>Hallo, Verden!</h1>
     <a href="/nyside">Klikk her!</a>
-    <img src='{{url_for("static", filename="mitt_bilde.jpg")}}' alt="Alternativ bildetekst">
+    <img src='../static/mittbilde.jpg' alt="Alternativ bildetekst">
 </body>
 </html>
 ````
-
-I stedet for `src="../static/mitt_bilde.jpg"` brukes en `url_for`-funksjon som er innebygt i Flask. Vi forklarer ikke logikken i den funksjonen akkurat nå, men alle bilder og eventuelt andre filer skal altså ligge i static-mappa og kan kobles til på denne måten. Det eneste du trenger å forandre er navnet i filename.
 
 
 
