@@ -1,21 +1,21 @@
 
 # Hva har vi lært?
 
-Frem til nå har vi jobbet mye med de grunnleggende byggesteinene for utvikling av webapplikasjoner nemlig html og css. Disse er ikke programmeringsspråk, men er en måte og strukturere og posisjonere innholdet en nettside har. Vi har også sett på grunnleggende programmering, i dette kurset python. Javascript er et annet programmeringsspråk som er tilrettelagt for å lett kunne lage interaktive nettsider. Javascript vil være forholdsvis enkelt å lære seg dersom man behersker det vi har vært gjennom med Python godt.
+Frem til nå har vi jobbet mye med de grunnleggende byggesteinene for utvikling av webapplikasjoner nemlig html og css. Disse er ikke programmeringsspråk, men er en måte og strukturere og posisjonere innholdet en nettside har. Vi har også sett på grunnleggende programmering, i dette kurset python. Vi kunne alternativt ha jobbet med Javascript, et populært programmeringsspråk for web-utvilkere som er tilrettelagt for å lett kunne lage interaktive nettsider. Vi valgte Python fordi det er enklere å forholde seg til, men dersom du behersker Python er det ikke spesielt vanskelig å lære seg grunnleggende Javascript på egenhånd.
 
-Selv om vi dermed teoretisk har muligheter til å lage rimelig flotte nettsider er vi fortsatt et stykke unna virkeligheten. For å kunne se gjennom nettstedene vi har laget, må vi ha alle filene og bildene liggende på datamaskinen vår. Tilsvarende dersom læreren din skal vurdere nettstedet ditt må du sende alle filene på forhånd. Slik er det jo ikke i virkeligheten, klikker du deg inn på en nettavis slipper du heldigvis å laste ned alle bildene og filene på forhånd. Vi kommuniserer med en server som gir nettleseren html-kode, bilder og annen informasjon som til enhver tid trengs for nettsidene vi besøker.
-
-# Nye begrep
-
-### Front-end og Back-end
-
-Alt som har med utseende og hvordan din interaksjon som bruker av en nettside fungerer er noe vi kaller for `front-end`. Det er på dette nivået vi har jobbet så langt. I virkeligheten ligger som sagt filene til nettsidene du besøker på en egen `server`. Det må dermed foregå kommunikasjon mellom din datamaskin og serveren. 
+Vi har nå teoretisk gode muligheter og verktøy for å lage fine nettsider, men vi er fortsatt et stykke unna virkeligheten. Html, css- og mediefilene vi lager må for eksempel ligge lagret på datamaskinen for at de skal kunne vises. Slik er det heldigvis ikke med internett slik du er vant med. Dersom du besøker en nettavis slipper du jo å laste ned alle bildene og filene på forhånd. Så hvordan fungerer det? Filene eksisterer fortsatt, men de ligger på en server. Når vi skriver eller klikker på en lenke på nettet kommuniserer vi med en slik server, som gir nettleseren vår html-kode, bilder og annen informasjon som til enhver tid trengs for å kunne vise nettsiden. I dette kapittelet skal vi forsiktig nærme oss denne måten å lage nettsteder på. Vi starter med litt teori om hvordan det hele fungerer.
 
 :::info
 
 Definisjon av en server: En server (også kjent som en tjener) er en programvare som tilbyr («serverer») en eller flere tjenester til andre datamaskiner (klienter) over et datanettverk.  
 
 :::
+
+# Nye begrep
+
+### Front-end og Back-end
+
+For å få bedre oversikt over miljøet rundt en web-applikasjon er det endel nye begrepep vi må gjennom. Alt som har med utseende og hvordan din interaksjon som **bruker** av en nettside fungerer er noe vi kaller for `front-end`. Det er på dette nivået vi har jobbet så langt. Som sagt har ikke brukeren tilgang til noen av filene våre, de ligger på sin egen `server`. Det må dermed foregå kommunikasjon mellom din datamaskin og serveren. 
 
 Et annet mer omfattende eksempel er når du besøker nettbanken din. Når du i har fylt ut det du trenger for å logge deg på, så sendes informasjonen til en server for å behandles. Serveren er programmert til sjekke om din autentisering stemmer, hente frem relevant informasjon om deg og dine kontoer, for så å sende alt tilbake og generere en nettside som er unik for deg. Hele denne prosessen skjer usynlig for oss brukere og kalles derfor for `back-end`. 
 
