@@ -1,6 +1,6 @@
 ---
 title: 5.8 Filhåndtering
-sidebar_position: 5
+sidebar_position: 8
 sidebar_label: 5.8 Filhåndtering
 description: Vi kan lagre og hente frem data, til og fra egne filer.
 ---
