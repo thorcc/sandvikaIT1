@@ -31,6 +31,6 @@ Når utseende på en nettside endres som en følge av informasjon vi sender til 
 
 Alle disse ulike delene har i tillegg masse forskjellige hjelpeverktøy som gjør jobben enklere for de som jobber med front-end, back-end eller begge deler. Blant annet ferdiglagde pakker som kalles for `rammeverk`. Språkene som brukes er fortsatt de samme, men rammeverkene gjør samme jobb raskere og mer effektiv. 
 
-![bilde med oversikt over rammeverk?]()
+[comment]: <![bilde med oversikt over rammeverk?]()>
 
 I resten av kapittelet skal vi lage noen dynamiske nettsider der vi også skal programmere back-end serveren. Vi skal bruke et rammeverk som kalles for Flask for å hjelpe oss. 
