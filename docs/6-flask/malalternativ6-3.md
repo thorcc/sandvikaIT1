@@ -1,8 +1,8 @@
 # Lage Mal med Flask
 
-### 
+### block og extends
 
-I prosjektet før jul er det en stort sjanse for at det ble veldig mye kopiering mellom de ulike nettsidene du lagde. Faktisk så var jo stort sett hele skjelettet samt header og footer elementende identiske. Når vi tar i bruk rammeverk så 
+I prosjektet før jul er det en stort sjanse for at det ble veldig mye kopiering mellom de ulike nettsidene du lagde. Faktisk så var jo stort sett hele skjelettet samt header og footer elementende identiske. Rammeverk er jo ment for å hjelpe oss, og Flask er bygd på en modul, kalt `jinja` som har muligheter for å forenkle slikt dobbeltarbeid. Vi gjør dette med å opprette en mal for hvordan sidene våre skal se ut, så lar vi selve nettsidene våre "arve" så mye som mulig fra malen.
 
 Vi starter med å opprette en ny html-fil i templates mappa. Vi kan kalle den for hva vi vil, men det er vanlig å bruke `mal.html` eller `layout.html` på engelsk. Denne siden skal inneholde alt som vi regner med kommer til å være felles for prosjektet og kan se ut som følger:
 
@@ -51,4 +51,4 @@ Symbolene `{% %}` er en snarvei de som har laget jinja har bestemt at skal bruke
 
 ```
 
-Først arver vi all felles kode fra "mal.html" ved å bruke "extend". Så fyller blokken der vi holdt av plass med det innholdet som hører til forsiden. Alle andre sider vi lager kan nå bygges på samme måte, og vi slipper dermed å kopiere alt som er felles for alle sidene slik som før.
+Først arver vi all felles kode fra "mal.html" ved å bruke "extend". Så fyller blokken der vi holdt av plass med det innholdet som hører til forsiden. Alle andre sider vi lager kan nå bygges på samme måte, og vi slipper på denne måten masse dobbeltarbeid. I mal.html kan du legge til så mange slike blokker du selv vil, for eksempel kan det være lurt å skrive noe css i blokk (eller lenke til css-filer) slik at css-kode kun treffer nettsidene du ønsker.
