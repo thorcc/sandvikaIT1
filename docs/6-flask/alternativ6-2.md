@@ -70,7 +70,7 @@ Koden som skrives her er koden til *serveren*, slik kode kalles ofte *back-end*,
 denne koden ligger *bak* og brukeren aldri ser denne koden.
 :::
 
-[comment]:<![]()>
+*legg til bilde*
 
 Følg lenka slik at du får åpnet nettstedet. Nå kan du surfe og inspisere som vanlig.
 
