@@ -12,11 +12,11 @@ I VS Code ligger utvidelser under ikonet med fire firkanter på menyen til venst
 
 
 Lag en ny mappe i VS Code, høyreklikk på mappen og velg `Create Flask`. Installasjonen kan ta ett minutt eller to, så smør deg med tålmodighet.
-Når du har installert Flask har det dukket endel mapper og to nye filer i prosjektmappen, for oss er de viktigste `app.py` og `templates/index.html`.
+Når du har installert Flask har det dukket opp en del mapper og to nye filer i prosjektmappen, for oss er de viktigste filene `app.py` og `templates/index.html`.
 
 ### Ruter
 
-Alle nettsidene vi skal lage skal ligge i mappen `templates` og forsiden bør hete `index.html`. Denne ble allerede laget da vi installerte Flask modulen, og vi ser at skjelettet, altså html-koden er lik det du er vant til. Vi kan legge til overskrifter og tekst, men lenker, bilder og css blir litt anderledes nå som vi jobber i et Flask-miljø. Tenk deg at hele mappen med prosjektet er noe som ligger back-end, altså brukeren ikke har tilgang til. Vi kan da for eksempel ikke lenger lage en lenke til en ny side der vi skriver `<a href="nyside.html>Trykk her</a>` fordi det forutsetter at brukeren har lastet ned nyside.html på forhånd. Vi lager istedet en forespørsel eller `rute`. En slik rute sender en beskjed til serveren om at vi ønsker å gå til nyside.html, serveren må da være kodet til å respondere ved å sende nettsiden til oss. Vi legger på en rute på forsiden ved å skrive a-elementet som følger:
+Alle nettsidene vi skal lage skal ligge i mappen `templates` og forsiden bør hete `index.html`. Denne ble allerede laget da vi installerte Flask modulen, og vi ser at skjelettet, altså html-koden er lik det du er vant til. Vi kan legge til overskrifter og tekst, men lenker, bilder og css blir litt annerledes nå som vi jobber i et Flask-miljø. Tenk deg at hele mappen med prosjektet er noe som ligger back-end, altså brukeren ikke har tilgang til. Vi kan da for eksempel ikke lenger lage en lenke til en ny side der vi skriver `<a href="nyside.html>Trykk her</a>` fordi det forutsetter at brukeren har lastet ned nyside.html på forhånd. Vi lager i stedet en forespørsel eller `rute`. En slik rute sender en beskjed til serveren om at vi ønsker å gå til nyside.html, serveren må da være kodet til å respondere ved å sende nettsiden til oss. Vi legger på en rute på forsiden ved å skrive a-elementet som følger:
 
 ````html
 <!DOCTYPE html>
@@ -76,7 +76,7 @@ Følg lenka slik at du får åpnet nettstedet. Nå kan du surfe og inspisere som
 
 ### Statiske filer
 
-Vi har sett på hvordan vi lenker sammen nettsider ved å gå via backend med flask. Hva da med eksterne filer, slik som bilder og css-filene våre? Disse skal jo heller ikke ligge åpent for brukeren, så også her må vi gjøre det litt anderledes. Flask er bygd opp på en måte der disse filene skal ligge i en spesifikk mappe som kalles `static`. Vi oppretter denne mappa i prosjektet vårt (på samme nivå som for eksempel templates mappa). Legg inn et bilde i static-mappa, og lag img-taggen et sted på forsiden vår. 
+Vi har sett på hvordan vi lenker sammen nettsider ved å gå via backend med flask. Hva da med eksterne filer, slik som bilder og css-filene våre? Disse skal jo heller ikke ligge åpent for brukeren, så også her må vi gjøre det litt annerledes. Flask er bygd opp på en måte der disse filene skal ligge i en spesifikk mappe som kalles `static`. Vi oppretter denne mappa i prosjektet vårt (på samme nivå som for eksempel templates mappa). Legg inn et bilde i static-mappa, og lag img-taggen et sted på forsiden vår. 
 ````html
 <!DOCTYPE html>
 <html lang="en">
