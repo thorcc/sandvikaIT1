@@ -1,9 +1,4 @@
----
-title: 6.2 Flask og HTML
-sidebar_position: 2
-sidebar_label: 6.2 Flask og HTML
-description: Se hvordan Flask og HTML samarbeider.
----
+
 
 # Flask og HTML
 

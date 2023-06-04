@@ -1,3 +1,10 @@
+---
+title: 6.3 Lage mal
+sidebar_position: 3
+sidebar_label: 6.3 Lage mal
+description: Lag maler for HTML i Flask.
+---
+
 # Lage Mal med Flask
 
 ### block og extends
