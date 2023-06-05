@@ -74,10 +74,10 @@ venner = {
 }
 
 fil = open("venner.json", "w")
-json.dump(venner,fil, indent = 4)
+json.dump(venner,fil, indent = 4, ensure_ascii=True)
 fil.close()
 ```
-`json.dump` "dumper" ordboka venner inn i variabelen "fil", altså kopierer ordboka inn i json-fila som akkurat ble opprettet. Vi legger på "indent = 4" slik at dataene ser ut som vi er vant til, i stedet for å ligge på en linje. Til slutt lukker vi fila. Prøv selv og se på json fila etter at den er opprettet. Forhåpentligvis ser du at ordboka ser nøyaktig lik ut som i python.
+`json.dump` "dumper" ordboka venner inn i variabelen "fil", altså kopierer ordboka inn i json-fila som akkurat ble opprettet. Vi legger på "indent = 4" slik at dataene ser ut som vi er vant til, i stedet for å ligge på en linje. Siste argument legger vi på så vi slipper knot med æøå og liknende. Til slutt lukker vi fila. Prøv selv og se på json fila etter at den er opprettet. Forhåpentligvis ser du at ordboka ser nøyaktig lik ut som i python.
 
 
 ## Hente data fra json
