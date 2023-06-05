@@ -90,6 +90,6 @@ def rute_paameldingsdata():
 
 Ei rute i app.py er ikke ferdig før vi returnerer brukeren dit vi ønsker. Vi kunne ha brukt "render_template" til ei ny html-side, men siden vi allerede har laget ei rute til paamelding.html sender vi brukeren dit ved funksjonen redirect (som må importeres fra flask).
 
-Dersom vi har gjort alt riktig har vi klart å sende informasjon fra påmeldingssiden vår til serveren som har lagret denne i en fil. Slike json-filer brukes primært til å flytte data, og neste steg ville vært å lagret dataene videre i en database, men det venter vi med til IT-2.
+Dersom vi har gjort alt riktig har vi klart å sende informasjon fra påmeldingssiden vår til serveren som har lagret denne i en fil. Json-filer brukes primært til å flytte data, og neste steg ville vært å lagret dataene i en database, men det venter vi med til IT-2.
 
 
