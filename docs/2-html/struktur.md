@@ -64,7 +64,7 @@ Her ligger det mange element nøstet inn under hverandre, `main` ligger rett und
 
 ## Oppgaver
 
-1. Lag et nettsted om skolen, bruk [skolens nettside](https://viken.no/sandvika-vgs/) som inspirasjon
+2.5 Lag et nettsted om skolen, bruk [skolens nettside](https://viken.no/sandvika-vgs/) som inspirasjon
     - Nettstedet skal bestå av minst fire undersider, f.eks:
       - index.html
       - fag.html
