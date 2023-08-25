@@ -91,7 +91,7 @@ Eksempel på et `form`-element
     <input id="f_navn" type="text">
     <label for="e_navn">Etternavn</label>
     <input id="e_navn" type="text">
-    <input type="submit" value="Registrer">
+    <button>Registrer</button>
 </form>
 ```
 
