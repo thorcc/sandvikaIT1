@@ -117,11 +117,7 @@ Et HTML-element vi bruker veldig mye fremover er `div`-elementet. Dette elemente
 
 ## Oppgaver
 
-1. Lag et `p`-element med teksten `innhold` og gjenskap CSS-boksen med padding, margin og border.
-   - Tips: `border: solid 1px black;`
-2. Lag en nettside som inneholder tre avsnitt med tekst, teksten skal ha 10% marg på høyre og venstre side.
-    - Tekst kan du finne på wikipedia, eks: [no.wikipedia.org/wiki/Parlamentarisme](https://no.wikipedia.org/wiki/Parlamentarisme)
-3. Kopier koden under og legg på CSS slik at de får riktige egenskaper
+1. Kopier koden under og legg på CSS slik at de får riktige egenskaper
 
 ```html
 <div>
@@ -130,5 +126,12 @@ Et HTML-element vi bruker veldig mye fremover er `div`-elementet. Dette elemente
     </section>
     <p>Hallo! - Jeg skal ha rosa bakgrunnsfarge, 0px marg over og under og 15px marg på venstre og høyre side</p>
 </div>
-<p>Dette var rart! - Jeg skal ha hvit bakgrunnsfarge og en svart linje over og under<p>
+<p>Dette var rart! - Jeg skal ha hvit bakgrunnsfarge og en svart linje over og under</p>
 ```
+
+2. Lag et `p`-element med teksten `innhold` og gjenskap CSS-boksen med padding, margin og border.
+   - Tips: `border: solid 1px black;`
+  
+3. Lag en nettside som inneholder tre avsnitt med tekst, teksten skal ha 10% marg på høyre og venstre side.
+    - Tekst kan du finne på wikipedia, eks: [no.wikipedia.org/wiki/Parlamentarisme](https://no.wikipedia.org/wiki/Parlamentarisme)
+
