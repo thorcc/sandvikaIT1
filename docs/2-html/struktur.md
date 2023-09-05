@@ -46,7 +46,7 @@ Når vi nøster elementer kan det være greit å ha et språk som raskt gir over
 <body>
     <header>
         <nav>
-            <a href="index.html>Hjem</a>
+            <a href="index.html">Hjem</a>
         </nav>
     </header>
     <main>
