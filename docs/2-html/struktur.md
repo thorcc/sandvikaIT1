@@ -44,6 +44,11 @@ Når vi nøster elementer kan det være greit å ha et språk som raskt gir over
 
 ```html
 <body>
+    <header>
+        <nav>
+            <a href="index.html>Hjem</a>
+        </nav>
+    </header>
     <main>
         <section>
             <h2>Hei</h2>
@@ -57,6 +62,9 @@ Når vi nøster elementer kan det være greit å ha et språk som raskt gir over
             <img src="katt3.png">
         </section>
     </main>
+    <footer>
+        <p>Laget på Sandvika VGS</p>
+    </footer>
 </body>
 ```
 
