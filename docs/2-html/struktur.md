@@ -30,7 +30,6 @@ De mest vanlige semantiske taggene er:
 |`<footer>` |bunntekst|
 |`<section>`|samler innhold som hører sammen|
 |`<article>`|selvstendig innhold|
-|`<div>`    |diverse innhold|
 
 En vanlig strukturering av nettsiden med semantsike elementer ser slik ut:
 
