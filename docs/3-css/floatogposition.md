@@ -1,17 +1,14 @@
 ---
-title: 3.6 Float og position
+title: 3.6 Position
 sidebar_position: 6
-sidebar_label: 3.6 Float og position
-description: Lær deg float og position og deres bruk.
+sidebar_label: 3.6 Position
+description: CSS-position
 ---
 
 # Float og Position
 
 Før grid og flex var en del av hverdagen var det langt mer kronglete å få plassert elementer slik vi ville ha de på nettsiden vår. I starten fantes ikke CSS i det hele tatt og da brukte man stort sett bare usynlige tabeller som man fylte med innhold. Når CSS ble introdusert var det med relativt begrensede muligheter for plassering. Da brukte man veldig ofte egenskapene `float` og `position`. Etterhvert som flex (og til slutt grid) ble utviklet, brukes de andre egenskapene mindre enn før, men det er fortsatt en del nyttige ting vi kan gjøre med dem!
 
-## Float
-
-Kommer
 
 ## Position
 
