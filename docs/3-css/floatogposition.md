@@ -1,7 +1,7 @@
 ---
-title: 3.6 Position
-sidebar_position: 6
-sidebar_label: 3.6 Position
+title: 3.7 Position
+sidebar_position: 7
+sidebar_label: 3.7 Position
 description: CSS-position
 ---
 

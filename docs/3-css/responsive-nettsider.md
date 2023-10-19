@@ -1,8 +1,8 @@
 ---
-title: 3.7 Responsive nettsider
-sidebar_position: 7
-sidebar_label: 3.7 Responsive nettsider
-description: Lag nettsider som er tilgjengelig for alle.
+title: 3.8 Responsive nettsider
+sidebar_position: 8
+sidebar_label: 3.8 Responsive nettsider
+description: Lag mobilvennlige nettsider.
 ---
 
 # Responsive nettsider
