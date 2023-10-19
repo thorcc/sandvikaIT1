@@ -31,7 +31,7 @@ function CssDisplay() {
                 <option>list-item</option>
               </select>
             </div>
-            <div><span className={styles.prop}>background-color:</span> <span className={styles.val}>red;</span></div>
+            <div><span className={styles.prop}>background-color:</span> <span className={styles.val}>darkolivegreen;</span></div>
             <div><span className={styles.prop}>margin:</span> <span className={styles.val}>20px;</span></div>
             <div><span className={styles.prop}>padding:</span> <span className={styles.val}>10px;</span></div>
             <div><span className={styles.prop}>border-radius:</span> <span className={styles.val}>7px;</span></div>
