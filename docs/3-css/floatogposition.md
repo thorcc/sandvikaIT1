@@ -98,13 +98,12 @@ Legg merke til at den relative posisjonen av boksen etterlater et tomrom der den
 
 ## relativ og absolute kombinert
 
-Et problem med absolutt posisjonering er at elementene ofte ikke oppfører seg "riktig" når vi endrer på størrelsen av skjermen. Det er også litt forvirrende å forstå hvordan man får flyttet et absolutt posisjonert element dit man vil. Dersom vi ønsker å begrense området et absolutt kan eksistere i, må vi lage en forelder som rammer inn både området og absolutt-elementet. Se på følgende eksempel der vi ønsker å legge tekst over et bilde:
+Et problem med absolutt posisjonering er at elementene ofte ikke oppfører seg "riktig" når vi endrer på størrelsen av skjermen. Det er også litt forvirrende å forstå hvordan man får flyttet et absolutt posisjonert element dit man vil. Dersom vi ønsker å begrense området et absolutt element kan eksistere i, må vi lage en forelder som rammer inn både området og absolutt-elementet. Se på følgende eksempel der vi ønsker å legge tekst over et bilde:
 
 ```html
 <div id="ramme">
     <img src="bilde" alt="Et stort landskap">
     <p>Tekst oppå bildet</p>
-
 </div>
 ```
 Ved å bygge opp elementene som følger kan vi sette forelder-elementet til position relative og p-elementet til position:absolute. Da vil posisjoneringen av p-elementet bestemmes av forelderen som følger:
@@ -190,6 +189,7 @@ a. Bruk flex til å lage en navigasjonsfane
 
 b. Posisjoner en tekst oppå en video
 
-c. Bruk grid eller flex for å gjenskape en bilderekke
+c. Bruk grid eller flex for å lage den blå boksen med lenker. 
 
-d. Bruk grid eller flex for å lage den blå boksen med lenker
+d. Bruk grid eller flex for å gjenskape en bilderekke
+ 
