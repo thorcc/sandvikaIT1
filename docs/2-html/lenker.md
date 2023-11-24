@@ -32,7 +32,7 @@ Sjekk ut [W3Schools](https://www.w3schools.com/tags/tag_a.asp) for å se hva mer
 
 :::
 
-### Innholdet til `a`-elementet
+#### Innholdet til `a`-elementet
 
 I eksempelet ovenfor skrev vi ren tekst i innholdsbiten av lenke-elementet. Det er ganske vanlig, men vi kan være mer avanserte. Alle elementer som ligger nøstet inn i et `a`-element blir en del av lenka. Slik kan for eksempel nettaviser gjøre både bilde og tekst klikkbare for å lese mer om saken:
 
@@ -50,7 +50,7 @@ Verdien til attributtet `href` i en a-tagg er en URL.
 
 URL'en til Sandvika VGS: `https://viken.no/sandvika-vgs`
 
-### Lokal URL
+#### Lokal URL
 
 En lokal URL er en *sti* til en fil lagret lokalt på en PC.
 Eks: `C:/Users/thorchr/desktop/uk3_html_css/bilde2.jpg`
@@ -70,7 +70,7 @@ bilde.jpeg blir da bare `bilde.jpeg` (siden vi er i samme mappe). Dersom bilde.j
 
 Her kommer noen eksempler på hvordan vi kan skriver relative stier til bilde.jpeg ved å enten gå inn i, eller hoppe ut av mapper.
 
-### I samme mappe
+#### I samme mappe
 
 ```
 -uke2
@@ -80,7 +80,7 @@ Her kommer noen eksempler på hvordan vi kan skriver relative stier til bilde.jp
 ```
 `<img src="bilde.jpeg">`
 
-### Bilde ligger i en bilder-mappe
+#### Bilde ligger i en bilder-mappe
 
 For å gå inn en undermappe brukes `navnPåMappe/`
 
@@ -94,7 +94,7 @@ For å gå inn en undermappe brukes `navnPåMappe/`
 ```
 `<img src="bilder/bilde.jpeg`
 
-### Bilde og nettsiden ligger i hver sin undermappe
+#### Bilde og nettsiden ligger i hver sin undermappe
 
 Her må vi først ut av hjem-mappen før vi kan gå inn i bilder-mappen. For å gå ett nivå opp brukes `../`
 
@@ -112,16 +112,16 @@ Her må vi først ut av hjem-mappen før vi kan gå inn i bilder-mappen. For å 
 
 ## Oppgaver
 
-**2.1** Lag en nettside som inneholder lenker til fem nettsider du besøker ofte  
+**2.3.1** Lag en nettside som inneholder lenker til fem nettsider du besøker ofte  
 
-**2.2** Lag en lenke til hjemmesiden du lagde forrige uke  
+**2.3.2** Lag en nettside om ferien din. Bruk det du har lært hittil til å legge på bilder og tekst. Koble den til nettsiden om deg selv fra oppgave 2.2.1. Sørg for at du kan hoppe frem og tilbake mellom begge sidene ved hjelp av lenker.  
 
-**2.3** Lag tre HTML-filer, `per.html`, `paal.html` og `espen.html`  
+**2.3.3** Lag tre HTML-filer, `per.html`, `paal.html` og `espen.html`  
 
    - Hver HTML-fil skal ha en overskrift og lenker til de to andre HTML-filene  
 
 
-**2.4** Last ned filen [2-3-lenker-oppgaver.zip](./2-3-lenker-oppgaver.zip)  
+**2.3.4** Last ned filen [2-3-lenker-oppgaver.zip](./2-3-lenker-oppgaver.zip)  
    - Flytt .zip-filen til IT-mappen din og pakk den ut (Mac: Dobbelklikk på filen i finder / Windows: Høyreklikk og velg pakk ut alle).   
    - Finn filen `hovedside.html` i VS Code  
    - Gjør oppgavene som står i filen  

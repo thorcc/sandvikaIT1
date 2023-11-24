@@ -104,3 +104,16 @@ Eksempel på et `form`-element
 ## De resterende elementene?
 
 For en mer fullstendig liste over elementer som finnes kan du se videre på [W3Schools - HTML Element Reference](https://www.w3schools.com/tags/default.asp), men du kommer langt med det vi har vært gjennom her. Nå begynner nok de aller fleste IT 1 elever å bli mer interessert i å endre på utseende og posisjonering av elementer på nettsiden sin, og da må vi over på det andre språket vi skal lære oss i faget, nemlig CSS.
+
+
+## Oppgaver
+
+**2.5.1**
+
+Ta for deg nettsidene du koblet sammen i oppgave 2.2.1 og 2.3.2. 
+
+a. Legg til en passende video du liker på siden om deg selv.
+
+b. Bygg inn et kart som viser et sted du vil trekke frem på ferie-siden.
+
+c. Legg til en påmelding til neste års tur på feriesiden. Her skal venner kunne skrive inn navn og velge blant tre forslag. For sistnevnte må du sette deg inn i select/option elementer som er en del av form-elememtet.

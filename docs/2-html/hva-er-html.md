@@ -147,3 +147,9 @@ Vi har nå laget en nettside med overskrift, tekst og bilder, for eksempel:
 ```
 
 Vi skal i neste avsnitt se litt nærmere på lenker ([2.3](./lenker.md)), og så på strukturering av nettsiden ([2.4](./struktur.md)). Siste del av dette kapittelet er en oppsummering av de mest brukte elementene ([2.5](./elementer.md)). Mange begynner nå å bli mer interessert i å gjøre utseende på nettsiden bedre. Da må vi se nærmere på CSS, som vi tar for oss i kap 3.
+
+## Oppgaver
+
+**2.2.1**
+
+Lag en nettside om deg selv. Du kan ta med informasjon om hvilken klasse du går i, hvilke fag du har valgt samt hobbyer og interesser. Ta et bilde av deg selv og legg det til nettsiden. Dersom du bruker et bilde fra iphone er det av en filtype som nettleseren ikke klarer å vise. Spør lærer eller andre hvordan du endrer filtype på et slikt bilde.

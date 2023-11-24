@@ -71,7 +71,32 @@ Her ligger det mange element nøstet inn under hverandre, `main` ligger rett und
 
 ## Oppgaver
 
-2.5 Lag et nettsted om skolen, bruk [skolens nettside](https://viken.no/sandvika-vgs/) som inspirasjon
+**2.4.1**
+
+Se på følgende utsnitt fra eksempelet ovenfor:
+```html
+    <main>
+        <section>
+            <h2>Hei</h2>
+            <p>tekst om meg selv.</p>
+        </section>
+        <section>
+            <h2>Katten min</h2>
+            <p>Bilder av katten min:</p>
+            <img src="katt1.png">
+            <img src="katt2.png">
+            <img src="katt3.png">
+        </section>
+    </main>
+```
+
+a. Hvor mange barn har main-elementet?
+
+b. Hvor mange etterkommere har main elementet?
+
+
+**2.4.2**
+Lag et nettsted om skolen, bruk [skolens nettside](https://viken.no/sandvika-vgs/) som inspirasjon
     - Nettstedet skal bestå av minst fire undersider, f.eks:
       - index.html
       - fag.html
