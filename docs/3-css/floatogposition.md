@@ -19,11 +19,11 @@ Position er en CSS-egenskap der man presist bestemmer hvor et element skal ligge
 * `positive: absolute;`
 * `position: fixed;`
 
-### position: static
+## position: static
 
 Alle elementene er i utgangspunktet satt til å være statiske. Det betyr at de følger de vanlige plasserings-reglene slik vi er vant til. Block-elementer legger seg under hverandre og inline-elementer legger seg ved siden av hverandre. Det er derfor som regel ingen grunn til å sette noen elementer til static, men det er greit å vite at verdien finnes. Statiske elementer kan heller ikke "dyttes" slik de andre kan.
 
-### Eksempel
+#### Eksempel
 
 For å få en god forståelse av hvordan de andre verdiene fungerer lager vi først kode for noen "bokser":
 
@@ -64,7 +64,7 @@ Legg merke til at inline-block (i motsetning til bare inline), lar oss sette hø
 
 ![Static](./bilder/3_6%20-%20floatogposition/position1.png)
 
-### position: relative
+## position: relative
 
 En relativ posisjon lar oss flytte på plasseringen på et element basert på der det allerede ligger. Hvis vi setter relativ posisjon følger det de vanlige reglene (statisk), men vi kan nå "dytte" elementet i alle retninger:
 
@@ -81,7 +81,7 @@ Vi "dytter" altså elementet 25 piksler nedover (fra toppen), og 25 piksler mot 
 
 ![Relative](./bilder/3_6%20-%20floatogposition/position2.png)
 
-### position: absolute 
+## position: absolute 
 
 Legg merke til at den relative posisjonen av boksen etterlater et tomrom der den opprinnelig var. Med absolutt posisjonering blir det motsatt. Da fjernes boksen fra sin opprinnelige posisjon og legger seg der hvor forelderen starter. Vi kan så dytte den på samme måte og får følgende effekt:
 
@@ -96,15 +96,42 @@ Legg merke til at den relative posisjonen av boksen etterlater et tomrom der den
 
 ![Absolutt](./bilder/3_6%20-%20floatogposition/position3.png)
 
-:::info
+## relativ og absolute kombinert
 
-NB! Følgende er et veldig nyttig triks!
+Et problem med absolutt posisjonering er at elementene ofte ikke oppfører seg "riktig" når vi endrer på størrelsen av skjermen. Det er også litt forvirrende å forstå hvordan man får flyttet et absolutt posisjonert element dit man vil. Dersom vi ønsker å begrense området et absolutt kan eksistere i, må vi lage en forelder som rammer inn både området og absolutt-elementet. Se på følgende eksempel der vi ønsker å legge tekst over et bilde:
 
-Et problem med absolutt posisjonering er at disse elementene ofte ikke endrer seg "riktig" når vi endrer på størrelsen av skjermen. Det løser vi ved å sette forelderen til å være relativ og så barna til være absolutte. Da vil barnas posisjon være absolutte, men flytte seg sammen med forelderen. Dette virker kanskje forvirrende, men er ganske enkelt å få til i praksis, se neste eksempel.
+```html
+<div id="ramme">
+    <img src="bilde" alt="Et stort landskap">
+    <p>Tekst oppå bildet</p>
 
-:::
+</div>
+```
+Ved å bygge opp elementene som følger kan vi sette forelder-elementet til position relative og p-elementet til position:absolute. Da vil posisjoneringen av p-elementet bestemmes av forelderen som følger:
 
-### Eksempel: Drop-down meny
+```css
+#ramme{
+    position: relative;
+}
+
+#ramme>p{
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    z-index: 2; /*tvinger elementet til å ligge oppå bildet */
+}
+
+```
+
+I dette kurset vil du stort sett alltid bruke position: absolute sammen med en relativ forelder.
+
+
+
+
+
+
+
+#### Eksempel: Drop-down meny
 
 La oss bruke det vi har sett på av relativ og absolutt posisjonering for å lage et drop-down meny. Vi ser av tipset ovenfor at vi må ha et *relativt forelder element* og *absolutte barn*. Drop-down menyen vår skal bestå av en synlig lenke og tre skjulte lenker som skal dukke opp når vi holder musepekeren over den synlige lenken:
 
@@ -139,7 +166,7 @@ La oss nå legge på CSS. Siden `a`-elementene skal legge seg under hverandre en
 
 Prøv selv med å skrive koden du ser over. Prøv så å lage en ordentlig navigasjonsbar med drop-down meny (farger, bakgrunn, padding etc). Legg merke til at det finnes mange alternative måter å lage langt mer spenstige drop-down menyer på, men det venter vi med for nå.
 
-### position: fixed
+## position: fixed
 
 Med denne verdien låser vi et element på plass uansett hvordan vi scroller på siden. Tenk deg for eksempel en navbar som alltid er med på toppen av siden uansett hvor langt ned du har kommet. Da må du sette header elementet til fixed, men i tillegg må vi sørge for at headeren alltid kommer over resten av nettsiden. Det gjør vi ved å øke z-indeksen. Prøv selv med en navigasjonsbar du har laget, legg til følgende inn i CSS koden din:
 
@@ -147,5 +174,22 @@ Med denne verdien låser vi et element på plass uansett hvordan vi scroller på
 header{
     position: fixed;
     z-index: 2;
+    width: 100%; /* Vi endrer på de grunnleggende egenskapene til header, og må da spesifisere bredden.
 }
 ```
+
+## Oppgaver
+
+**3.7.1**
+
+Til denne oppgaven får du en pakke av læreren din med video og bilder fra pexels.com
+
+Lag en forenklet versjon av https://www.visitnorway.com/
+
+a. Bruk flex til å lage en navigasjonsfane
+
+b. Posisjoner en tekst oppå en video
+
+c. Bruk grid eller flex for å gjenskape en bilderekke
+
+d. Bruk grid eller flex for å lage den blå boksen med lenker
