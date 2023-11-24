@@ -117,7 +117,7 @@ Et HTML-element vi bruker veldig mye fremover er `div`-elementet. Dette elemente
 
 ## Oppgaver
 
-1. Kopier koden under og legg på CSS slik at de får riktige egenskaper
+**3.2.1** Kopier koden under og legg på CSS slik at de får riktige egenskaper
 
 ```html
 <div>
@@ -135,3 +135,14 @@ Et HTML-element vi bruker veldig mye fremover er `div`-elementet. Dette elemente
 3. Lag en nettside som inneholder tre avsnitt med tekst, teksten skal ha 10% marg på høyre og venstre side.
     - Tekst kan du finne på wikipedia, eks: [no.wikipedia.org/wiki/Parlamentarisme](https://no.wikipedia.org/wiki/Parlamentarisme)
 
+**3.2.1**
+
+Ta for deg nettavisen du lagde i oppgave 2.5.2. Bruk CSS til å endre både header- og a-elementene til navigasjonsfanen på følgende måte:
+
+a. Legg til en rød bakgrunnsfarge på header-elementet. Legg også på litt padding på topp/bunn av elementet.
+
+b. Endre på a-elementene slik at de er farget hvite og ikke har en understrek.
+
+c. Legg litt luft mellom a-elementene ved for eksempel å gi de en marg på en eller begge sidene.
+
+d. Lær deg hvordan du importerer nye fonter fra for eksempel Google Fonts, og endre font typen til a-elementene.

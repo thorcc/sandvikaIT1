@@ -64,7 +64,7 @@ Når flex er "skrudd på" får vi en del nye egenskaper å forholde oss til:
 
 I eksemplene som kommer er det flere regelsett for CSS, og noen av egenskapene er kanskje nye for deg. Det er veldig lurt å prøve å lage de samme fanene selv, og eksperimentere med verdiene. Hva skjer når du endrer på ting, eller fjerner egenskaper. Ved å utforske koden på denne måten, vil du lære veldig mye om hvordan CSS og flex fungerer! 
 
-### Alternativ 1 - Horisontal Spredning
+#### Alternativ 1 - Horisontal Spredning
 
 La oss pynte på navigasjonsfanen vår, se nøye på hver egenskap og resultatet og prøv å avgjøre hva hver linje gjør.
 
@@ -93,7 +93,7 @@ Resultatet blir:
 > Vi ser at "space-around" gjør at barna til nav fyller hele skjermen, men like mye luft på 
 > hver side. `text-decoration: none;` er en egenskap som fjerner understreken på lenkene. 
 
-### Alternativ 2 - Horisontalt Venstrestilt
+#### Alternativ 2 - Horisontalt Venstrestilt
 
 En annen variant er å legge padding på selve lenkene, og bruke "flex-start" i stedet. Flex-start legger alle elementene ved begynnelsen, og padding sørger for at det er luft i mellom:
 
@@ -118,7 +118,7 @@ Resultat:
 
 ![Navigasjonsbar](./bilder/3_4%20-%20flex/navbar3.png)
 
-### Alternativ 3 - Mobil/Vertikal
+#### Alternativ 3 - Mobil/Vertikal
 
 For en nettside til mobiltelefon, er som oftest det beste å ha fleks-elementene i en kolonne. Vi endrer flex-direction så lenkene kommer under hverandre. Vi bruker - som i forrige eksempel - padding for luft mellom lenkene, og til slutt så sentrerer vi lenkene horisontalt ved hjelp av align-items:
 
@@ -144,7 +144,7 @@ Resultat:
 
 ![Navigasjonsbar](./bilder/3_4%20-%20flex/navbar5.png)
 
-### Alternativ 4 - Horisontalt i grupper
+#### Alternativ 4 - Horisontalt i grupper
 
 Ofte er det vanlig å ha lenker til nettstedet til venstre, og innlogging eller min side til høyre. Vi nøster lenkene slik at det bare blir to fleks-barn og legger `space-between` på disse:
 
@@ -196,13 +196,22 @@ Alternativt kan man bestemme størrelsen til et fleks-element ved å bruke egens
 
 :::
 
-## Oppgave 1 - TV2 Plays pakkevelger
+## Oppgaver
+
+**3.4.1**
+
+Ta for deg nettavisen du jobbet med i 2.5.2 og 3.2.1. Fjern eventuell marg mellom lenkene og bruk flex samt annen CSS til å få navigasjonsfanen til å se omtrent slik ut:
+
+![Navigasjonsbar_oppgave](./bilder/3_4%20-%20flex/navbar_oppgave.png)
+
+
+**3.4.2**
 
 Bruk Flex og gjenskap [TV2 Plays pakkevelger](https://play.tv2.no/pakker).
 
 - Tips: fonten `Helvetica` er ganske lik TV2 Plays sin.
 
-## Oppgave 2 - Spotifys nettside
+**3.4.3**
 
 Gjenskap [Spotifys nettside](https://open.spotify.com/).
 

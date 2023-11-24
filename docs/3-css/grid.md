@@ -124,3 +124,13 @@ Skal man ha mange elementer i bredden, kan man bruke repeat.
 Eks: `repeat(4,1fr)`, som tilsvarer `1fr 1fr 1fr 1fr`.
 
 :::
+
+## Oppgaver
+
+**3.5.1**
+
+Lag en nettside om solsystemet vårt. Den skal bestå av et 4x2 grid der hver rute skal bestå av et bilde av planeten samt navnet på den.
+
+**3.5.2**
+
+Forsøk å gjenskape det periodiske system ved å bruke grid. Bruk for eksempel wikipedia sin versjon som inspirasjon

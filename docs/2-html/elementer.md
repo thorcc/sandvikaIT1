@@ -117,3 +117,16 @@ a. Legg til en passende video du liker på siden om deg selv.
 b. Bygg inn et kart som viser et sted du vil trekke frem på ferie-siden.
 
 c. Legg til en påmelding til neste års tur på feriesiden. Her skal venner kunne skrive inn navn og velge blant tre forslag. For sistnevnte må du sette deg inn i select/option elementer som er en del av form-elememtet.
+
+d. Lag en ny html side der det er en tekst det står "Du er registert", samt en lenke tilbake til feriesiden. Koble denne siden i action-attributtet til påmeldingsskjemaet du lagde i c.
+
+**2.5.2**
+Begynn på en nettavis:
+
+a. Legg på elementene header, main og footer for å strukturere siden.	
+
+b. I header elementet: Lag noen lenker for ulike kategorier. De trenger ikke virke enda. Eksempler på kategorier kan være "Sport", "Kultur", "Lokalnytt" og lignende. 
+	
+b. I main elementet: Legg til et par fiktive "nyheter" bestående av bilde og overskrift. Begge deler skal være en del av en lenke til selve saken, altså nøstet inn i et a-element.  
+	
+c. Lag en underside med tekst og flere bilder til en av sakene på forsiden.
