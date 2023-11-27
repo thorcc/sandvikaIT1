@@ -14,15 +14,37 @@ print("hallo, verden!")
 - I `hallo.py`-programmet ditt vet datamaskinen hvordan den skal utføre `print`-funksjonen.
 - `print`-funksjonen tar inn argumenter. I dette tilfellet, er `"hallo, verden!"` argumentene `print`-funksjonen tar inn.
 
+## Egne funksjoner
+
+- Vi kan også definere våre egne funksjoner med nøkkelordet `def`
+- La oss lage en funksjon som hilser på folk:
+
+```python
+def hils():
+    print("Hei sveis!")
+    print("Ha en fin dag!")
+hils()
+```
+
+```python
+def hils(til):
+    print("Hei", til)
+    print("Ha en fin dag!")
+
+hils("Thor")
+```
+
+- Det skjer ingenting når vi kjører programmet
+- Det er fordi vi bare har lært datamaskinen hvordan den skal
+
 ## Bugs (feil)
 
-- En stor del av koding handler om *Bugs*. Bugs er feil i koden, som vi må løse.
-- Det kunne jo vært at vi glemte en parentes i `hallo.py`, slik at vi skrev `print("hallo, verden"`. Da ville *kompilatoren* gitt oss enn feilmelding i terminalen.
+- En stor del av koding handler om _Bugs_. Bugs er feil i koden, som vi må løse.
+- Det kunne jo vært at vi glemte en parentes i `hallo.py`, slik at vi skrev `print("hallo, verden"`. Da ville _kompilatoren_ gitt oss enn feilmelding i terminalen.
 - Veldig mange bugs kan løses ved å lese feilmeldingene kompilatoren gir.
 - Dessvere er det ikke alltid like lett å tolke feilmeldingene fra kompilatoren, men med litt trening og erfaring blir man god.
 
 ## Forbedring av hallo, verden
-
 
 - Vi kan lage en personlig vri på `hallo.py`.
 - Vi legger til en ny funksjon `input` som tar en spørsmål som argument.
@@ -33,7 +55,7 @@ input("Hva heter du? ")
 print("hallo, verden!")
 ```
 
-- Foreløpig får vi ikke gjort noe med brukerens svar på spørsmålet vårt. For å gjøre det må vi innføre et nytt konsept, nemlig *variabler*.
+- Foreløpig får vi ikke gjort noe med brukerens svar på spørsmålet vårt. For å gjøre det må vi innføre et nytt konsept, nemlig _variabler_.
 
 ## Variabler
 
@@ -57,71 +79,54 @@ navn = input("Hva heter du? ")
 print("hallo, navn")
 ```
 
-- La oss fikse det:
+- Noen funksjoner kan ta flere argumenter.
+- `print`-funksjonen er en sånn funksjon.
+- `print`-funksjonen har ingen begrensning på antall argumenter, og den printer argumentene ut på samme linje.
+- Argmuentene skilles med komma.
+- Pass på at du setter komma riktig!
 
 ```python
 navn = input("Hva heter du? ")
-print("hallo, ")
-print(navn)
+print("hallo,", navn, "?")
+```
+
+## Oppgave
+
+```python
+a = 10
+b = 20
+a = b
+print(a)
+print(b)
 ```
 
 ## Kommentarer
 
 - Kommentarer er en fin måte å gi forklaringer på hva programmer gjør.
 - Se på kommentarer som notater for deg selv og andre.
-- La oss legge til kommentarer i programmet vårt.
+- Kommentarer skrives etter `#`, da vil resten av linjen _kommenteres ut_, som vil si at den ikke vil kjøre.
+- La oss legge til en kommentar i programmet vårt:
 
 ```python
 # spør om brukerens navn
 navn = input("Hva heter du? ")
-print("hallo, ")
-print(navn)
+print("hallo, ", navn)
 ```
 
 ## Pseudokode
 
-- Kommentarer kan også fungere som en spesiell *to-do*-liste for hva du må programmere i programmet ditt.
-- Kommentarer som beskriver stegene i et program kalles for *pseudokode*
-- Pseudokode er en fin måte å planlegge koden i et program, særlig når du ikke vet hvordan du skal løse et problem.
+- Kommentarer kan være veldig nyttige i planleggingen av et program.
+- De kan fungere som en spesiell _to-do_-liste for hva du skal programmere i programmet ditt.
+- Slike kommentarer som beskriver stegene i et program kalles for _pseudokode_
+- Pseudokode kan være veldig hjelpsomt, særlig når du ikke vet hvordan du skal løse et problem.
 - En pseudokode for `hallo.py` kunne for eksempel vært:
 
 ```python
 # Spør om brukerens navn
-# Print hallo
-# Print brukerens navn
+# Print hallo og brukerens navn
 ```
 
 - Man kan godt la pseudokoden bli stående når koden er ferdig. Programmet vårt blir da:
-
-```python
-# Spør om brukerens navn
-navn = input("Hva heter du? ")
-
-# Print hallo
-print("hallo, ")
-
-# Print brukerens navn
-print(navn)
-
-```
-
-## Forenkling av kode (refaktorere)
-
-- Vi kan gjøre noen forenklinger i programmet vårt
-
-- Vi kan f.eks plusse sammen tekstene `"hallo, "` og navnet til brukeren:
-
-```python
-# Spør om brukerens navn
-navn = input("Hva heter du? ")
-
-# Print hallo og brukerens navn
-print("hallo, " + navn)
-```
-
-- Alternativt kan vi sende inn flere argumenter til `print`-funksjonen.
-- Noen funksjoner kan ta i mot flere argumenter, da skilles hvert argument med et `,`
-- Vi kan faktisk gi så mange argumenter vi vil til print-funksjonen, og den vil printe alt på samme linje i terminalen.
 
 ```python
 # Spør om brukerens navn
@@ -131,6 +136,14 @@ navn = input("Hva heter du? ")
 print("hallo, ", navn)
 ```
 
+## Oppgaver
+
+1. Få en pseudokode og skriv koden
+2. Få en kode og skriv pseudokode
+3. Areal av firkant
+   a. Skriv pseudokode
+   b. Skriv koden
+
 ## Koden bør være lesbar/forståelig for andre
 
 - Når du skriver kode for å løse et problem, er det som regel veldig mange måter å løse problemet på.
@@ -139,7 +152,7 @@ print("hallo, ", navn)
 
 ## Strenger og formatering
 
-- En tekst i Python kalles for en *streng*
+- En tekst i Python kalles for en _streng_
 - `f-strenger` er en spesiell type strenger, som lar oss blande tekst og variabler på en elegant måte
 - `f-strenger` skrives som vanlig tekst, altså mellom anførselstegn `""`, bare at vi putter en `f` foran, slik: `f"Hei på deg!"`, variabler puttes mellom krøllparenteser `{}`, slik `f"Hei {navn}!"`.
 
