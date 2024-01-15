@@ -16,12 +16,13 @@ I Python brukes løkker for å repetere arbeidsoppgaver.
 ## While-løkke
 
 While-løkker kjører "så lenge" en betingelse er sann.
-For eksempel bruker programmet under en while-løkke for å telle ned fra 5, og deretter si "lift off!":
 
 ```python
 while betingelse:
     # kode som gjennomføres så lenge betingelsen er sann
 ```
+
+For eksempel bruker programmet under en while-løkke for å telle ned fra 5, og deretter si "lift off!":
 
 <iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=n%20%3D%205%0Awhile%20n%20%3E%200%3A%0A%20%20%20%20print%28n%29%0A%20%20%20%20n%20-%3D%201%0Aprint%28%22Lift%20off!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
@@ -82,9 +83,21 @@ I eksempel 2 vil `n` alltid forbli større enn 0, fordi 20 er større enn 0.
 
 :::
 
-## For-løkke
+## For-løkker
 
-En for-løkke gjentar en kode et bestemt antall ganger.
+En for-løkke er en løkke som kan brukes for å gå gjennom *ting*, for eksempel kan vi bruke en for-løkke for å gå gjennom hver bokstav i en tekst, hver *ting* i en liste eller hvert opplslagsord i en ordbok.
+
+Koden under bruker en for-løkke og går gjennom hver bokstav i teksten `Ja, vi elsker` og teller antall mellomrom.
+
+<iframe width="100%" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=antall_mellomrom%20%3D%200%0Afor%20bokstav%20in%20%22Ja,%20vi%20elsker%22%3A%0A%20%20%20%20if%20bokstav%20%3D%3D%20%22%20%22%3A%0A%20%20%20%20%20%20%20%20antall_mellomrom%20%2B%3D%201%0Aprint%28antall_mellomrom%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+Inne i en for-løkke lages en variabel, for eksempel `bokstav`.
+For hver runde i løkken oppdateres variabelsen verdi, i eksempelene over har variabelen `bokstav` først verdien `J`, så `a`, så `,`, så ` ` og så videre.
+Følg med på hva som skjer i minnet (global frame) i eksempelet under.
+
+<iframe width="100%" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20bokstav%20in%20%22Ja,%20vi%20elsker%22%3A%0A%20%20%20%20print%28bokstav%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+vi gjentar en kode et bestemt antall ganger.
 Hvis vi på forhånd vet hvor mange ganger en kode skal kjøre, kan vi bruke en for-løkke.
 
 Løkken under vil telle fra 1 til 10.
