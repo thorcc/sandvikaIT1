@@ -89,22 +89,69 @@ En for-løkke er en løkke som kan brukes for å gå gjennom *ting*, for eksempe
 
 Koden under bruker en for-løkke og går gjennom hver bokstav i teksten `Ja, vi elsker` og teller antall mellomrom.
 
-<iframe width="100%" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=antall_mellomrom%20%3D%200%0Afor%20bokstav%20in%20%22Ja,%20vi%20elsker%22%3A%0A%20%20%20%20if%20bokstav%20%3D%3D%20%22%20%22%3A%0A%20%20%20%20%20%20%20%20antall_mellomrom%20%2B%3D%201%0Aprint%28antall_mellomrom%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="100%" height="400" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=antall_mellomrom%20%3D%200%0Afor%20bokstav%20in%20%22Ja,%20vi%20elsker%22%3A%0A%20%20%20%20if%20bokstav%20%3D%3D%20%22%20%22%3A%0A%20%20%20%20%20%20%20%20antall_mellomrom%20%2B%3D%201%0Aprint%28antall_mellomrom%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 Inne i en for-løkke lages en variabel, for eksempel `bokstav`.
-For hver runde i løkken oppdateres variabelsen verdi, i eksempelene over har variabelen `bokstav` først verdien `J`, så `a`, så `,`, så ` ` og så videre.
+For hver runde i løkken oppdateres variabelsen verdi, i eksempelene over har variabelen `bokstav` først verdien `"J"`, så `"a"`, så `","`, så `" "` og så videre.
 Følg med på hva som skjer i minnet (global frame) i eksempelet under.
 
-<iframe width="100%" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20bokstav%20in%20%22Ja,%20vi%20elsker%22%3A%0A%20%20%20%20print%28bokstav%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="100%" height="400" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20bokstav%20in%20%22Ja,%20vi%20elsker%22%3A%0A%20%20%20%20print%28bokstav%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
-vi gjentar en kode et bestemt antall ganger.
-Hvis vi på forhånd vet hvor mange ganger en kode skal kjøre, kan vi bruke en for-løkke.
+Vi kan også bruke for-løkker for å gå gjennom lister.
+Da vil variabelen vi oppretter i løkken få verdiene til hvert element i listen, en verdi om gangen.
+Legg merke til hvilke verdier variabelen `elev` har i eksempelet under.
 
-Løkken under vil telle fra 1 til 10.
+> En liste i python skrives mellom firkantparenteser `["dette", "er", "en", "liste"]`.  
+> Firkantparenteser skrives med `option/alt` + `shift` + `8` på mac.  
+> Firkantparenteser skrives med `Alt gr` + `8` på windows.
+
+<iframe width="100%" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20elev%20in%20%5B%22Erling%22,%20%22Ada%22,%20%22Caroline%22%5D%3A%0A%20%20%20%20print%28elev%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+Det er også mulig å bruke for-løkker på lister med tall.
+Eksempelet under skriver ut syv-gangen.
 
 ```python
-for i in range(1,11):
-    print(i)
+print("7-gangen")
+for tall in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+    gange = 7 * tall
+    print(f"7 * {tall} = {gange}")
+```
+
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="100%" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=print%28%227-gangen%22%29%0Afor%20tall%20in%20%5B1,%202,%203,%204,%205,%206,%207,%208%20,%209,%2010%5D%3A%0A%20%20%20%20gange%20%3D%207%20*%20tall%0A%20%20%20%20print%28f%227%20*%20%7Btall%7D%20%3D%20%7Bgange%7D%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+I lengden blir det litt slitsomt å skrive alle tallene i listen.
+Vi kan heller bruke den innebygde funksjonen `range(start, slutt_før)`, som gir oss et intervall fra og med `start` opp til `slutt_før`.
+
+> `range()` er en innebygd funksjon som lager en rekke med tall.
+> Rekken starter på det første tallet  og slutter ett tall før det andre tallet. Eks: `range(1,3)` gir rekken `1` `2`.
+> `range(5,7)` gir rekken `5` `6`.
+> Det er også mulig å droppe første tallet i range, slik `range(3)`, da lager range en rekke som starter på `0` og slutter før tallet mellom parantesene. Eks: `range(3)` gir rekken `0` `1` `2`
+
+```python
+print("7-gangen")
+for tall in range(1,11):
+    gange = 7 * tall
+    print(f"7 * {tall} = {gange}")
+```
+
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="100%" height="350" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=print%28%227-gangen%22%29%0Afor%20tall%20in%20range%281,11%29%3A%0A%20%20%20%20gange%20%3D%207%20*%20tall%0A%20%20%20%20print%28f%227%20*%20%7Btall%7D%20%3D%20%7Bgange%7D%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+Legg merke til at range slutter én før den siste verdien som sendes inn.
+Løkken under vil altså telle fra 1 til 10 – ikke fra 1 til 11!
+
+```python
+for tall in range(1,11):
+    print(tall)
 ```
 
 <details>
@@ -114,26 +161,9 @@ for i in range(1,11):
 
 </details>
 
-`range()` er en innebygd funksjon som lager en rekke med tall. Rekken starter på det første tallet og slutter ett tall før det andre tallet. Eks: `range(1,3)` gir rekken `1` `2`. `range(5,7)` gir rekken `5` `6`.
-
-Det er også mulig å droppe første tallet i range, slik `range(3)`, da lager range en rekke som starter på `0` og slutter før tallet mellom parantesene. Eks: `range(3)` gir rekken `0` `1` `2`
-
-```python
-# Teller fra 0 til 9
-for i in range(10):
-    print(i)
-```
-
-<details>
-<summary>Klikk for Pythontutor</summary>
-
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=%23%20Teller%20fra%200%20til%209%0Afor%20i%20in%20range%2810%29%3A%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
-</details>
-
 ## While vs. for
 
-I mange tilfeller kan vi velge om vi skal bruke for eller while.
+I mange tilfeller kan vi velge om vi skal bruke *for* eller *while*.
 I eksemplet under brukes både en while-løkke og en for-løkke for å telle til 10.
 
 ```python
@@ -155,32 +185,13 @@ for i in range(11):
 
 </details>
 
-Selv om det er mulig å bruke begge typene løkker for å løse samme problem, er det noen tilfeller hvor vi oftere bruker for, og andre tilfeller hvor vi oftere bruker while. 
+Selv om det er mulig å bruke begge typene løkker for å løse samme problem, er det noen tilfeller hvor vi oftere bruker *for*, og andre tilfeller hvor vi oftere bruker *while*.
 For-løkker brukes som oftest når vi vet hvor mange ganger vi skal gjenta en kode, mens While-løkker brukes oftest når vi ikke vet hvor mange ganger vi skal gjenta en kode.
-
-## Lister og løkker
-
-En for-løkke kan brukes for å gå gjennom alle *tingene* i en liste.
-
-```python
-liste = [1, 2, "Hei", True]
-for i in liste:
-    print(i)
-```
-
-<details>
-<summary>Klikk for Pythontutor</summary>
-    
-
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=liste%20%3D%20%5B1,%202,%20%22Hei%22,%20True%5D%0Afor%20i%20in%20liste%3A%0A%20%20%20%20print%28i%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
-
-
-</details>
 
 ## Ordbøker og løkker
 
-For-løkker kan også brukes for å gå gjennom ordbøker.
-For å få ut både nøkler og verdier må man gå gjennom innholdet i ordboken, det gjøres med `.items()`, se eksempel under.
+For-løkker kan også brukes for å gå gjennom hver nøkkel i ordbøker.
+Vi skal se mer på ordbøker i neste kapittel.
 
 ```python
 fotballspiller = {
@@ -189,17 +200,16 @@ fotballspiller = {
     "alder": 26,
     "klubb": "Lyon"
 }
-for nøkkel, verdi in fotballspiller.items():
-    print(nøkkel, ":", verdi)
+for nøkkel in fotballspiller:
+    print(f"{nøkkel}: {fotballspiller[nøkkel]}")
 ```
 
 <details>
 <summary>Klikk for Pythontutor</summary>
 
-<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fotballspiller%20%3D%20%7B%0A%20%20%20%20%22fornavn%22%3A%20%22Ada%22,%0A%20%20%20%20%22etternavn%22%3A%20%22Hegerberg%22,%0A%20%20%20%20%22alder%22%3A%2026,%0A%20%20%20%20%22klubb%22%3A%20%22Lyon%22%0A%7D%0Afor%20n%C3%B8kkel,%20verdi%20in%20fotballspiller.items%28%29%3A%0A%20%20%20%20print%28n%C3%B8kkel,%20%22%3A%22,%20verdi%29%0A&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=fotballspiller%20%3D%20%7B%0A%20%20%20%20%22fornavn%22%3A%20%22Ada%22,%0A%20%20%20%20%22etternavn%22%3A%20%22Hegerberg%22,%0A%20%20%20%20%22alder%22%3A%2026,%0A%20%20%20%20%22klubb%22%3A%20%22Lyon%22%0A%7D%0Afor%20n%C3%B8kkel%20in%20fotballspiller%3A%0A%20%20%20%20print%28f%22%7Bn%C3%B8kkel%7D%3A%20%7Bfotballspiller%5Bn%C3%B8kkel%5D%7D%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
 
 </details>
-
 
 ## Oppgaver
 
