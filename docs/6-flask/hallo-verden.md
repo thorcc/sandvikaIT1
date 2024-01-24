@@ -7,47 +7,35 @@ description: Sett i gang med Flask på egen hånd.
 
 # Kom i gang med Flask
 
-## 1. Opprette et nytt prosjekt
+## 1. Installere Flask
 
 1. Lag en ny terminal i VS Code
-   1. `Terminal -> New Terminal`
-2. Lag en ny mappe med terminalen
-   1. Skriv  `mkdir mappenavn`
-3. Gå inn i mappen med terminalen
-   1. Sriv `cd mappenavn`
-4. Lag et nytt virtuelt prorgrammeringsmiljø i mappen
-   1. Windows: `py -3 -m venv venv`
-   2. Mac: `python3 -m venv venv`
-5. Aktiver miljøet
-   1. Windows: `venv\Scripts\activate`
-   2. Mac: `. venv/bin/activate`
-6. Installer Flask
-   1. `pip install Flask`
+   - `Terminal -> New Terminal`
+2. Installer Flask
+   - Skriv følgende i terminalen og trykk enter:
+      - Windows: `pip install Flask`
+      - Mac: `pip3 install Flask`
 
-## 2. Åpne et tidligere prosjekt
-
-1. Lag en ny terminal i VS Code
-   1. `Terminal -> New Terminal`
-2. Gå inn i prosjekt-mappen med terminalen
-   1. Sriv `cd mappenavn`
-3. Aktiver miljøet
-   1. Windows: `venv\Scripts\activate`
-   2. Mac: `. venv/bin/activate`
-
-## 3. Ditt første prosjekt
-
-1. Lag en ny fil `app.py` i prosjektmappen
-2. Lim inn koden under i `app.py`:
+## 2. Ditt første prosjekt
 
 ```python
-from flask import Flask
+from flask import Flask # importerer Flask fra flask-biblioteket
 
-app = Flask(__name__)
+app = Flask(__name__) # oppretter en flask-app
 
+# lager en rute for / (som betyr at den kan nås på http://127.0.0.1:5000/)
+# ruten vil vise det som returneres av funksjonen som er definert under @app.route("/")
 @app.route("/")
-def hello_world():
-    return "<p>Hello, World!</p>"
-```
+def hallo_verden():
+    return "<p>Hallo, verden!</p>"
 
-3. Skriv `flask run` i terminalen
-4. Gå inn på nettsiden `http://127.0.0.1:5000/` i nettleseren din
+
+# lager en rute for /ha-en-fin-dag (som betyr at den vil kjøre på http://127.0.0.1:5000/ha-en-fin-dag)
+@app.route("/ha-en-fin-dag")
+def hallo_verden():
+    return "<h1>Ha en fin dag!</h1>"
+
+# starter en webserver i test-modus som kjører på port 5000
+# webserveren vil nå kjøre på http://127.0.0.1:5000
+app.run(debug=True, port=5000) 
+```
