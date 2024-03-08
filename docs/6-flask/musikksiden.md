@@ -13,24 +13,20 @@ description: Et eksempel på bruk av Flask.
 
 ```
 |
-- static (ny)
+- static
 |    |
-|    - nav.css (ny)
-|    - style.css (ny)
+|    - nav.css
+|    - style.css
 |
 - templates
 |   |
-|   - mal.html (ny)
-|   - sanger.html (ny)
-|   - artister.html (ny)
+|   - mal.html
+|   - sanger.html
+|   - artister.html
 |   - index.html
 |
 - app.py
-- spotify.py (ny)
-- requirements.txt
-- venv
-|   |
-|   -...
+- spotify.py
 |
 ```
 
@@ -50,15 +46,15 @@ artistliste = ["Slowthai", "Shame", "Karpe", "Honningbarna"]
 #]
 sangliste = weekly_top_songs_global()
 
-@app.route("/") # oppretter en rute til /
+@app.get("/") # oppretter en rute til /
 def index(): # oppretter en funksjon index, denne funksjonen vil kjøre når vi besøker ruten definert på linjen over
     return render_template("index.html")
 
-@app.route("/sanger") # oppretter en rute til "/sanger"
+@app.get("/sanger") # oppretter en rute til "/sanger"
 def sanger():
     return render_template("sanger.html", sanger=sangliste) # returnerer nettsiden "sanger.html"
 
-@app.route("/artister") # oppretter en rute til "/artister"
+@app.get("/artister") # oppretter en rute til "/artister"
 def artister():
     return render_template("artister.html", artister=artistliste) # returnerer nettsiden "artister.html"
 ```
