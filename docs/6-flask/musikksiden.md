@@ -57,6 +57,8 @@ def sanger():
 @app.get("/artister") # oppretter en rute til "/artister"
 def artister():
     return render_template("artister.html", artister=artistliste) # returnerer nettsiden "artister.html"
+
+app.run(debug=True)
 ```
 
 ## mal.html
