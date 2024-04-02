@@ -1,10 +1,3 @@
----
-title: 6.7 Hallo, verden
-sidebar_position: 7
-sidebar_label: 6.7 Hallo, verden
-description: Sett i gang med Flask på egen hånd.
----
-
 # Kom i gang med Flask
 
 ## 1. Installere Flask
