@@ -56,11 +56,15 @@ I app.py må vi nå opprette ruta vi kalte "/tilsendt_data". Vi gjør først fø
 ```python
 from flask import Flask, render_template, request, redirect
 
-@app.route("/tilsendt_data",methods=["POST"])
+app = Flask(__name__)
+
+@app.post("/tilsendt_data",methods=["POST"])
 def rute_paameldingsdata():
     navn = request.form.get("navn")
     alder = request.form.get("alder")
     idrett = request.form.get("idrett")
+
+app.run(debug=True)
 ```
 
 I argumentet til "get"-funksjonen må vi skrive det som står under "name"-attributten fra form-elementet. Da vil verdien lagres i vår nye variabel. Dersom vi ønsker å lagre dataene i en json-fil, husker vi at de må skrives som ei liste eller en ordbok. Vi velger sistnevnte og lagrer ordboka i en json-fil på samme måte som vi lære i kapittel 5.8:
@@ -68,7 +72,10 @@ I argumentet til "get"-funksjonen må vi skrive det som står under "name"-attri
 ```python
 from flask import Flask, render_template, request, redirect
 
-@app.route("/tilsendt_data",methods=["POST"])
+app = Flask(__name__)
+
+
+@app.post("/tilsendt_data",methods=["POST"])
 def rute_paameldingsdata():
     navn = request.form.get("navn")
     alder = request.form.get("alder")
@@ -86,6 +93,8 @@ def rute_paameldingsdata():
     fil.close
 
     return redirect("/paamelding")
+
+app.run(debug=True)
 ```
 
 Ei rute i app.py er ikke ferdig før vi returnerer brukeren dit vi ønsker. Vi kunne ha brukt "render_template" til ei ny html-side, men siden vi allerede har laget ei rute til paamelding.html sender vi brukeren dit ved funksjonen redirect (som må importeres fra flask).
