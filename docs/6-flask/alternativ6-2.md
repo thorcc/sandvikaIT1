@@ -9,20 +9,20 @@ description: Se hvordan Flask og HTML samarbeider.
 
 ### Mapper, Filer og Ruter
 
-Før du starter må du installere rammeverket. Snakk med læreren din for hjelp til dette
+Før du starter med flask må du installere det. Snakk med læreren din for hjelp til dette
 
-Når vi skal sette opp en struktur som beskrevet i forrige avsnitt, så er det enkelte filer og mapper som må ha spesifikke navn og ligge riktig i forhold til hverandre for at rammeverket skal fungere. Vi lager en prosjektmappe med valgfritt navn og legger følgende inn i denne:
+Når vi skal sette opp rammeverket, så er det enkelte filer og mapper som må ha spesifikke navn og ligge riktig i forhold til hverandre for at det skal fungere. Vi lager en prosjektmappe med valgfritt navn og legger følgende inn i denne:
 
-- app.py er en python fil som skal fungere som serveren vår. Denne fungerer som et sentralbord og skal håndtere alle forespørsler fra brukere av siden vår.
+- `app.py` er en python fil og fungerer som serveren vår. Vi kan se på fila som et sentralbord vi programmerer. Her skal vi håndtere alle forespørsler fra brukere av siden vår.
 
-- templates er en mappe som skal inneholde alle html filene våre
+- `templates` er en mappe som skal inneholde alle html filene våre
 
-- static er en mappe som skal inneholde alle bildene og eventuelle css-filer.
+- `static` er en mappe som skal inneholde alle bildene og eventuelle css-filer.
 
 
 ![Fil og mappestruktur](./bilder/struktur.png)
 
-Flask er et hjelpeverktøy som krever relativt lite for å sette opp. Vi gjør legger inn følgende tre linjer i app.py:
+ Vi legger så inn følgende tre linjer i app.py:
 
 ```python
 from flask import Flask, render_template
@@ -35,13 +35,13 @@ app.run(debug=True)
 
 ```
 
-Vi kan nå kjøre python-koden og vil få servert følgende resultat
+Det kreves ikke mye kode for å sette opp serveren i app.py, men vi venter med å forklare hva som skjer. Prøv å kjøre kan nå kjøre python-koden og du får servert følgende resultat
 
 ![Flask kjøres](./bilder/flask_server.png)
 
-Vi ser at vi har fått en nettadresse, `http://127.0.0.1:5000`, som viser oss nettstedet vårt så lenge vi kjører server-fila vår. Det er denne vi skal bruke heretter, "open in browser" utvidelsen vi brukte tidligere vil ikke lenger fungere. 
+Vi ser at vi har fått tilgang til en nettadresse, `http://127.0.0.1:5000`. Dette er forsiden til nettstedet vårt så lenge vi kjører server-fila vår. Det er denne vi skal bruke heretter, "open in browser" utvidelsen vi brukte tidligere vil ikke lenger fungere. 
 
-Dersom vi følger på adressen nå får vi en feilmelding tilbake. Selv om serveren er skrudd på, har den ingen instruksjoner for hva som skal skje når noen besøker nettstedet, og det finnes jo heller ingen nettsider å vise!
+Dersom vi følger på adressen nå, får vi en feilmelding tilbake. Selv om serveren er skrudd på, har den ingen instruksjoner for hva som skal skje når noen besøker nettstedet, og det finnes jo heller ingen nettsider å vise!
 
 Vi starter derfor å lage forsiden til nettstedet vårt. Vi oppretter en html-fil og legger denne i `templates` mappa. Så skriver vi et standard skjelett og en overskrift som for eksempel:
 
@@ -59,7 +59,7 @@ Vi starter derfor å lage forsiden til nettstedet vårt. Vi oppretter en html-fi
 </html>
 ```
 
-Vi er fortsatt ikke i mål, vi må nå legge inn kode i app.py som skal koble URL-en vår opp til nettsiden vi akkurat laget. Dette kalles for en rute og ser ut som følger:
+Vi er fortsatt ikke i mål, vi må nå legge inn kode i app.py som skal koble URL-en vår opp til html-fila vi akkurat laget. Dette kalles for en rute og ser ut som følger:
 
 ```python
 from flask import Flask, render_template, request
@@ -75,9 +75,9 @@ app.run(debug=True)
 
 De som lager Flask har bestemt at ruta til forsiden alltid skal hete "/". Nå vil funksjonen "rute_forside()" kjøres hver gang noen besøker forsiden til nettstedet. Denne sørger for at  html fila leveres tilbake til brukerens nettleser.
 
-La oss lage enda en nettside, vi lager en ny html-fil som vi lagrer i "templates", for eksempel `nyside.html`. For å nå denne siden legger vi som før inn et a-element på forsiden vår, men det kan ikke lenger se ut som følger: `<a href="nyside.html>Les mer her</a>` Det er fordi da forutsetter vi at brukeren allerede har lastet ned nyside.html på forhånd. Det gir jo ikke mening i virkeligheten vi slipper heldigvis å laste ned alle nettsidene til et nettsted før vi besøker det.
+La oss utvide prosjektet med enda en nettside. Vi lager en ny html-fil som vi lagrer i "templates", for eksempel `nyside.html`. For å nå denne siden legger vi som før inn et a-element på forsiden vår, men det kan ikke lenger se ut som tidligere (`<a href="nyside.html>Les mer her</a>`). Det er fordi da forutsetter vi at brukeren allerede har lastet ned nyside.html på forhånd.
 
-Vi må istedet må vi sende en forespørsel til app.py og lage ei ny rute der som håndterer forespørselen. Navnet på ruta bestemmer vi selv. Vi kan for eksempel skrive `<a href="/nyside">Les mer her</a>`. Forsiden vår kan dermed se ut som følger:
+Vi må istedet sende en forespørsel til app.py og lage en ny rute der som håndterer forespørselen. Navnet på ruta bestemmer vi selv. Vi kan for eksempel skrive `<a href="/nyside">Les mer her</a>`:
 
 ````html
 <!DOCTYPE html>
@@ -95,9 +95,7 @@ Vi må istedet må vi sende en forespørsel til app.py og lage ei ny rute der so
 </html>
 ````
 
-Vi har kalt ruten vår for `/nyside`. Neste steg er å gå til app.py og lage den ferdig på samme måte som ruta til forsiden:
-
-
+Vi navnga altså ruten vår for `/nyside`. Neste steg er å gå til app.py og lage den ferdig på samme måte som ruta til forsiden:
 
 ```python
 from flask import Flask, render_template # importerer det som trengs fra Flask-biblioteket
@@ -113,22 +111,20 @@ def side2():
     return render_template("nyside.html")
 ```
 
-**Det kan være lurt å trene litt på dette ved å lage et par html nettsider til, og koble de sammen på nettstedet ved hjelp av ruter.**
+*Det kan være lurt å trene litt på dette ved å lage et par nettsider til og koble de sammen på nettstedet ved hjelp av ruter.*
 
-Alt vi lærte om html og css før vi tok i bruk Flask kan vi nå bruke til å lage de samme nettstedene vi tidligere har laget. Den eneste forskjellen hittil er altså at vi bruker en web-server, `app.py` og at lenkene mellom sidene må skrives som ruter og programmeres. Heldigvis får vi i tillegg nye muligheter til å bruke programmering for å få til langt mer avansert funksjonalitet! 
-
-Serveren vår kan for eksempel både sende og ta imot ekstra data fra nettleseren/bruker, noe som gir oss uante muligheter. La oss starte med enkle varianter av disse prinsippene.
+Alt vi lærte om html og css før vi tok i bruk Flask kan vi nå bruke til å lage de samme nettstedene vi tidligere har laget. Den eneste forskjellen hittil er altså at vi bruker en web-server, `app.py` og at lenkene mellom sidene må skrives som ruter og programmeres. Heldigvis får vi i tillegg nye muligheter til å bruke programmering for å få til langt mer avansert funksjonalitet! Serveren vår kan for eksempel både sende og ta imot ekstra data fra bruker som for eksempel brukernavn og passord. La oss starte med et enklere eksempel.
 
 ### Sende data
 
-Vi starter med å endre litt på ruten til forsiden:
+Vi legger til `navn="Ola"` på ruten til forsiden:
 
 ```python
 @app.route("/")  # Rute til forsiden vår
 def index(): 
     return render_template("index.html", navn="Ola") 
 ```
-Når vi sender forsiden vår til nettleseren sender vi samtidig også med python-variabelen `navn`. Den kan vi ta imot og bruke på forsiden vår:
+Når vi sender forsiden vår til nettleseren sender vi samtidig også med python-variabelen `navn` (med verdien "Ola"). Den kan vi ta imot og bruke på forsiden vår:
 
 ```html
 
@@ -138,7 +134,7 @@ Når vi sender forsiden vår til nettleseren sender vi samtidig også med python
 </body>
 ```
 
-Vi bruker `{{ }}` for at nettleseren skal forstå at det er den tilsendte variabelen navn som skal skrives, ikke bare "navn". Nå vil nettsiden skrive ut "Heisann Ola"
+Vi bruker `{{ }}` for at nettleseren skal forstå at det er den tilsendte variabelen navn som skal vises, ikke bare ordet "navn". Nå vil nettsiden skrive ut "Heisann Ola"
 
 Legg merke til at dersom variabelen navn ikke eksisterer i app.py, eller ikke sendes til html-fila vår, så vil feltet bare stå tomt og skrive "Heisann" istedet.
 
@@ -174,7 +170,7 @@ Følgende må være oppfylt for at vi kan sende inn navnet vi skriver i input-fe
 
 - Alt vi sender inn må i utgangspunktene ha attributtene `name` og `value`, altså avsender og innhold. Input-feltet av type tekst er et unntak ettersom som ikke trenger `value` fordi innholdet tilsvarer det vi skriver i tekstfeltet.
 
-Nå må vi skrive serverkode i app.py som tar imot navnet. Denne må skrives under ruta "/nytt_navn" ettersom det var det vi kalte den i action-attributtet.
+Nå må vi skrive serverkode i app.py som tar imot navnet. Denne må skrives under ruta "/nytt_navn" ettersom det var det vi kalte den i action-attributtet. Vi må også spesifisere at den skal håndtere en "post" forespørsel ved å skrive @app-post() istedet for @app.get()
 
 ```python
 @app.post("/nytt_navn")
