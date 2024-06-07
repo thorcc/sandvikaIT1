@@ -9,6 +9,8 @@ description: Se hvordan Flask og HTML samarbeider.
 
 ### Mapper, Filer og Ruter
 
+Før du starter må du installere rammeverket. Snakk med læreren din for hjelp til dette
+
 Når vi skal sette opp en struktur som beskrevet i forrige avsnitt, så er det enkelte filer og mapper som må ha spesifikke navn og ligge riktig i forhold til hverandre for at rammeverket skal fungere. Vi lager en prosjektmappe med valgfritt navn og legger følgende inn i denne:
 
 - app.py er en python fil som skal fungere som serveren vår. Denne fungerer som et sentralbord og skal håndtere alle forespørsler fra brukere av siden vår.
