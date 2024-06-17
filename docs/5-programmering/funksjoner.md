@@ -144,11 +144,8 @@ print(hypotenus(6,8)) # -> 10.0
 
 ### Oppgave 5.6.2
 
-a) Lag en prosedyre `kalkulator()` som ber brukeren om å skrive inn to tall, og deretter printer summen av tallene.
-
-b) Utvid prosedyren slik at den spør brukeren om hvilken regneoperasjon (+,-,*,/) den skal utføre.
-
-c) **Frivillig:** Hvis du lagde chatbotten i kapittel 4, legg til kalkulatoren som et valg i den. 
+a) Lag en funksjon `kalkulator()` som tar inn to tall og en regneopreasjon (+,-,*,/), og returnerer resultatet av tallene og regneoperasjonen.
+b) **Frivillig:** Hvis du lagde chatbotten i kapittel 4, legg til kalkulatoren som et valg i den. 
 
 
 <details>
