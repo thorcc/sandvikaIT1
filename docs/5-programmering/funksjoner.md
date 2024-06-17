@@ -266,15 +266,16 @@ Lag en funksjon som returnerer en tilfeldig rgb-farge. Eks: â€œrgb(100,155,200)â
 from random import randint
 
 def tilfeldig_farge():
-    farge_liste = []
+    r = randint(0, 255)
+    g = randint(0, 255)
+    b = randint(0, 255)
 
-    for i in range(3):
-        tilfeldig_tall = randint(0, 255)
-        farge_liste.append(tilfeldig_tall)
+    return f"rgb({r},{g},{b})"
 
-    farge = f"rgb({farge_liste[0]}, {farge_liste[1]}, {farge_liste[2]})"
-
-    return farge
+# Testing
+print(tilfeldig_farge())
+print(tilfeldig_farge())
+print(tilfeldig_farge())
 ```
 
 </details>
