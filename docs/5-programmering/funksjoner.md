@@ -127,7 +127,16 @@ b) Endre på funksjonen slik brukeren kan bestemme om det er hypotenus eller en 
 <details>
 <summary>Klikk for løsning</summary>
 
-Kommer senere
+```python
+from math import sqrt
+
+def hypotenus(katet1, katet2):
+    return sqrt(katet1 ** 2 + katet2 ** 2)
+
+# Testing:
+print(hypotenus(3,4)) # -> 5.0
+print(hypotenus(6,8)) # -> 10.0
+```
 
 </details>
 
@@ -146,24 +155,19 @@ c) **Frivillig:** Hvis du lagde chatbotten i kapittel 4, legg til kalkulatoren s
 <summary>Klikk for løsning</summary>
 
 ```python
-def kalkulator():
-    tall1 = float(input("Første tall: "))
-    operasjon = input("Operasjon: ")
-    tall2 = float(input("Andre tall: "))
-    
-
+def kalkulator(tall1, operasjon, tall2):
     if operasjon == "+":
-        resultat = tall1 + tall2
+        return tall1 + tall2
     elif operasjon == "-":
-        resultat = tall1 - tall2
+        return tall1 - tall2
     elif operasjon == "*":
-        resultat = tall1 * tall2
+        return tall1 * tall2
     elif operasjon == "/":
-        resultat = tall1 / tall2
+        return tall1 / tall2
 
-    print(f"{tall1} {operasjon} {tall2} = {resultat}")
+# Testing
+print(kalkulator(3, "+", 2)) # -> 5
 
-kalkulator()
 ```
 
 </details>
