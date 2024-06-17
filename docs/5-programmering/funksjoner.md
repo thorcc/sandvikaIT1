@@ -144,7 +144,7 @@ print(hypotenus(6,8)) # -> 10.0
 
 ### Oppgave 5.6.2
 
-a) Lag en funksjon `kalkulator()` som tar inn to tall og en regneopreasjon (+,-,*,/), og returnerer resultatet av tallene og regneoperasjonen.
+a) Lag en funksjon `kalkulator(tall1, operasjon, tall2)` som tar inn to tall og en regneopreasjon (+,-,*,/), og returnerer resultatet av tallene og regneoperasjonen.
 b) **Frivillig:** Hvis du lagde chatbotten i kapittel 4, legg til kalkulatoren som et valg i den. 
 
 
