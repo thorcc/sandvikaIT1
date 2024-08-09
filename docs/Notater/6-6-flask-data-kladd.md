@@ -1,17 +1,17 @@
 ---
-title: 6.4 Lagre data med Flask
-sidebar_position: 4
-sidebar_label: 6.4 Lagre data
+title: 6.5 Lagre data med Flask
+sidebar_position: 5
+sidebar_label: 6.5 Lagre data
 description: Lær om samarbeid mellom bruker og server i Flask.
 ---
 
-# Lagre og sende data
+# Lagre med form elementet
 
-## Lagre Data
+
 
 I kapittel 2.8 så vi kort på "form"-elementet, vi går nå tilbake til dette og viser hvordan vi kan ta imot og lagre informasjon fra brukere. Tanken er at man kan fylle ut html-elementene, hvorpå informasjonen sendes til app.py som håndterer den. Dette følger samme prinsipp som når vi gjør et kall på en rute, og app.py sender oss til ønsket nettside. Verdt å merke seg er at vi deler forespørslen/rutekall til serveren i to typer. Den første er såkalte er en request av type "get", som indikerer at vi ønsker å få noe tilbake fra serveren, for eksempel en ny nettside. Denne typen er standard, og vi trenger ikke presisere noe mer enn det vi allerede har gjort. Den andre forespørselen er kalles er av type "post", og brukes når vi ønsker å sende informasjon til serveren. Informasjonen vi skal sende via form-elementet sendes som "post", og dette må vi spesifisere når vi oppretter elementet. 
 
-#### Sende informasjon fra html til app.py
+### Sende informasjon fra html til app.py
 
 Vi setter opp et nytt Flask prosjekt, og tilsvarende forrige kapittel kan vi legge til siden *paamelding.html*, samt en rute "/paamelding" fra forsiden via app.py:
 

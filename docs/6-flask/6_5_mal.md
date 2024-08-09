@@ -1,7 +1,7 @@
 ---
-title: 6.3 Lage mal
-sidebar_position: 3
-sidebar_label: 6.3 Lage mal
+title: 6.5 Lage mal
+sidebar_position: 5
+sidebar_label: 6.5 Lage mal
 description: Lag maler for HTML i Flask.
 ---
 
@@ -58,4 +58,4 @@ Symbolene `{% %}` er en snarvei de som har laget jinja har bestemt at skal bruke
 
 ```
 
-Vi arver all felles kode fra "mal.html" ved å bruke "extend". Så fyller blokken der vi holdt av plass med det innholdet som hører til forsiden. Alle andre sider vi lager kan bygges på samme måte, og vi slipper på denne måten masse dobbeltarbeid. I mal fila kan du legge til så mange slike blokker du selv vil, for eksempel kan det være lurt å separere css koden din. Det som er felles legges i malen, mens vi setter av blokker så sidene kan skrive egen css for seg selv. 
+Vi arver all felles kode fra "mal.html" ved å bruke "extends". Så fyller blokken der vi holdt av plass med det innholdet som hører til forsiden. Alle andre sider vi lager kan bygges på samme måte, og vi slipper på denne måten masse dobbeltarbeid. I mal fila kan du legge til så mange slike blokker du selv vil, for eksempel kan det være lurt å separere css koden din. Det som er felles legges i malen, mens vi setter av blokker så sidene kan skrive egen css for seg selv. 

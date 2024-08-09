@@ -8,9 +8,9 @@ description: Velkommen til Flask!
 
 ## Veien videre
 
-Frem til nå har vi jobbet mye med de grunnleggende byggesteinene for utvikling av webapplikasjoner nemlig html og css. Disse er ikke programmeringsspråk, men er en måte og strukturere og posisjonere innholdet en nettside har. Vi har også sett på grunnleggende programmering ved hjelp av python. Alternativt kunn vi ha jobbet med Javascript, et populært programmeringsspråk for web-utvilkere som er tilrettelagt for å lett kunne lage interaktive nettsider. Vi valgte Python fordi du har jobbet med det tidligere og fordi det er relativt enkelt og forholde seg til. Det viktigste er uansett å lære seg grunnleggende programmering, dersom du behersker Python er det ikke spesielt vanskelig å lære seg  Javascript på egenhånd.
+Frem til nå har vi jobbet mye med de grunnleggende byggesteinene for utvikling av webapplikasjoner nemlig html og css. Disse er ikke programmeringsspråk, men er en måte og strukturere og posisjonere innholdet en nettside har. Vi har også sett på grunnleggende programmering ved hjelp av python. Alternativt kunne vi ha jobbet med Javascript, et populært programmeringsspråk for web-utvilkere som er tilrettelagt for å lett kunne lage interaktive nettsider. Vi valgte Python fordi du har jobbet med det tidligere og fordi det er relativt enkelt og forholde seg til. Det viktigste er uansett å lære seg grunnleggende programmering, dersom du behersker Python er det ikke spesielt vanskelig å lære seg Javascript eller andre språk på egenhånd.
 
-Du har nå teoretisk gode muligheter samt verktøy for å lage fine nettsider, men er fortsatt et stykke unna virkeligheten. Html, css- og mediefilene vi har laget til nå må for eksempel ligge lagret på datamaskinen for at de skal kunne vises. Heldigvis er det ikke slik vi er vant med internettet. Dersom du besøker en nettavis slipper du jo å laste ned alle bildene og filene på forhånd. Så hvordan fungerer det da? Filene eksisterer fortsatt, men de ligger på en server. Når vi skriver eller klikker på en lenke på nettet kommuniserer vi med en slik server, som gir nettleseren all informasjon som til enhver tid trengs for å kunne vise nettsiden. I dette kapittelet skal vi forsiktig nærme oss denne måten å lage nettsteder på. Vi starter med litt teori om hvordan det hele fungerer.
+Selv om vi har muligheten til å lage relativt imponerende nettsted nå, er vi fortsatt et stykke unna virkeligheten. Html, css- og mediefilene vi har laget til nå må for eksempel ligge lagret på datamaskinen for at de skal kunne vises. Heldigvis er det ikke slik vi er vant med internettet. Dersom du besøker en nettavis slipper du jo å laste ned alle bildene og filene på forhånd. Så hvordan fungerer det da? Filene eksisterer fortsatt, men de ligger på en server. Når vi skriver eller klikker på en lenke på nettet kommuniserer vi med en slik server, som gir nettleseren all informasjon som til enhver tid trengs for å kunne vise nettsiden. I dette kapittelet skal vi forsiktig nærme oss denne måten å lage nettsteder på. Vi starter med litt teori om hvordan det hele fungerer.
 
 :::info
 
@@ -40,6 +40,16 @@ Når utseende på en nettside endres som en følge av informasjon vi sender til 
 
 For å raskt kunne sette opp en slik arkitektur og utvikle nettsidene våre så effektivt som mulig finnes det en masse forskjellige hjelpeverktøy tilgjengelig. En kategori av slike verktøy kalles for `rammeverk`. Det finnes mange rammeverk som hjelper med de ulike delene vi har sett på(css, front-end, back-end), og dermed  er det preferanse som avgjør ulike bedrifter/utviklere ender opp med å bruke. Som med mye annet i IT-verdenen er det mest jobb å lære seg de første rammeverkene, deretter blir det stadig lettere.
 
-*legg til bilde med oversikt?*
 
-I resten av kapittelet skal vi lage noen dynamiske nettsider der vi skal bruke et rammeverk. Vi har valgt oss Flask, mest fordi det bruker Python som programmeringsspråk, og fordi det er relativt enkelt å forholde seg til. Flask er et rammeverk for back-end delen av en nettside, det hjelper oss med å bygge opp tidligere nevnte kommunikasjon mellom bruker og server. Vi jobber fortsatt på vår egen datamaskin, men bruker Flask til å sette opp et såkalt virtuelt miljø der vi styrer både serveren og brukeropplevelsen samtidig. I neste delkapittel ser vi nærmere på hvordan vi installerer alt vi trenger, og de grunnleggende prinsippene vi bruker.
+
+I resten av kapittelet skal vi lage noen dynamiske nettsider der vi skal bruke et rammeverk. Vi har valgt oss Flask, mest fordi det bruker Python som programmeringsspråk, og fordi det er relativt enkelt å forholde seg til sammenlignet med tilsvarende rammeverk.
+
+Flask gir oss i grove trekk tre nye muligheter:
+
+- **Interaksjon mellom nettside og serverkode:** Vi må lære å skrive såkalte `ruter (engelsk: route)`. Med disse kan vi sende informasjon mellom bruker og server.
+
+- **Enkel Python programmering i html-filer:** Et alternativ til javascript, slik at vi kan kode mer avanserte nettsider.
+
+- **Verktøy for å unngå dobbeltarbeid:** Vi kan definere maler slik at vi slipper å skrive samme html- og css kode mer enn en gang.
+
+Vi skal se på hver av disse for seg, og så vise hvordan man lager avanserte nettsted ved å kombinere prinsippene.
