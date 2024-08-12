@@ -81,5 +81,11 @@ Fortsett å jobbe med nettsiden i avsnittene over.
 
 a) Send variabelen `alder = "18"` fra ruta app.py og bruk denne til å skrive ut alderen på html-siden.
 
-b) Lag et form-element som i eksemepelet over der du kan fylle inn ny alder. Ta det imot i app.py i variabelen alder. Sjekk så variabelen ved å skrive "print(alder)" i app.py 
+b) Lag et form-element som i eksemepelet over der du kan fylle inn ny alder. Ta det imot i app.py i variabelen alder. Sjekk så variabelen i konsollen ved å bruke "print(alder)" i app.py 
 
+
+### Oppgave 6.3.2
+
+Lag mappe og sett den opp som et Flask prosjekt.
+
+Send en liste med fem typer frukt fra app.py til en nettside. Skriv ut den nest siste frukten i et h3-element på nettsiden.
