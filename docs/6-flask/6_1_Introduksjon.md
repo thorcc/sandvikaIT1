@@ -46,7 +46,7 @@ I resten av kapittelet skal vi lage noen dynamiske nettsider der vi skal bruke e
 
 Flask gir oss i grove trekk tre nye muligheter:
 
-- **Interaksjon mellom nettside og serverkode:** Vi må lære å skrive såkalte `ruter (engelsk: route)`. Med disse kan vi sende informasjon mellom bruker og server.
+- **Interaksjon mellom nettside og serverkode:** Vi må lære å skrive såkalte `ruter` (engelsk: route). Med disse kan vi sende informasjon mellom bruker og server.
 
 - **Enkel Python programmering i html-filer:** Et alternativ til javascript, slik at vi kan kode mer avanserte nettsider.
 

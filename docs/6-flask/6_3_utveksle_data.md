@@ -5,11 +5,11 @@ sidebar_label: 6.3 Sende data
 description: Vi sender informasjon mellom server og nettleser
 ---
 
-Vi har nå et fungerende Flask prosjekt. Det kan føles som mye nytt arbeid i forhold til før jul, men vi kan nå benytte oss av de nye mulighetene vi presenterte i 6.1. Vi starter ved å vise hvordan vi kan utveksle informasjon mellom en bruker og en server.
+Vi har nå et fungerende Flask prosjekt. Det kan føles som mye nytt arbeid i forhold til før jul, men målet er å kunne legge til langt mer avansert funksjonalitet. Neste steg blir derfor å se hvordan vi kan utveksle informasjon mellom en bruker og en server.
 
 ### Sende data
 
-Sett opp et Flask prosjekt tilsvarende forrige kapittel, legg til `navn="Ola"` på ruten til forsiden slik som under:
+Bruk samme eller tilsvarende Flask prosjekt tilsvarende vi lagde i forrige kapittel, legg til `navn="Ola"` på ruten til forsiden slik som under:
 
 ```python
 @app.route("/")  # Rute til forsiden vår
