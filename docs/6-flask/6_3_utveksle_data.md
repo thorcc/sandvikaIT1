@@ -88,4 +88,4 @@ b) Lag et form-element som i eksemepelet over der du kan fylle inn ny alder. Ta 
 
 Lag mappe og sett den opp som et Flask prosjekt.
 
-Send en liste med fem typer frukt fra app.py til en nettside. Skriv ut den nest siste frukten i et h3-element på nettsiden.
+Send en liste med fem typer frukt fra app.py til en nettside. Skriv ut lista i et h3 element.

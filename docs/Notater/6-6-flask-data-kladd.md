@@ -15,7 +15,6 @@ I kapittel 2.8 så vi kort på "form"-elementet, vi går nå tilbake til dette o
 
 Vi setter opp et nytt Flask prosjekt, og tilsvarende forrige kapittel kan vi legge til siden *paamelding.html*, samt en rute "/paamelding" fra forsiden via app.py:
 
-![Oppsettet](bilder/flaskoppsett.jpg)
 
 *Vi setter opp Flask som i forrige delkapittel*
 
