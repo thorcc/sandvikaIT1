@@ -20,6 +20,8 @@ Mange av dere har Mac og bruker Safari som nettleser. Det meste går helt fint m
 
 > [Hvordan endre standard nettleser på Mac?](https://support.apple.com/no-no/HT201607)
 
+- [Python](https://www.python.org/downloads/)
+
 ## Extensions/Utvidelser
 
 ![Extensions i VS Code](./bilder/extensions.png ':size=200')
