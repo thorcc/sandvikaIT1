@@ -21,7 +21,7 @@ Du har trolig vært på utallige nettsider hele livet uten å tenke særlig nøy
 
 *Eksempel på kildekode*
 
-Her er nok mye uforståelig tekst, som kan virke skremmende på en fersk IT 1 elev, men det er altså slik nettsiden er laget. Nettsiden er skrevet på et eget språk som vi kaller HTML. Dette språket skrives på en spesiell form der vi kan bestemme hva som skal være på nettsiden vår. Når en nettleser leser html-filer med slik tekst, tolker den teksten og lager nettsiden basert på det som er skrevet.
+Her er nok mye uforståelig tekst, som kan virke skremmende for en fersk IT 1 elev, men det er altså slik nettsiden er laget. Nettsiden er skrevet på et eget språk som vi kaller HTML. Dette språket skrives på en spesiell form der vi kan bestemme hva som skal være på nettsiden vår. Når en nettleser leser HTML-filer med slik tekst, tolker den teksten og lager nettsiden basert på det som er skrevet.
 
 
 Fra [wikipedia.org](https://no.wikipedia.org/wiki/HTML): 
@@ -37,7 +37,7 @@ Ved hjelp av HTML kan vi derfor ganske enkelt angi en overskrift, et bilde og li
 
 ## Din første nettside
 
-Den beste måten å lære både HTML (og det meste innen IT-fagene) er å prøve selv. Akkurat som når du skriver tekstfiler, skal vi nå skrive en html-fil. Teoretisk sett kan vi skrive en slik fil i skriveprogram du allerede er vant med å bruke, men med slike er det ikke mye hjelp å få. Derfor vil vi ha et eget program som er laget for å blant annet skrive HTML. Det finnes mange gode alternativ, såkalte *editorer*, og den mest populære er for tiden VS Code.
+Den beste måten å lære både HTML (og det meste innen IT-fagene) er å prøve selv. Akkurat som når du skriver tekstfiler, skal vi nå skrive en HTML-fil. Teoretisk sett kan vi skrive en slik fil i skriveprogram du allerede er vant med å bruke, men med slike er det ikke mye hjelp å få. Derfor vil vi ha et eget program som er laget for å blant annet skrive HTML. Det finnes mange gode alternativ, såkalte *editorer*, og den mest populære er for tiden VS Code.
 
 Prøv følgende:
 
@@ -45,7 +45,7 @@ Prøv følgende:
 
 - **Opprett en ny fil:** Velg File og så "New File" *(Snarvei: ctrl-n / command-n)*
 
-- **Lagre den nye filen som en html-fil:** Velg "Save as" *(Snarvei: ctrl-s / command-s)*. Navnet på fila kan for eksempel være `hjemmeside.html`. Vi må ha med punktum etter navnet og det er viktig at det som står etter punktum er `html`.
+- **Lagre den nye filen som en HTML-fil:** Velg "Save as" *(Snarvei: ctrl-s / command-s)*. Navnet på fila kan for eksempel være `hjemmeside.html`. Vi må ha med punktum etter navnet og det er viktig at det som står etter punktum er `html`.
 
 - **Kopier inn følgende tekst:**
 
