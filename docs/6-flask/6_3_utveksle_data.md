@@ -12,12 +12,11 @@ Vi har nå et fungerende Flask prosjekt. Det kan føles som mye nytt arbeid i fo
 Bruk samme eller tilsvarende Flask prosjekt tilsvarende vi lagde i forrige kapittel, legg til `navn="Ola"` på ruten til forsiden slik som under:
 
 ```python
-@app.route("/")  # Rute til forsiden vår
+@app.get("/")  # Rute til forsiden vår
 def index(): 
     return render_template("index.html", navn="Ola") 
 ```
-Når vi sender forsiden vår til nettleseren sender vi samtidig også med python-variabelen `navn` (med verdien "Ola"). Den kan vi ta imot og bruke på forsiden vår:
-
+Når vi sender forsiden vår til nettleseren sender vi samtidig også med python-variabelen `navn` (med verdien "Ola"). Den kan vi ta imot og benytte oss av ved behov:
 ```html
 
 <body>

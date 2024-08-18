@@ -35,7 +35,7 @@ app.run(debug=True)
 
 ```
 
-Det kreves ikke mer kode for å sette opp serveren i app.py, og vi trenger heller ikke å forstå hva disse linjene gjør. Prøv å kjøre kan nå kjøre python-fila, og du får servert forhåpentligvis følgende resultat:
+Det kreves ikke mer kode for å sette opp serveren i app.py, og vi trenger heller ikke å forstå hva disse linjene gjør. Prøv å kjøre python-fila, og se etter følgende resultat:
 
 ![Flask kjøres](./bilder/flask_server.png)
 
@@ -45,7 +45,7 @@ Vi ser at vi har fått tilgang til en nettadresse, `http://127.0.0.1:5000`. Dett
 
 ### Ruter
 
-Dersom vi nå besøker adressen Flask ga oss får vi en feilmelding tilbake. Selv om serveren er skrudd på finnes det jo ingen nettsider å vise!
+På dette tidspunktet vil nettadressen vi får gi en feilmelding. Selv om serveren er skrudd på finnes det jo ingen nettsider å vise!
 
 Vi lager html-fila til forsiden som før ved å opprette en html-fil og legge denne i templates-mappa. Bransjestandarden til forsider er å kalle denne for **index.html**, så vi gjør det samme denne gangen. Til slutt legger vi inn standard skjelett og en overskrift som for eksempel:
 
@@ -65,7 +65,6 @@ Vi lager html-fila til forsiden som før ved å opprette en html-fil og legge de
 Nå må nettsiden vi lagde kobles opp til serveren, altså app.py. Dette gjøres ved å opprette ei **rute**. Slike ruter skrives på en spesiell måte:
 
 ![flask-rute](./bilder/rute.png)
-
 1. **Type rute:** En enkel regel er at hvis brukeren til nettsiden skal få informasjon fra app.py så skriver vi **get**. Dersom brukeren skal sende informasjon til app.py skriver vi **post**.
 
 2. **Navn på rute:** Første rute vil mer eller mindre alltid returnere forsiden. Denne må ha navnet **/**. Alle andre ruter kan vi bestemme navn på selv
@@ -76,7 +75,7 @@ Nå må nettsiden vi lagde kobles opp til serveren, altså app.py. Dette gjøres
 
 5. **Hva skal returneres**: Først og fremst bør vi levere en nettside, men vi kan også legge til python-variable av alle datatyper.
 
-Vi følger denne strukturen og legger til følgende i app.py:
+Vi følger denne strukturen og app.py ser nå slik ut:
 
 ```python
 from flask import Flask, render_template, request
@@ -109,11 +108,11 @@ def side2():
 
 Dersom vi legger på /nyside i URL-en til forsiden `(http://127.0.0.1:5000/nyside)` skal vi havne på den nye nettsiden. Prøv selv!
 
-### Lenker som Ruter
+### Lenker som ruter
 
-Før jul lærte vi å lenke sammen nettsider med a-element. Dette fungerer som tidligere, med ett viktig unntak. I href-attributtene kan vi ikke lenger skrive den lokale stien til filene våre, vi må heller skrive inn navnet på ruta vi ønsker å nå i app.py.
+Før jul lærte vi å lenke sammen nettsider med a-element. Dette fungerer som tidligere, med ett viktig unntak. I href-attributtene kan vi ikke lenger skrive den lokale stien til filene, vi må heller skrive inn navnet på ruta som hører til nettsiden.
 
-Se på a-elementene vi har lagt til for å se hvordan:
+Se på a-elementene i html-koden:
 
 ```html
 
