@@ -34,7 +34,7 @@ Hva tror du skrives til konsollen? Sjekk selv.
 
 ## Datatyper
 
-Som nevnt kan vi lagre veldig mye forskjellig som variabler, men datamaskinen vet i utgangspunktet ikke forskjell på noen av delene. Skal for eksempel verdien `10` være ett tall som vi skal bruke til å regne med, eller skal det bare være en del av en vanlig tekst? For at programmet skal fungere er det viktig at vi vet hvilken *datatype* vi jobber med. Det betyr at når vi deklarerer en ny variabel, så må vi ikke bare lage et navn og innhold på den. Vi må samtidig fortelle hva slags type variabel det er. I mange programmeringsspråk gjøres dette spesifikt, men i Python holder det å skrive verdien av variabelen på riktig form form for at programmet skal gjenkjenne datatypen. La oss se nærmere på nøyaktig hva vi skal skrive for å skille mellom ulike datatyper.
+Som nevnt kan vi lagre veldig mye forskjellig som variabler, men datamaskinen vet i utgangspunktet ikke forskjell på noen av delene. Skal for eksempel verdien `10` være ett tall som vi skal bruke til å regne med, eller skal det bare være en del av en vanlig tekst? For at programmet skal fungere er det viktig at vi vet hvilken *datatype* vi jobber med. Det betyr at når vi oppretter en ny variabel, så må vi ikke bare lage et navn og innhold på den. Vi må samtidig fortelle hva slags type variabel det er. I mange programmeringsspråk gjøres dette spesifikt, men i Python holder det å skrive verdien av variabelen på riktig form for at programmet skal gjenkjenne datatypen. La oss se nærmere på nøyaktig hva vi skal skrive for å skille mellom ulike datatyper.
 
 ##### Strenger (eng: String)
 
