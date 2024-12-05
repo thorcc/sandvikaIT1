@@ -29,11 +29,12 @@ Vi bruker `{{ }}` for at nettleseren skal forstå at det er den tilsendte variab
 
 Legg merke til at dersom variabelen navn ikke eksisterer i app.py, eller ikke sendes til html-fila vår, så vil feltet bare stå tomt og skrive "Heisann" istedet.
 
- Foreløpig kan dette virke litt merkelig, vi kunne jo bare skrevet Ola rett inn i html-koden. La oss vise hvordan vi kan bytte navnet ved å sende inn et annet til serveren vår!
+ Foreløpig kan dette virke litt merkelig. Vi kunne jo bare skrevet Ola rett inn i html-koden, men dette åpner opp for langt mer interaktive/dynamiske nettsider, noe vi skal se nærmere på i neste avsnitt.
 
  ### Ta imot data
 
 Det finnes flere måter å sende data tilbake til serveren på, og felles for de er at det er litt mer komplisert enn å få de tilsendt. Du husker kanskje `form`-elementet i kapittel 2.5? Det var et eksempel på hvordan vi kunne lage blant annet registreringsskjema på nettsiden, og nå har vi endelig muligheten til å få de til å fungere.
+
 
 Vi legger inn et form-element i forsiden vår:
 

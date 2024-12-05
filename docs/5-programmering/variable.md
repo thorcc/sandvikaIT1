@@ -19,7 +19,7 @@ Dersom vi for eksempel ønsker å lagre tallet 10 kan vi skrive:
 tall = 10
 ```
 
-Vi sier at vi **deklarerer** variabelen `tall` med verdien `10`. Navnet på variabelen tilsvarer merkelappen på glassene i hylla. Selv om vi bestemmer navnet selv, bør vi velge et navn som gir mening. Dersom vi senere overskriver verdien vi lagrer i tall, er det alltid den siste deklarasjonen som gjelder.
+Vi har nå opprettet en variabel `tall` med verdien `10`. Navnet på variabelen tilsvarer merkelappen på glassene i hylla. Selv om vi bestemmer navnet selv, bør vi velge et navn som gir mening. Dersom vi senere overskriver verdien vi lagrer i tall, er det alltid den siste verdien som gjelder.
 
 ## Hente en variabel
 
