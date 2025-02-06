@@ -476,14 +476,10 @@ flagg = {
     "chile": ["blått", "hvitt", "rødt"] 
 }
 
-flagg["polen"] = ["hvitt", "rødt"]
+land = input("Skriv inn et land du tenker på: ")
 
-land = input("Skriv inn et land du tenker på: ").lower()
-
-if flagg[land]:
-    # Definerer en variabel som setter sammen alle fargene og separerer disse med komma.
-    farger = ", ".join(flagg[land])
-    print(f"Landet har fargene {farger}.")
+if land in flagg:
+    print(f"Landet har fargene {flagg[land]}.")
 else:
     print("Vi har dessverre ikke fargene til flagget til dette landet!")
 ```
