@@ -460,8 +460,6 @@ Merk at vi kan skrive ordbøker og lister over flere linjer, så lenge vi passer
 
 :::
 
-Bruk `flagg["egenskap"]`, og legg til et nytt land i ordboken.
-
 Legg til kode slik at brukeren kan skrive inn et land, og så printes fargene til landets flagg. Hvis brukeren skriver inn et land som ikke eksisterer i ordboken, skal programmet gi en feilmelding som forteller at vi ikke har lagret info om dette landet.
 
 <details>
