@@ -504,8 +504,6 @@ b) Øk prisen på croissant med 10 kr, uten å endre hva du skrev i din original
 
 Skriv ut listen med innhold på nytt, og sjekk at croissantens pris er endret riktig.
 
-c) Lag en funksjon meny(liste) som du kan kalle på for å utføre oppgave 1 og 4, og endre programmet ditt til å kjøre denne funksjonen i stedet.
-
 <details>
 <summary>Klikk for løsning</summary>
 
@@ -544,9 +542,4 @@ Legg til følgende linje av kode før for-løkken i oppgave a).
 ```python
 meny[0]["pris"] = 35
 ```
-
-c)
-
-Kommer...
-
 </details>
