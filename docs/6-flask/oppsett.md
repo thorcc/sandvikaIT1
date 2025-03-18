@@ -7,7 +7,7 @@ description: Oppsett av Flask
 
 # Oppsett av flask
 
-## IT1 - Uten virtuelt miljø (venv)
+## IT1
 
 1. Åpne en ny terminal i VS Code
 
