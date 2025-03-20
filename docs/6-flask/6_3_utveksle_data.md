@@ -89,3 +89,22 @@ b) Lag et form-element som i eksemepelet over der du kan fylle inn ny alder. Ta 
 Lag mappe og sett den opp som et Flask prosjekt.
 
 Send en liste med fem typer frukt fra app.py til en nettside. Skriv ut lista i et h3 element.
+
+### Oppgave 6.3.3
+
+Bruk Flask, og lag en nettside der brukere kan se og legge til varer i en handleliste.
+
+<details>
+<summary>Klikk her for hint</summary>
+
+1. Lag en ny python-fil `app.py` og en html-fil `templates/index.html`
+2. Lag et `<form>`-element i HTML-fila som sender en ny vare til ruten `/legg-til`
+3. Lag en tom liste, `handleliste = []`, i `app.py`
+4. Lag to ruter
+    - en `get`-rute `/` som skal vise handlelisten
+    - en `post`-rute `/legg-til` som skal legge til nye varer i handlelisten
+5. Send `handleliste` til html-fila og vis listen på nettsiden
+
+</details>
+
+
