@@ -27,7 +27,7 @@ Når vi skal sette opp rammeverket, så er det enkelte filer og mapper som må h
 ```python
 from flask import Flask, render_template, request
 
-app = flask(__name__)
+app = Flask(__name__)
 
 # Vi kommer til å skrive inn all annen serverkode her
 
