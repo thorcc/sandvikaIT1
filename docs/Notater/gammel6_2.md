@@ -80,3 +80,8 @@ I `app.py` skrives Python-koden til applikasjonen.
 Koden som skrives her er koden til *serveren*, slik kode kalles ofte *back-end*, fordi 
 denne koden ligger *bak* og brukeren aldri ser denne koden.
 :::
+
+
+| app.py | forside.html |
+|:---|:---|
+|from flask import Flask, render_template <br/><br/>app = Flask(\_\_name\_\_)<br/><br/>@app.get("/")<br/> def rute_forside(): <br/>&emsp;&emsp; navn = Lisa <br/> &emsp;&emsp; return render_template("forside.html, navn = navn)<br/><br/>app.run(debug="True") | <\!DOCTYPE html> <br/>\<html lang="en"><br/>\<head><br/>&emsp;&emsp;\<meta charset="UTF-8"\><br/>&emsp;&emsp;\<title>Mitt Prosjekt\</title>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br/>\</head><br/>\<body><br/>&emsp;&emsp;\<h1>Heisann {{navn}}!\</h1><br/>\</body><br/>\</html>|

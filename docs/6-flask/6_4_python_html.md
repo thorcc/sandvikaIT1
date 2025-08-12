@@ -17,9 +17,22 @@ Mye av det vi skal gjennom i dette delkapittelet kunne vært løst mer elegant m
 
 Start ved å opprette et Flask prosjekt slik du forhåpentligvis har prøvd noen ganger nå. (Legg merke til at vi sender et navn fra app.py til forsiden og skriver det ut der):
 
-| app.py | forside.html |
-|:---|:---|
-|from flask import Flask, render_template <br/><br/>app = Flask(\_\_name\_\_)<br/><br/>@app.get("/")<br/> def rute_forside(): <br/>&emsp;&emsp; navn = Lisa <br/> &emsp;&emsp; return render_template("forside.html, navn = navn)<br/><br/>app.run(debug="True") | <\!DOCTYPE html> <br/>\<html lang="en"><br/>\<head><br/>&emsp;&emsp;\<meta charset="UTF-8"><br/>&emsp;&emsp;\<title>Mitt Prosjekt\</title>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br/>\</head><br/>\<body><br/>&emsp;&emsp;\<h1>Heisann {{navn}}!\</h1><br/>\</body><br/>\</html>|
+<table>
+  <thead>
+    <tr>
+      <th>app.py</th>
+      <th>forside.html</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img style="display:block; " width=100% height="100%" src="./bilder/6_4_oppsett_html.png" /></td>
+      <td><img style="display:block; " width=100% height="100%" src="./bilder/6_4_oppsett_app_py.png" /></td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 *Det aller enkleste oppsettet for en forside med Flask. Husk å opprette mappestrukturene der filene skal ligge på riktig måte*
 
