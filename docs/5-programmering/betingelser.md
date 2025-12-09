@@ -32,7 +32,7 @@ if alder > 17:
 </details>
 
 
-Vi ser her logikken bak en betingelse, skrevet som en *if-setning*. Vi regner ut alder, og så sjekker vi den matematiske ulikheten `alder > 17`. Dersom alder er større en 17 returnerer sjekken `True`, hvilket betyr at print instruksjonen kjører. Dersom betingelsen returnerer `False`, så skjer det ingenting. Vi bruker innhopp for å gruppere hvilken kode som hører til betingelsen. 
+Vi ser her logikken bak en betingelse, skrevet som en *if-setning*. Vi regner ut alder, og så sjekker vi den matematiske ulikheten `alder > 17`. Dersom alder er større en 17 returnerer sjekken `True`, hvilket betyr at print instruksjonen kjører. Dersom betingelsen returnerer `False`, så skjer det ingenting. Vi bruker innhopp for å gruppere hvilken kode som hører til betingelsen.
 
 Når vi lager en betingelse kan vi avslutte med `else`, altså kode som skal kjøre dersom det vi sjekker returnerer `False`:
 
@@ -61,11 +61,11 @@ else:
 Vi kan teste flere utsagn samtidig. Anta at vi ønsker å sjekke om et tall ligger mellom 10 og 20. Da vil vi at tallet både skal være større enn 10, og *samtidig* være mindre enn 20. Vi kan skrive følgende:
 
 ```python
-tall = input("Hvor mange poeng fikk du? ")
+tall = int(input("Hvor mange poeng fikk du? "))
 
 if tall > 10 and tall < 20:
     print("Dette tilsvarer middels måloppnåelse")
-``` 
+```
 
 <details>
 <summary>Klikk for Pythontutor</summary>
@@ -75,12 +75,12 @@ if tall > 10 and tall < 20:
 </details>
 
 
-Her må begge betingelsene være sanne samtidig for at koden skal kjøre. 
+Her må begge betingelsene være sanne samtidig for at koden skal kjøre.
 
 Hvis vi skal lage ferdig koden (0 - 10 poeng er lav måloppnåelse mens 20 - 30 tilsvarer høy), så kan vi kjede sammen flere betingelser. Setningsoppbygningen foregår da som *if - elif - else*. Her starter "if" instruksjonen, elif står for "else if" der vi kan sjekke andre betingelser (vi kan ha flere av disse etter hverandre), mens "else" avslutter. Det er lettest å se i praksis:
 
 ```python
-tall = input("Hvor mange poeng fikk du? ")
+tall = int(input("Hvor mange poeng fikk du? "))
 
 if tall >= 0 and tall < 10:
     print("Dette tilsvarer lav måloppnåelse")
@@ -234,15 +234,15 @@ if tall == 1 or tall == 10:
 
 ### Oppgave 5.3.1
 
-Med variablene a = 3, b = 7 og c = "7", d = 3.  
-Hvilke utfall gir testene nedenfor? (True, False eller noe annet?)  
-a)	`a < b`  
-b)	`a > b`    
-c)	`b >= c`  
-d)  `a = c`  
-e)  `a == d`  
-f)  `a > d or a == d`  
-g)  `a > d and a == d`  
+Med variablene a = 3, b = 7 og c = "7", d = 3.
+Hvilke utfall gir testene nedenfor? (True, False eller noe annet?)
+a)	`a < b`
+b)	`a > b`
+c)	`b >= c`
+d)  `a = c`
+e)  `a == d`
+f)  `a > d or a == d`
+g)  `a > d and a == d`
 
 <details>
 <summary>Klikk for løsning</summary>
@@ -347,7 +347,7 @@ if høyde >= 100:
 
 ### Oppgave 5.3.5
 
-Lag en variabel `hemmelig` med et tall mellom 1 og 10. Be brukeren gjette tallet. Dersom brukeren gjetter riktig, skriver du ut "Gratulerer! Du gjettet riktig". Ved feil skriver du "Beklager, du gjettet feil". Ta vare på koden, du skal bruke den senere. 
+Lag en variabel `hemmelig` med et tall mellom 1 og 10. Be brukeren gjette tallet. Dersom brukeren gjetter riktig, skriver du ut "Gratulerer! Du gjettet riktig". Ved feil skriver du "Beklager, du gjettet feil". Ta vare på koden, du skal bruke den senere.
 
 <details>
 <summary>Klikk for hint</summary>
@@ -393,7 +393,7 @@ else:
 
 ### Oppgave 5.3.7
 
-a) Lag et program der bruker kan skrive inn poengsummen sin for en matematikkeksamen. Programmet skal skrive ut karakteren på eksamen når vi bruker følgende skala (maks 60 poeng): 
+a) Lag et program der bruker kan skrive inn poengsummen sin for en matematikkeksamen. Programmet skal skrive ut karakteren på eksamen når vi bruker følgende skala (maks 60 poeng):
 
 | Karakter | 1   | 2   | 3   | 4   | 5   | 6   |
 | -------- | --- | --- | --- | --- | --- | --- |
@@ -442,13 +442,13 @@ Hva velger du?
 1: Stein
 2: Saks
 3: Papir
-Ditt valg (1,2,3): 
+Ditt valg (1,2,3):
 ```
 Programmet må sjekke brukerens valg mot datamaskinens valg.
 
 Her kan du ha behov for å trekke tilfeldige heltall, og da må vi importere en instruks utenifra.
 
-Start koden med 
+Start koden med
 
 ```python
 from random import *
@@ -461,7 +461,7 @@ from random import *
 
 - Ta imot et tall mellom 1 og 3 fra bruker
 - Trekk et tall mellom 1 og 3 for datamaskinen
-- Sammenlign tallene med en betingelse der du sjekker valgene opp mot hverandre og skriv ut resultatet. 
+- Sammenlign tallene med en betingelse der du sjekker valgene opp mot hverandre og skriv ut resultatet.
 
 For eksempel hvis brukeren skriver 1 (Stein) og datamaskinen velger 2 (Saks) så skriver du ut "Du vant, motstanderen valgte saks!".
 
@@ -489,11 +489,11 @@ elif spiller_valg == 1 and data_valg == 3:
 elif spiller_valg == 2 and data_valg == 1:
     print("Du tapte, mostanderen valgte stein!")
 elif spiller_valg == 2 and data_valg == 3:
-    print("Du vant, mostanderen valgte papir!")  
+    print("Du vant, mostanderen valgte papir!")
 elif spiller_valg == 3 and data_valg == 1:
     print("Du vant, mostanderen valgte stein!")
 elif spiller_valg == 3 and data_valg == 2:
-    print("Du tapte, mostanderen valgte saks!") 
+    print("Du tapte, mostanderen valgte saks!")
 else:
     print("Du har valgt feil!")
 ```
@@ -502,7 +502,7 @@ else:
 
 ### Oppgave 5.3.9
 
-Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True eller False) til følgende uttrykk? 
+Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True eller False) til følgende uttrykk?
 1.  `b`
 2.	`x == 0`
 3.	`b and x == 0`
@@ -545,9 +545,9 @@ Gitt at verdien av b = False, og verdien av x = 0. Hva er sannhetsverdien (True 
 
 **SJAMAN-PROGRAMMET**
 
-Lag et program som skriver ut tekster med personlige spådomer. Hvilken tekst som skal skrives ut avhenger av verdiene i variablene: kjønn, fødselsår og navn.  
+Lag et program som skriver ut tekster med personlige spådomer. Hvilken tekst som skal skrives ut avhenger av verdiene i variablene: kjønn, fødselsår og navn.
 
-Et eksempel på en spådom kan være:  
+Et eksempel på en spådom kan være:
 `Kjære Trine Skei Grande, denne måneden vil du motta en gave fra en ukjent. Unngå pengespill og gatekjøkkenmat. Dette gjelder spesielt deg som er dame og født i 1969.`
 
 <details>
@@ -595,14 +595,14 @@ print(f"Kjære {navn}, {tilfeldig_intro}. {tilfeldig_pastand}. Dette gjelder spe
 
 **SKUDDÅR**
 
-Lag et program som avgjør om et årstall er skuddår eller ikke.  
+Lag et program som avgjør om et årstall er skuddår eller ikke.
 > Tips: for å sjekke om tall er delelig på 4, bruk modulo. Eks: `tall % 4 == 0` gir True hvis tallet er delelig på 4.
 
 a) Bruk reglene som gjaldt fra 8 e.kr til 1582:
 - Et år er et skuddår hvis årstallet er delelig på 4.
 
 b) Endre programmet fra oppgave a) slik at du bruker reglene som er litt mer korrekt:
-- Et år er et skuddår hvis: 
+- Et år er et skuddår hvis:
     - årstallet er delelig på 4, eks: 2012 var skuddår, men ikke 2014
     - men ikke hvis årstallet er delelig på 100, eks: 1900 var ikke skuddår
     - men likevel hvis det er også er delelig på 400, eks: 2000 var skuddår
