@@ -32,6 +32,84 @@ De vi bruker mest og som vi laster ned allerede første dag er:
 - open in browser 2.0.0
 - Python
 
+## Instillinger i VS Code
+
+- Trykk CMD+Shift+P skriv "Open User Settings (JSON)"
+- Fjern alt og lim inn koden under.
+
+```json
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.autoClosingQuotes": "never",
+    "editor.hover.enabled": false,
+    "editor.occurrencesHighlight": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.matchBrackets": "never",
+    "editor.guides.indentation": false,
+    "editor.quickSuggestions": {
+      "comments": "off",
+      "other": "off",
+      "strings": "off"
+    }
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "breadcrumbs.enabled": false,
+  "chat.disableAIFeatures": true,
+  "diffEditor.diffAlgorithm": "advanced",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.colorDecorators": false,
+  "editor.emptySelectionClipboard": false,
+  "editor.folding": false,
+  "editor.foldingHighlight": false,
+  "editor.formatOnSave": false,
+  "editor.lightbulb.enabled": "off",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.selectionHighlight": false,
+  "editor.stickyScroll.enabled": false,
+
+  "explorer.autoOpenDroppedFile": false,
+  "explorer.compactFolders": false,
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  "files.exclude": {
+    "**/.*": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "problems.decorations.enabled": false,
+  "problems.visibility": false,
+  "python.terminal.executeInFileDir": true,
+  "python.terminal.shellIntegration.enabled": false,
+  "scm.countBadge": "off",
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.toggleSidebarVisibility"
+  ],
+  "terminal.integrated.enableVisualBell": true,
+  "terminal.integrated.gpuAcceleration": "off",
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.sendKeybindingsToShell": true,
+  "terminal.integrated.shellIntegration.decorationsEnabled": "never",
+  "terminal.integrated.shellIntegration.enabled": true,
+  "terminal.integrated.showExitAlert": false,
+  "terminal.integrated.tabs.description": "${task}${separator}${local}",
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "workbench.editor.closeOnFileDelete": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.tips.enabled": false,
+  "workbench.welcomePage.walkthroughs.openOnInstall": false
+}
+```
 
 ## Nettressurser
 
