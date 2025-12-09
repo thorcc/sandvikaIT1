@@ -23,6 +23,15 @@ if alder > 17:
     print("Hei", navn, "du er myndig!")
 ```
 
+
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=navn%20%3D%20input%28%22Hva%20heter%20du%3F%20%22%29%0Af_aar%20%3D%20int%28input%28%22Hvilket%20%C3%A5r%20er%20du%20f%C3%B8dt%3F%20%22%29%29%0A%0Aalder%20%3D%202022%20-%20f_aar%20%23%20Erstatt%202022%20med%20riktig%20%C3%A5r%20om%20n%C3%B8dvendig%0A%0Aif%20alder%20%3E%2017%3A%0A%20%20%20%20print%28%22Hei%22,%20navn,%20%22du%20er%20myndig!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+
 Vi ser her logikken bak en betingelse, skrevet som en *if-setning*. Vi regner ut alder, og så sjekker vi den matematiske ulikheten `alder > 17`. Dersom alder er større en 17 returnerer sjekken `True`, hvilket betyr at print instruksjonen kjører. Dersom betingelsen returnerer `False`, så skjer det ingenting. Vi bruker innhopp for å gruppere hvilken kode som hører til betingelsen. 
 
 Når vi lager en betingelse kan vi avslutte med `else`, altså kode som skal kjøre dersom det vi sjekker returnerer `False`:
@@ -39,6 +48,14 @@ else:
     print("Hei", navn, "du er dessverre ikke myndig enda")
 ```
 
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=navn%20%3D%20input%28%22Hva%20heter%20du%3F%20%22%29%0Af_aar%20%3D%20int%28input%28%22Hvilket%20%C3%A5r%20er%20du%20f%C3%B8dt%3F%20%22%29%29%0A%0Aalder%20%3D%202022%20-%20f_aar%0A%0Aif%20alder%20%3E%2017%3A%0A%20%20%20%20print%28%22Hei%22,%20navn,%20%22du%20er%20myndig!%22%29%0Aelse%3A%0A%20%20%20%20print%28%22Hei%22,%20navn,%20%22du%20er%20dessverre%20ikke%20myndig%20enda%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+
 ## Flere betingelser
 
 Vi kan teste flere utsagn samtidig. Anta at vi ønsker å sjekke om et tall ligger mellom 10 og 20. Da vil vi at tallet både skal være større enn 10, og *samtidig* være mindre enn 20. Vi kan skrive følgende:
@@ -50,6 +67,14 @@ if tall > 10 and tall < 20:
     print("Dette tilsvarer middels måloppnåelse")
 ``` 
 
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=tall%20%3D%20input%28%22Hvor%20mange%20poeng%20fikk%20du%3F%20%22%29%0A%0Aif%20tall%20%3E%2010%20and%20tall%20%3C%2020%3A%0A%20%20%20%20print%28%22Dette%20tilsvarer%20middels%20m%C3%A5loppn%C3%A5else%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+
 Her må begge betingelsene være sanne samtidig for at koden skal kjøre. 
 
 Hvis vi skal lage ferdig koden (0 - 10 poeng er lav måloppnåelse mens 20 - 30 tilsvarer høy), så kan vi kjede sammen flere betingelser. Setningsoppbygningen foregår da som *if - elif - else*. Her starter "if" instruksjonen, elif står for "else if" der vi kan sjekke andre betingelser (vi kan ha flere av disse etter hverandre), mens "else" avslutter. Det er lettest å se i praksis:
@@ -59,7 +84,7 @@ tall = input("Hvor mange poeng fikk du? ")
 
 if tall >= 0 and tall < 10:
     print("Dette tilsvarer lav måloppnåelse")
-elif tall > 10 and tall <= 20
+elif tall > 10 and tall <= 20:
     print("Dette tilsvarer middels måloppnåelse")
 elif tall > 20 and tall <= 30:
     print("Dette tilsvarer høy måloppnåelse")
@@ -67,22 +92,15 @@ else:
     print("Du må skrive inn poeng mellom 0 og 30!")
 ```
 
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=tall%20%3D%20input%28%22Hvor%20mange%20poeng%20fikk%20du%3F%20%22%29%0A%0Aif%20tall%20%3E%3D%200%20and%20tall%20%3C%2010%3A%0A%20%20%20%20print%28%22Dette%20tilsvarer%20lav%20m%C3%A5loppn%C3%A5else%22%29%0Aelif%20tall%20%3E%2010%20and%20tall%20%3C%3D%2020%3A%0A%20%20%20%20print%28%22Dette%20tilsvarer%20middels%20m%C3%A5loppn%C3%A5else%22%29%0Aelif%20tall%20%3E%2020%20and%20tall%20%3C%3D%2030%3A%0A%20%20%20%20print%28%22Dette%20tilsvarer%20h%C3%B8y%20m%C3%A5loppn%C3%A5else%22%29%0Aelse%3A%0A%20%20%20%20print%28%22Du%20m%C3%A5%20skrive%20inn%20poeng%20mellom%200%20og%2030!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+
 Det er viktig at vi har innhopp på all kode som tilhører hver del av if-elif setningen. Legg merke til at vi strengt tatt kunne ha laget nye if-setninger for hver sjekk i stedet, men det anses som dårlig kode. Da ville man kunne ha havnet i flere sjekker samtidig, og det ønsker vi å unngå. Ved å bruke elif og else, kobler vi alt sammen til samme betingelse.
-
-### En vanlig misforståelse
-
-Betingelsene som står før og etter `and` eller `or` er to selvstendige som ikke har noe med hverandre å gjøre.
-Under er et eksempel på en typisk feil mange IT1-elever gjør.
-
-```python
-# En vanlig feil
-if tall == 1 or 10:
-    print("Denne linjen vil kjøres uansett hvilken verdi tall har")
-
-# Dette blir riktig
-if tall == 1 or tall == 10:
-    print("Denne vil kjøre kun hvis tall er lik 1 eller 10")
-```
 
 ## Operatorer i en betingelse
 
@@ -99,6 +117,14 @@ if alder == 18:
 
 ```
 
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=navn%20%3D%20input%28%22Hva%20heter%20du%3F%20%22%29%0Af_aar%20%3D%20int%28input%28%22Hvilket%20%C3%A5r%20er%20du%20f%C3%B8dt%3F%20%22%29%29%0A%0Aalder%20%3D%202022%20-%20f_aar%0A%0Aif%20alder%20%3D%3D%2018%3A%0A%20%20%20%20print%28%22Gratulerer%22,%20navn,%20%22du%20ble/blir%20myndig%20i%20%C3%A5r!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
+
+
 Når vi lager en betingelse er vi heller ikke begrenset til matematiske utsagn, vi kan like gjerne sjekke strenger:
 
 ```python
@@ -111,6 +137,13 @@ elif svar == "nei":
 else:
     print("Du må svare ja eller nei!")
 ```
+
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=svar%20%3D%20input%28%22Har%20du%20forst%C3%A5tt%20if-setninger%20n%C3%A5%3F%20%22%29%0A%0Aif%20svar%20%3D%3D%20%22ja%22%3A%0A%20%20%20%20print%28%22Bra%20jobbet!%22%29%0Aelif%20svar%20%3D%3D%20%22nei%22%3A%0A%20%20%20%20print%28%22Ikke%20gi%20opp,%20du%20vil%20snart%20knekke%20koden!%22%29%0Aelse%3A%0A%20%20%20%20print%28%22Du%20m%C3%A5%20svare%20ja%20eller%20nei!%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
 
 Følgende tabell er en fin oppsummering og oversikt over de ulike operatorene vi kan bruke når vi skal sette opp en betingelse:
 
@@ -131,7 +164,7 @@ Følgende tabell er en fin oppsummering og oversikt over de ulike operatorene vi
 
 Med `in`-operatoren er det mulig å sjekke om noe er i en samling.
 
-### Strings
+#### Strenger
 
 `in`-operatoren er veldig fin for å sjekke om noe er i en tekst, koden under sjekker om `programmere` er et eller annet sted i brukerens svar.
 Husk at en string (tekst) er egentlig bare en samling med tegn.
@@ -142,7 +175,7 @@ if "programmere" in brukersvar:
     print("Kult!")
 ```
 
-### Lister
+#### Lister
 
 Lister er Koden under sjekker om brukerens input er i listen med fotballag.
 
@@ -153,7 +186,7 @@ if brukersvar in ["arsenal", "start", "sheffield wednesday"]:
     print("Kult!")
 ```
 
-### Ordbøker
+#### Ordbøker
 
 I ordbøker kan vi bruke `in` for å sjekke om en nøkkel finnes i ordboken.
 
@@ -171,6 +204,31 @@ if navn in ordbok:
 else:
     print(f"{navn} finnes ikke i telefonboken")
 ```
+
+#### En vanlig misforståelse
+
+Betingelsene som står før og etter `and` eller `or` er to selvstendige som ikke har noe med hverandre å gjøre.
+Under er et eksempel på en typisk feil mange IT1-elever gjør.
+
+```python
+import random
+tall = random.randint(1,20)
+
+# En vanlig feil
+if tall == 1 or 10:
+    print("Denne linjen vil kjøres uansett hvilken verdi tall har")
+
+# Dette blir riktig
+if tall == 1 or tall == 10:
+    print("Denne vil kjøre kun hvis tall er lik 1 eller 10")
+```
+
+<details>
+<summary>Klikk for Pythontutor</summary>
+
+<iframe width="800" height="500" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=import%20random%0Atall%20%3D%20random.randint%281,20%29%0A%0A%23%20En%20vanlig%20feil%0Aif%20tall%20%3D%3D%201%20or%2010%3A%0A%20%20%20%20print%28%22Denne%20linjen%20vil%20kj%C3%B8res%20uansett%20hvilken%20verdi%20tall%20har%22%29%0A%0A%23%20Dette%20blir%20riktig%0Aif%20tall%20%3D%3D%201%20or%20tall%20%3D%3D%2010%3A%0A%20%20%20%20print%28%22Denne%20vil%20kj%C3%B8re%20kun%20hvis%20tall%20er%20lik%201%20eller%2010%22%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
+
+</details>
 
 ## Oppgaver
 
@@ -657,4 +715,4 @@ if aar >= 1582:
 >
 >  -- Haikerens guide til Galaksen, Douglas Adams
 
-Lag en fil `dyp.py` og lag et program som spør brukeren om svaret på Det store spørsmålet om livet, universet og alt mulig, og svar ja hvis brukeren svarer `42`, `førtito` eller `to og førti` eller svar nei.
+Lag en fil `dyp.py` og lag et program som spør brukeren om svaret på Det store spørsmålet om livet, universet og alt mulig, og svar ja hvis brukeren svarer `42`, `førtito` eller `to og førti`, ellers svar nei.
