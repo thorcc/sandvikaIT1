@@ -130,23 +130,41 @@ Følgende tabell er en fin oppsummering og oversikt over de ulike operatorene vi
 ## Samlinger
 
 Med `in`-operatoren er det mulig å sjekke om noe er i en samling.
-Koden under sjekker om brukerens input er i listen med fotballag.
+
+### Strings
+
+`in`-operatoren er veldig fin for å sjekke om noe er i en tekst, koden under sjekker om `programmere` er et eller annet sted i brukerens svar.
+Husk at en string (tekst) er egentlig bare en samling med tegn.
+
+```python
+brukersvar = input("Skriv et par setninger om hva du liker å gjøre på fritiden: ")
+if "programmere" in brukersvar:
+    print("Kult!")
+```
+
+### Lister
+
+Lister er Koden under sjekker om brukerens input er i listen med fotballag.
 
 ```python
 brukersvar = input("Hva er favorittlaget ditt?")
-if brukersvar in ["Arsenal", "IK Start", "Sheffield Wednesday"]:
+brukersvar = brukersvar.lower() # tips: gjør brukerinput til små bokstaver, slik at vi ikke trenger sjekke for store bokstaver
+if brukersvar in ["arsenal", "start", "sheffield wednesday"]:
     print("Kult!")
 ```
+
+### Ordbøker
 
 I ordbøker kan vi bruke `in` for å sjekke om en nøkkel finnes i ordboken.
 
 ```python
 telefonbok = {
-    "Ravi": 99323454,
-    "Thor": 97605931
+    "ravi": 99323454,
+    "thor": 97605931
 }
 
 navn = input("Hvem vil du se nummeret til? ")
+navn = navn.lower()
 
 if navn in ordbok:
     print(f"{navn} har telefonnummer: {telefonbok[navn]}")
