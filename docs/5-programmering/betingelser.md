@@ -69,6 +69,21 @@ else:
 
 Det er viktig at vi har innhopp på all kode som tilhører hver del av if-elif setningen. Legg merke til at vi strengt tatt kunne ha laget nye if-setninger for hver sjekk i stedet, men det anses som dårlig kode. Da ville man kunne ha havnet i flere sjekker samtidig, og det ønsker vi å unngå. Ved å bruke elif og else, kobler vi alt sammen til samme betingelse.
 
+### En vanlig misforståelse
+
+Betingelsene som står før og etter `and` eller `or` er to selvstendige som ikke har noe med hverandre å gjøre.
+Under er et eksempel på en typisk feil mange IT1-elever gjør.
+
+```python
+# En vanlig feil
+if tall == 1 or 10:
+    print("Denne linjen vil kjøres uansett hvilken verdi tall har")
+
+# Dette blir riktig
+if tall == 1 or tall == 10:
+    print("Denne vil kjøre kun hvis tall er lik 1 eller 10")
+```
+
 ## Operatorer i en betingelse
 
 I eksempelene ovenfor sjekket vi en matematisk ulikhet, men vi har langt større spillerom en det. La oss først se nærmere på å undersøke likheter, det byr nemlig på et unikt problem når vi koder. I matematikken bruker vi jo et likhetstegn for å vise (eller regne på ukjentene) at utsagnene på begge sider av likhetstegnet er det samme, men når vi koder bruker vi likhetstegnet for å *deklarere* en variabel! Dermed kan vi ikke lage en betingelse som for eksempel sjekker `if alder = 17:`, fordi da overskriver vi den eksisterende verdien av alder til 17. Vi bruker derfor doble likhetstegn for å undersøke om noe er likt. Koden der vi sjekket alder kan dermed skrives om til for eksempel:
@@ -110,7 +125,34 @@ Følgende tabell er en fin oppsummering og oversikt over de ulike operatorene vi
 | `and`    | og                   |
 | `or`     | eller                |
 | `not`    | ikke                 |
+| `in`     | i                    |
 
+## Samlinger
+
+Med `in`-operatoren er det mulig å sjekke om noe er i en samling.
+Koden under sjekker om brukerens input er i listen med fotballag.
+
+```python
+brukersvar = input("Hva er favorittlaget ditt?")
+if brukersvar in ["Arsenal", "IK Start", "Sheffield Wednesday"]:
+    print("Kult!")
+```
+
+I ordbøker kan vi bruke `in` for å sjekke om en nøkkel finnes i ordboken.
+
+```python
+telefonbok = {
+    "Ravi": 99323454,
+    "Thor": 97605931
+}
+
+navn = input("Hvem vil du se nummeret til? ")
+
+if navn in ordbok:
+    print(f"{navn} har telefonnummer: {telefonbok[navn]}")
+else:
+    print(f"{navn} finnes ikke i telefonboken")
+```
 
 ## Oppgaver
 
