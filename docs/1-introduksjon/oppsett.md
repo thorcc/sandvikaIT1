@@ -107,7 +107,8 @@ De vi bruker mest og som vi laster ned allerede første dag er:
   "workbench.startupEditor": "none",
   "workbench.statusBar.visible": true,
   "workbench.tips.enabled": false,
-  "workbench.welcomePage.walkthroughs.openOnInstall": false
+  "workbench.welcomePage.walkthroughs.openOnInstall": false,
+  "workbench.preferredLightColorTheme": "Default Light+"
 }
 ```
 
