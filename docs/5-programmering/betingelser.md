@@ -626,3 +626,35 @@ if aar >= 1582:
 ```
 
 </details>
+
+### Oppgave 5.3.12
+
+
+
+> "Ja vel, da," sa datamaskinen og ble still et øyeblikk. De to mennene klarte ikke sitte i ro. Spenningen var uutholdelig.
+>
+> "Dere kommer helt sikkert ikke til å like det," gjentok Dypsindige Tenker.
+>
+> "Fortell oss det!"
+>
+> "Ja vel, da" sa Dypsindige Tenker. "Svaret på det store spørsmålet ..."
+>
+> "Ja ...!"
+>
+> "Om livet, universet og alt mulig ..." sa Dypsindige Tenker.
+>
+> "Ja ...!"
+>
+> "Er ..." sa Dypsindige Tenker og tok en liten pause igjen.
+>
+> "Ja ...!"
+>
+> "Er ..."
+>
+> "Ja ... !!! ...?"
+>
+> "Førtito," sa Dypsindige Tenker med uendelig tyngde og ro.
+>
+>  -- Haikerens guide til Galaksen, Douglas Adams
+
+Lag en fil `dyp.py` og lag et program som spør brukeren om svaret på Det store spørsmålet om livet, universet og alt mulig, og svar ja hvis brukeren svarer `42`, `førtito` eller `to og førti` eller svar nei.
