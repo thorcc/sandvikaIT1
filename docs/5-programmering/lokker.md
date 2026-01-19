@@ -9,7 +9,7 @@ description: Løkker brukes for å gjøre repetitive arbeidsoppgaver.
 
 <iframe width="100%" height="500" src="https://www.youtube.com/embed/mgooqyWMTxk?start=0&end=37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Datamaskiner er veldig gode på å repetere identiske eller lignende arbeidsoppgaver uten å gjøre feil, mens vi mennesker ikke alltid er like flinke. 
+Datamaskiner er veldig gode på å repetere identiske eller lignende arbeidsoppgaver uten å gjøre feil, mens vi mennesker ikke alltid er like flinke.
 Det er en av grunnene til at datamaskiner ofte brukes for å automatisere gjentagende oppgaver.
 I Python brukes løkker for å repetere arbeidsoppgaver.
 
@@ -56,7 +56,7 @@ print("Riktig!")
 
 ### Uendelige løkker
 
-While-løkkene kjører så lenge betingelsen er sann (`True`). 
+While-løkkene kjører så lenge betingelsen er sann (`True`).
 Hvis betingelsen aldri blir usann (`False`), vil en løkke kjøre for alltid. Slike løkker kalles *uendelige løkker* (fra eng. *infinite loops*).
 Hvis vi ender opp i en uendelig løkke vil PCen fryse, og vi får ikke kjørt resten av programmet.
 
@@ -101,8 +101,8 @@ Vi kan også bruke for-løkker for å gå gjennom lister.
 Da vil variabelen vi oppretter i løkken få verdiene til hvert element i listen, en verdi om gangen.
 Legg merke til hvilke verdier variabelen `elev` har i eksempelet under.
 
-> En liste i python skrives mellom firkantparenteser `["dette", "er", "en", "liste"]`.  
-> Firkantparenteser skrives med `option/alt` + `shift` + `8` på mac.  
+> En liste i python skrives mellom firkantparenteser `["dette", "er", "en", "liste"]`.
+> Firkantparenteser skrives med `option/alt` + `shift` + `8` på mac.
 > Firkantparenteser skrives med `Alt gr` + `8` på windows.
 
 <iframe width="100%" height="300" frameborder="0" src="https://pythontutor.com/iframe-embed.html#code=for%20elev%20in%20%5B%22Erling%22,%20%22Ada%22,%20%22Caroline%22%5D%3A%0A%20%20%20%20print%28elev%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=311&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
@@ -225,7 +225,7 @@ c) Bruk en for-løkke til å printe ut alle partallene fra og med 400 til og med
 <summary>Klikk for løsning</summary>
 
 ```python
-# a) 
+# a)
 
 tall = 0
 while tall < 101:
@@ -237,7 +237,7 @@ while tall < 101:
 for tall in range(101):
     print(tall)
 
-# c) 
+# c)
 
 for tall in range(400, 601,2):
     print(tall)
@@ -250,7 +250,7 @@ for tall in range(400, 601,2):
 a) Forklar hva følgende kode gjør:
 
 ```python
-sum = 0 
+sum = 0
 n = 200
 
 for tall in range(1,n+1):
@@ -300,16 +300,16 @@ Ta frem koden koden for Stein - Saks - Papir. Legg på funksjonalitet slik at pr
 
 <details>
 <summary>Klikk for løsning</summary>
-    
+
 Kommer
 
 </details>
 
 ### Oppgave 5.4.4
 
-Lag din egen Chatbot. 
+Lag din egen Chatbot.
 
-**Eksempel på bruk av Chatbot** 
+**Eksempel på bruk av Chatbot**
 `````
 Hei jeg er chatbotten Thorsen 2000, hva lurer du på?
 > Hvor mye koster en bitcoin?
@@ -319,10 +319,58 @@ Lurer du på noe annet?
 Det er 6 grader og regn
 Lurer du på noe annet?
 > Hva er klokka?
-Klokka er 09:39 
+Klokka er 09:39
 > Hva er hovedstaden i Argentina?
 Det vet jeg ikke.
 Lurer du på noe annet?
 > Nei
 Den er grei. Ha en fin dag.
 `````
+### Oppgave 5.4.5
+
+
+I denne oppgaven skal du lage et huskeliste-program som kjøres i terminalen.
+
+1. Lag en meny som ser ut som eksempelet under.
+
+<details><summary>Eksempel</summary>
+
+```text
+-- Huskelista --
+
+1: Se huskelista
+2: Legg til et listepunkt
+q: Avslutt
+> 1
+Du valgte 1: Se huskelista
+
+-- Huskelista --
+
+1: Se huskelista
+2: Legg til et listepunkt
+q: Avslutt
+> 2
+Du valgte 2: Legg til et listepunkt
+
+-- Huskelista --
+
+1: Se huskelista
+2: Legg til et listepunkt
+q: Avslutt
+> 3
+Ugyldig valg
+
+-- Huskelista --
+
+1: Se huskelista
+2: Legg til et listepunkt
+q: Avslutt
+> q
+Takk for nå
+```
+</details>
+
+2. Opprett en liste øverst i koden med ett listepunkt: `huskeliste = ["Gjør ferdig huskeliste-oppgaven"]`
+3. Legg til kode slik at hvis brukeren velger `1: se huskelista` skal listen printes.
+4. Legg til kode slik at hvis brukeren velger `2: Legg til et listepunkt` kan brukeren skrive inn tekst for et nytt listepunkt (`nytt_punkt = input("> ")`), også skal teksten legges til på slutten av listen (`huskeliste.append(nytt_punkt)`).
+5. Legg til et nytt menyvalg `3: Fjern listepunkt` som først printer hele huskelisten, så ber brukeren skrive posisjonen til listepunktet (eks: 0-3) han ønsker å slette og til slutt fjerner listepunktet fra huskelisten (`huskeliste.pop(posisjon)`).
