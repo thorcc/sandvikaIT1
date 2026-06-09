@@ -226,6 +226,8 @@ print(f"Vennene er {total_alder} år tilsammen.")
 
 [Se eksempel i pythontutor](https://pythontutor.com/visualize.html#code=venner%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22fornavn%22%3A%22Ola%22,%0A%20%20%20%20%20%20%20%20%22etternavn%22%3A%22Nordmann%22,%0A%20%20%20%20%20%20%20%20%22telefon_nr%22%3A%20%2222222222%22,%0A%20%20%20%20%20%20%20%20%22alder%22%3A%2018,%0A%20%20%20%20%20%20%20%20%22hobby%22%3A%20%5B%22venner%22,%22h%C3%A5ndball%22,%22kino%22%5D%0A%20%20%20%20%7D,%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22fornavn%22%3A%22Kari%22,%0A%20%20%20%20%20%20%20%20%22etternavn%22%3A%22Nordmann%22,%0A%20%20%20%20%20%20%20%20%22telefon_nr%22%3A%20%2222223333%22,%0A%20%20%20%20%20%20%20%20%22alder%22%3A%2017,%0A%20%20%20%20%20%20%20%20%22hobby%22%3A%20%5B%22venner%22,%22fotball%22,%22kino%22%5D%0A%20%20%20%20%7D%0A%5D%0Atotal_alder%20%3D%200%0A%0Afor%20venn%20in%20venner%3A%0A%20%20%20%20print%28f'%7Bvenn%5B%22fornavn%22%5D%7D%20%7Bvenn%5B%22etternavn%22%5D%7D%20er%20%7Bvenn%5B%22alder%22%5D%7D%20%C3%A5r%20gammel'%29%0A%20%20%20%20total_alder%20%2B%3D%20venn%5B%22alder%22%5D%0A%0Aprint%28f%22Vennene%20er%20%7Btotal_alder%7D%20%C3%A5r%20tilsammen.%22%29&curInstr=0&mode=display&origin=opt-frontend.js&py=311)
 
+## Værdata
+
 I virkeligheten kan dette bli ganske komplisert, her ser du et lite utdrag av hvordan yr lagrer værdata. Ikke vær bekymret om du mister oversikt her, dette går et stykke utover pensum for kurset:
 
 ![Bilde: Værdata fra yr.](./bilder/komplisertjson.png)
