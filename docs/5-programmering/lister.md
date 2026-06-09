@@ -215,16 +215,17 @@ venner = [
         "hobby": ["venner","fotball","kino"]
     }
 ]
-total_alder = 0
+
+total_alder = 0 # teller som starter på 0
 
 for venn in venner:
-    print(f'{venn["fornavn"]} {venn["etternavn"]} er {venn["alder"]} år gammel')
-    total_alder += venn["alder"]
+    print(f'{venn["fornavn"]} {venn["etternavn"]} er {venn["alder"]} år gammel') # printer info om hver venn
+    total_alder += venn["alder"] # øker telleren med alderen til vennen
 
-print(f"Vennene er {total_alder} år tilsammen.")
+print(f"Vennene er til sammen {total_alder} år.")
 ```
 
-[Se eksempel i pythontutor](https://pythontutor.com/visualize.html#code=venner%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22fornavn%22%3A%22Ola%22,%0A%20%20%20%20%20%20%20%20%22etternavn%22%3A%22Nordmann%22,%0A%20%20%20%20%20%20%20%20%22telefon_nr%22%3A%20%2222222222%22,%0A%20%20%20%20%20%20%20%20%22alder%22%3A%2018,%0A%20%20%20%20%20%20%20%20%22hobby%22%3A%20%5B%22venner%22,%22h%C3%A5ndball%22,%22kino%22%5D%0A%20%20%20%20%7D,%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22fornavn%22%3A%22Kari%22,%0A%20%20%20%20%20%20%20%20%22etternavn%22%3A%22Nordmann%22,%0A%20%20%20%20%20%20%20%20%22telefon_nr%22%3A%20%2222223333%22,%0A%20%20%20%20%20%20%20%20%22alder%22%3A%2017,%0A%20%20%20%20%20%20%20%20%22hobby%22%3A%20%5B%22venner%22,%22fotball%22,%22kino%22%5D%0A%20%20%20%20%7D%0A%5D%0Atotal_alder%20%3D%200%0A%0Afor%20venn%20in%20venner%3A%0A%20%20%20%20print%28f'%7Bvenn%5B%22fornavn%22%5D%7D%20%7Bvenn%5B%22etternavn%22%5D%7D%20er%20%7Bvenn%5B%22alder%22%5D%7D%20%C3%A5r%20gammel'%29%0A%20%20%20%20total_alder%20%2B%3D%20venn%5B%22alder%22%5D%0A%0Aprint%28f%22Vennene%20er%20%7Btotal_alder%7D%20%C3%A5r%20tilsammen.%22%29&curInstr=0&mode=display&origin=opt-frontend.js&py=311)
+[Se eksempel i pythontutor](https://pythontutor.com/visualize.html#code=venner%20%3D%20%5B%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22fornavn%22%3A%22Ola%22,%0A%20%20%20%20%20%20%20%20%22etternavn%22%3A%22Nordmann%22,%0A%20%20%20%20%20%20%20%20%22telefon_nr%22%3A%20%2222222222%22,%0A%20%20%20%20%20%20%20%20%22alder%22%3A%2018,%0A%20%20%20%20%20%20%20%20%22hobby%22%3A%20%5B%22venner%22,%22h%C3%A5ndball%22,%22kino%22%5D%0A%20%20%20%20%7D,%0A%20%20%20%20%7B%0A%20%20%20%20%20%20%20%20%22fornavn%22%3A%22Kari%22,%0A%20%20%20%20%20%20%20%20%22etternavn%22%3A%22Nordmann%22,%0A%20%20%20%20%20%20%20%20%22telefon_nr%22%3A%20%2222223333%22,%0A%20%20%20%20%20%20%20%20%22alder%22%3A%2017,%0A%20%20%20%20%20%20%20%20%22hobby%22%3A%20%5B%22venner%22,%22fotball%22,%22kino%22%5D%0A%20%20%20%20%7D%0A%5D%0Atotal_alder%20%3D%200%0A%0Afor%20venn%20in%20venner%3A%0A%20%20%20%20print%28f'%7Bvenn%5B%22fornavn%22%5D%7D%20%7Bvenn%5B%22etternavn%22%5D%7D%20er%20%7Bvenn%5B%22alder%22%5D%7D%20%C3%A5r%20gammel'%29%0A%20%20%20%20total_alder%20%2B%3D%20venn%5B%22alder%22%5D%0A%0Aprint%28f%22Vennene%20er%20til%20sammen%20%7Btotal_alder%7D%20%C3%A5r.%22%29&curInstr=0&mode=display&origin=opt-frontend.js&py=311)
 
 ## Værdata
 
